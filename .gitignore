@@ -1,0 +1,9 @@
+token_code.txt
+
+ros2_humble_venv/
+
+ros2_humble_ws/
+
+ros2_kart_ws/build/
+ros2_kart_ws/install/
+ros2_kart_ws/log/
