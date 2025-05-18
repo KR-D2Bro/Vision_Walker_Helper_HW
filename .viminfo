@@ -11,17 +11,32 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/adapter_name
+~MSle0~/node
+
+# Last Substitute String:
+$
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1747473730,,"wq"
 :w
-|2,0,1747470238,,"w"
+|2,0,1747556164,,"w"
+:wq
+|2,0,1747565981,,"wq"
 :q
-|2,0,1747449674,,"q"
+|2,0,1747565777,,"q"
+:q!
+|2,0,1747542636,,"q!"
+:Wq
+|2,0,1747538870,,"Wq"
 
 # Search String History (newest to oldest):
+?/disconnect
+|2,1,1747565160,47,"disconnect"
+?/quit
+|2,1,1747565140,47,"quit"
+? @$
+|2,1,1747554292,,"@$"
+?/node
+|2,1,1747540937,47,"node"
 ?/adapter_name
 |2,1,1747405285,47,"adapter_name"
 
@@ -32,378 +47,585 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
-""1	LINE	0
-	        self.bus = SMBus(1)  # Raspberry Pi I2C bus 1
-|3,1,1,1,1,0,1747471193,"        self.bus = SMBus(1)  # Raspberry Pi I2C bus 1"
-"2	LINE	0
-	        
-|3,0,2,1,1,0,1747471174,"        "
+"0	LINE	0
+	       
+|3,0,0,1,1,0,1747554292,"       "
+"1	CHAR	0
+	 agent_bus = asyncio.get_event_loop().run_until_complete(register_agent())
+	
+|3,0,1,0,2,0,1747565338," agent_bus = asyncio.get_event_loop().run_until_complete(register_agent())",""
+"2	CHAR	0
+	from dbus_next.service import ServiceInterface, method
+	from dbus_next.aio import MessageBus
+	from dbus_next.constants import BusType
+	
+	# D-Bus object path for the agent
+	AGENT_PATH = '/test/agent'
+	
+	class Agent(ServiceInterface):
+	    def __init__(self):
+	        super().__init__('org.bluez.Agent1')
+	
+	    @method()
+	    def Release(self) -> None:
+	        pass
+	
+	    @method()
+	    def RequestPinCode(self, device: 'o') -> 's':
+	        return '0000'
+	
+	    @method()
+	    def DisplayPinCode(self, device: 'o', pincode: 's') -> None:
+	        print(f'[Agent] DisplayPinCode for {device}: {pincode}')
+	
+	    @method()
+	    def RequestPasskey(self, device: 'o') -> 'u':
+	        return 0
+	
+	    @method()
+	    def DisplayPasskey(self, device: 'o', passkey: 'u', entered: 'u') -> None:
+	        print(f'[Agent] DisplayPasskey for {device}: {passkey} (entered {entered})')
+	
+	    @method()
+	    def RequestConfirmation(self, device: 'o', passkey: 'u') -> None:
+	        # 자동 승인
+	        return
+	
+	    @method()
+	    def RequestAuthorization(self, device: 'o') -> None:
+	        return
+	
+	    @method()
+	    def AuthorizeService(self, device: 'o', uuid: 's') -> None:
+	        return
+	
+	    @method()
+	    def Cancel(self) -> None:
+	        pass
+	
+	async def register_agent() -> MessageBus:
+	    # 시스템 버스에 연결 (SESSION 대신 SYSTEM 버스 사용)
+|3,0,2,0,50,0,1747564327,"from dbus_next.service import ServiceInterface, method","from dbus_next.aio import MessageBus","from dbus_next.constants import BusType","","# D-Bus object path for the agent","AGENT_PATH = '/test/agent'","","class Agent(ServiceInterface):","    def __init__(self):","        super().__init__('org.bluez.Agent1')","","    @method()","    def Release(self) -> None:","        pass","","    @method()",>51
+|<"    def RequestPinCode(self, device: 'o') -> 's':","        return '0000'","","    @method()","    def DisplayPinCode(self, device: 'o', pincode: 's') -> None:","        print(f'[Agent] DisplayPinCode for {device}: {pincode}')","","    @method()","    def RequestPasskey(self, device: 'o') -> 'u':","        return 0","","    @method()","    def DisplayPasskey(self, device: 'o', passkey: 'u', entered: 'u') -> None:",>86
+|<"        print(f'[Agent] DisplayPasskey for {device}: {passkey} (entered {entered})')","","    @method()","    def RequestConfirmation(self, device: 'o', passkey: 'u') -> None:","        # 자동 승인","        return","","    @method()","    def RequestAuthorization(self, device: 'o') -> None:","        return","","    @method()","    def AuthorizeService(self, device: 'o', uuid: 's') -> None:","        return","","    @method()","    def Cancel(self) -> None:","        pass","",>43
+|<"async def register_agent() -> MessageBus:","    # 시스템 버스에 연결 (SESSION 대신 SYSTEM 버스 사용)"
 "3	LINE	0
-	        self.bus = SMBus(1)  # Raspberry Pi I2C bus 1
-|3,0,3,1,1,0,1747471173,"        self.bus = SMBus(1)  # Raspberry Pi I2C bus 1"
-"4	CHAR	0
-	while True:
-	            try:
-	                self.bus.write_byte_data(MPU9250_ADDR, PWR_MGMT_1, 0x00)  # sleep 해제
-	                self.bus.write_byte_data(MPU9250_ADDR, GYRO_CONFIG, 0x00)  # ±250°/s
-	                self.bus.write_byte_data(MPU9250_ADDR, ACCEL_CONFIG, 0x00) #가속도 감도
-	                break
+	    return bus
+|3,0,3,1,1,0,1747564226,"    return bus"
+"4	LINE	0
+	    await mgr.call_request_default_agent(AGENT_PATH)
+|3,0,4,1,1,0,1747564225,"    await mgr.call_request_default_agent(AGENT_PATH)"
+"5	LINE	0
+	H, 'NoInputNoOutput')
+|3,0,5,1,1,0,1747564225,"H, 'NoInputNoOutput')"
+"6	CHAR	0
+	from dbus_next.service import ServiceInterface, method
+	from dbus_next.aio import MessageBus
+	from dbus_next.constants import BusType
 	
-	            except:
-	                self.get_logger().warn('I2C 초기화/설정 실패, 5초 후 재시도...')
-	                time.sleep(5)
+	# D-Bus object path for the agent
+	AGENT_PATH = '/test/agent'
 	
-|3,0,4,0,11,0,1747470902,"while True:","            try:","                self.bus.write_byte_data(MPU9250_ADDR, PWR_MGMT_1, 0x00)  # sleep 해제","                self.bus.write_byte_data(MPU9250_ADDR, GYRO_CONFIG, 0x00)  # ±250°/s","                self.bus.write_byte_data(MPU9250_ADDR, ACCEL_CONFIG, 0x00) #가속도 감도","                break","","            except:",>94
-|<"                self.get_logger().warn('I2C 초기화/설정 실패, 5초 후 재시도...')","                time.sleep(5)",""
-"5	CHAR	0
-	#!/usr/bin/env python3
+	class Agent(ServiceInterface):
+	    def __init__(self):
+	        super().__init__('org.bluez.Agent1')
 	
-	import sys
-	import signal
-	import json
-	import threading
+	    @method()
+	    def Release(self) -> None:
+	        """에이전트가 unregister 될 때 호출됩니다"""
+	        pass
 	
-	import rclpy
-	from rclpy.node import Node
-	from std_msgs.msg import String
+	    @method()
+	    def RequestPinCode(self, device: 'o') -> 's':
+	        """PIN 코드를 요청받았을 때 리턴합니다"""
+	        return '0000'
 	
-	import gatt
+	    @method()
+	    def DisplayPinCode(self, device: 'o', pincode: 's') -> None:
+	        """PIN 코드를 표시하라는 요청이 들어오면 호출됩니다"""
+	        print(f'[Agent] DisplayPinCode for {device}: {pincode}')
 	
-	# BLE Constants
-	ADAPTER_NAME = 'hci0'
-	SERVICE_UUID = '12345678-1234-5678-1234-56789abcde00'
-	CHAR_UUID    = '12345678-1234-5678-1234-56789abcde01'
+	    @method()
+	    def RequestPasskey(self, device: 'o') -> 'u':
+	        """Passkey 요청 시 정수형으로 리턴합니다"""
+	        return 0
 	
-	class CartCharacteristic(gatt.Characteristic):
-	    """
-	    GATT Characteristic for config and location_update messages.
-	    Supports read, write, notify.
-	    """
-	    def __init__(self, service, path):
-	        super().__init__(service, path, CHAR_UUID, ['read', 'write', 'notify'])
-	        self.service = service
-	        self.value_bytes = bytearray()
+	    @method()
+	    def DisplayPasskey(self, device: 'o', passkey: 'u', entered: 'u') -> None:
+	        """Passkey를 표시하라는 요청이 들어오면 호출됩니다"""
+	        print(f'[Agent] DisplayPasskey for {device}: {passkey} (entered {entered})')
 	
-	    def on_read_value(self, offset):
-	        # Return current value as list of bytes
-	        return list(self.value_bytes)
+	    @method()
+	    def RequestConfirmation(self, device: 'o', passkey: 'u') -> None:
+	        """Passkey 일치 확인 요청이 들어오면 자동으로 확인 처리합니다"""
+	        return
 	
-	    def on_write_value(self, value, options):
-	        data = bytes(value)
-	        text = data.decode('utf-8', errors='ignore')
-	        try:
-	            msg = json.loads(text)
-	            if msg.get('type') == 'config':
-	                payload = msg.get('payload', {})
-	                ros_msg = String()
-	                ros_msg.data = json.dumps(payload)
-	                self.service.node.config_pub.publish(ros_msg)
-	                self.service.node.get_logger().info(f'[ROS2] cart_config published: {payload}')
-	                ack = {'type': 'config_ack', 'status': 'OK'}
-	                self.value_bytes = bytearray(json.dumps(ack).encode())
-	                self.notify()
-	            else:
-	                self.service.node.get_logger().warn(f'Unknown msg type: {msg.get("type")}')
-	        except Exception as e:
-	            self.service.node.get_logger().error(f'Write parse error: {e}')
-|3,0,5,0,50,0,1747405731,"#!/usr/bin/env python3","","import sys","import signal","import json","import threading","","import rclpy","from rclpy.node import Node","from std_msgs.msg import String","","import gatt","","# BLE Constants","ADAPTER_NAME = 'hci0'","SERVICE_UUID = '12345678-1234-5678-1234-56789abcde00'","CHAR_UUID    = '12345678-1234-5678-1234-56789abcde01'","","class CartCharacteristic(gatt.Characteristic):","    \"\"\"",>66
-|<"    GATT Characteristic for config and location_update messages.","    Supports read, write, notify.","    \"\"\"","    def __init__(self, service, path):","        super().__init__(service, path, CHAR_UUID, ['read', 'write', 'notify'])","        self.service = service","        self.value_bytes = bytearray()","","    def on_read_value(self, offset):","        # Return current value as list of bytes","        return list(self.value_bytes)","",>47
-|<"    def on_write_value(self, value, options):","        data = bytes(value)","        text = data.decode('utf-8', errors='ignore')","        try:","            msg = json.loads(text)","            if msg.get('type') == 'config':","                payload = msg.get('payload', {})","                ros_msg = String()","                ros_msg.data = json.dumps(payload)","                self.service.node.config_pub.publish(ros_msg)",>97
-|<"                self.service.node.get_logger().info(f'[ROS2] cart_config published: {payload}')","                ack = {'type': 'config_ack', 'status': 'OK'}","                self.value_bytes = bytearray(json.dumps(ack).encode())","                self.notify()","            else:","                self.service.node.get_logger().warn(f'Unknown msg type: {msg.get(\"type\")}')","        except Exception as e:",>77
-|<"            self.service.node.get_logger().error(f'Write parse error: {e}')"
-"6	LINE	0
-	#!/usr/bin/env python
-|3,0,6,1,1,0,1747405531,"#!/usr/bin/env python"
+	    @method()
+	    def RequestAuthorization(self, device: 'o') -> None:
+	        """서비스 접근 권한 요청 시 허용 처리합니다"""
+	        return
+	
+	    @method()
+	    def AuthorizeService(self, device: 'o', uuid: 's') -> None:
+	        """특정 서비스 접근 허가 요청 시 허용 처리합니다"""
+	        return
+|3,0,6,0,50,0,1747564224,"from dbus_next.service import ServiceInterface, method","from dbus_next.aio import MessageBus","from dbus_next.constants import BusType","","# D-Bus object path for the agent","AGENT_PATH = '/test/agent'","","class Agent(ServiceInterface):","    def __init__(self):","        super().__init__('org.bluez.Agent1')","","    @method()","    def Release(self) -> None:",>72
+|<"        \"\"\"에이전트가 unregister 될 때 호출됩니다\"\"\"","        pass","","    @method()","    def RequestPinCode(self, device: 'o') -> 's':","        \"\"\"PIN 코드를 요청받았을 때 리턴합니다\"\"\"","        return '0000'","","    @method()","    def DisplayPinCode(self, device: 'o', pincode: 's') -> None:","        \"\"\"PIN 코드를 표시하라는 요청이 들어오면 호출됩니다\"\"\"",>66
+|<"        print(f'[Agent] DisplayPinCode for {device}: {pincode}')","","    @method()","    def RequestPasskey(self, device: 'o') -> 'u':","        \"\"\"Passkey 요청 시 정수형으로 리턴합니다\"\"\"","        return 0","","    @method()","    def DisplayPasskey(self, device: 'o', passkey: 'u', entered: 'u') -> None:","        \"\"\"Passkey를 표시하라는 요청이 들어오면 호출됩니다\"\"\"",>86
+|<"        print(f'[Agent] DisplayPasskey for {device}: {passkey} (entered {entered})')","","    @method()","    def RequestConfirmation(self, device: 'o', passkey: 'u') -> None:","        \"\"\"Passkey 일치 확인 요청이 들어오면 자동으로 확인 처리합니다\"\"\"","        return","","    @method()","    def RequestAuthorization(self, device: 'o') -> None:","        \"\"\"서비스 접근 권한 요청 시 허용 처리합니다\"\"\"","        return","",>15
+|<"    @method()","    def AuthorizeService(self, device: 'o', uuid: 's') -> None:","        \"\"\"특정 서비스 접근 허가 요청 시 허용 처리합니다\"\"\"","        return"
 "7	CHAR	0
-	3
+	async def register_agent():
+	    bus = await MessageBus(BusType.SYSTEM).connect()
+	    agent = Agent()
+	    bus.export('/test/agent', agent)
+	    obj = await bus.get_proxy_object(
+	        'org.bluez',
+	        '/org/bluez',
+	        interface_names=['org.bluez.AgentManager1']
+	    )
+	    mgr = obj.get_interface('org.bluez.AgentManager1')
+	    await mgr.call_register_agent('/test/agent', 'NoInputNoOutput')
+	    await mgr.call_request_default_agent('/test/agent')
+|3,0,7,0,12,0,1747563833,"async def register_agent():","    bus = await MessageBus(BusType.SYSTEM).connect()","    agent = Agent()","    bus.export('/test/agent', agent)","    obj = await bus.get_proxy_object(","        'org.bluez',","        '/org/bluez',","        interface_names=['org.bluez.AgentManager1']","    )","    mgr = obj.get_interface('org.bluez.AgentManager1')","    await mgr.call_register_agent('/test/agent', 'NoInputNoOutput')",>57
+|<"    await mgr.call_request_default_agent('/test/agent')"
+"8	CHAR	0
+	 def __init__(self):
+	        super().__init__('org.bluez.Agent1')
 	
-	import sys
-	import signal
-	import json
-	import threading
+	    @method(in_signature='', out_signature='')
+	    def Release(self) -> None:
+	        """에이전트가 unregister 될 때 호출됩니다."""
+	        pass
 	
-	import rclpy
-	from rclpy.node import Node
-	from std_msgs.msg import String
+	    @method(in_signature='o', out_signature='s')
+	    def RequestPinCode(self, device) -> str:
+	        """PIN 코드를 요청받았을 때 string으로 리턴합니다."""
+	        return '0000'
 	
-	import gatt
+	    @method(in_signature='os', out_signature='')
+	    def DisplayPinCode(self, device, pincode) -> None:
+	        print(f'[Agent] DisplayPinCode for {device}: {pincode}')
 	
-	# BLE Constants
-	ADAPTER_NAME = 'hci0'
-	SERVICE_UUID = '12345678-1234-5678-1234-56789abcde00'
-	CHAR_UUID    = '12345678-1234-5678-1234-56789abcde01'
+	    @method(in_signature='o', out_signature='u')
+	    def RequestPasskey(self, device) -> int:
+	        """Passkey 요청 시 integer로 리턴합니다."""
+	        return 0
 	
-	class CartCharacteristic(gatt.Characteristic):
-	    """
-	    GATT Characteristic handling config and location_update messages.
-	    Supports read, write, notify.
-	    """
-	    def __init__(self, service):
-	        # index, UUID, flags
-	        super().__init__(service, CHAR_UUID, ['read', 'write', 'notify'])
-	        self.service = service
-	        self.value_bytes = bytearray()
+	    @method(in_signature='ouu', out_signature='')
+	    def DisplayPasskey(self, device, passkey, entered) -> None:
+	        print(f'[Agent] DisplayPasskey for {device}: {passkey} (entered {entered})')
 	
-	    def on_read_value(self, offset):
-	        return list(self.value_bytes)
+	    @method(in_signature='ou', out_signature='')
+	    def RequestConfirmation(self, device, passkey) -> None:
+	        """passkey 값 일치 확인 요청이 들어올 때 자동으로 확인 처리합니다."""
+	        return
 	
-	    def on_write_value(self, value, options):
-	        data = bytes(value)
-	        text = data.decode('utf-8', errors='ignore')
-	        try:
-	            msg = json.loads(text)
-	            msg_type = msg.get('type')
-	            if msg_type == 'config':
-	                payload = msg.get('payload', {})
-	                ros_msg = String()
-	                ros_msg.data = json.dumps(payload)
-	                self.service.node.config_pub.publish(ros_msg)
-	                self.service.node.get_logger().info(f'[ROS2] cart_config published: {payload}')
-	                ack = {'type': 'config_ack', 'status': 'OK'}
-	                self.value_bytes = bytearray(json.dumps(ack).encode())
-	                self.notify()
-	                self.service.node.get_logger().info('[GATT] Sent config_ack')
-	            else:
-	                self.service.node.get_logger().warn(f'Unknown msg type: {msg_type}')
-|3,0,7,0,50,0,1747405530,"3","","import sys","import signal","import json","import threading","","import rclpy","from rclpy.node import Node","from std_msgs.msg import String","","import gatt","","# BLE Constants","ADAPTER_NAME = 'hci0'","SERVICE_UUID = '12345678-1234-5678-1234-56789abcde00'","CHAR_UUID    = '12345678-1234-5678-1234-56789abcde01'","","class CartCharacteristic(gatt.Characteristic):","    \"\"\"",>71
-|<"    GATT Characteristic handling config and location_update messages.","    Supports read, write, notify.","    \"\"\"","    def __init__(self, service):","        # index, UUID, flags","        super().__init__(service, CHAR_UUID, ['read', 'write', 'notify'])","        self.service = service","        self.value_bytes = bytearray()","","    def on_read_value(self, offset):","        return list(self.value_bytes)","","    def on_write_value(self, value, options):",>29
-|<"        data = bytes(value)","        text = data.decode('utf-8', errors='ignore')","        try:","            msg = json.loads(text)","            msg_type = msg.get('type')","            if msg_type == 'config':","                payload = msg.get('payload', {})","                ros_msg = String()","                ros_msg.data = json.dumps(payload)","                self.service.node.config_pub.publish(ros_msg)",>97
-|<"                self.service.node.get_logger().info(f'[ROS2] cart_config published: {payload}')","                ack = {'type': 'config_ack', 'status': 'OK'}","                self.value_bytes = bytearray(json.dumps(ack).encode())","                self.notify()","                self.service.node.get_logger().info('[GATT] Sent config_ack')","            else:","                self.service.node.get_logger().warn(f'Unknown msg type: {msg_type}')"
-"8	LINE	0
-	        super().__init__(manager, service_path, SERVICE_UUID)
-|3,0,8,1,1,0,1747405346,"        super().__init__(manager, service_path, SERVICE_UUID)"
+	    @method(in_signature='o', out_signature='')
+	    def RequestAuthorization(self, device) -> None:
+	        """서비스 접근 권한 요청 시 호출되어 허용 처리합니다."""
+	        return
+	
+	    @method(in_signature='os', out_signature='')
+	    def AuthorizeService(self, device, uuid) -> None:
+	        """특정 서비스(UUID)에 대한 접근 허가를 처리합니다."""
+	        return
+	
+	    @method(in_signature='', out_signature='')
+	    def Cancel(self) -> None:
+	        """요청이 취소될 때 호출됩니다."""
+	        pass
+|3,0,8,0,45,0,1747561216," def __init__(self):","        super().__init__('org.bluez.Agent1')","","    @method(in_signature='', out_signature='')","    def Release(self) -> None:","        \"\"\"에이전트가 unregister 될 때 호출됩니다.\"\"\"","        pass","","    @method(in_signature='o', out_signature='s')","    def RequestPinCode(self, device) -> str:","        \"\"\"PIN 코드를 요청받았을 때 string으로 리턴합니다.\"\"\"",>23
+|<"        return '0000'","","    @method(in_signature='os', out_signature='')","    def DisplayPinCode(self, device, pincode) -> None:","        print(f'[Agent] DisplayPinCode for {device}: {pincode}')","","    @method(in_signature='o', out_signature='u')","    def RequestPasskey(self, device) -> int:","        \"\"\"Passkey 요청 시 integer로 리턴합니다.\"\"\"","        return 0","","    @method(in_signature='ouu', out_signature='')",>65
+|<"    def DisplayPasskey(self, device, passkey, entered) -> None:","        print(f'[Agent] DisplayPasskey for {device}: {passkey} (entered {entered})')","","    @method(in_signature='ou', out_signature='')","    def RequestConfirmation(self, device, passkey) -> None:","        \"\"\"passkey 값 일치 확인 요청이 들어올 때 자동으로 확인 처리합니다.\"\"\"","        return","","    @method(in_signature='o', out_signature='')",>53
+|<"    def RequestAuthorization(self, device) -> None:","        \"\"\"서비스 접근 권한 요청 시 호출되어 허용 처리합니다.\"\"\"","        return","","    @method(in_signature='os', out_signature='')","    def AuthorizeService(self, device, uuid) -> None:","        \"\"\"특정 서비스(UUID)에 대한 접근 허가를 처리합니다.\"\"\"","        return","","    @method(in_signature='', out_signature='')","    def Cancel(self) -> None:",>62
+|<"        \"\"\"요청이 취소될 때 호출됩니다.\"\"\"","        pass"
 "9	LINE	0
-	        service_path = adapter_path + '/service0'
-|3,0,9,1,1,0,1747405343,"        service_path = adapter_path + '/service0'"
-"-	CHAR	0
-	02
-|3,0,36,0,1,0,1747469422,"02"
+	 def RequestPasskey(self, device):
+|3,0,9,1,1,0,1747560935," def RequestPasskey(self, device):"
+""-	CHAR	0
+	.
+|3,1,36,0,1,0,1747556163,"."
 
 # File marks:
-'0  5  12  ~/.gitignore
-|4,48,5,12,1747473730,"~/.gitignore"
-'1  5  14  ~/.gitignore
-|4,49,5,14,1747473703,"~/.gitignore"
-'2  9  16  ~/.gitignore
-|4,50,9,16,1747473663,"~/.gitignore"
-'3  11  16  ~/.gitignore
-|4,51,11,16,1747473663,"~/.gitignore"
-'4  9  16  ~/.gitignore
-|4,52,9,16,1747473663,"~/.gitignore"
-'5  11  16  ~/.gitignore
-|4,53,11,16,1747473663,"~/.gitignore"
-'6  9  16  ~/.gitignore
-|4,54,9,16,1747473653,"~/.gitignore"
-'7  11  16  ~/.gitignore
-|4,55,11,16,1747473653,"~/.gitignore"
-'8  9  16  ~/.gitignore
-|4,56,9,16,1747473653,"~/.gitignore"
-'9  11  16  ~/.gitignore
-|4,57,11,16,1747473653,"~/.gitignore"
+'0  78  11  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,48,78,11,1747566074,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+'1  132  19  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,49,132,19,1747565981,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+'2  136  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,50,136,0,1747565777,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+'3  130  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,51,130,0,1747565777,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+'4  116  80  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,52,116,80,1747565347,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+'5  116  80  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,53,116,80,1747565347,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+'6  117  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,54,117,0,1747565347,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+'7  117  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,55,117,0,1747565347,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+'8  46  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,56,46,28,1747565315,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+'9  44  53  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,57,44,53,1747565240,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
 
 # Jumplist (newest first):
--'  5  12  ~/.gitignore
-|4,39,5,12,1747473730,"~/.gitignore"
--'  5  14  ~/.gitignore
-|4,39,5,14,1747473703,"~/.gitignore"
--'  9  16  ~/.gitignore
-|4,39,9,16,1747473694,"~/.gitignore"
--'  9  16  ~/.gitignore
-|4,39,9,16,1747473694,"~/.gitignore"
--'  11  16  ~/.gitignore
-|4,39,11,16,1747473663,"~/.gitignore"
--'  11  16  ~/.gitignore
-|4,39,11,16,1747473663,"~/.gitignore"
--'  11  16  ~/.gitignore
-|4,39,11,16,1747473653,"~/.gitignore"
--'  5  0  ~/.gitignore
-|4,39,5,0,1747473596,"~/.gitignore"
--'  5  0  ~/.gitignore
-|4,39,5,0,1747473596,"~/.gitignore"
--'  5  0  ~/.gitignore
-|4,39,5,0,1747473579,"~/.gitignore"
--'  1  5  ~/.gitignore
-|4,39,1,5,1747473513,"~/.gitignore"
--'  1  5  ~/.gitignore
-|4,39,1,5,1747473513,"~/.gitignore"
--'  1  5  ~/.gitignore
-|4,39,1,5,1747473513,"~/.gitignore"
--'  1  5  ~/.gitignore
-|4,39,1,5,1747473513,"~/.gitignore"
--'  1  5  ~/.gitignore
-|4,39,1,5,1747473513,"~/.gitignore"
--'  1  5  ~/.gitignore
-|4,39,1,5,1747473064,"~/.gitignore"
--'  2  0  ~/.gitignore
-|4,39,2,0,1747473057,"~/.gitignore"
--'  2  0  ~/.gitignore
-|4,39,2,0,1747473057,"~/.gitignore"
--'  2  0  ~/.gitignore
-|4,39,2,0,1747473057,"~/.gitignore"
--'  2  0  ~/.gitignore
-|4,39,2,0,1747473057,"~/.gitignore"
--'  2  0  ~/.gitignore
-|4,39,2,0,1747473057,"~/.gitignore"
--'  2  0  ~/.gitignore
-|4,39,2,0,1747473057,"~/.gitignore"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  1  39  ~/token_code.txt
-|4,39,1,39,1747473054,"~/token_code.txt"
--'  2  0  ~/.gitignore
-|4,39,2,0,1747473041,"~/.gitignore"
--'  2  0  ~/.gitignore
-|4,39,2,0,1747473041,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1747473010,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1747473010,"~/.gitignore"
--'  26  22  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
-|4,39,26,22,1747471641,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py"
--'  26  22  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
-|4,39,26,22,1747471641,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py"
--'  26  22  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
-|4,39,26,22,1747471641,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py"
--'  26  22  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
-|4,39,26,22,1747471641,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py"
--'  26  22  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
-|4,39,26,22,1747471641,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py"
--'  26  22  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
-|4,39,26,22,1747471641,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py"
--'  26  22  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
-|4,39,26,22,1747471641,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py"
--'  26  22  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
-|4,39,26,22,1747471641,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py"
--'  26  22  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
-|4,39,26,22,1747471641,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py"
--'  26  22  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
-|4,39,26,22,1747471641,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py"
+-'  78  11  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,78,11,1747566074,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  132  19  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,132,19,1747565981,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  136  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,136,0,1747565902,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  130  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,130,0,1747565777,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  116  80  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,116,80,1747565698,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  117  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,117,0,1747565698,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  117  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,117,0,1747565347,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  44  53  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,44,53,1747565316,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  44  53  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,44,53,1747565316,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  44  53  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,44,53,1747565316,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  46  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,46,28,1747565315,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  46  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,46,28,1747565315,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  46  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,46,28,1747565315,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  46  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,46,28,1747565315,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  46  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,46,28,1747565315,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  46  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,46,28,1747565315,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  46  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,46,28,1747565315,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  46  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,46,28,1747565315,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,29,35,1747565256,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,29,35,1747565256,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,29,35,1747565256,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,29,35,1747565256,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,29,35,1747565256,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,29,35,1747565256,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,29,35,1747565256,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,29,35,1747565256,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  44  53  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,44,53,1747565240,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  44  53  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,44,53,1747565240,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  72  15  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,72,15,1747565160,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  72  15  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,72,15,1747565160,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  72  15  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,72,15,1747565160,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  72  15  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,72,15,1747565160,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  72  15  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,72,15,1747565160,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  64  3  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,64,3,1747565150,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  64  3  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,64,3,1747565150,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  64  3  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,64,3,1747565150,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  64  3  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,64,3,1747565150,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  64  3  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,64,3,1747565150,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  74  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,74,28,1747565140,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  74  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,74,28,1747565140,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  74  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,74,28,1747565140,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  74  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,74,28,1747565140,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  74  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,74,28,1747565140,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  102  20  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,102,20,1747565134,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  102  20  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,102,20,1747565134,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  102  20  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,102,20,1747565134,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  102  20  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,102,20,1747565134,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  102  20  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,102,20,1747565134,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  119  76  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,119,76,1747564958,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  109  76  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,109,76,1747564958,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  118  76  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,118,76,1747564958,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  109  76  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,109,76,1747564958,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  118  76  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,118,76,1747564958,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  109  76  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,109,76,1747564958,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  109  76  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,109,76,1747564958,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564331,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564331,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564331,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564331,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+|4,39,68,0,1747564331,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
 
 # History of marks within files (newest to oldest):
+
+> ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+	*	1747565314	0
+	"	46	28
+	^	68	0
+	.	67	14
+	+	1	36
+	+	1	45
+	+	1	0
+	+	1	46
+	+	1	54
+	+	1	29
+	+	1	0
+	+	1	79
+	+	1	45
+	+	1	0
+	+	1	12
+	+	1	40
+	+	1	0
+	+	1	13
+	+	1	25
+	+	1	54
+	+	1	14
+	+	69	0
+	+	67	14
+
+> /src/app_interface_pkg/app_interface_pkg/ble_agent.py
+	*	1747564316	0
+	"	1	0
+
+> ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py.py
+	*	1747564215	0
+	"	1	0
+
+> ~/ros2_kart_ws/src/app_interface_pkg/package.xml
+	*	1747560703	0
+	"	20	37
+	^	20	38
+	.	20	37
+	+	6	51
+	+	17	26
+	+	18	2
+	+	20	2
+	+	18	40
+	+	19	22
+	+	18	0
+	+	20	37
+
+> ~/ros2_kart_ws/src/app_interface_pkg/setup.py
+	*	1747560666	0
+	"	30	0
+	^	24	20
+	.	18	0
+	+	15	21
+	+	18	4
+	+	28	8
+	+	27	56
+	+	16	19
+	+	18	0
+
+> ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+	*	1747557491	0
+	"	78	11
+	^	57	22
+	.	24	92
+	+	1	10
+	+	1	35
+	+	1	0
+	+	1	10
+	+	1	0
+	+	1	10
+	+	1	0
+	+	1	22
+	+	1	10
+	+	1	0
+	+	115	0
+	+	1	10
+	+	1	53
+	+	1	81
+	+	1	29
+	+	1	33
+	+	1	49
+	+	1	58
+	+	115	0
+	+	113	10
+	+	27	58
+	+	45	0
+	+	40	0
+	+	45	0
+	+	43	0
+	+	52	76
+	+	27	16
+	+	54	7
+	+	54	0
+	+	55	63
+	+	74	73
+	+	31	43
+	+	34	0
+	+	50	73
+	+	62	0
+	+	18	7
+	+	26	0
+	+	24	64
+	+	25	0
+	+	23	22
+	+	10	27
+	+	9	0
+	+	8	0
+	+	24	63
+	+	23	12
+	+	24	54
+	+	12	28
+	+	26	49
+	+	26	8
+	+	23	8
+	+	24	49
+	+	26	54
+	+	26	72
+	+	30	61
+	+	26	0
+	+	30	43
+	+	29	55
+	+	12	0
+	+	50	74
+	+	8	0
+	+	17	90
+	+	17	0
+	+	27	64
+	+	25	0
+	+	24	92
+
+> ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/peripheral.py
+	*	1747554413	0
+	"	31	48
+
+> ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/localGATT.py
+	*	1747543447	0
+	"	187	0
+	.	558	0
+	+	1018	56
+	+	878	40
+	+	881	16
+	+	481	65
+	+	485	0
+	+	489	0
+	+	493	0
+	+	497	0
+	+	501	0
+	+	505	0
+	+	558	0
+
+> ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/GATT.py
+	*	1747543036	0
+	"	97	41
 
 > ~/.gitignore
 	*	1747473728	0

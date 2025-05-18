@@ -224,3 +224,156 @@ vim package.xml
 cd ~/ros2_kart_ws/
 colcon build
 sudo reboot 
+cd ros2_kart_ws/
+vim src/interfaces/CMakeLists.txt 
+rm src/interfaces/.CMakeLists.txt.swp 
+vim src/interfaces/package.xml 
+colcon build --packages-select interfaces
+ros2 run sensor_pkg imu_pub 
+source install/setup.bash 
+ros2 run sensor_pkg imu_pub 
+lsmod | grep i2c
+ls -l /dev/i2c-1 
+ros2 run sensor_pkg imu_pub 
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+colcon build --packages-select sensor_pkg
+source install/setup.bash 
+ros2 run sensor_pkg imu_pub 
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+colcon build --packages-select sensor_pkg
+source install/setup.bash 
+ros2 run sensor_pkg imu_pub 
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+colcon build --packages-select sensor_pkg
+source install/setup.bash 
+ros2 run sensor_pkg imu_pub 
+cd ..
+git remote add origin https://github.com/KR-D2Bro/Vision_Walker_Helper_HW.git
+cd ros2_kart_ws/
+git remote add origin https://github.com/KR-D2Bro/Vision_Walker_Helper_HW.git
+cd ..
+ls
+echo "# Vision_Walker_Helper_HW" >> README.md
+ls
+git init
+ls
+git add README.md
+git commit -m "first commit"
+git config --global user.email "32204045@dankook.ac.kr"
+git config --global user.name "dongjae"
+git lis
+git list
+git --help
+git log
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/KR-D2Bro/Vision_Walker_Helper_HW.git
+git push -u origin main
+ls
+git remote add origin https://github.com/KR-D2Bro/Vision_Walker_Helper_HW.git
+git push -u origin main
+git remote set-url origin https://github.com/KR-D2Bro/Vision_Walker_Helper_HW.git
+git push -u origin main
+git remote set-url origin https://github.com/KR-D2Bro/Vision_Walker_Helper_HW.git
+git push -u origin main
+ls
+vim .gitignore
+vim token_code.txt
+vim .gitignore
+git add .
+ls
+pip freeze > requirements.txt
+ls
+cat requirements.txt 
+ls
+vim .gitignore 
+cd ros2_humble_venv/
+ls
+cd ..
+vim .gitignore 
+git add .
+vim .gitignore 
+git add .
+vim .gitignore 
+git push -u origin main
+git commit -m "add imu_pub"
+git log
+git push -u origin main
+ls
+git add .
+git commit -m "remove ros2_humble_ws"
+git push -u origin main
+git rm -r --cached ros2_humble_ws/
+ls
+cd ros2_humble_ws/
+ls
+cd ..
+git commit -m "Remove ROS2 build artifacts from repo"
+git push -u origin main
+sudo apt update
+sudo apt install git-credential-manager-core
+git config --global credential.helper store
+git push -u origin main
+ls
+cd ros2_kart_ws/
+ls
+sudo poweroff 
+ros2 topic list
+ros2 topic echo imu/data
+vim ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py 
+cd ros2_kart_ws/
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/peripheral.py 
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/peripheral.py 
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node
+vim ros2_humble_venv/lib/python3.11/site-packages/
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/ 
+cd ros2_kart_ws/
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+sudo bluetoothctl
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py 
+0;44;57M0;44;57mclear
+clear
+vim ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py 
+rm ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/.ble_node.py.swp 
+vim ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py 
+colcon build --packages-select app_interface_pkg
+ls
+rm -r build/ install/ log/
+cd ros2_kart_ws/
+colcon build --packages-select app_interface_pkg

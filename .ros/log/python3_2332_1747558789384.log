@@ -1,0 +1,4 @@
+[INFO] [1747558789.600211101] [ble_gatt_server]: Using adapter: D8:3A:DD:F2:4C:84
+[INFO] [1747558789.626532715] [ble_gatt_server]: BLE GATT Server started
+[INFO] [1747558802.490122861] [ble_gatt_server]: Central connected: <bluezero.device.Device object at 0x7fa95eedd0>
+[INFO] [1747558818.592903270] [ble_gatt_server]: Central disconnected: <bluezero.device.Device object at 0x7fab6d16d0>

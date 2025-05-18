@@ -1,0 +1,9 @@
+[INFO] [1747565423.675830700] [ble_gatt_server]: Using adapter: D8:3A:DD:F2:4C:84
+[INFO] [1747565423.699137152] [ble_gatt_server]: BLE GATT Server started
+[INFO] [1747565429.118098833] [ble_gatt_server]: Central disconnected: <bluezero.device.Device object at 0x7fae0906d0>
+[INFO] [1747565431.734229200] [ble_gatt_server]: Central connected: <bluezero.device.Device object at 0x7fa43c5790>
+[INFO] [1747565448.502487194] [ble_gatt_server]: Central disconnected: <bluezero.device.Device object at 0x7fa43c4e10>
+[INFO] [1747565470.343760878] [ble_gatt_server]: Central connected: <bluezero.device.Device object at 0x7fa43c5f10>
+[INFO] [1747565475.501316773] [ble_gatt_server]: Central disconnected: <bluezero.device.Device object at 0x7fa43c5f10>
+[INFO] [1747565493.514793291] [ble_gatt_server]: Central connected: <bluezero.device.Device object at 0x7fa43c5d50>
+[INFO] [1747565498.905509867] [ble_gatt_server]: Central disconnected: <bluezero.device.Device object at 0x7fa43c5d50>
