@@ -1,0 +1,4 @@
+[INFO] [1747810840.019767814] [ble_gatt_server]: Using adapter: D8:3A:DD:F2:4C:84
+[INFO] [1747810840.050246841] [ble_gatt_server]: BLE GATT Server started
+[INFO] [1747810849.442912978] [ble_gatt_server]: Handle Write: stored_value set to bytearray(b'\t')
+[INFO] [1747810870.279080831] [ble_gatt_server]: Handle Read: returning bytearray(b'\t')

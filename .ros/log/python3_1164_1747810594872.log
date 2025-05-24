@@ -1,0 +1,5 @@
+[INFO] [1747810595.088381929] [ble_gatt_server]: Using adapter: D8:3A:DD:F2:4C:84
+[INFO] [1747810595.123275996] [ble_gatt_server]: BLE GATT Server started
+[INFO] [1747810602.066180657] [ble_gatt_server]: Handle Read: returning [1]
+[INFO] [1747810604.855897128] [ble_gatt_server]: Handle Write: stored_value set to
+[INFO] [1747810612.326572660] [ble_gatt_server]: Handle Read: returning [1]

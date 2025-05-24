@@ -377,3 +377,221 @@ ls
 rm -r build/ install/ log/
 cd ros2_kart_ws/
 colcon build --packages-select app_interface_pkg
+sudo btmon
+vim ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+vim ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim ~/ros2_kart_ws/src/app_interface_pkg/setup.py 
+vim ~/ros2_kart_ws/src/app_interface_pkg/package.xml 
+vim ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+sudo btmon
+vim ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py 
+cd ros2_kart_ws/
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node
+pip install dbus-next
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node
+vim ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+colcon build --packages-select app_interface_pkg
+ls
+rm -r build/ install/ log/
+cd ros2_kart_ws/
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node
+vim ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py.py 
+vim ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
+cd ros2_kart_ws/
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node
+vim /src/app_interface_pkg/app_interface_pkg/ble_agent.py
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py
+sudo bluetooth
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ls ~
+ls ~ -al
+ros2 run app_interface_pkg ble_node
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py
+sudo systemctl daemon-reload 
+sudo systemctl restart bluetooth
+ros2 run app_interface_pkg ble_node
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node
+ls /var/lib/bluetooth/
+sudo ls /var/lib/bluetooth/
+sudo ls /var/lib/bluetooth/ -al
+sudo ls /var/lib/bluetooth/D8:3A:DD:F2:4C:84
+sudo bluetoothctl 
+ros2 run app_interface_pkg ble_node
+cd ..
+pip freeze > requirements.txt 
+cat requirements.txt | grep gatt
+git add .
+git commit -m "Add: ble node"
+git push -u origin main
+echo ".git-credentials" >> .gitignore 
+git rm --cached .git-credentials 
+git add .gitignore 
+git commit -m "Remove: .git-credentials and ignore it"
+git push -u origin main
+git log
+git push --force origin main
+git filter-branch --force   --index-filter "git rm --cached --ignore-unmatch .git-credentials"   --prune-empty   --tag-name-filter cat   -- --all
+git push -u origin main
+git log
+git filter-branch --force   --index-filter "git rm --cached --ignore-unmatch .git-credentials"   --prune-empty   --tag-name-filter cat   -- --all
+rm -rf .git/filter-branch/
+git for-each-ref --format="%(refname)" refs/original/ |   xargs -n 1 git update-ref -d
+rm -rf .git/filter-branch/git for-each-ref --format="%(refname)" refs/original/ |   xargs -n 1 git update-ref -d
+rm -d .git/filter-branch/git for-each-ref --format="%(refname)" refs/original/ |   xargs -n 1 git update-ref -d
+rm -rf .git/filter-branch/
+git for-each-ref --format="%(refname)" refs/original/ |   xargs -n 1 git update-ref -d
+git reflog expire --expire=now --all
+git gc --prune=now --aggressive
+git push -u origin main
+git log
+git reset --hard f3285e7bd4b9ca4cd796e2d8aa284fdca85ed4c5
+git log
+cat .gitignore 
+git revert f3285e7bd4b9ca4cd796e2d8aa284fdca85ed4c5
+git log
+ls
+cd ros2_kart_ws/src/
+ls
+git reset --hard f3285e7bd4b9ca4cd796e2d8aa284fdca85ed4c5
+git log
+cd ros2_kart_ws/src/
+ls
+git reset --soft HEAD~1
+git log
+ls
+cd ~
+echo ".git-credentials" >> .gitignore 
+ls
+git add .
+git commit -m "Add app_interface_pkg"
+git push -u origin main
+git log
+git push -u origin main
+sudo poweroff 
+ros2 run app_interface_pkg ble_node 
+ls
+cd ros2_kart_ws/
+ls
+ls src/
+ls src/interfaces/msg/
+ls
+vim src/decision_pkg/decision_pkg/decision_node.py
+                                                                                ros2 run app_interface_pkg ble_node 
+vim ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py 
+ros2 run app_interface_pkg ble_node 
+cd ros2_kart_ws/
+colcon build --packages-select app_interface
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface
+source install/setup.bash 
+ls src/
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node 
+cd ..
+ls
+vim ros2_humble_venv/lib/python3.11/site-packages/bluezero/peripheral.py 
+colcon build --packages-select app_interface_pkg
+ls
+rm -r build/ install/ log/
+ls
+cd ros2_kart_ws/
+colcon build --packages-select app_interface_pkg
+vim ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py 
+cd ros2_kart_ws/
+ls
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+sudo poweroff 
+vim ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py 
+cd ros2_kart_ws/
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface_pkg
+source install/setup.bash 
+ros2 run app_interface_pkg ble_node 
+cd src/
+cd ..
+ls
+vim src/sensor_pkg/sensor_pkg/illuminance_node.py
+sudo poweroff 
+btmon
+sudo btmon
+vim ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py 
+sudo btmon
+vim ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py 
+clear
+vim ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py 

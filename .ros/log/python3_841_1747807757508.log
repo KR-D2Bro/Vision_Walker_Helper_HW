@@ -1,0 +1,8 @@
+[INFO] [1747807758.627353846] [ble_gatt_server]: Using adapter: D8:3A:DD:F2:4C:84
+[INFO] [1747807758.675512174] [ble_gatt_server]: BLE GATT Server started
+[INFO] [1747807788.285903001] [ble_gatt_server]: Central connected: <bluezero.device.Device object at 0x7f92de0a10>
+[INFO] [1747807797.423278716] [ble_gatt_server]: Handle Read: returning [1]
+[INFO] [1747807809.264486652] [ble_gatt_server]: Handle Read: returning [1]
+[INFO] [1747807833.036465111] [ble_gatt_server]: Handle Read: returning [1]
+[INFO] [1747807833.531622083] [ble_gatt_server]: Handle Read: returning [1]
+[INFO] [1747807833.756218748] [ble_gatt_server]: Handle Read: returning [1]

@@ -1,0 +1,6 @@
+[INFO] [1747804746.150938585] [ble_gatt_server]: Using adapter: D8:3A:DD:F2:4C:84
+[INFO] [1747804746.206474645] [ble_gatt_server]: BLE GATT Server started
+[INFO] [1747804797.049270716] [ble_gatt_server]: Received read request
+[INFO] [1747804799.349048888] [ble_gatt_server]: Received read request
+[INFO] [1747804806.449061879] [ble_gatt_server]: Received read request
+[INFO] [1747804835.399278994] [ble_gatt_server]: Received read request

@@ -39,6 +39,8 @@ class BLEGATTServer(Node):
         SERVICE_UUID = '12345678-1234-5678-1234-56789abcdef0'
         CHAR_UUID    = 'abcdef01-1234-5678-1234-56789abcdef0'
 
+        self.stored_value = [0x01]
+
         # Create service
         self.ble_periph.add_service(srv_id=1,
                                     uuid=SERVICE_UUID,
@@ -48,9 +50,9 @@ class BLEGATTServer(Node):
         self.ble_periph.add_characteristic(srv_id=1,
                                            chr_id=1,
                                            uuid=CHAR_UUID,
-                                           value=[],
+                                           value=self.stored_value,
                                            notifying=False,
-                                           flags=['encrypt-read', 'encrypt-write','notify'],
+                                           flags=['encrypt-read', 'encrypt-write','write-without-response','notify'],
                                            read_callback=self.handle_read,
                                            write_callback=self.handle_write)
 
@@ -81,16 +83,20 @@ class BLEGATTServer(Node):
         """
         Read callback: returns current value of the characteristic
         """
-        self.get_logger().info('Received read request')
-        # Return a list of bytes; here just returns a single byte value 0
-        return [0]
+        self.get_logger().info(f'Handle Read: returning {self.stored_value}')
+        return self.stored_value
 
-    def handle_write(self, value):
+    def handle_write(self, value,options):
         """
         Write callback: receives a list of byte values
         """
-        self.get_logger().info(f'Received write request: {value}')
-        # Implement handling of incoming data as needed
+        try:
+            self.stored_value = list(value)
+            self.get_logger().info(f'Handle Write: stored_value set to {self.stored_value}')
+
+        except Exception as e:
+            print("WRITE ERROR!!!!")
+            raise
 
     def notify_callback(notifying, characteristic):
         if notifying:
@@ -103,7 +109,6 @@ class BLEGATTServer(Node):
         except Exception:
             pass
         super().destroy_node()
-
 
 def main(args=None):
     # 1) asyncio 이벤트 루프 가져오기

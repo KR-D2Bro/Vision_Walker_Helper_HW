@@ -11,24 +11,26 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/node
+~MSle0~/self.ble
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:w
-|2,0,1747556164,,"w"
-:wq
-|2,0,1747565981,,"wq"
 :q
-|2,0,1747565777,,"q"
+|2,0,1747811911,,"q"
+:w
+|2,0,1747811910,,"w"
+:wq
+|2,0,1747809344,,"wq"
 :q!
 |2,0,1747542636,,"q!"
 :Wq
 |2,0,1747538870,,"Wq"
 
 # Search String History (newest to oldest):
+?/self.ble
+|2,1,1747808370,47,"self.ble"
 ?/disconnect
 |2,1,1747565160,47,"disconnect"
 ?/quit
@@ -48,430 +50,442 @@ $
 
 # Registers:
 "0	LINE	0
-	       
-|3,0,0,1,1,0,1747554292,"       "
-"1	CHAR	0
-	 agent_bus = asyncio.get_event_loop().run_until_complete(register_agent())
+	        self.get_logger().info(f'Handle Write: stored_value set to {self.stored_value}')
 	
-|3,0,1,0,2,0,1747565338," agent_bus = asyncio.get_event_loop().run_until_complete(register_agent())",""
-"2	CHAR	0
-	from dbus_next.service import ServiceInterface, method
-	from dbus_next.aio import MessageBus
-	from dbus_next.constants import BusType
-	
-	# D-Bus object path for the agent
-	AGENT_PATH = '/test/agent'
-	
-	class Agent(ServiceInterface):
-	    def __init__(self):
-	        super().__init__('org.bluez.Agent1')
-	
-	    @method()
-	    def Release(self) -> None:
-	        pass
-	
-	    @method()
-	    def RequestPinCode(self, device: 'o') -> 's':
-	        return '0000'
-	
-	    @method()
-	    def DisplayPinCode(self, device: 'o', pincode: 's') -> None:
-	        print(f'[Agent] DisplayPinCode for {device}: {pincode}')
-	
-	    @method()
-	    def RequestPasskey(self, device: 'o') -> 'u':
-	        return 0
-	
-	    @method()
-	    def DisplayPasskey(self, device: 'o', passkey: 'u', entered: 'u') -> None:
-	        print(f'[Agent] DisplayPasskey for {device}: {passkey} (entered {entered})')
-	
-	    @method()
-	    def RequestConfirmation(self, device: 'o', passkey: 'u') -> None:
-	        # 자동 승인
-	        return
-	
-	    @method()
-	    def RequestAuthorization(self, device: 'o') -> None:
-	        return
-	
-	    @method()
-	    def AuthorizeService(self, device: 'o', uuid: 's') -> None:
-	        return
-	
-	    @method()
-	    def Cancel(self) -> None:
-	        pass
-	
-	async def register_agent() -> MessageBus:
-	    # 시스템 버스에 연결 (SESSION 대신 SYSTEM 버스 사용)
-|3,0,2,0,50,0,1747564327,"from dbus_next.service import ServiceInterface, method","from dbus_next.aio import MessageBus","from dbus_next.constants import BusType","","# D-Bus object path for the agent","AGENT_PATH = '/test/agent'","","class Agent(ServiceInterface):","    def __init__(self):","        super().__init__('org.bluez.Agent1')","","    @method()","    def Release(self) -> None:","        pass","","    @method()",>51
-|<"    def RequestPinCode(self, device: 'o') -> 's':","        return '0000'","","    @method()","    def DisplayPinCode(self, device: 'o', pincode: 's') -> None:","        print(f'[Agent] DisplayPinCode for {device}: {pincode}')","","    @method()","    def RequestPasskey(self, device: 'o') -> 'u':","        return 0","","    @method()","    def DisplayPasskey(self, device: 'o', passkey: 'u', entered: 'u') -> None:",>86
-|<"        print(f'[Agent] DisplayPasskey for {device}: {passkey} (entered {entered})')","","    @method()","    def RequestConfirmation(self, device: 'o', passkey: 'u') -> None:","        # 자동 승인","        return","","    @method()","    def RequestAuthorization(self, device: 'o') -> None:","        return","","    @method()","    def AuthorizeService(self, device: 'o', uuid: 's') -> None:","        return","","    @method()","    def Cancel(self) -> None:","        pass","",>43
-|<"async def register_agent() -> MessageBus:","    # 시스템 버스에 연결 (SESSION 대신 SYSTEM 버스 사용)"
+|3,0,0,1,2,0,1747808550,"        self.get_logger().info(f'Handle Write: stored_value set to {self.stored_value}')",""
+""1	LINE	0
+	            self.ble_periph.characteristics[(1, 1)].value = self.stored_value
+|3,1,1,1,1,0,1747810814,"            self.ble_periph.characteristics[(1, 1)].value = self.stored_value"
+"2	LINE	0
+	            self.stored_value = list(value)
+|3,0,2,1,1,0,1747810691,"            self.stored_value = list(value)"
 "3	LINE	0
-	    return bus
-|3,0,3,1,1,0,1747564226,"    return bus"
+	        except Exception as e:
+|3,0,3,1,1,0,1747810680,"        except Exception as e:"
 "4	LINE	0
-	    await mgr.call_request_default_agent(AGENT_PATH)
-|3,0,4,1,1,0,1747564225,"    await mgr.call_request_default_agent(AGENT_PATH)"
+	            self.get_logger().info('Handle Write: stored_value set to')
+|3,0,4,1,1,0,1747810668,"            self.get_logger().info('Handle Write: stored_value set to')"
 "5	LINE	0
-	H, 'NoInputNoOutput')
-|3,0,5,1,1,0,1747564225,"H, 'NoInputNoOutput')"
-"6	CHAR	0
-	from dbus_next.service import ServiceInterface, method
-	from dbus_next.aio import MessageBus
-	from dbus_next.constants import BusType
+	            return self.stored_value
+|3,0,5,1,1,0,1747810626,"            return self.stored_value"
+"6	LINE	0
 	
-	# D-Bus object path for the agent
-	AGENT_PATH = '/test/agent'
+|3,0,6,1,1,0,1747807082,""
+"7	LINE	0
+	        self.srv = peripheral.Service(SERVICE_UUID)
+|3,0,7,1,1,0,1747807081,"        self.srv = peripheral.Service(SERVICE_UUID)"
+"8	LINE	0
+	        super().destroy_node()
 	
-	class Agent(ServiceInterface):
-	    def __init__(self):
-	        super().__init__('org.bluez.Agent1')
-	
-	    @method()
-	    def Release(self) -> None:
-	        """에이전트가 unregister 될 때 호출됩니다"""
-	        pass
-	
-	    @method()
-	    def RequestPinCode(self, device: 'o') -> 's':
-	        """PIN 코드를 요청받았을 때 리턴합니다"""
-	        return '0000'
-	
-	    @method()
-	    def DisplayPinCode(self, device: 'o', pincode: 's') -> None:
-	        """PIN 코드를 표시하라는 요청이 들어오면 호출됩니다"""
-	        print(f'[Agent] DisplayPinCode for {device}: {pincode}')
-	
-	    @method()
-	    def RequestPasskey(self, device: 'o') -> 'u':
-	        """Passkey 요청 시 정수형으로 리턴합니다"""
-	        return 0
-	
-	    @method()
-	    def DisplayPasskey(self, device: 'o', passkey: 'u', entered: 'u') -> None:
-	        """Passkey를 표시하라는 요청이 들어오면 호출됩니다"""
-	        print(f'[Agent] DisplayPasskey for {device}: {passkey} (entered {entered})')
-	
-	    @method()
-	    def RequestConfirmation(self, device: 'o', passkey: 'u') -> None:
-	        """Passkey 일치 확인 요청이 들어오면 자동으로 확인 처리합니다"""
-	        return
-	
-	    @method()
-	    def RequestAuthorization(self, device: 'o') -> None:
-	        """서비스 접근 권한 요청 시 허용 처리합니다"""
-	        return
-	
-	    @method()
-	    def AuthorizeService(self, device: 'o', uuid: 's') -> None:
-	        """특정 서비스 접근 허가 요청 시 허용 처리합니다"""
-	        return
-|3,0,6,0,50,0,1747564224,"from dbus_next.service import ServiceInterface, method","from dbus_next.aio import MessageBus","from dbus_next.constants import BusType","","# D-Bus object path for the agent","AGENT_PATH = '/test/agent'","","class Agent(ServiceInterface):","    def __init__(self):","        super().__init__('org.bluez.Agent1')","","    @method()","    def Release(self) -> None:",>72
-|<"        \"\"\"에이전트가 unregister 될 때 호출됩니다\"\"\"","        pass","","    @method()","    def RequestPinCode(self, device: 'o') -> 's':","        \"\"\"PIN 코드를 요청받았을 때 리턴합니다\"\"\"","        return '0000'","","    @method()","    def DisplayPinCode(self, device: 'o', pincode: 's') -> None:","        \"\"\"PIN 코드를 표시하라는 요청이 들어오면 호출됩니다\"\"\"",>66
-|<"        print(f'[Agent] DisplayPinCode for {device}: {pincode}')","","    @method()","    def RequestPasskey(self, device: 'o') -> 'u':","        \"\"\"Passkey 요청 시 정수형으로 리턴합니다\"\"\"","        return 0","","    @method()","    def DisplayPasskey(self, device: 'o', passkey: 'u', entered: 'u') -> None:","        \"\"\"Passkey를 표시하라는 요청이 들어오면 호출됩니다\"\"\"",>86
-|<"        print(f'[Agent] DisplayPasskey for {device}: {passkey} (entered {entered})')","","    @method()","    def RequestConfirmation(self, device: 'o', passkey: 'u') -> None:","        \"\"\"Passkey 일치 확인 요청이 들어오면 자동으로 확인 처리합니다\"\"\"","        return","","    @method()","    def RequestAuthorization(self, device: 'o') -> None:","        \"\"\"서비스 접근 권한 요청 시 허용 처리합니다\"\"\"","        return","",>15
-|<"    @method()","    def AuthorizeService(self, device: 'o', uuid: 's') -> None:","        \"\"\"특정 서비스 접근 허가 요청 시 허용 처리합니다\"\"\"","        return"
-"7	CHAR	0
-	async def register_agent():
-	    bus = await MessageBus(BusType.SYSTEM).connect()
-	    agent = Agent()
-	    bus.export('/test/agent', agent)
-	    obj = await bus.get_proxy_object(
-	        'org.bluez',
-	        '/org/bluez',
-	        interface_names=['org.bluez.AgentManager1']
-	    )
-	    mgr = obj.get_interface('org.bluez.AgentManager1')
-	    await mgr.call_register_agent('/test/agent', 'NoInputNoOutput')
-	    await mgr.call_request_default_agent('/test/agent')
-|3,0,7,0,12,0,1747563833,"async def register_agent():","    bus = await MessageBus(BusType.SYSTEM).connect()","    agent = Agent()","    bus.export('/test/agent', agent)","    obj = await bus.get_proxy_object(","        'org.bluez',","        '/org/bluez',","        interface_names=['org.bluez.AgentManager1']","    )","    mgr = obj.get_interface('org.bluez.AgentManager1')","    await mgr.call_register_agent('/test/agent', 'NoInputNoOutput')",>57
-|<"    await mgr.call_request_default_agent('/test/agent')"
-"8	CHAR	0
-	 def __init__(self):
-	        super().__init__('org.bluez.Agent1')
-	
-	    @method(in_signature='', out_signature='')
-	    def Release(self) -> None:
-	        """에이전트가 unregister 될 때 호출됩니다."""
-	        pass
-	
-	    @method(in_signature='o', out_signature='s')
-	    def RequestPinCode(self, device) -> str:
-	        """PIN 코드를 요청받았을 때 string으로 리턴합니다."""
-	        return '0000'
-	
-	    @method(in_signature='os', out_signature='')
-	    def DisplayPinCode(self, device, pincode) -> None:
-	        print(f'[Agent] DisplayPinCode for {device}: {pincode}')
-	
-	    @method(in_signature='o', out_signature='u')
-	    def RequestPasskey(self, device) -> int:
-	        """Passkey 요청 시 integer로 리턴합니다."""
-	        return 0
-	
-	    @method(in_signature='ouu', out_signature='')
-	    def DisplayPasskey(self, device, passkey, entered) -> None:
-	        print(f'[Agent] DisplayPasskey for {device}: {passkey} (entered {entered})')
-	
-	    @method(in_signature='ou', out_signature='')
-	    def RequestConfirmation(self, device, passkey) -> None:
-	        """passkey 값 일치 확인 요청이 들어올 때 자동으로 확인 처리합니다."""
-	        return
-	
-	    @method(in_signature='o', out_signature='')
-	    def RequestAuthorization(self, device) -> None:
-	        """서비스 접근 권한 요청 시 호출되어 허용 처리합니다."""
-	        return
-	
-	    @method(in_signature='os', out_signature='')
-	    def AuthorizeService(self, device, uuid) -> None:
-	        """특정 서비스(UUID)에 대한 접근 허가를 처리합니다."""
-	        return
-	
-	    @method(in_signature='', out_signature='')
-	    def Cancel(self) -> None:
-	        """요청이 취소될 때 호출됩니다."""
-	        pass
-|3,0,8,0,45,0,1747561216," def __init__(self):","        super().__init__('org.bluez.Agent1')","","    @method(in_signature='', out_signature='')","    def Release(self) -> None:","        \"\"\"에이전트가 unregister 될 때 호출됩니다.\"\"\"","        pass","","    @method(in_signature='o', out_signature='s')","    def RequestPinCode(self, device) -> str:","        \"\"\"PIN 코드를 요청받았을 때 string으로 리턴합니다.\"\"\"",>23
-|<"        return '0000'","","    @method(in_signature='os', out_signature='')","    def DisplayPinCode(self, device, pincode) -> None:","        print(f'[Agent] DisplayPinCode for {device}: {pincode}')","","    @method(in_signature='o', out_signature='u')","    def RequestPasskey(self, device) -> int:","        \"\"\"Passkey 요청 시 integer로 리턴합니다.\"\"\"","        return 0","","    @method(in_signature='ouu', out_signature='')",>65
-|<"    def DisplayPasskey(self, device, passkey, entered) -> None:","        print(f'[Agent] DisplayPasskey for {device}: {passkey} (entered {entered})')","","    @method(in_signature='ou', out_signature='')","    def RequestConfirmation(self, device, passkey) -> None:","        \"\"\"passkey 값 일치 확인 요청이 들어올 때 자동으로 확인 처리합니다.\"\"\"","        return","","    @method(in_signature='o', out_signature='')",>53
-|<"    def RequestAuthorization(self, device) -> None:","        \"\"\"서비스 접근 권한 요청 시 호출되어 허용 처리합니다.\"\"\"","        return","","    @method(in_signature='os', out_signature='')","    def AuthorizeService(self, device, uuid) -> None:","        \"\"\"특정 서비스(UUID)에 대한 접근 허가를 처리합니다.\"\"\"","        return","","    @method(in_signature='', out_signature='')","    def Cancel(self) -> None:",>62
-|<"        \"\"\"요청이 취소될 때 호출됩니다.\"\"\"","        pass"
+|3,0,8,1,2,0,1747804915,"        super().destroy_node()",""
 "9	LINE	0
-	 def RequestPasskey(self, device):
-|3,0,9,1,1,0,1747560935," def RequestPasskey(self, device):"
-""-	CHAR	0
-	.
-|3,1,36,0,1,0,1747556163,"."
+	    
+	    self.stored_value=0
+|3,0,9,1,2,0,1747804914,"    ","    self.stored_value=0"
+"-	CHAR	0
+	0
+|3,0,36,0,1,0,1747810710,"0"
 
 # File marks:
-'0  78  11  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,48,78,11,1747566074,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
-'1  132  19  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,49,132,19,1747565981,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
-'2  136  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,50,136,0,1747565777,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
-'3  130  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,51,130,0,1747565777,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
-'4  116  80  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,52,116,80,1747565347,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
-'5  116  80  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,53,116,80,1747565347,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
-'6  117  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,54,117,0,1747565347,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
-'7  117  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,55,117,0,1747565347,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
-'8  46  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,56,46,28,1747565315,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
-'9  44  53  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,57,44,53,1747565240,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+'0  18  0  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
+|4,48,18,0,1747811921,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py"
+'1  12  0  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py
+|4,49,12,0,1747811911,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py"
+'2  55  82  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,50,55,82,1747811514,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+'3  56  59  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,51,56,59,1747810324,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+'4  56  59  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,52,56,59,1747810324,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+'5  98  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,53,98,35,1747809915,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+'6  98  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,54,98,35,1747809915,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+'7  99  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,55,99,35,1747809915,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+'8  99  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,56,99,35,1747809915,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+'9  98  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,57,98,35,1747809344,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
 
 # Jumplist (newest first):
--'  78  11  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,78,11,1747566074,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  132  19  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,132,19,1747565981,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  136  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,136,0,1747565902,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  130  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,130,0,1747565777,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  116  80  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,116,80,1747565698,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  117  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,117,0,1747565698,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  117  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,117,0,1747565347,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  44  53  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,44,53,1747565316,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  44  53  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,44,53,1747565316,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  44  53  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,44,53,1747565316,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  46  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,46,28,1747565315,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  46  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,46,28,1747565315,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  46  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,46,28,1747565315,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  46  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,46,28,1747565315,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  46  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,46,28,1747565315,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  46  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,46,28,1747565315,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  46  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,46,28,1747565315,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  46  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,46,28,1747565315,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,29,35,1747565256,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,29,35,1747565256,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,29,35,1747565256,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,29,35,1747565256,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,29,35,1747565256,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,29,35,1747565256,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,29,35,1747565256,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,29,35,1747565256,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  44  53  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,44,53,1747565240,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  44  53  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,44,53,1747565240,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  72  15  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,72,15,1747565160,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  72  15  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,72,15,1747565160,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  72  15  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,72,15,1747565160,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  72  15  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,72,15,1747565160,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  72  15  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,72,15,1747565160,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  64  3  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,64,3,1747565150,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  64  3  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,64,3,1747565150,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  64  3  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,64,3,1747565150,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  64  3  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,64,3,1747565150,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  64  3  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,64,3,1747565150,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  74  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,74,28,1747565140,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  74  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,74,28,1747565140,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  74  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,74,28,1747565140,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  74  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,74,28,1747565140,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  74  28  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,74,28,1747565140,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  102  20  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,102,20,1747565134,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  102  20  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,102,20,1747565134,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  102  20  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,102,20,1747565134,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  102  20  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,102,20,1747565134,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  102  20  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,102,20,1747565134,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  119  76  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,119,76,1747564958,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  109  76  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,109,76,1747564958,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  118  76  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,118,76,1747564958,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  109  76  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,109,76,1747564958,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  118  76  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,118,76,1747564958,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  109  76  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,109,76,1747564958,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  109  76  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,109,76,1747564958,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  29  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,29,35,1747564919,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564880,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564331,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564331,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564331,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564331,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
--'  68  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
-|4,39,68,0,1747564331,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py"
+-'  18  0  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
+|4,39,18,0,1747811921,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py"
+-'  12  0  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py
+|4,39,12,0,1747811911,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py"
+-'  26  22  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
+|4,39,26,22,1747811602,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py"
+-'  1  0  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py
+|4,39,1,0,1747811585,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py"
+-'  55  82  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,55,82,1747811514,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  55  82  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,55,82,1747811514,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  55  82  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,55,82,1747811514,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  95  12  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,95,12,1747810694,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  95  12  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,95,12,1747810694,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  95  12  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,95,12,1747810694,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  98  12  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,98,12,1747810682,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  98  12  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,98,12,1747810682,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  98  12  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,98,12,1747810682,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  56  59  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,56,59,1747810419,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  56  59  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,56,59,1747810419,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  56  59  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,56,59,1747810419,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  56  59  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,56,59,1747810324,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  56  59  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,56,59,1747810324,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  56  59  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,56,59,1747810324,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  99  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,99,35,1747810208,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  99  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,99,35,1747810208,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  99  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,99,35,1747810208,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  99  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,99,35,1747809915,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  99  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,99,35,1747809915,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  99  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,99,35,1747809915,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  99  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,99,35,1747809344,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  99  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,99,35,1747809344,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  99  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,99,35,1747809344,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,51,51,1747809318,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,51,51,1747809318,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,51,51,1747809318,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,51,51,1747809318,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,51,51,1747809318,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,51,51,1747809318,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,51,51,1747809318,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,51,51,1747809318,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,51,51,1747809318,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,51,51,1747809318,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,51,51,1747809318,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,51,51,1747809318,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,51,51,1747809091,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,51,51,1747809091,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,51,51,1747809091,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  96  65  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,96,65,1747808542,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  96  65  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,96,65,1747808542,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  96  65  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,96,65,1747808542,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  96  65  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,96,65,1747808542,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  96  65  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,96,65,1747808542,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  96  65  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,96,65,1747808542,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  96  65  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,96,65,1747808542,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  96  65  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,96,65,1747808542,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  96  65  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,96,65,1747808542,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  96  65  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,96,65,1747808542,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  96  65  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,96,65,1747808542,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  96  65  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,96,65,1747808542,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  141  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,141,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  140  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,140,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  144  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,144,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  143  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,143,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  144  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,144,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  143  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,143,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  144  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,144,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  143  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,143,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  141  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,141,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  140  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,140,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  144  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,144,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  143  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,143,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  144  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,144,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  143  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,143,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  144  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,144,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  143  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,143,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  141  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,141,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  140  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,140,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  144  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,144,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  143  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,143,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  144  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,144,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  143  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,143,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  144  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,144,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  143  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,143,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  95  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,95,22,1747808056,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  95  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,95,22,1747808056,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  95  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,95,22,1747808056,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  95  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,95,22,1747808056,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  95  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,95,22,1747808056,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  95  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,95,22,1747808056,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  95  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,95,22,1747808056,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  95  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,95,22,1747808056,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  95  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,95,22,1747808056,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  95  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,95,22,1747808056,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  95  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,95,22,1747808056,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  95  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,95,22,1747808056,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  94  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,94,22,1747808050,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  94  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,94,22,1747808050,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  94  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,94,22,1747808050,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  94  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,94,22,1747808050,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  94  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,94,22,1747808050,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  94  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,94,22,1747808050,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  94  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,94,22,1747808050,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  94  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,94,22,1747808050,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  94  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+|4,39,94,22,1747808050,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
 
 # History of marks within files (newest to oldest):
+
+> ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py
+	*	1747811910	0
+	"	12	0
+	^	12	0
+	.	12	0
+	+	4	11
+	+	6	31
+	+	8	48
+	+	9	8
+	+	12	0
+
+> ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
+	*	1747811902	0
+	"	18	0
+	^	26	23
+	.	26	22
+	+	103	10
+	+	4	14
+	+	25	39
+	+	23	8
+	+	23	34
+	+	23	45
+	+	23	49
+	+	23	23
+	+	23	120
+	+	27	28
+	+	23	123
+	+	14	23
+	+	23	53
+	+	23	62
+	+	45	0
+	+	39	21
+	+	24	0
+	+	45	8
+	+	44	0
+	+	23	0
+	+	46	16
+	+	22	0
+	+	46	16
+	+	47	15
+	+	47	61
+	+	48	0
+	+	50	97
+	+	51	92
+	+	52	61
+	+	55	30
+	+	56	73
+	+	62	11
+	+	63	11
+	+	64	11
+	+	65	11
+	+	67	11
+	+	68	11
+	+	69	11
+	+	70	11
+	+	72	35
+	+	56	39
+	+	75	0
+	+	61	0
+	+	22	8
+	+	24	0
+	+	26	22
+
+> ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
+	*	1747811262	0
+	"	55	82
+	^	55	83
+	.	55	74
+	+	1	33
+	+	1	49
+	+	1	58
+	+	120	0
+	+	118	10
+	+	27	58
+	+	47	0
+	+	40	0
+	+	47	0
+	+	45	0
+	+	54	76
+	+	27	16
+	+	56	7
+	+	56	0
+	+	57	63
+	+	76	73
+	+	31	43
+	+	34	0
+	+	52	73
+	+	64	0
+	+	18	7
+	+	26	0
+	+	24	64
+	+	25	0
+	+	23	22
+	+	10	27
+	+	9	0
+	+	8	0
+	+	24	63
+	+	23	12
+	+	24	54
+	+	12	28
+	+	26	49
+	+	26	8
+	+	23	8
+	+	24	49
+	+	26	54
+	+	26	72
+	+	30	61
+	+	26	0
+	+	30	43
+	+	29	55
+	+	12	0
+	+	52	74
+	+	8	0
+	+	17	90
+	+	17	0
+	+	27	64
+	+	25	0
+	+	24	92
+	+	55	89
+	+	87	31
+	+	95	0
+	+	95	8
+	+	96	0
+	+	95	88
+	+	113	0
+	+	111	0
+	+	53	65
+	+	42	32
+	+	95	8
+	+	45	0
+	+	92	0
+	+	95	8
+	+	95	65
+	+	95	38
+	+	45	0
+	+	95	23
+	+	55	66
+	+	95	8
+	+	95	0
+	+	98	0
+	+	95	8
+	+	98	65
+	+	93	11
+	+	95	11
+	+	98	71
+	+	98	30
+	+	99	16
+	+	45	44
+	+	50	51
+	+	51	51
+	+	98	35
+	+	89	39
+	+	95	12
+	+	98	0
+	+	97	0
+	+	95	0
+	+	94	37
+	+	50	51
+	+	51	51
+	+	45	44
+	+	95	0
+	+	94	36
+	+	55	74
+
+> ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/peripheral.py
+	*	1747806596	0
+	"	42	45
+
+> ~/ros2_kart_ws/src/decision_pkg/decision_pkg/decision_node.py
+	*	1747641369	0
+	"	1	3
+	^	1	4
+	.	1	3
+	+	1	3
 
 > ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
 	*	1747565314	0
@@ -532,81 +546,6 @@ $
 	+	16	19
 	+	18	0
 
-> ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-	*	1747557491	0
-	"	78	11
-	^	57	22
-	.	24	92
-	+	1	10
-	+	1	35
-	+	1	0
-	+	1	10
-	+	1	0
-	+	1	10
-	+	1	0
-	+	1	22
-	+	1	10
-	+	1	0
-	+	115	0
-	+	1	10
-	+	1	53
-	+	1	81
-	+	1	29
-	+	1	33
-	+	1	49
-	+	1	58
-	+	115	0
-	+	113	10
-	+	27	58
-	+	45	0
-	+	40	0
-	+	45	0
-	+	43	0
-	+	52	76
-	+	27	16
-	+	54	7
-	+	54	0
-	+	55	63
-	+	74	73
-	+	31	43
-	+	34	0
-	+	50	73
-	+	62	0
-	+	18	7
-	+	26	0
-	+	24	64
-	+	25	0
-	+	23	22
-	+	10	27
-	+	9	0
-	+	8	0
-	+	24	63
-	+	23	12
-	+	24	54
-	+	12	28
-	+	26	49
-	+	26	8
-	+	23	8
-	+	24	49
-	+	26	54
-	+	26	72
-	+	30	61
-	+	26	0
-	+	30	43
-	+	29	55
-	+	12	0
-	+	50	74
-	+	8	0
-	+	17	90
-	+	17	0
-	+	27	64
-	+	25	0
-	+	24	92
-
-> ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/peripheral.py
-	*	1747554413	0
-	"	31	48
-
 > ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/localGATT.py
 	*	1747543447	0
 	"	187	0
@@ -643,58 +582,6 @@ $
 	^	1	40
 	.	1	39
 	+	1	39
-
-> ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
-	*	1747471640	0
-	"	26	22
-	^	26	23
-	.	26	22
-	+	103	10
-	+	4	14
-	+	25	39
-	+	23	8
-	+	23	34
-	+	23	45
-	+	23	49
-	+	23	23
-	+	23	120
-	+	27	28
-	+	23	123
-	+	14	23
-	+	23	53
-	+	23	62
-	+	45	0
-	+	39	21
-	+	24	0
-	+	45	8
-	+	44	0
-	+	23	0
-	+	46	16
-	+	22	0
-	+	46	16
-	+	47	15
-	+	47	61
-	+	48	0
-	+	50	97
-	+	51	92
-	+	52	61
-	+	55	30
-	+	56	73
-	+	62	11
-	+	63	11
-	+	64	11
-	+	65	11
-	+	67	11
-	+	68	11
-	+	69	11
-	+	70	11
-	+	72	35
-	+	56	39
-	+	75	0
-	+	61	0
-	+	22	8
-	+	24	0
-	+	26	22
 
 > ~/ros2_kart_ws/src/interfaces/package.xml
 	*	1747468458	0

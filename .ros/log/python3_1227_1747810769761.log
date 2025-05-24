@@ -1,0 +1,3 @@
+[INFO] [1747810769.977111000] [ble_gatt_server]: Using adapter: D8:3A:DD:F2:4C:84
+[INFO] [1747810769.998789105] [ble_gatt_server]: BLE GATT Server started
+[INFO] [1747810788.105168366] [ble_gatt_server]: Handle Read: returning bytearray(b'\x02')

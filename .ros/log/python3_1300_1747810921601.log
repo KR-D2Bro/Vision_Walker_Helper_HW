@@ -1,0 +1,8 @@
+[INFO] [1747810921.816511280] [ble_gatt_server]: Using adapter: D8:3A:DD:F2:4C:84
+[INFO] [1747810921.838165079] [ble_gatt_server]: BLE GATT Server started
+[INFO] [1747810925.808741640] [ble_gatt_server]: Handle Read: returning [1]
+[INFO] [1747810929.992346652] [ble_gatt_server]: Handle Write: stored_value set to [7]
+[INFO] [1747810932.691415127] [ble_gatt_server]: Handle Read: returning [7]
+[INFO] [1747810965.742827448] [ble_gatt_server]: Central connected: <bluezero.device.Device object at 0x7f82261510>
+[INFO] [1747810970.808856383] [ble_gatt_server]: Handle Write: stored_value set to [65]
+[INFO] [1747810972.048385952] [ble_gatt_server]: Handle Write: stored_value set to [65]
