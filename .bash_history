@@ -595,3 +595,61 @@ sudo btmon
 vim ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py 
 clear
 vim ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py 
+ls
+git add .
+git status
+git commit -m "Fix: ble write_callback"
+git branch dev
+git branch list
+git branch -l
+git branch -rm list
+git branch -d list
+git checkout dev 
+git branch
+git push -u dev dev
+git push -u origin dev
+git branch main 
+git checkout main 
+git push -u origin dev
+ls
+cat token_code.txt 
+git push -u origin dev
+echo "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" >> token_code.txt 
+cat token_code.txt 
+echo "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" > token_code.txt 
+cat token_code.txt 
+git push -u origin dev
+git push origin main
+ls ros2_kart_ws/src/
+ls ros2_kart_ws/src/decision_pkg/decision_pkg/
+vim ros2_kart_ws/src/decision_pkg/decision_pkg/decision_node.py 
+git checkout dev 
+vim ros2_kart_ws/src/decision_pkg/decision_pkg/decision_node.py 
+vim ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py 
+vim ros2_kart_ws/src/sensor_pkg/package.xml 
+vim ros2_kart_ws/src/sensor_pkg/setup.py 
+cd ros2_kart_ws/
+colcon build --packages-select sensor_pkg
+source install/setup.bash 
+ros2 run sensor_pkg illuminance_pub 
+vim src/sensor_pkg/sensor_pkg/illuminance_node.py 
+colcon build --packages-select sensor_pkg
+source install/setup.bash 
+ros2 run sensor_pkg illuminance_pub 
+ls /dev/i2c-*
+cat /boot/config.txt 
+cat /boot/firmware/config.txt 
+sudo vim /boot/firmware/config.txt 
+ls /dev/i2c-*
+sudo reboot 
+ls /dev/i2c-*
+cd ros2_kart_ws/
+vim src/sensor_pkg/sensor_pkg/illuminance_node.py 
+colcon build --packages-select sensor_pkg
+source install/setup.bash 
+ros2 run sensor_pkg illuminance_pub 
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+ls
+ls src/
+cd src/
+ros2 pkg create --build-type ament_python --license Apache-2.0 actuator_pkg

@@ -18,13 +18,13 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1747811911,,"q"
+|2,0,1748084325,,"q"
+:wq
+|2,0,1748079053,,"wq"
+:q!
+|2,0,1748077922,,"q!"
 :w
 |2,0,1747811910,,"w"
-:wq
-|2,0,1747809344,,"wq"
-:q!
-|2,0,1747542636,,"q!"
 :Wq
 |2,0,1747538870,,"Wq"
 
@@ -53,279 +53,266 @@ $
 	        self.get_logger().info(f'Handle Write: stored_value set to {self.stored_value}')
 	
 |3,0,0,1,2,0,1747808550,"        self.get_logger().info(f'Handle Write: stored_value set to {self.stored_value}')",""
-""1	LINE	0
-	            self.ble_periph.characteristics[(1, 1)].value = self.stored_value
-|3,1,1,1,1,0,1747810814,"            self.ble_periph.characteristics[(1, 1)].value = self.stored_value"
+"1	LINE	0
+	  <depend>smbus2</depend>
+|3,0,1,1,1,0,1748078209,"  <depend>smbus2</depend>"
 "2	LINE	0
-	            self.stored_value = list(value)
-|3,0,2,1,1,0,1747810691,"            self.stored_value = list(value)"
+	
+|3,0,2,1,1,0,1748077930,""
 "3	LINE	0
-	        except Exception as e:
-|3,0,3,1,1,0,1747810680,"        except Exception as e:"
+	        self.get_logger().info('Light Data Publisher started, publishing on /illuminance/data')
+|3,0,3,1,1,0,1748077929,"        self.get_logger().info('Light Data Publisher started, publishing on /illuminance/data')"
 "4	LINE	0
-	            self.get_logger().info('Handle Write: stored_value set to')
-|3,0,4,1,1,0,1747810668,"            self.get_logger().info('Handle Write: stored_value set to')"
+	        
+|3,0,4,1,1,0,1748077928,"        "
 "5	LINE	0
-	            return self.stored_value
-|3,0,5,1,1,0,1747810626,"            return self.stored_value"
+	        super().__init__('')
+|3,0,5,1,1,0,1748077928,"        super().__init__('')"
 "6	LINE	0
-	
-|3,0,6,1,1,0,1747807082,""
+	    def __init__(self):
+|3,0,6,1,1,0,1748077927,"    def __init__(self):"
 "7	LINE	0
-	        self.srv = peripheral.Service(SERVICE_UUID)
-|3,0,7,1,1,0,1747807081,"        self.srv = peripheral.Service(SERVICE_UUID)"
+	class LightDataPublisher(Node):
+|3,0,7,1,1,0,1748077927,"class LightDataPublisher(Node):"
 "8	LINE	0
-	        super().destroy_node()
 	
-|3,0,8,1,2,0,1747804915,"        super().destroy_node()",""
+|3,0,8,1,1,0,1748077927,""
 "9	LINE	0
-	    
-	    self.stored_value=0
-|3,0,9,1,2,0,1747804914,"    ","    self.stored_value=0"
-"-	CHAR	0
-	0
-|3,0,36,0,1,0,1747810710,"0"
+	import time
+|3,0,9,1,1,0,1748077926,"import time"
+""-	CHAR	0
+	1
+|3,1,36,0,1,0,1748079045,"1"
 
 # File marks:
-'0  18  0  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
-|4,48,18,0,1747811921,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py"
-'1  12  0  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py
-|4,49,12,0,1747811911,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py"
-'2  55  82  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,50,55,82,1747811514,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
-'3  56  59  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,51,56,59,1747810324,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
-'4  56  59  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,52,56,59,1747810324,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
-'5  98  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,53,98,35,1747809915,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
-'6  98  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,54,98,35,1747809915,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
-'7  99  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,55,99,35,1747809915,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
-'8  99  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,56,99,35,1747809915,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
-'9  98  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,57,98,35,1747809344,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+'0  48  0  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
+|4,48,48,0,1748084325,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py"
+'1  14  25  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py
+|4,49,14,25,1748079053,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py"
+'2  48  0  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
+|4,50,48,0,1748078847,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py"
+'3  48  28  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py
+|4,51,48,28,1748078469,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py"
+'4  48  28  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py
+|4,52,48,28,1748078469,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py"
+'5  27  64  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,53,27,64,1748078298,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+'6  27  64  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,54,27,64,1748078291,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+'7  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,55,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+'8  28  12  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py
+|4,56,28,12,1748077949,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py"
+'9  28  12  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py
+|4,57,28,12,1748077949,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py"
 
 # Jumplist (newest first):
--'  18  0  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
-|4,39,18,0,1747811921,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py"
--'  12  0  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py
-|4,39,12,0,1747811911,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py"
--'  26  22  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
-|4,39,26,22,1747811602,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py"
--'  1  0  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py
-|4,39,1,0,1747811585,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py"
--'  55  82  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,55,82,1747811514,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  55  82  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,55,82,1747811514,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  55  82  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,55,82,1747811514,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  95  12  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,95,12,1747810694,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  95  12  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,95,12,1747810694,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  95  12  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,95,12,1747810694,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  98  12  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,98,12,1747810682,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  98  12  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,98,12,1747810682,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  98  12  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,98,12,1747810682,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  56  59  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,56,59,1747810419,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  56  59  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,56,59,1747810419,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  56  59  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,56,59,1747810419,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  56  59  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,56,59,1747810324,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  56  59  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,56,59,1747810324,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  56  59  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,56,59,1747810324,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  99  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,99,35,1747810208,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  99  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,99,35,1747810208,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  99  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,99,35,1747810208,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  99  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,99,35,1747809915,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  99  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,99,35,1747809915,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  99  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,99,35,1747809915,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  99  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,99,35,1747809344,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  99  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,99,35,1747809344,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  99  35  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,99,35,1747809344,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,51,51,1747809318,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,51,51,1747809318,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,51,51,1747809318,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,51,51,1747809318,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,51,51,1747809318,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,51,51,1747809318,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,51,51,1747809318,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,51,51,1747809318,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,51,51,1747809318,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,51,51,1747809318,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,51,51,1747809318,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,51,51,1747809318,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,51,51,1747809091,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,51,51,1747809091,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  51  51  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,51,51,1747809091,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  96  65  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,96,65,1747808542,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  96  65  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,96,65,1747808542,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  96  65  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,96,65,1747808542,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  96  65  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,96,65,1747808542,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  96  65  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,96,65,1747808542,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  96  65  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,96,65,1747808542,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  96  65  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,96,65,1747808542,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  96  65  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,96,65,1747808542,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  96  65  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,96,65,1747808542,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  96  65  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,96,65,1747808542,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  96  65  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,96,65,1747808542,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  96  65  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,96,65,1747808542,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  141  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,141,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  140  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,140,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  144  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,144,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  143  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,143,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  144  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,144,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  143  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,143,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  144  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,144,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  143  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,143,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  141  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,141,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  140  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,140,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  144  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,144,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  143  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,143,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  144  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,144,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  143  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,143,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  144  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,144,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  143  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,143,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  141  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,141,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  140  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,140,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  144  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,144,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  143  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,143,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  144  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,144,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  143  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,143,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  144  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,144,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  143  0  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,143,0,1747808370,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  95  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,95,22,1747808056,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  95  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,95,22,1747808056,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  95  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,95,22,1747808056,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  95  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,95,22,1747808056,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  95  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,95,22,1747808056,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  95  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,95,22,1747808056,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  95  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,95,22,1747808056,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  95  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,95,22,1747808056,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  95  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,95,22,1747808056,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  95  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,95,22,1747808056,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  95  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,95,22,1747808056,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  95  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,95,22,1747808056,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  94  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,94,22,1747808050,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  94  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,94,22,1747808050,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  94  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,94,22,1747808050,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  94  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,94,22,1747808050,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  94  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,94,22,1747808050,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  94  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,94,22,1747808050,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  94  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,94,22,1747808050,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  94  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,94,22,1747808050,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
--'  94  22  ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
-|4,39,94,22,1747808050,"~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py"
+-'  48  0  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
+|4,39,48,0,1748084325,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py"
+-'  14  25  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py
+|4,39,14,25,1748079053,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py"
+-'  14  25  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py
+|4,39,14,25,1748079053,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py"
+-'  48  28  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py
+|4,39,48,28,1748079038,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py"
+-'  48  28  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py
+|4,39,48,28,1748079038,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py"
+-'  48  0  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
+|4,39,48,0,1748078847,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py"
+-'  48  0  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
+|4,39,48,0,1748078847,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py"
+-'  48  28  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py
+|4,39,48,28,1748078469,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py"
+-'  48  28  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py
+|4,39,48,28,1748078469,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py"
+-'  28  12  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py
+|4,39,28,12,1748078440,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py"
+-'  28  12  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py
+|4,39,28,12,1748078440,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py"
+-'  28  12  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py
+|4,39,28,12,1748078440,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py"
+-'  28  12  ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py
+|4,39,28,12,1748078440,"~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py"
+-'  27  64  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,27,64,1748078298,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  27  64  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,27,64,1748078298,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  27  64  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,27,64,1748078298,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  27  64  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,27,64,1748078298,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  27  64  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,27,64,1748078298,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  27  64  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,27,64,1748078298,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  27  64  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,27,64,1748078298,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  27  64  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,27,64,1748078298,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  27  64  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,27,64,1748078291,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  27  64  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,27,64,1748078291,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  27  64  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,27,64,1748078291,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  27  64  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,27,64,1748078291,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  27  64  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,27,64,1748078291,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  27  64  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,27,64,1748078291,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  27  64  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,27,64,1748078291,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  27  64  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,27,64,1748078291,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  26  48  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,26,48,1748078224,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  26  48  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,26,48,1748078224,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  26  48  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,26,48,1748078224,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  26  48  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,26,48,1748078224,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  26  48  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,26,48,1748078224,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  26  48  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,26,48,1748078224,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  26  48  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,26,48,1748078224,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  26  48  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,26,48,1748078224,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  26  48  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,26,48,1748078224,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  26  48  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,26,48,1748078224,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  26  48  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,26,48,1748078224,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  26  48  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,26,48,1748078224,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  26  48  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,26,48,1748078224,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  26  48  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,26,48,1748078224,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  26  48  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,26,48,1748078224,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  26  48  ~/ros2_kart_ws/src/sensor_pkg/setup.py
+|4,39,26,48,1748078224,"~/ros2_kart_ws/src/sensor_pkg/setup.py"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  17  27  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,17,27,1748078219,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  18  38  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,18,38,1748077960,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  18  38  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,18,38,1748077960,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  18  38  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,18,38,1748077960,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  18  38  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,18,38,1748077960,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  18  38  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,18,38,1748077960,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  18  38  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,18,38,1748077960,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  18  38  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,18,38,1748077960,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  18  38  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,18,38,1748077960,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  18  38  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,18,38,1748077960,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  18  38  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,18,38,1748077960,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  18  38  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,18,38,1748077960,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  18  38  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,18,38,1748077960,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  18  38  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,18,38,1748077960,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  18  38  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,18,38,1748077960,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  18  38  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,18,38,1748077960,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  18  38  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,18,38,1748077960,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  18  38  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,18,38,1748077960,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  18  38  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,18,38,1748077960,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  18  38  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,18,38,1748077960,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  18  38  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,18,38,1748077960,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  18  38  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,18,38,1748077960,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  18  38  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,18,38,1748077960,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
+-'  18  38  ~/ros2_kart_ws/src/sensor_pkg/package.xml
+|4,39,18,38,1748077960,"~/ros2_kart_ws/src/sensor_pkg/package.xml"
 
 # History of marks within files (newest to oldest):
 
-> ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py
-	*	1747811910	0
-	"	12	0
-	^	12	0
-	.	12	0
-	+	4	11
-	+	6	31
-	+	8	48
-	+	9	8
-	+	12	0
-
 > ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
-	*	1747811902	0
-	"	18	0
+	*	1748084324	0
+	"	48	0
 	^	26	23
 	.	26	22
 	+	103	10
@@ -374,6 +361,56 @@ $
 	+	22	8
 	+	24	0
 	+	26	22
+
+> ~/ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py
+	*	1748079051	0
+	"	14	25
+	^	14	26
+	.	14	25
+	+	1	11
+	+	1	31
+	+	1	48
+	+	1	8
+	+	1	22
+	+	58	10
+	+	1	31
+	+	7	23
+	+	1	25
+	+	9	47
+	+	1	0
+	+	48	28
+	+	14	25
+
+> ~/ros2_kart_ws/src/sensor_pkg/setup.py
+	*	1748078297	0
+	"	27	64
+	^	27	65
+	.	27	64
+	+	26	48
+	+	15	20
+	+	16	16
+	+	15	20
+	+	27	64
+
+> ~/ros2_kart_ws/src/sensor_pkg/package.xml
+	*	1748078217	0
+	"	17	27
+	^	17	28
+	.	17	27
+	+	14	25
+	+	18	38
+	+	16	0
+	+	14	2
+	+	15	0
+	+	17	27
+
+> ~/ros2_kart_ws/src/decision_pkg/decision_pkg/decision_node.py
+	*	1748076661	0
+	"	4	0
+	^	4	0
+	.	5	0
+	+	1	10
+	+	5	0
 
 > ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_node.py
 	*	1747811262	0
@@ -479,13 +516,6 @@ $
 > ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/peripheral.py
 	*	1747806596	0
 	"	42	45
-
-> ~/ros2_kart_ws/src/decision_pkg/decision_pkg/decision_node.py
-	*	1747641369	0
-	"	1	3
-	^	1	4
-	.	1	3
-	+	1	3
 
 > ~/ros2_kart_ws/src/app_interface_pkg/app_interface_pkg/ble_agent.py
 	*	1747565314	0
@@ -617,21 +647,6 @@ $
 	+	116	0
 	+	117	40
 	+	116	42
-
-> ~/ros2_kart_ws/src/sensor_pkg/package.xml
-	*	1747450545	0
-	"	15	38
-	^	15	39
-	.	15	38
-	+	14	25
-	+	15	38
-
-> ~/ros2_kart_ws/src/sensor_pkg/setup.py
-	*	1747450277	0
-	"	23	48
-	^	23	49
-	.	23	48
-	+	23	48
 
 > ~/ros2_kart_ws/src/interfaces/CM
 	*	1747449672	0
