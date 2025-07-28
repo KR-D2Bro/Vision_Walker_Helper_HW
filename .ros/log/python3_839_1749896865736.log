@@ -1,0 +1,57 @@
+[INFO] [1749896866.227315194] [Battery_state_publisher]: I2C 초기화 성공
+[INFO] [1749896866.228891634] [Battery_state_publisher]: Battery State Publisher started, publishing on /battery_state/data
+[INFO] [1749896876.179922171] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749896886.179892377] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749896896.184738287] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749896906.184876528] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749896916.184733253] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749896926.184821170] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749896936.179962293] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749896946.179967709] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749896956.185039165] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749896966.184619338] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749896976.184610730] [Battery_state_publisher]: Battery: 94%
+[WARN] [1749896986.183475762] [Battery_state_publisher]: I2C 통신 오류: OSError(5, 'Input/output error'), 버스 재초기화 시도
+[INFO] [1749896986.187471482] [Battery_state_publisher]: I2C 초기화 성공
+[INFO] [1749896996.184652036] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897006.184597006] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897016.184560653] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897026.184672404] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897036.184550161] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897046.184710098] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897056.184536516] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897066.184712388] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897076.184561362] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897086.184562440] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897096.184539852] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897106.184589692] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897116.184557911] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897126.184567095] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897136.184563636] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897146.184538814] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897156.184523306] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897166.184549550] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897176.184596585] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897186.184572695] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897196.184630227] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897206.184608730] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897216.184576803] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897226.184610767] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897236.184591852] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897246.184586970] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897256.184605436] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897266.184587078] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897276.184589383] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897286.184603510] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897296.184603248] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897306.184554827] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897316.184612948] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897326.184598776] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897336.184557125] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897346.184601750] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897356.184617568] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897366.184587844] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897376.184626753] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897386.184611732] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897396.184578186] [Battery_state_publisher]: Battery: 94%
+[INFO] [1749897406.183545088] [Battery_

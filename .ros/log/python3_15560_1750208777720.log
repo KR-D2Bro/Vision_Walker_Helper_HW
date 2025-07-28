@@ -1,0 +1,52 @@
+[INFO] [1750208778.589544181] [illuminance_sensor]: Initialized PCF8591 at 0x48
+[ERROR] [1750208779.517938194] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208780.520804182] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208781.517577765] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208782.515620832] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208783.516081351] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208784.518552948] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208785.513394118] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208786.524629164] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208787.526788834] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208788.515969025] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[INFO] [1750208788.529767543] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+[ERROR] [1750208789.515472873] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208790.521094644] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208791.520625307] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208792.511845503] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208793.513084984] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208794.516122582] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208795.513264256] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208796.516966929] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208797.523014848] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208798.513514708] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[INFO] [1750208798.524997572] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+[ERROR] [1750208799.519084608] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208800.523478264] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208801.526884639] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208802.518923577] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208803.518855016] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208804.515438614] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208805.516606372] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208806.524257795] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208807.513113279] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208808.522263836] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[INFO] [1750208808.536519188] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+[ERROR] [1750208809.519772361] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208810.512335299] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208811.511925460] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208812.512720605] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208813.513364083] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208814.512817872] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208815.512812812] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208816.514361218] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208817.514556861] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208818.515863692] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[INFO] [1750208818.519653776] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+[ERROR] [1750208819.513477976] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208820.516088792] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208821.513205835] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208822.515185186] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208823.512863396] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208824.515885991] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1750208825.520491182] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error

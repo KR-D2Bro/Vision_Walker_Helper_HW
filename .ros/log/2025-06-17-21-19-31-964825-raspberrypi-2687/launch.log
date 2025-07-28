@@ -1,0 +1,247 @@
+1750162771.9673026 [INFO] [launch]: All log files can be found below /home/dongjae/.ros/log/2025-06-17-21-19-31-964825-raspberrypi-2687
+1750162771.9677215 [INFO] [launch]: Default logging verbosity is set to INFO
+1750162772.2083101 [INFO] [imu_pub-1]: process started with pid [2688]
+1750162772.2099605 [INFO] [illuminance_pub-2]: process started with pid [2690]
+1750162772.2117651 [INFO] [battery_pub-3]: process started with pid [2692]
+1750162772.2141640 [INFO] [light_srv-4]: process started with pid [2694]
+1750162772.2163315 [INFO] [buzzer_srv-5]: process started with pid [2696]
+1750162772.2185516 [INFO] [ble_node-6]: process started with pid [2698]
+1750162772.2213855 [INFO] [decision_node-7]: process started with pid [2700]
+1750162772.2248015 [INFO] [vision_node-8]: process started with pid [2702]
+1750162774.0675526 [light_srv-4] /home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/light_service.py:15: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+1750162774.0681608 [light_srv-4]   GPIO.setup(LED_PIN, GPIO.OUT)
+1750162774.2674332 [buzzer_srv-5] [INFO] [1750162774.259972712] [buzzer_actuator]: 🔔 PWM Buzzer Control Node Started
+1750162774.7525284 [imu_pub-1] [INFO] [1750162774.751640706] [imu_sensor]: I2C-3 초기화 성공
+1750162774.8594074 [illuminance_pub-2] [INFO] [1750162774.855333041] [illuminance_sensor]: Initialized PCF8591 at 0x48
+1750162775.0038087 [battery_pub-3] [INFO] [1750162775.001890351] [battery_sensor]: I2C 초기화 성공
+1750162775.0056663 [battery_pub-3] [INFO] [1750162775.004197628] [battery_sensor]: Battery State Publisher started, publishing on /battery_state/data
+1750162775.1751127 [imu_pub-1] [INFO] [1750162775.170287737] [imu_sensor]: FallDetectionNode started: roll_thr=65.0°, pitch_thr=65.0°
+1750162775.2012584 [buzzer_srv-5] [INFO] [1750162775.199604565] [buzzer_actuator]: 🔊 Buzzer ON (Duty: 0%) 1Sec
+1750162775.2533708 [light_srv-4] [INFO] [1750162775.250254938] [light_actuator]: 💡 불을 켭니다.
+1750162775.3018258 [ble_node-6] [INFO] [1750162775.301189011] [ble_node]: Loaded config from disk
+1750162775.3296144 [ble_node-6] [INFO] [1750162775.329002352] [ble_node]: Using adapter: D8:3A:DD:F2:4C:84
+1750162775.3674119 [ble_node-6] [INFO] [1750162775.366106375] [ble_node]: BLE GATT Server started
+1750162775.3758759 [ble_node-6] [INFO] [1750162775.375190780] [ble_node]: Config service added
+1750162775.8191667 [illuminance_pub-2] [ERROR] [1750162775.818465309] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162776.8192143 [illuminance_pub-2] [ERROR] [1750162776.818465250] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162777.8190720 [illuminance_pub-2] [ERROR] [1750162777.818359822] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162778.8199928 [illuminance_pub-2] [ERROR] [1750162778.819327978] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162779.8191273 [illuminance_pub-2] [ERROR] [1750162779.818436021] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162780.2021117 [light_srv-4] [INFO] [1750162780.201354075] [light_actuator]: 💤 불을 끕니다.
+1750162780.2501457 [decision_node-7] [INFO] [1750162780.248232294] [decision_node]: ✅ 요청 성공: 부저가 켜졌습니다.
+1750162780.2515135 [decision_node-7] [INFO] [1750162780.250305387] [decision_node]: ✅ 요청 성공: 불이 켜졌습니다.
+1750162780.2552845 [decision_node-7] [INFO] [1750162780.254456149] [decision_node]: ✅ 요청 성공: 불이 켜졌습니다.
+1750162780.8181455 [illuminance_pub-2] [ERROR] [1750162780.817540620] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162781.8189659 [illuminance_pub-2] [ERROR] [1750162781.818229448] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162782.8182070 [illuminance_pub-2] [ERROR] [1750162782.817595194] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162783.8193471 [illuminance_pub-2] [ERROR] [1750162783.817953303] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162784.8184147 [illuminance_pub-2] [ERROR] [1750162784.817765250] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162784.9544718 [battery_pub-3] [INFO] [1750162784.953161969] [battery_sensor]: Battery: 98%
+1750162785.8231373 [illuminance_pub-2] [ERROR] [1750162785.819174777] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162786.8180931 [illuminance_pub-2] [ERROR] [1750162786.817507535] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162787.8182566 [illuminance_pub-2] [ERROR] [1750162787.817603000] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162788.8182740 [illuminance_pub-2] [ERROR] [1750162788.817632763] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162789.0951838 [vision_node-8] /home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolov5/utils/general.py:32: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+1750162789.0956128 [vision_node-8]   import pkg_resources as pkg
+1750162789.8184254 [illuminance_pub-2] [ERROR] [1750162789.817643804] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162790.8185430 [illuminance_pub-2] [ERROR] [1750162790.817836289] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162791.8185942 [illuminance_pub-2] [ERROR] [1750162791.817879312] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162792.8193438 [illuminance_pub-2] [ERROR] [1750162792.817948169] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162793.8181949 [illuminance_pub-2] [ERROR] [1750162793.817570198] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162794.8182526 [illuminance_pub-2] [ERROR] [1750162794.817621964] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162794.9538810 [battery_pub-3] [INFO] [1750162794.953294477] [battery_sensor]: Battery: 98%
+1750162795.3585939 [vision_node-8] Fusing layers... 
+1750162795.8193333 [illuminance_pub-2] [ERROR] [1750162795.818376335] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162796.6711872 [vision_node-8] Model summary: 157 layers, 7012822 parameters, 0 gradients, 15.8 GFLOPs
+1750162796.7194128 [vision_node-8] [0:33:59.992109018] [2702] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:326 [0mlibcamera v0.5.0+59-d83ff0a4
+1750162796.8182058 [illuminance_pub-2] [ERROR] [1750162796.817579517] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162796.8444192 [vision_node-8] [0:34:00.117099529] [2803] [1;33m WARN [1;37mRPiSdn [1;34msdn.cpp:40 [0mUsing legacy SDN tuning - please consider moving SDN inside rpi.denoise
+1750162796.8472080 [vision_node-8] [0:34:00.119687451] [2803] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:447 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx708@1a to Unicam device /dev/media3 and ISP device /dev/media1
+1750162796.8476462 [vision_node-8] [0:34:00.119757247] [2803] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1121 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+1750162796.8566554 [vision_node-8] [0:34:00.129341019] [2702] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1205 [0mconfiguring streams: (0) 640x480-XBGR8888 (1) 1536x864-SBGGR10_CSI2P
+1750162796.8578608 [vision_node-8] [0:34:00.129815737] [2803] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:622 [0mSensor: /base/soc/i2c0mux/i2c@1/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10 - Selected unicam format: 1536x864-pBAA
+1750162797.8240898 [illuminance_pub-2] [ERROR] [1750162797.821996989] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162798.8194923 [illuminance_pub-2] [ERROR] [1750162798.818608952] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162799.8182344 [illuminance_pub-2] [ERROR] [1750162799.817587378] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162800.8181934 [illuminance_pub-2] [ERROR] [1750162800.817561407] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162801.8184388 [illuminance_pub-2] [ERROR] [1750162801.817825176] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162802.6381586 [vision_node-8] qt.qpa.xcb: could not connect to display 
+1750162802.6483855 [vision_node-8] qt.qpa.plugin: Could not load the Qt platform plugin "xcb" in "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/cv2/qt/plugins" even though it was found.
+1750162802.6491804 [vision_node-8] This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
+1750162802.6498594 [vision_node-8] 
+1750162802.6509371 [vision_node-8] Available platform plugins are: xcb.
+1750162802.6520276 [vision_node-8] 
+1750162802.7353768 [ERROR] [vision_node-8]: process has died [pid 2702, exit code -6, cmd '/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/vision_pkg/vision_node --ros-args -r __node:=vision_node'].
+1750162802.8179500 [illuminance_pub-2] [ERROR] [1750162802.817454394] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162803.8179302 [illuminance_pub-2] [ERROR] [1750162803.817427054] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162804.8179355 [illuminance_pub-2] [ERROR] [1750162804.817425882] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162804.9536469 [battery_pub-3] [INFO] [1750162804.953144544] [battery_sensor]: Battery: 98%
+1750162805.8207033 [illuminance_pub-2] [ERROR] [1750162805.819776283] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162806.8179495 [illuminance_pub-2] [ERROR] [1750162806.817437909] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162807.8188679 [illuminance_pub-2] [ERROR] [1750162807.817418979] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750162808.3697362 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1750162808.4255452 [ble_node-6] Advertisement registered
+1750162808.4285631 [ble_node-6] Traceback (most recent call last):
+1750162808.4312217 [ble_node-6]   File "/home/dongjae/ros2_kart_ws/install/app_interface_pkg/lib/python3.11/site-packages/app_interface_pkg/ble_node.py", line 115, in main
+1750162808.4325476 [ble_node-6]     rclpy.spin(node)
+1750162808.4338470 [ble_node-6]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750162808.4368675 [ble_node-6]     executor.spin_once()
+1750162808.4385617 [ble_node-6]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750162808.4413419 [ble_node-6]     self._spin_once_impl(timeout_sec)
+1750162808.4431701 [ble_node-6]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 748, in _spin_once_impl
+1750162808.4453256 [ble_node-6]     raise handler.exception()
+1750162808.4463613 [ble_node-6]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/task.py", line 254, in __call__
+1750162808.4476476 [ble_node-6]     self._handler.send(None)
+1750162808.4489045 [ble_node-6]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 447, in handler
+1750162808.4501553 [ble_node-6]     await call_coroutine(entity, arg)
+1750162808.4516637 [ble_node-6]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 372, in _execute_subscription
+1750162808.4524226 [ble_node-6]     await await_or_execute(sub.callback, msg)
+1750162808.4546306 [ble_node-6]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 107, in await_or_execute
+1750162808.4563448 [ble_node-6]     return callback(*args)
+1750162808.4606466 [ble_node-6]            ^^^^^^^^^^^^^^^
+1750162808.4621191 [ble_node-6]   File "/home/dongjae/ros2_kart_ws/install/app_interface_pkg/lib/python3.11/site-packages/app_interface_pkg/ble_node.py", line 85, in battery_listener_callback
+1750162808.4640889 [ble_node-6]     self.periph.update_battery_state(percentage)
+1750162808.4654515 [ble_node-6]   File "/home/dongjae/ros2_kart_ws/install/app_interface_pkg/lib/python3.11/site-packages/app_interface_pkg/ble_periph.py", line 129, in update_battery_state
+1750162808.4669828 [ble_node-6]     self.notify_characteristic.set_value(list(percentage.to_bytes(2,byteorder='little',signed=True)))
+1750162808.4692943 [ble_node-6]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750162808.4700599 [ble_node-6] AttributeError: 'NoneType' object has no attribute 'set_value'
+1750162808.4716763 [ble_node-6] 
+1750162808.4740305 [ble_node-6] During handling of the above exception, another exception occurred:
+1750162808.4760182 [ble_node-6] 
+1750162808.4769683 [ble_node-6] Traceback (most recent call last):
+1750162808.4780564 [ble_node-6]   File "/home/dongjae/ros2_kart_ws/install/app_interface_pkg/lib/app_interface_pkg/ble_node", line 33, in <module>
+1750162808.4794161 [ble_node-6]     sys.exit(load_entry_point('app_interface_pkg==0.0.0', 'console_scripts', 'ble_node')())
+1750162808.4806609 [ble_node-6]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750162808.4821899 [ble_node-6]   File "/home/dongjae/ros2_kart_ws/install/app_interface_pkg/lib/python3.11/site-packages/app_interface_pkg/ble_node.py", line 119, in main
+1750162808.4843965 [ble_node-6]     thread.join()
+1750162808.4859364 [ble_node-6]   File "/usr/lib/python3.11/threading.py", line 1112, in join
+1750162808.4876957 [ble_node-6]     self._wait_for_tstate_lock()
+1750162808.4887054 [ble_node-6]   File "/usr/lib/python3.11/threading.py", line 1132, in _wait_for_tstate_lock
+1750162808.4895978 [ble_node-6]     if lock.acquire(block, timeout):
+1750162808.4905744 [ble_node-6]        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750162808.4916432 [ble_node-6] KeyboardInterrupt
+1750162808.4953783 [battery_pub-3] Traceback (most recent call last):
+1750162808.4973416 [battery_pub-3]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/battery_pub", line 33, in <module>
+1750162808.4992871 [battery_pub-3]     sys.exit(load_entry_point('sensor_pkg==0.0.0', 'console_scripts', 'battery_pub')())
+1750162808.5019383 [battery_pub-3]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750162808.5028458 [battery_pub-3]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/battery_node.py", line 62, in main
+1750162808.5046093 [battery_pub-3]     rclpy.spin(node)
+1750162808.5061131 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750162808.5074751 [battery_pub-3]     executor.spin_once()
+1750162808.5085990 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750162808.5097489 [battery_pub-3]     self._spin_once_impl(timeout_sec)
+1750162808.5109272 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 740, in _spin_once_impl
+1750162808.5119605 [battery_pub-3]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+1750162808.5129828 [battery_pub-3]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750162808.5140858 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+1750162808.5156429 [battery_pub-3]     return next(self._cb_iter)
+1750162808.5168931 [battery_pub-3]            ^^^^^^^^^^^^^^^^^^^
+1750162808.5178270 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+1750162808.5211272 [battery_pub-3]     wait_set.wait(timeout_nsec)
+1750162808.5229449 [battery_pub-3] KeyboardInterrupt
+1750162808.5249829 [light_srv-4] Traceback (most recent call last):
+1750162808.5262313 [light_srv-4]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/light_srv", line 33, in <module>
+1750162808.5276535 [light_srv-4]     sys.exit(load_entry_point('actuator_pkg==0.0.0', 'console_scripts', 'light_srv')())
+1750162808.5288987 [light_srv-4]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750162808.5301132 [light_srv-4]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/light_service.py", line 45, in main
+1750162808.5313556 [light_srv-4]     rclpy.spin(node)
+1750162808.5320823 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750162808.5334291 [light_srv-4]     executor.spin_once()
+1750162808.5355613 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750162808.5364382 [light_srv-4]     self._spin_once_impl(timeout_sec)
+1750162808.5376210 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 740, in _spin_once_impl
+1750162808.5382426 [light_srv-4]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+1750162808.5395501 [light_srv-4]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750162808.5417066 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+1750162808.5437622 [light_srv-4]     return next(self._cb_iter)
+1750162808.5448763 [light_srv-4]            ^^^^^^^^^^^^^^^^^^^
+1750162808.5458443 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+1750162808.5474160 [light_srv-4]     wait_set.wait(timeout_nsec)
+1750162808.5496058 [light_srv-4] KeyboardInterrupt
+1750162808.5514965 [decision_node-7] Traceback (most recent call last):
+1750162808.5525942 [decision_node-7]   File "/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/decision_pkg/decision_node", line 33, in <module>
+1750162808.5547030 [decision_node-7]     sys.exit(load_entry_point('decision_pkg==0.0.0', 'console_scripts', 'decision_node')())
+1750162808.5557332 [decision_node-7]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750162808.5570219 [decision_node-7]   File "/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/python3.11/site-packages/decision_pkg/decision_node.py", line 64, in main
+1750162808.5583057 [decision_node-7]     rclpy.spin(node)
+1750162808.5592284 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750162808.5610406 [decision_node-7]     executor.spin_once()
+1750162808.5629156 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750162808.5659132 [decision_node-7]     self._spin_once_impl(timeout_sec)
+1750162808.5667126 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 740, in _spin_once_impl
+1750162808.5677726 [decision_node-7]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+1750162808.5687926 [decision_node-7]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750162808.5696599 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+1750162808.5713346 [decision_node-7]     return next(self._cb_iter)
+1750162808.5725977 [decision_node-7]            ^^^^^^^^^^^^^^^^^^^
+1750162808.5735257 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+1750162808.5742228 [decision_node-7]     wait_set.wait(timeout_nsec)
+1750162808.5755687 [decision_node-7] KeyboardInterrupt
+1750162808.5922499 [buzzer_srv-5] Traceback (most recent call last):
+1750162808.5929468 [buzzer_srv-5]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/buzzer_srv", line 33, in <module>
+1750162808.5944681 [buzzer_srv-5]     sys.exit(load_entry_point('actuator_pkg==0.0.0', 'console_scripts', 'buzzer_srv')())
+1750162808.5950961 [buzzer_srv-5]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750162808.5954902 [buzzer_srv-5]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/buzzer_service.py", line 51, in main
+1750162808.5962727 [buzzer_srv-5]     rclpy.shutdown()
+1750162808.5985591 [buzzer_srv-5]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 130, in shutdown
+1750162808.6002166 [buzzer_srv-5]     _shutdown(context=context)
+1750162808.6037748 [buzzer_srv-5]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/utilities.py", line 58, in shutdown
+1750162808.6064630 [buzzer_srv-5]     return context.shutdown()
+1750162808.6099477 [buzzer_srv-5]            ^^^^^^^^^^^^^^^^^^
+1750162808.6112804 [buzzer_srv-5]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/context.py", line 102, in shutdown
+1750162808.6125579 [buzzer_srv-5]     self.__context.shutdown()
+1750162808.6135440 [buzzer_srv-5] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at /home/dongjae/ros2_humble_ws/src/ros2/rcl/rcl/src/rcl/init.c:241
+1750162808.6205881 [illuminance_pub-2] Traceback (most recent call last):
+1750162808.6226554 [illuminance_pub-2]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/illuminance_pub", line 33, in <module>
+1750162808.6248901 [illuminance_pub-2]     sys.exit(load_entry_point('sensor_pkg==0.0.0', 'console_scripts', 'illuminance_pub')())
+1750162808.6267252 [illuminance_pub-2]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750162808.6274829 [illuminance_pub-2]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/illuminance_node.py", line 55, in main
+1750162808.6293726 [illuminance_pub-2]     rclpy.shutdown()
+1750162808.6311069 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 130, in shutdown
+1750162808.6327841 [illuminance_pub-2]     _shutdown(context=context)
+1750162808.6380548 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/utilities.py", line 58, in shutdown
+1750162808.6404557 [illuminance_pub-2]     return context.shutdown()
+1750162808.6426401 [illuminance_pub-2]            ^^^^^^^^^^^^^^^^^^
+1750162808.6481085 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/context.py", line 102, in shutdown
+1750162808.6492047 [illuminance_pub-2]     self.__context.shutdown()
+1750162808.6551073 [illuminance_pub-2] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at /home/dongjae/ros2_humble_ws/src/ros2/rcl/rcl/src/rcl/init.c:241
+1750162808.6781094 [imu_pub-1] Traceback (most recent call last):
+1750162808.6787295 [imu_pub-1]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/imu_node.py", line 129, in main
+1750162808.6794896 [imu_pub-1]     rclpy.spin(node)
+1750162808.6838982 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750162808.6992288 [imu_pub-1]     executor.spin_once()
+1750162808.7004826 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750162808.7047145 [imu_pub-1]     self._spin_once_impl(timeout_sec)
+1750162808.7095497 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 740, in _spin_once_impl
+1750162808.7115896 [imu_pub-1]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+1750162808.7162998 [imu_pub-1]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750162808.7213752 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+1750162808.7268648 [imu_pub-1]     return next(self._cb_iter)
+1750162808.7320614 [imu_pub-1]            ^^^^^^^^^^^^^^^^^^^
+1750162808.7328806 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+1750162808.7370105 [imu_pub-1]     wait_set.wait(timeout_nsec)
+1750162808.7437208 [imu_pub-1] KeyboardInterrupt
+1750162808.7445962 [imu_pub-1] 
+1750162808.7453778 [imu_pub-1] During handling of the above exception, another exception occurred:
+1750162808.7483890 [imu_pub-1] 
+1750162808.7503483 [imu_pub-1] Traceback (most recent call last):
+1750162808.7549164 [imu_pub-1]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/imu_pub", line 33, in <module>
+1750162808.7572217 [imu_pub-1]     sys.exit(load_entry_point('sensor_pkg==0.0.0', 'console_scripts', 'imu_pub')())
+1750162808.7654905 [imu_pub-1]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750162808.7665558 [imu_pub-1]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/imu_node.py", line 132, in main
+1750162808.7691748 [imu_pub-1]     rclpy.shutdown()
+1750162808.7717004 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 130, in shutdown
+1750162808.7739413 [imu_pub-1]     _shutdown(context=context)
+1750162808.7758868 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/utilities.py", line 58, in shutdown
+1750162808.7779434 [imu_pub-1]     return context.shutdown()
+1750162808.7818053 [imu_pub-1]            ^^^^^^^^^^^^^^^^^^
+1750162808.7829075 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/context.py", line 102, in shutdown
+1750162808.7839496 [imu_pub-1]     self.__context.shutdown()
+1750162808.7876287 [imu_pub-1] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at /home/dongjae/ros2_humble_ws/src/ros2/rcl/rcl/src/rcl/init.c:241
+1750162809.0166397 [ERROR] [illuminance_pub-2]: process has died [pid 2690, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/illuminance_pub --ros-args -r __node:=illuminance_sensor'].
+1750162809.0425644 [ERROR] [battery_pub-3]: process has died [pid 2692, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/battery_pub --ros-args -r __node:=battery_sensor'].
+1750162809.0721304 [ERROR] [ble_node-6]: process has died [pid 2698, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/app_interface_pkg/lib/app_interface_pkg/ble_node --ros-args -r __node:=ble_node'].
+1750162809.0779510 [ERROR] [light_srv-4]: process has died [pid 2694, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/light_srv --ros-args -r __node:=light_actuator'].
+1750162809.1290438 [ERROR] [decision_node-7]: process has died [pid 2700, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/decision_pkg/decision_node --ros-args -r __node:=decision_node'].
+1750162809.1653521 [ERROR] [buzzer_srv-5]: process has died [pid 2696, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/buzzer_srv --ros-args -r __node:=buzzer_actuator'].
+1750162809.2366271 [ERROR] [imu_pub-1]: process has died [pid 2688, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/imu_pub --ros-args -r __node:=imu_sensor'].

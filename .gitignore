@@ -8,3 +8,4 @@ ros2_kart_ws/build/
 ros2_kart_ws/install/
 ros2_kart_ws/log/
 .git-credentials
+ros2_kart_ws/src/vision_pkg/vision_pkg/yolov5

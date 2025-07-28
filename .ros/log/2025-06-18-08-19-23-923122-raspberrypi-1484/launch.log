@@ -1,0 +1,347 @@
+1750202363.9256196 [INFO] [launch]: All log files can be found below /home/dongjae/.ros/log/2025-06-18-08-19-23-923122-raspberrypi-1484
+1750202363.9261045 [INFO] [launch]: Default logging verbosity is set to INFO
+1750202364.1512012 [INFO] [imu_pub-1]: process started with pid [1485]
+1750202364.1562178 [INFO] [illuminance_pub-2]: process started with pid [1487]
+1750202364.1571097 [INFO] [battery_pub-3]: process started with pid [1489]
+1750202364.1641395 [INFO] [light_srv-4]: process started with pid [1491]
+1750202364.1681635 [INFO] [buzzer_srv-5]: process started with pid [1493]
+1750202364.1687622 [INFO] [ble_node-6]: process started with pid [1495]
+1750202364.1694126 [INFO] [decision_node-7]: process started with pid [1497]
+1750202364.1699655 [INFO] [vision_node-8]: process started with pid [1499]
+1750202366.5519218 [buzzer_srv-5] [INFO] [1750202366.550227317] [buzzer_actuator]: 🔔 PWM Buzzer Control Node Started
+1750202366.5693099 [light_srv-4] /home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/light_service.py:16: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+1750202366.5709925 [light_srv-4]   GPIO.setup(LED_PIN1, GPIO.OUT)
+1750202366.5735056 [light_srv-4] /home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/light_service.py:17: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+1750202366.5763350 [light_srv-4]   GPIO.setup(LED_PIN2, GPIO.OUT)
+1750202366.6843185 [illuminance_pub-2] [INFO] [1750202366.679386724] [illuminance_sensor]: Initialized PCF8591 at 0x48
+1750202366.7429481 [imu_pub-1] [INFO] [1750202366.742230437] [imu_sensor]: I2C-3 초기화 성공
+1750202367.0525846 [battery_pub-3] [INFO] [1750202367.047015514] [battery_sensor]: I2C 초기화 성공
+1750202367.0533206 [battery_pub-3] [INFO] [1750202367.049932636] [battery_sensor]: Battery State Publisher started, publishing on /battery_state/data
+1750202367.1202240 [decision_node-7] [INFO] [1750202367.117092745] [decision_node]: Loaded config from disk
+1750202367.1326382 [imu_pub-1] [INFO] [1750202367.129754210] [imu_sensor]: FallDetectionNode started: roll_thr=65.0°, pitch_thr=65.0°
+1750202367.4439478 [ble_node-6] [INFO] [1750202367.443097006] [ble_node]: Using adapter: D8:3A:DD:F2:4C:84
+1750202367.4802523 [ble_node-6] [INFO] [1750202367.479617543] [ble_node]: BLE GATT Server started
+1750202367.4887738 [ble_node-6] [INFO] [1750202367.488189152] [ble_node]: Config service added
+1750202367.5759084 [illuminance_pub-2] [INFO] [1750202367.575170403] [illuminance_sensor]: RAW=198 → 77.64705882352942%
+1750202368.5762384 [illuminance_pub-2] [INFO] [1750202368.575413518] [illuminance_sensor]: RAW=198 → 77.64705882352942%
+1750202369.5784531 [illuminance_pub-2] [INFO] [1750202369.576845742] [illuminance_sensor]: RAW=198 → 77.64705882352942%
+1750202370.5759315 [illuminance_pub-2] [INFO] [1750202370.575110573] [illuminance_sensor]: RAW=198 → 77.64705882352942%
+1750202371.5786970 [illuminance_pub-2] [INFO] [1750202371.577085346] [illuminance_sensor]: RAW=198 → 77.64705882352942%
+1750202372.5759974 [illuminance_pub-2] [INFO] [1750202372.575201980] [illuminance_sensor]: RAW=198 → 77.64705882352942%
+1750202373.5762987 [illuminance_pub-2] [INFO] [1750202373.575415532] [illuminance_sensor]: RAW=198 → 77.64705882352942%
+1750202374.5763359 [illuminance_pub-2] [INFO] [1750202374.575480235] [illuminance_sensor]: RAW=198 → 77.64705882352942%
+1750202375.5756116 [illuminance_pub-2] [INFO] [1750202375.574867728] [illuminance_sensor]: RAW=198 → 77.64705882352942%
+1750202376.5757141 [illuminance_pub-2] [INFO] [1750202376.574956740] [illuminance_sensor]: RAW=198 → 77.64705882352942%
+1750202376.5801775 [illuminance_pub-2] [INFO] [1750202376.579101636] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750202376.5823417 [decision_node-7] [INFO] [1750202376.581606955] [decision_node]: [INFO] send light request: False
+1750202376.6147137 [light_srv-4] [INFO] [1750202376.614079137] [light_actuator]: 💤 불을 끕니다.
+1750202376.9884429 [battery_pub-3] [WARN] [1750202376.987810295] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750202376.9901886 [battery_pub-3] [INFO] [1750202376.989657127] [battery_sensor]: I2C 초기화 성공
+1750202377.5756876 [illuminance_pub-2] [INFO] [1750202377.574878456] [illuminance_sensor]: RAW=198 → 77.64705882352942%
+1750202378.5763805 [illuminance_pub-2] [INFO] [1750202378.575323323] [illuminance_sensor]: RAW=198 → 77.64705882352942%
+1750202379.5754654 [illuminance_pub-2] [INFO] [1750202379.574825240] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202380.5772810 [illuminance_pub-2] [INFO] [1750202380.576065948] [illuminance_sensor]: RAW=224 → 87.84313725490196%
+1750202381.5754857 [illuminance_pub-2] [INFO] [1750202381.574847920] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202382.5787513 [illuminance_pub-2] [INFO] [1750202382.577704617] [illuminance_sensor]: RAW=240 → 94.11764705882352%
+1750202383.5775151 [illuminance_pub-2] [INFO] [1750202383.576601143] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202384.5758584 [illuminance_pub-2] [INFO] [1750202384.575141350] [illuminance_sensor]: RAW=240 → 94.11764705882352%
+1750202385.0043924 [vision_node-8] /home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolov5/utils/general.py:32: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+1750202385.0050831 [vision_node-8]   import pkg_resources as pkg
+1750202385.5757749 [illuminance_pub-2] [INFO] [1750202385.574984538] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202386.5784774 [illuminance_pub-2] [INFO] [1750202386.575748529] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202386.5826447 [illuminance_pub-2] [INFO] [1750202386.581163146] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750202386.5854959 [decision_node-7] [INFO] [1750202386.582257273] [decision_node]: [INFO] send light request: False
+1750202386.5898781 [light_srv-4] [INFO] [1750202386.586446322] [light_actuator]: 💤 불을 끕니다.
+1750202386.9890995 [battery_pub-3] [WARN] [1750202386.988358514] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750202386.9922051 [battery_pub-3] [INFO] [1750202386.991550008] [battery_sensor]: I2C 초기화 성공
+1750202387.5810611 [illuminance_pub-2] [INFO] [1750202387.575416214] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202388.5757415 [illuminance_pub-2] [INFO] [1750202388.575069310] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202389.5796199 [illuminance_pub-2] [INFO] [1750202389.578927329] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202390.5758071 [illuminance_pub-2] [INFO] [1750202390.575033387] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202391.5758281 [illuminance_pub-2] [INFO] [1750202391.574949374] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202392.3983543 [vision_node-8] Fusing layers... 
+1750202392.5810831 [illuminance_pub-2] [INFO] [1750202392.580188337] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202393.5754573 [illuminance_pub-2] [INFO] [1750202393.574827257] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202393.7306108 [vision_node-8] Model summary: 157 layers, 7012822 parameters, 0 gradients, 15.8 GFLOPs
+1750202393.7864711 [vision_node-8] [0:10:10.578360333] [1499] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:326 [0mlibcamera v0.5.0+59-d83ff0a4
+1750202393.9103925 [vision_node-8] [0:10:10.702270117] [1603] [1;33m WARN [1;37mRPiSdn [1;34msdn.cpp:40 [0mUsing legacy SDN tuning - please consider moving SDN inside rpi.denoise
+1750202393.9129267 [vision_node-8] [0:10:10.704922715] [1603] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:447 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx708@1a to Unicam device /dev/media3 and ISP device /dev/media0
+1750202393.9133434 [vision_node-8] [0:10:10.704992399] [1603] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1121 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+1750202393.9226704 [vision_node-8] [0:10:10.714595998] [1499] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1205 [0mconfiguring streams: (0) 640x480-XBGR8888 (1) 1536x864-SBGGR10_CSI2P
+1750202393.9240029 [vision_node-8] [0:10:10.715083230] [1603] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:622 [0mSensor: /base/soc/i2c0mux/i2c@1/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10 - Selected unicam format: 1536x864-pBAA
+1750202394.6022179 [illuminance_pub-2] [INFO] [1750202394.595734076] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202395.5774167 [illuminance_pub-2] [INFO] [1750202395.576569581] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202396.5257413 [vision_node-8] [INFO] [1750202396.525148133] [vision_node]: capture!!
+1750202396.5301738 [decision_node-7] Traceback (most recent call last):
+1750202396.5308197 [decision_node-7]   File "/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/decision_pkg/decision_node", line 33, in <module>
+1750202396.5328643 [decision_node-7]     sys.exit(load_entry_point('decision_pkg==0.0.0', 'console_scripts', 'decision_node')())
+1750202396.5332925 [decision_node-7]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750202396.5339019 [decision_node-7]   File "/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/python3.11/site-packages/decision_pkg/decision_node.py", line 111, in main
+1750202396.5345306 [decision_node-7]     rclpy.spin(node)
+1750202396.5348086 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750202396.5350001 [decision_node-7]     executor.spin_once()
+1750202396.5351689 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750202396.5353339 [decision_node-7]     self._spin_once_impl(timeout_sec)
+1750202396.5355449 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 748, in _spin_once_impl
+1750202396.5366688 [decision_node-7]     raise handler.exception()
+1750202396.5371065 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/task.py", line 254, in __call__
+1750202396.5373762 [decision_node-7]     self._handler.send(None)
+1750202396.5375776 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 447, in handler
+1750202396.5377965 [decision_node-7]     await call_coroutine(entity, arg)
+1750202396.5379653 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 372, in _execute_subscription
+1750202396.5381858 [decision_node-7]     await await_or_execute(sub.callback, msg)
+1750202396.5384502 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 107, in await_or_execute
+1750202396.5387342 [decision_node-7]     return callback(*args)
+1750202396.5423129 [decision_node-7]            ^^^^^^^^^^^^^^^
+1750202396.5430958 [decision_node-7]   File "/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/python3.11/site-packages/decision_pkg/decision_node.py", line 63, in vision_listener_callback
+1750202396.5439980 [decision_node-7]     self.send_buzzer_request(0.5)
+1750202396.5485339 [decision_node-7]   File "/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/python3.11/site-packages/decision_pkg/decision_node.py", line 49, in send_buzzer_request
+1750202396.5493736 [decision_node-7]     req.time = time
+1750202396.5506499 [decision_node-7]     ^^^^^^^^
+1750202396.5545259 [decision_node-7]   File "/home/dongjae/ros2_kart_ws/install/interfaces/lib/python3.11/site-packages/interfaces/srv/_buzzer_command.py", line 127, in time
+1750202396.5554941 [decision_node-7]     assert \
+1750202396.5599303 [decision_node-7] AssertionError: The 'time' field must be of type 'int'
+1750202396.5923085 [illuminance_pub-2] [INFO] [1750202396.589191238] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202396.6124597 [illuminance_pub-2] [INFO] [1750202396.608725844] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750202397.0047531 [battery_pub-3] [WARN] [1750202397.004004718] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750202397.0109622 [battery_pub-3] [INFO] [1750202397.009905092] [battery_sensor]: I2C 초기화 성공
+1750202397.0344315 [ERROR] [decision_node-7]: process has died [pid 1497, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/decision_pkg/decision_node --ros-args -r __node:=decision_node'].
+1750202397.5801318 [illuminance_pub-2] [INFO] [1750202397.578765647] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202398.5778944 [illuminance_pub-2] [INFO] [1750202398.577225277] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202399.5800903 [illuminance_pub-2] [INFO] [1750202399.579279392] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202400.5835817 [illuminance_pub-2] [INFO] [1750202400.582978565] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202401.5796044 [illuminance_pub-2] [INFO] [1750202401.578946554] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202402.5775707 [illuminance_pub-2] [INFO] [1750202402.576959832] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202403.0830760 [vision_node-8] [INFO] [1750202403.082551644] [vision_node]: capture!!
+1750202403.5858371 [illuminance_pub-2] [INFO] [1750202403.582203900] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202404.5801420 [illuminance_pub-2] [INFO] [1750202404.578827629] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202405.1872528 [vision_node-8] [INFO] [1750202405.184835891] [vision_node]: capture!!
+1750202405.5800653 [illuminance_pub-2] [INFO] [1750202405.578106245] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202406.5820312 [illuminance_pub-2] [INFO] [1750202406.580730607] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202406.5944963 [illuminance_pub-2] [INFO] [1750202406.588392419] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750202406.9905543 [battery_pub-3] [WARN] [1750202406.988807743] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750202406.9998989 [battery_pub-3] [INFO] [1750202406.990592712] [battery_sensor]: I2C 초기화 성공
+1750202407.3107936 [vision_node-8] [INFO] [1750202407.310319942] [vision_node]: capture!!
+1750202407.5796165 [illuminance_pub-2] [INFO] [1750202407.578868757] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750202408.5762889 [illuminance_pub-2] [INFO] [1750202408.575479957] [illuminance_sensor]: RAW=242 → 94.90196078431372%
+1750202409.3889608 [vision_node-8] [INFO] [1750202409.388307856] [vision_node]: capture!!
+1750202409.5816095 [illuminance_pub-2] [INFO] [1750202409.580568406] [illuminance_sensor]: RAW=242 → 94.90196078431372%
+1750202410.5826914 [illuminance_pub-2] [INFO] [1750202410.581359953] [illuminance_sensor]: RAW=200 → 78.43137254901961%
+1750202411.5904510 [illuminance_pub-2] [INFO] [1750202411.588517600] [illuminance_sensor]: RAW=200 → 78.43137254901961%
+1750202412.5844994 [illuminance_pub-2] [INFO] [1750202412.582456731] [illuminance_sensor]: RAW=200 → 78.43137254901961%
+1750202413.5790212 [illuminance_pub-2] [INFO] [1750202413.578030188] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202414.5830367 [illuminance_pub-2] [INFO] [1750202414.581503089] [illuminance_sensor]: RAW=200 → 78.43137254901961%
+1750202415.5799227 [illuminance_pub-2] [INFO] [1750202415.578241639] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202416.5872438 [illuminance_pub-2] [INFO] [1750202416.581457157] [illuminance_sensor]: RAW=200 → 78.43137254901961%
+1750202416.5896094 [illuminance_pub-2] [INFO] [1750202416.589015960] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750202416.9890993 [battery_pub-3] [WARN] [1750202416.988487183] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750202416.9920931 [battery_pub-3] [INFO] [1750202416.990681258] [battery_sensor]: I2C 초기화 성공
+1750202417.5810816 [illuminance_pub-2] [INFO] [1750202417.576757544] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202418.5888140 [illuminance_pub-2] [INFO] [1750202418.583360247] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202419.5828934 [illuminance_pub-2] [INFO] [1750202419.581781246] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202420.5804946 [illuminance_pub-2] [INFO] [1750202420.578588305] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202421.5821605 [illuminance_pub-2] [INFO] [1750202421.580027342] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202422.5767601 [illuminance_pub-2] [INFO] [1750202422.575657337] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202423.5815744 [illuminance_pub-2] [INFO] [1750202423.580997026] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202424.5831983 [illuminance_pub-2] [INFO] [1750202424.582595342] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202425.5766039 [illuminance_pub-2] [INFO] [1750202425.575810190] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202426.1461761 [vision_node-8] [INFO] [1750202426.145576417] [vision_node]: capture!!
+1750202426.5882590 [illuminance_pub-2] [INFO] [1750202426.583054147] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202426.5983102 [illuminance_pub-2] [INFO] [1750202426.595159312] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750202426.9895997 [battery_pub-3] [WARN] [1750202426.988958772] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750202426.9951458 [battery_pub-3] [INFO] [1750202426.991709600] [battery_sensor]: I2C 초기화 성공
+1750202427.5771840 [illuminance_pub-2] [INFO] [1750202427.576464310] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202428.5857563 [illuminance_pub-2] [INFO] [1750202428.579409614] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202429.5841870 [illuminance_pub-2] [INFO] [1750202429.581254537] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202430.3272862 [vision_node-8] [INFO] [1750202430.326686563] [vision_node]: capture!!
+1750202430.5841148 [illuminance_pub-2] [INFO] [1750202430.579200232] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202431.5786886 [illuminance_pub-2] [INFO] [1750202431.577609113] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202432.6010153 [illuminance_pub-2] [INFO] [1750202432.590007552] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202433.5834985 [illuminance_pub-2] [INFO] [1750202433.581313554] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202434.5783358 [illuminance_pub-2] [INFO] [1750202434.577114439] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202435.5817268 [illuminance_pub-2] [INFO] [1750202435.580425811] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202436.5841753 [illuminance_pub-2] [INFO] [1750202436.581996917] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202436.5914769 [illuminance_pub-2] [INFO] [1750202436.589341829] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750202436.9940295 [battery_pub-3] [WARN] [1750202436.993400331] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750202436.9966428 [battery_pub-3] [INFO] [1750202436.995575281] [battery_sensor]: I2C 초기화 성공
+1750202437.5778358 [illuminance_pub-2] [INFO] [1750202437.577192196] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202438.5838816 [illuminance_pub-2] [INFO] [1750202438.582693310] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202439.5767918 [illuminance_pub-2] [INFO] [1750202439.575614386] [illuminance_sensor]: RAW=199 → 78.03921568627452%
+1750202440.5855994 [illuminance_pub-2] [INFO] [1750202440.584443515] [illuminance_sensor]: RAW=198 → 77.64705882352942%
+1750202441.5820570 [illuminance_pub-2] [INFO] [1750202441.580919822] [illuminance_sensor]: RAW=198 → 77.64705882352942%
+1750202442.5801258 [illuminance_pub-2] [INFO] [1750202442.577387446] [illuminance_sensor]: RAW=198 → 77.64705882352942%
+1750202443.5100989 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1750202443.5885680 [battery_pub-3] Traceback (most recent call last):
+1750202443.5906150 [battery_pub-3]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/battery_pub", line 33, in <module>
+1750202443.5954633 [battery_pub-3]     sys.exit(load_entry_point('sensor_pkg==0.0.0', 'console_scripts', 'battery_pub')())
+1750202443.5988400 [battery_pub-3]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750202443.6009965 [battery_pub-3]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/battery_node.py", line 62, in main
+1750202443.6028860 [battery_pub-3]     rclpy.spin(node)
+1750202443.6043749 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750202443.6060629 [battery_pub-3]     executor.spin_once()
+1750202443.6088815 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750202443.6103787 [battery_pub-3]     self._spin_once_impl(timeout_sec)
+1750202443.6126559 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 740, in _spin_once_impl
+1750202443.6170719 [battery_pub-3]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+1750202443.6182663 [battery_pub-3]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750202443.6192727 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+1750202443.6224213 [battery_pub-3]     return next(self._cb_iter)
+1750202443.6254425 [battery_pub-3]            ^^^^^^^^^^^^^^^^^^^
+1750202443.6278210 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+1750202443.6303854 [battery_pub-3]     wait_set.wait(timeout_nsec)
+1750202443.6320944 [battery_pub-3] KeyboardInterrupt
+1750202443.6370957 [light_srv-4] Traceback (most recent call last):
+1750202443.6394839 [light_srv-4]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/light_srv", line 33, in <module>
+1750202443.6422687 [light_srv-4]     sys.exit(load_entry_point('actuator_pkg==0.0.0', 'console_scripts', 'light_srv')())
+1750202443.6454124 [light_srv-4]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750202443.6473062 [light_srv-4]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/light_service.py", line 50, in main
+1750202443.6492097 [light_srv-4]     rclpy.spin(node)
+1750202443.6509125 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750202443.6521518 [light_srv-4]     executor.spin_once()
+1750202443.6533327 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750202443.6585894 [light_srv-4]     self._spin_once_impl(timeout_sec)
+1750202443.6596239 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 740, in _spin_once_impl
+1750202443.6613462 [light_srv-4]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+1750202443.6725185 [light_srv-4]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750202443.6738691 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+1750202443.6747508 [light_srv-4]     return next(self._cb_iter)
+1750202443.6756985 [light_srv-4]            ^^^^^^^^^^^^^^^^^^^
+1750202443.6799731 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+1750202443.6816206 [light_srv-4]     wait_set.wait(timeout_nsec)
+1750202443.6826136 [light_srv-4] KeyboardInterrupt
+1750202443.6899917 [vision_node-8] Traceback (most recent call last):
+1750202443.6918588 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/vision_pkg/vision_node", line 33, in <module>
+1750202443.6954544 [vision_node-8]     sys.exit(load_entry_point('vision_pkg==0.0.0', 'console_scripts', 'vision_node')())
+1750202443.7008407 [vision_node-8]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750202443.7020986 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/object_detection_node.py", line 41, in main
+1750202443.7032979 [vision_node-8]     rclpy.spin(node)
+1750202443.7044823 [vision_node-8]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750202443.7082250 [vision_node-8]     executor.spin_once()
+1750202443.7095344 [vision_node-8]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750202443.7127395 [vision_node-8]     self._spin_once_impl(timeout_sec)
+1750202443.7153544 [vision_node-8]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 746, in _spin_once_impl
+1750202443.7164724 [vision_node-8]     handler()
+1750202443.7200413 [vision_node-8]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/task.py", line 254, in __call__
+1750202443.7211461 [vision_node-8]     self._handler.send(None)
+1750202443.7223699 [vision_node-8]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 447, in handler
+1750202443.7243268 [vision_node-8]     await call_coroutine(entity, arg)
+1750202443.7324247 [vision_node-8]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 361, in _execute_timer
+1750202443.7332382 [vision_node-8]     await await_or_execute(tmr.callback)
+1750202443.7398403 [vision_node-8]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 107, in await_or_execute
+1750202443.7410467 [vision_node-8]     return callback(*args)
+1750202443.7421055 [vision_node-8]            ^^^^^^^^^^^^^^^
+1750202443.7484331 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/object_detection_node.py", line 25, in process_frame
+1750202443.7494302 [vision_node-8]     detections = self.detector.detect(frame)
+1750202443.7503190 [vision_node-8]                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750202443.7512102 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolo_detector.py", line 31, in detect
+1750202443.7521486 [vision_node-8]     pred = self.model(img, augment=False)
+1750202443.7531648 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750202443.7538223 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+1750202443.7546382 [vision_node-8]     return self._call_impl(*args, **kwargs)
+1750202443.7558243 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750202443.7567551 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+1750202443.7578537 [vision_node-8]     return forward_call(*args, **kwargs)
+1750202443.7588711 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750202443.7601001 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolov5/models/common.py", line 700, in forward
+1750202443.7616675 [vision_node-8]     y = self.model(im, augment=augment, visualize=visualize) if augment or visualize else self.model(im)
+1750202443.7628226 [vision_node-8]                                                                                           ^^^^^^^^^^^^^^
+1750202443.7640350 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+1750202443.7651002 [vision_node-8]     return self._call_impl(*args, **kwargs)
+1750202443.7662826 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750202443.7673538 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+1750202443.7683778 [vision_node-8]     return forward_call(*args, **kwargs)
+1750202443.7693384 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750202443.7702239 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolov5/models/yolo.py", line 270, in forward
+1750202443.7710798 [vision_node-8]     return self._forward_once(x, profile, visualize)  # single-scale inference, train
+1750202443.7721639 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750202443.7732897 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolov5/models/yolo.py", line 169, in _forward_once
+1750202443.7744126 [vision_node-8]     x = m(x)  # run
+1750202443.7755516 [vision_node-8]         ^^^^
+1750202443.7767098 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+1750202443.7777724 [vision_node-8]     return self._call_impl(*args, **kwargs)
+1750202443.7786880 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750202443.7796538 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+1750202443.7821653 [imu_pub-1] [WARN] [1750202443.520386878] [imu_sensor]: I2C-1 연결 불량 발생
+1750202443.7833850 [imu_pub-1] Failed to publish log message to rosout: publisher's context is invalid, at /home/dongjae/ros2_humble_ws/src/ros2/rcl/rcl/src/rcl/publisher.c:389
+1750202443.7886508 [imu_pub-1] [INFO] [1750202443.531578868] [imu_sensor]: I2C-3 초기화 성공
+1750202443.7898402 [imu_pub-1] Failed to publish log message to rosout: publisher's context is invalid, at /home/dongjae/ros2_humble_ws/src/ros2/rcl/rcl/src/rcl/publisher.c:389
+1750202443.7976034 [vision_node-8]     return forward_call(*args, **kwargs)
+1750202443.7988055 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750202443.8000679 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolov5/models/common.py", line 247, in forward
+1750202443.8009028 [vision_node-8]     return self.cv3(torch.cat((self.m(self.cv1(x)), self.cv2(x)), 1))
+1750202443.8085737 [vision_node-8]                                                     ^^^^^^^^^^^
+1750202443.8096795 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+1750202443.8106596 [vision_node-8]     return self._call_impl(*args, **kwargs)
+1750202443.8115747 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750202443.8126974 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+1750202443.8136697 [vision_node-8]     return forward_call(*args, **kwargs)
+1750202443.8207183 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750202443.8218970 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolov5/models/common.py", line 91, in forward_fuse
+1750202443.8230164 [vision_node-8]     return self.act(self.conv(x))
+1750202443.8239598 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^
+1750202443.8251731 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+1750202443.8325982 [vision_node-8]     return self._call_impl(*args, **kwargs)
+1750202443.8336687 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750202443.8347213 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+1750202443.8358121 [vision_node-8]     return forward_call(*args, **kwargs)
+1750202443.8367522 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750202443.8378618 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/activation.py", line 432, in forward
+1750202443.8446238 [vision_node-8]     return F.silu(input, inplace=self.inplace)
+1750202443.8457570 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750202443.8469164 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/functional.py", line 2379, in silu
+1750202443.8479085 [vision_node-8]     return torch._C._nn.silu_(input)
+1750202443.8489792 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^
+1750202443.8547094 [vision_node-8] KeyboardInterrupt
+1750202443.8575742 [buzzer_srv-5] Traceback (most recent call last):
+1750202443.8593700 [buzzer_srv-5]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/buzzer_srv", line 33, in <module>
+1750202443.8639436 [buzzer_srv-5]     sys.exit(load_entry_point('actuator_pkg==0.0.0', 'console_scripts', 'buzzer_srv')())
+1750202443.8646758 [buzzer_srv-5]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750202443.8653476 [buzzer_srv-5]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/buzzer_service.py", line 51, in main
+1750202443.8663158 [buzzer_srv-5]     rclpy.shutdown()
+1750202443.8673160 [buzzer_srv-5]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 130, in shutdown
+1750202443.8704877 [buzzer_srv-5]     _shutdown(context=context)
+1750202443.8721504 [buzzer_srv-5]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/utilities.py", line 58, in shutdown
+1750202443.8761103 [buzzer_srv-5]     return context.shutdown()
+1750202443.8774350 [buzzer_srv-5]            ^^^^^^^^^^^^^^^^^^
+1750202443.8819814 [buzzer_srv-5]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/context.py", line 102, in shutdown
+1750202443.8827386 [buzzer_srv-5]     self.__context.shutdown()
+1750202443.8837869 [buzzer_srv-5] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at /home/dongjae/ros2_humble_ws/src/ros2/rcl/rcl/src/rcl/init.c:241
+1750202443.8864617 [illuminance_pub-2] Traceback (most recent call last):
+1750202443.8900003 [illuminance_pub-2]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/illuminance_pub", line 33, in <module>
+1750202443.8907869 [illuminance_pub-2]     sys.exit(load_entry_point('sensor_pkg==0.0.0', 'console_scripts', 'illuminance_pub')())
+1750202443.8913310 [illuminance_pub-2]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750202443.8961842 [illuminance_pub-2]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/illuminance_node.py", line 71, in main
+1750202443.8968217 [illuminance_pub-2]     rclpy.shutdown()
+1750202443.8977008 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 130, in shutdown
+1750202443.9008715 [illuminance_pub-2]     _shutdown(context=context)
+1750202443.9026699 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/utilities.py", line 58, in shutdown
+1750202443.9059911 [illuminance_pub-2]     return context.shutdown()
+1750202443.9073305 [illuminance_pub-2]            ^^^^^^^^^^^^^^^^^^
+1750202443.9080915 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/context.py", line 102, in shutdown
+1750202443.9095731 [illuminance_pub-2]     self.__context.shutdown()
+1750202443.9123988 [illuminance_pub-2] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at /home/dongjae/ros2_humble_ws/src/ros2/rcl/rcl/src/rcl/init.c:241
+1750202443.9148257 [imu_pub-1] Traceback (most recent call last):
+1750202443.9158456 [imu_pub-1]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/imu_pub", line 33, in <module>
+1750202443.9169195 [imu_pub-1]     sys.exit(load_entry_point('sensor_pkg==0.0.0', 'console_scripts', 'imu_pub')())
+1750202443.9179471 [imu_pub-1]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750202443.9203753 [imu_pub-1]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/imu_node.py", line 132, in main
+1750202443.9219987 [imu_pub-1]     rclpy.shutdown()
+1750202443.9230313 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 130, in shutdown
+1750202443.9275937 [imu_pub-1]     _shutdown(context=context)
+1750202443.9284728 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/utilities.py", line 58, in shutdown
+1750202443.9290450 [imu_pub-1]     return context.shutdown()
+1750202443.9296291 [imu_pub-1]            ^^^^^^^^^^^^^^^^^^
+1750202443.9364016 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/context.py", line 102, in shutdown
+1750202443.9373014 [imu_pub-1]     self.__context.shutdown()
+1750202443.9382706 [imu_pub-1] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at /home/dongjae/ros2_humble_ws/src/ros2/rcl/rcl/src/rcl/init.c:241
+1750202443.9933343 [ERROR] [battery_pub-3]: process has died [pid 1489, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/battery_pub --ros-args -r __node:=battery_sensor'].
+1750202444.0151820 [ERROR] [light_srv-4]: process has died [pid 1491, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/light_srv --ros-args -r __node:=light_actuator'].
+1750202444.0406928 [ERROR] [buzzer_srv-5]: process has died [pid 1493, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/buzzer_srv --ros-args -r __node:=buzzer_actuator'].
+1750202444.1860471 [ERROR] [illuminance_pub-2]: process has died [pid 1487, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/illuminance_pub --ros-args -r __node:=illuminance_sensor'].
+1750202444.2296715 [ERROR] [imu_pub-1]: process has died [pid 1485, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/imu_pub --ros-args -r __node:=imu_sensor'].
+1750202445.7856100 [ERROR] [vision_node-8]: process has died [pid 1499, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/vision_pkg/vision_node --ros-args -r __node:=vision_node'].
+1750202448.5752985 [ERROR] [ble_node-6]: process[ble_node-6] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+1750202448.5770125 [INFO] [ble_node-6]: sending signal 'SIGTERM' to process[ble_node-6]
+1750202453.5773945 [ERROR] [ble_node-6]: process[ble_node-6] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+1750202453.5814764 [INFO] [ble_node-6]: sending signal 'SIGKILL' to process[ble_node-6]
+1750202453.6066203 [ERROR] [ble_node-6]: process has died [pid 1495, exit code -9, cmd '/home/dongjae/ros2_kart_ws/install/app_interface_pkg/lib/app_interface_pkg/ble_node --ros-args -r __node:=ble_node'].

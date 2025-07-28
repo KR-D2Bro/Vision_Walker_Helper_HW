@@ -4,130 +4,101 @@ ROS2 Node for BLE GATT Server using Bluezero on Raspberry Pi
 """
 import rclpy
 from rclpy.node import Node
-import threading
+from threading import Thread
 import subprocess
 import asyncio
-#import re
-from bluezero import adapter
-from bluezero import peripheral
-from bluezero import async_tools
+from interfaces.msg import Config, BatteryState
+from interfaces.srv import ConfigSrv
 from app_interface_pkg.ble_agent import register_agent
+from app_interface_pkg.ble_periph import Ble_peripheral
+
 
 class BLEGATTServer(Node):
     def __init__(self):
         super().__init__('ble_gatt_server')
 
-        # Discover the Bluetooth adapter address
-        # Get the first available Bluetooth adapter
-        adapters = adapter.list_adapters()
-        if not adapters:
-            self.get_logger().error('No Bluetooth adapters found')
-            raise RuntimeError('No Bluetooth adapter found')
-        adapter_address = adapters[0]
-        self.get_logger().info(f'Using adapter: {adapter_address}')
+        self.config = [False, False,0]
+        self.config_cli = self.create_client(ConfigSrv,'/srv/config')
+        Thread(target = self.wait_config_srv, daemon=True).start()
 
-        # Configure Bluezero Peripheral
-        self.ble_periph = peripheral.Peripheral(adapter_address=adapter_address,
-                                           local_name='ROS2Pi',
-                                           appearance=0
-                                           )
-        # Assign connection event callbacks
-        self.ble_periph.on_connect = self.handle_connect
-        self.ble_periph.on_disconnect = self.handle_disconnect
+        self.periph = None
+        
+        self.ble_pub = self.create_publisher(Config, '/ble/config', 10)
+        self.battery_sub = self.create_subscription(BatteryState,
+                                                    '/battery_state/data',
+                                                    self.battery_listener_callback,
+                                                    10)
+        self.last_notified_percentage = 100
 
-        # Define a custom service and characteristic UUIDs
-        SERVICE_UUID = '12345678-1234-5678-1234-56789abcdef0'
-        CHAR_UUID    = 'abcdef01-1234-5678-1234-56789abcdef0'
+        self.ble_lock = self.create_timer(0.01, self._dummy_timer)
 
-        self.stored_value = [0x01]
-
-        # Create service
-        self.ble_periph.add_service(srv_id=1,
-                                    uuid=SERVICE_UUID,
-                                    primary=True)
-
-        # Create characteristic with read and write properties
-        self.ble_periph.add_characteristic(srv_id=1,
-                                           chr_id=1,
-                                           uuid=CHAR_UUID,
-                                           value=self.stored_value,
-                                           notifying=False,
-                                           flags=['encrypt-read', 'encrypt-write','write-without-response','notify'],
-                                           read_callback=self.handle_read,
-                                           write_callback=self.handle_write)
-
-        # Run the Bluezero peripheral in a background thread
-        thread = threading.Thread(target=self.ble_periph.publish)
-        thread.daemon = True
-        thread.start()
-
-        self.get_logger().info('BLE GATT Server started')
-
-    
-    def handle_connect(self, device_address):
-        """
-        Called when a Central device connects to this Peripheral
-        :param device_address: the BD_ADDR of the connecting Central
-        """
-        self.get_logger().info(f'Central connected: {device_address}')
-
-    def handle_disconnect(self, device_address):
-        """
-        Called when a Central device disconnects
-        :param device_address: the BD_ADDR of the disconnecting Central
-        """
-        self.get_logger().info(f'Central disconnected: {device_address}')
+    def publish_config(self):
+        # BLE 쓰레드에서 이 메소드 호출해서 ROS2 토픽에 뿌리도록 함
+        msg = Config()
+        msg.light = bool(self.config[0])
+        msg.alarm = bool(self.config[1])
+        msg.volume = int(self.config[2])
+        self.ble_pub.publish(msg)
+        
+        self.get_logger().info(f"Config Published: {self.config}")
 
 
-    def handle_read(self):
-        """
-        Read callback: returns current value of the characteristic
-        """
-        self.get_logger().info(f'Handle Read: returning {self.stored_value}')
-        return self.stored_value
+    def battery_listener_callback(self, msg:BatteryState):
+        percentage = msg.percentage
+        if percentage != self.last_notified_percentage:
+            if self.periph is not None:
+                self.periph.update_battery_state(percentage)
+            self.last_notified_percentage = percentage
 
-    def handle_write(self, value,options):
-        """
-        Write callback: receives a list of byte values
-        """
+    def wait_config_srv(self):
+        self.config_cli.wait_for_service(timeout_sec=60.0)
+        req = ConfigSrv.Request()
+        future = self.config_cli.call_async(req)
+        future.add_done_callback(self.handle_config_response)
+
+    def handle_config_response(self,future):
         try:
-            self.stored_value = list(value)
-            self.get_logger().info(f'Handle Write: stored_value set to {self.stored_value}')
-
+            res = future.result()
+            self.config[0] = res.light
+            self.config[1] = res.alarm
+            self.config[2] = res.volume
         except Exception as e:
-            print("WRITE ERROR!!!!")
-            raise
+            self.get_logger().error(f'[Error] 서비스 요청 중 오류: {e}')
 
-    def notify_callback(notifying, characteristic):
-        if notifying:
-            async_tools.add_timer_seconds(2, update_value, characteristic)
+    # dummy 콜백: 이 타이머는 BLE 쓰레드와 시분할로 실행될 때,
+    # 자잘한 처리를 하기 위해 빈 콜백을 두는 것 뿐입니다.
+    def _dummy_timer(self):
+        pass
 
-    def destroy_node(self):
-        # Stop Bluezero peripheral
-        try:
-            self.ble_periph.quit()
-        except Exception:
-            pass
-        super().destroy_node()
+
 
 def main(args=None):
+    rclpy.init(args=args)
+    node = BLEGATTServer()
+    ble_periph = Ble_peripheral(node=node)
+    node.periph = ble_periph
+
+    thread = Thread(target=ble_periph.ble_periph.publish, daemon=True)
+    thread.start()
+    
     # 1) asyncio 이벤트 루프 가져오기
     loop = asyncio.get_event_loop()
 
     # 2) 에이전트 등록 (bus 인스턴스도 같이 얻긴 하지만, 버리지 않으면 됨)
-    loop.run_until_complete(register_agent())
+    loop.run_until_complete(register_agent(ble_periph))
 
     # 3) 루프를 백그라운드 스레드에서 계속 돌린다
-    loop_thread = threading.Thread(target=loop.run_forever, daemon=True)
+    loop_thread = Thread(target=loop.run_forever, daemon=True)
     loop_thread.start()
 
-    rclpy.init(args=args)
-    node = BLEGATTServer()
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
         pass
     finally:
+        thread.join()
+        thread.close()
+
         node.destroy_node()
         rclpy.shutdown()
 

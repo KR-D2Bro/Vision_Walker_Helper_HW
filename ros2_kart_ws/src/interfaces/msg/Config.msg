@@ -1,0 +1,5 @@
+
+bool light
+bool alarm
+
+uint8 volume

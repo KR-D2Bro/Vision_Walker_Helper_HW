@@ -1,0 +1,85 @@
+1750215466.8660712 [INFO] [launch]: All log files can be found below /home/dongjae/.ros/log/2025-06-18-11-57-46-861985-raspberrypi-699
+1750215466.8672600 [INFO] [launch]: Default logging verbosity is set to INFO
+1750215467.1770322 [INFO] [imu_pub-1]: process started with pid [933]
+1750215467.1901658 [INFO] [illuminance_pub-2]: process started with pid [935]
+1750215467.1909943 [INFO] [battery_pub-3]: process started with pid [937]
+1750215467.1915998 [INFO] [light_srv-4]: process started with pid [939]
+1750215467.1921718 [INFO] [buzzer_srv-5]: process started with pid [941]
+1750215467.1926780 [INFO] [ble_node-6]: process started with pid [943]
+1750215467.1931775 [INFO] [decision_node-7]: process started with pid [945]
+1750215467.2057846 [INFO] [vision_node-8]: process started with pid [947]
+1750215470.0223303 [buzzer_srv-5] [INFO] [1750215470.018446784] [buzzer_actuator]: 🔔 PWM Buzzer Control Node Started
+1750215470.2405736 [illuminance_pub-2] [INFO] [1750215470.239692007] [illuminance_sensor]: Initialized PCF8591 at 0x48
+1750215470.3128014 [battery_pub-3] [INFO] [1750215470.311862858] [battery_sensor]: I2C 초기화 성공
+1750215470.3176849 [battery_pub-3] [INFO] [1750215470.316026118] [battery_sensor]: Battery State Publisher started, publishing on /battery_state/data
+1750215470.3426440 [decision_node-7] [INFO] [1750215470.341926266] [decision_node]: Loaded config from disk
+1750215470.3671114 [imu_pub-1] [INFO] [1750215470.366275729] [imu_sensor]: I2C-3 초기화 성공
+1750215470.7256041 [imu_pub-1] [INFO] [1750215470.724877988] [imu_sensor]: FallDetectionNode started: roll_thr=65.0°, pitch_thr=65.0°
+1750215470.7316051 [ble_node-6] [INFO] [1750215470.730787451] [ble_node]: Using adapter: D8:3A:DD:F2:4C:84
+1750215470.8079774 [ble_node-6] [INFO] [1750215470.806916765] [ble_node]: BLE GATT Server started
+1750215470.8142028 [ble_node-6] [INFO] [1750215470.813572710] [ble_node]: Config service added
+1750215471.1887264 [illuminance_pub-2] [INFO] [1750215471.186271450] [illuminance_sensor]: RAW=242 → 94.90196078431372%
+1750215472.1867828 [illuminance_pub-2] [INFO] [1750215472.186070172] [illuminance_sensor]: RAW=234 → 91.76470588235294%
+1750215473.1867003 [illuminance_pub-2] [INFO] [1750215473.186018246] [illuminance_sensor]: RAW=246 → 96.47058823529412%
+1750215473.2404354 [imu_pub-1] [WARN] [1750215473.239654431] [imu_sensor]: FALL! Roll=-65.2°, Pitch=-21.2°
+1750215473.2423983 [decision_node-7] [INFO] [1750215473.241579857] [decision_node]: [INFO] send buzzer request: 3.0 seconds
+1750215473.2452602 [buzzer_srv-5] [INFO] [1750215473.244476746] [buzzer_actuator]: 🔊 Buzzer ON (Duty: 90%) 3.0Sec
+1750215473.2516510 [imu_pub-1] [WARN] [1750215473.250984394] [imu_sensor]: FALL! Roll=-110.3°, Pitch=-2.9°
+1750215473.2601883 [imu_pub-1] [WARN] [1750215473.259510357] [imu_sensor]: FALL! Roll=-69.2°, Pitch=-14.4°
+1750215473.3517854 [imu_pub-1] [WARN] [1750215473.349678708] [imu_sensor]: FALL! Roll=-71.4°, Pitch=-2.8°
+1750215474.1868670 [illuminance_pub-2] [INFO] [1750215474.186155152] [illuminance_sensor]: RAW=247 → 96.86274509803921%
+1750215475.1868365 [illuminance_pub-2] [INFO] [1750215475.186137448] [illuminance_sensor]: RAW=240 → 94.11764705882352%
+1750215476.1892722 [illuminance_pub-2] [INFO] [1750215476.186561744] [illuminance_sensor]: RAW=239 → 93.72549019607843%
+1750215477.1901653 [illuminance_pub-2] [INFO] [1750215477.189460539] [illuminance_sensor]: RAW=238 → 93.33333333333333%
+1750215478.1878712 [illuminance_pub-2] [INFO] [1750215478.186454094] [illuminance_sensor]: RAW=250 → 98.0392156862745%
+1750215479.1897619 [illuminance_pub-2] [INFO] [1750215479.188894705] [illuminance_sensor]: RAW=249 → 97.6470588235294%
+1750215480.1867261 [illuminance_pub-2] [INFO] [1750215480.186064075] [illuminance_sensor]: RAW=249 → 97.6470588235294%
+1750215480.1924255 [illuminance_pub-2] [INFO] [1750215480.190985834] [illuminance_sensor]: [INFO] Illuminance publish: isNight=True
+1750215480.1932886 [decision_node-7] [INFO] [1750215480.191067741] [decision_node]: [INFO] send light request: True
+1750215480.2130666 [battery_pub-3] [WARN] [1750215480.212381130] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750215480.2161458 [battery_pub-3] [INFO] [1750215480.215461945] [battery_sensor]: I2C 초기화 성공
+1750215480.2305484 [light_srv-4] [INFO] [1750215480.229359649] [light_actuator]: 💡 불을 켭니다.
+1750215481.1891205 [illuminance_pub-2] [INFO] [1750215481.186444574] [illuminance_sensor]: RAW=249 → 97.6470588235294%
+1750215482.1898420 [illuminance_pub-2] [INFO] [1750215482.186622462] [illuminance_sensor]: RAW=249 → 97.6470588235294%
+1750215483.1875896 [illuminance_pub-2] [INFO] [1750215483.186722740] [illuminance_sensor]: RAW=249 → 97.6470588235294%
+1750215484.1870062 [illuminance_pub-2] [INFO] [1750215484.186039906] [illuminance_sensor]: RAW=249 → 97.6470588235294%
+1750215485.1867135 [illuminance_pub-2] [INFO] [1750215485.186006701] [illuminance_sensor]: RAW=238 → 93.33333333333333%
+1750215486.1868367 [illuminance_pub-2] [INFO] [1750215486.186141071] [illuminance_sensor]: RAW=238 → 93.33333333333333%
+1750215487.1898806 [illuminance_pub-2] [INFO] [1750215487.187259219] [illuminance_sensor]: RAW=232 → 90.98039215686275%
+1750215488.1887057 [illuminance_pub-2] [INFO] [1750215488.186674237] [illuminance_sensor]: RAW=230 → 90.19607843137256%
+1750215488.8133886 [vision_node-8] /home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolov5/utils/general.py:32: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+1750215488.8138559 [vision_node-8]   import pkg_resources as pkg
+1750215489.1905692 [illuminance_pub-2] [INFO] [1750215489.188363736] [illuminance_sensor]: RAW=228 → 89.41176470588236%
+1750215490.1870277 [illuminance_pub-2] [INFO] [1750215490.186288624] [illuminance_sensor]: RAW=227 → 89.01960784313725%
+1750215490.1912968 [illuminance_pub-2] [INFO] [1750215490.190526735] [illuminance_sensor]: [INFO] Illuminance publish: isNight=True
+1750215490.1935246 [decision_node-7] [INFO] [1750215490.192617476] [decision_node]: [INFO] send light request: True
+1750215490.1997972 [light_srv-4] [INFO] [1750215490.196171384] [light_actuator]: 💡 불을 켭니다.
+1750215490.2131038 [battery_pub-3] [WARN] [1750215490.212465513] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750215490.2155612 [battery_pub-3] [INFO] [1750215490.214505087] [battery_sensor]: I2C 초기화 성공
+1750215491.1886368 [illuminance_pub-2] [INFO] [1750215491.187687105] [illuminance_sensor]: RAW=227 → 89.01960784313725%
+1750215492.1868985 [illuminance_pub-2] [INFO] [1750215492.186134123] [illuminance_sensor]: RAW=227 → 89.01960784313725%
+1750215493.1865666 [illuminance_pub-2] [INFO] [1750215493.185894771] [illuminance_sensor]: RAW=227 → 89.01960784313725%
+1750215494.1872873 [illuminance_pub-2] [INFO] [1750215494.186268363] [illuminance_sensor]: RAW=227 → 89.01960784313725%
+1750215495.1882305 [illuminance_pub-2] [INFO] [1750215495.187157992] [illuminance_sensor]: RAW=227 → 89.01960784313725%
+1750215495.9711514 [vision_node-8] Fusing layers... 
+1750215496.1901844 [illuminance_pub-2] [INFO] [1750215496.189384491] [illuminance_sensor]: RAW=227 → 89.01960784313725%
+1750215497.1886172 [illuminance_pub-2] [INFO] [1750215497.187031657] [illuminance_sensor]: RAW=228 → 89.41176470588236%
+1750215497.3231757 [vision_node-8] Model summary: 157 layers, 7012822 parameters, 0 gradients, 15.8 GFLOPs
+1750215497.3809814 [vision_node-8] [0:00:49.082915192] [947] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:326 [0mlibcamera v0.5.0+59-d83ff0a4
+1750215497.5002956 [vision_node-8] [0:00:49.202227358] [1053] [1;33m WARN [1;37mRPiSdn [1;34msdn.cpp:40 [0mUsing legacy SDN tuning - please consider moving SDN inside rpi.denoise
+1750215497.5026770 [vision_node-8] [0:00:49.204642932] [1053] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:447 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx708@1a to Unicam device /dev/media1 and ISP device /dev/media3
+1750215497.5030406 [vision_node-8] [0:00:49.204712729] [1053] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1121 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+1750215497.5123081 [vision_node-8] [0:00:49.214237766] [947] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1205 [0mconfiguring streams: (0) 640x480-XBGR8888 (1) 1536x864-SBGGR10_CSI2P
+1750215497.5135550 [vision_node-8] [0:00:49.214760784] [1053] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:622 [0mSensor: /base/soc/i2c0mux/i2c@1/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10 - Selected unicam format: 1536x864-pBAA
+1750215498.1920211 [illuminance_pub-2] [INFO] [1750215498.187229249] [illuminance_sensor]: RAW=228 → 89.41176470588236%
+1750215499.1878252 [illuminance_pub-2] [INFO] [1750215499.186919063] [illuminance_sensor]: RAW=227 → 89.01960784313725%
+1750215499.9457898 [vision_node-8] [INFO] [1750215499.943128767] [vision_node]: capture!!
+1750215499.9480846 [decision_node-7] [INFO] [1750215499.947417211] [decision_node]: [INFO] send buzzer request: 0.8 seconds
+1750215499.9499168 [buzzer_srv-5] [INFO] [1750215499.948412674] [buzzer_actuator]: 🔊 Buzzer ON (Duty: 90%) 0.800000011920929Sec
+1750215500.1930761 [illuminance_pub-2] [INFO] [1750215500.189296396] [illuminance_sensor]: RAW=227 → 89.01960784313725%
+1750215500.1957183 [illuminance_pub-2] [INFO] [1750215500.194983489] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750215500.2010458 [decision_node-7] [INFO] [1750215500.200358081] [decision_node]: [INFO] send light request: False
+1750215500.2049525 [light_srv-4] [INFO] [1750215500.204241433] [light_actuator]: 💤 불을 끕니다.
+1750215500.2141469 [battery_pub-3] [WARN] [1750215500.213415952] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750215500.2205622 [battery_pub-3] [INFO] [1750215500.219906952] [battery_sensor]: I2C 초기화 성공
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           

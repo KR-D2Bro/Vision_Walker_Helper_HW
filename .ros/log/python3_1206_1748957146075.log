@@ -1,0 +1,3 @@
+[INFO] [1748957146.288679588] [ble_gatt_server]: Loaded config from disk
+[INFO] [1748957146.317516094] [ble_gatt_server]: Using adapter: D8:3A:DD:F2:4C:84
+[INFO] [1748957146.341410672] [ble_gatt_server]: BLE GATT Server started

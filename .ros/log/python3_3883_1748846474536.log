@@ -1,0 +1,1 @@
+[ERROR] [1748846474.726169342] [ble_gatt_server]: Failed to read or parse JSON from /home/dongjae/config.conf: Expecting property name enclosed in double quotes: line 2 column 2 (char 3)

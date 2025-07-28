@@ -1,0 +1,988 @@
+1750204409.1017456 [INFO] [launch]: All log files can be found below /home/dongjae/.ros/log/2025-06-18-08-53-29-099229-raspberrypi-25427
+1750204409.1022432 [INFO] [launch]: Default logging verbosity is set to INFO
+1750204409.3353045 [INFO] [imu_pub-1]: process started with pid [25428]
+1750204409.3444085 [INFO] [illuminance_pub-2]: process started with pid [25430]
+1750204409.3451984 [INFO] [battery_pub-3]: process started with pid [25432]
+1750204409.3458114 [INFO] [light_srv-4]: process started with pid [25434]
+1750204409.3521111 [INFO] [buzzer_srv-5]: process started with pid [25436]
+1750204409.3527336 [INFO] [ble_node-6]: process started with pid [25438]
+1750204409.3533733 [INFO] [decision_node-7]: process started with pid [25440]
+1750204409.3538420 [INFO] [vision_node-8]: process started with pid [25442]
+1750204410.4963677 [buzzer_srv-5] [INFO] [1750204410.488360268] [buzzer_actuator]: 🔔 PWM Buzzer Control Node Started
+1750204411.7523680 [imu_pub-1] [INFO] [1750204411.748000752] [imu_sensor]: I2C-3 초기화 성공
+1750204412.0404675 [illuminance_pub-2] [INFO] [1750204412.036045683] [illuminance_sensor]: Initialized PCF8591 at 0x48
+1750204412.0525174 [light_srv-4] /home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/light_service.py:16: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+1750204412.0531287 [light_srv-4]   GPIO.setup(LED_PIN1, GPIO.OUT)
+1750204412.0538790 [light_srv-4] /home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/light_service.py:17: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+1750204412.0546596 [light_srv-4]   GPIO.setup(LED_PIN2, GPIO.OUT)
+1750204412.1564109 [imu_pub-1] [INFO] [1750204412.155401482] [imu_sensor]: FallDetectionNode started: roll_thr=65.0°, pitch_thr=65.0°
+1750204412.4030392 [battery_pub-3] [INFO] [1750204412.402231887] [battery_sensor]: I2C 초기화 성공
+1750204412.4109979 [battery_pub-3] [INFO] [1750204412.408913871] [battery_sensor]: Battery State Publisher started, publishing on /battery_state/data
+1750204412.4883862 [decision_node-7] [INFO] [1750204412.487667731] [decision_node]: Loaded config from disk
+1750204412.5226300 [ble_node-6] [INFO] [1750204412.521835462] [ble_node]: Using adapter: D8:3A:DD:F2:4C:84
+1750204412.6041858 [ble_node-6] [INFO] [1750204412.602635084] [ble_node]: BLE GATT Server started
+1750204412.6093824 [ble_node-6] [INFO] [1750204412.608702739] [ble_node]: Config service added
+1750204412.9634302 [illuminance_pub-2] [INFO] [1750204412.959768322] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204413.9610455 [illuminance_pub-2] [INFO] [1750204413.959835083] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204414.9603288 [illuminance_pub-2] [INFO] [1750204414.959621126] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204415.9610186 [illuminance_pub-2] [INFO] [1750204415.959657836] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204416.9608302 [illuminance_pub-2] [INFO] [1750204416.959305182] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204417.9622228 [illuminance_pub-2] [INFO] [1750204417.959358971] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204418.9606025 [illuminance_pub-2] [INFO] [1750204418.959840444] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204419.9625063 [illuminance_pub-2] [INFO] [1750204419.959585537] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204420.9620025 [illuminance_pub-2] [INFO] [1750204420.959345854] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204421.9615993 [illuminance_pub-2] [INFO] [1750204421.959218302] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204421.9682522 [illuminance_pub-2] [INFO] [1750204421.964977553] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750204421.9693174 [decision_node-7] [INFO] [1750204421.966477004] [decision_node]: [INFO] send light request: False
+1750204422.0281415 [light_srv-4] [INFO] [1750204422.027409043] [light_actuator]: 💤 불을 끕니다.
+1750204422.3166873 [battery_pub-3] [WARN] [1750204422.316041884] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750204422.3186800 [battery_pub-3] [INFO] [1750204422.318108942] [battery_sensor]: I2C 초기화 성공
+1750204422.9293368 [vision_node-8] /home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolov5/utils/general.py:32: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+1750204422.9300418 [vision_node-8]   import pkg_resources as pkg
+1750204422.9619064 [illuminance_pub-2] [INFO] [1750204422.959229455] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204423.9660897 [illuminance_pub-2] [INFO] [1750204423.959607496] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204424.9602549 [illuminance_pub-2] [INFO] [1750204424.959466174] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204425.9601717 [illuminance_pub-2] [INFO] [1750204425.958982616] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204426.9599779 [illuminance_pub-2] [INFO] [1750204426.959224851] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204427.7857950 [vision_node-8] Fusing layers... 
+1750204427.9683762 [illuminance_pub-2] [INFO] [1750204427.965043007] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204428.8408573 [vision_node-8] Model summary: 157 layers, 7012822 parameters, 0 gradients, 15.8 GFLOPs
+1750204428.8715065 [vision_node-8] [0:44:05.663338904] [25442] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:326 [0mlibcamera v0.5.0+59-d83ff0a4
+1750204428.9597747 [illuminance_pub-2] [INFO] [1750204428.958968185] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204428.9823079 [vision_node-8] [0:44:05.774184200] [25544] [1;33m WARN [1;37mRPiSdn [1;34msdn.cpp:40 [0mUsing legacy SDN tuning - please consider moving SDN inside rpi.denoise
+1750204428.9845924 [vision_node-8] [0:44:05.776548997] [25544] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:447 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx708@1a to Unicam device /dev/media3 and ISP device /dev/media0
+1750204428.9852381 [vision_node-8] [0:44:05.776628811] [25544] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1121 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+1750204428.9951146 [vision_node-8] [0:44:05.787077821] [25442] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1205 [0mconfiguring streams: (0) 640x480-XBGR8888 (1) 1536x864-SBGGR10_CSI2P
+1750204428.9965036 [vision_node-8] [0:44:05.788415367] [25544] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:622 [0mSensor: /base/soc/i2c0mux/i2c@1/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10 - Selected unicam format: 1536x864-pBAA
+1750204429.9682894 [illuminance_pub-2] [INFO] [1750204429.963413468] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204430.9714949 [illuminance_pub-2] [INFO] [1750204430.967555089] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204431.3583453 [ble_node-6] [INFO] [1750204431.356285836] [ble_node]: Central disconnected: <bluezero.device.Device object at 0x7f72d21050>
+1750204431.9642177 [illuminance_pub-2] [INFO] [1750204431.962744986] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204431.9711649 [illuminance_pub-2] [INFO] [1750204431.969399434] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750204431.9768786 [decision_node-7] [INFO] [1750204431.975395979] [decision_node]: [INFO] send light request: False
+1750204431.9851530 [light_srv-4] [INFO] [1750204431.983715747] [light_actuator]: 💤 불을 끕니다.
+1750204432.3177023 [battery_pub-3] [WARN] [1750204432.315745625] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750204432.3254852 [battery_pub-3] [INFO] [1750204432.321787059] [battery_sensor]: I2C 초기화 성공
+1750204432.9625757 [illuminance_pub-2] [INFO] [1750204432.961478895] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204433.9633398 [illuminance_pub-2] [INFO] [1750204433.961896182] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204434.9604685 [illuminance_pub-2] [INFO] [1750204434.959575159] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204435.9645245 [illuminance_pub-2] [INFO] [1750204435.960299022] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204436.5406280 [ble_node-6] [INFO] [1750204436.539758131] [ble_node]: Central connected: <bluezero.device.Device object at 0x7f4fed7bd0>, auth check start
+1750204436.9638469 [illuminance_pub-2] [INFO] [1750204436.962893502] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204437.9632463 [illuminance_pub-2] [INFO] [1750204437.962164400] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204438.9721661 [illuminance_pub-2] [INFO] [1750204438.967405957] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204439.9657023 [illuminance_pub-2] [INFO] [1750204439.964879169] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204440.9667976 [illuminance_pub-2] [INFO] [1750204440.965829431] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204441.4400966 [ble_node-6] [INFO] [1750204441.439045933] [ble_node]: Central disconnected: <bluezero.device.Device object at 0x7f4ff46dd0>
+1750204441.9664810 [illuminance_pub-2] [INFO] [1750204441.965142985] [illuminance_sensor]: RAW=204 → 80.0%
+1750204441.9736822 [decision_node-7] [INFO] [1750204441.971255012] [decision_node]: [INFO] send light request: False
+1750204441.9811103 [illuminance_pub-2] [INFO] [1750204441.979265486] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750204441.9908280 [light_srv-4] [INFO] [1750204441.988446933] [light_actuator]: 💤 불을 끕니다.
+1750204442.3198576 [battery_pub-3] [WARN] [1750204442.318464889] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750204442.3253188 [battery_pub-3] [INFO] [1750204442.323288129] [battery_sensor]: I2C 초기화 성공
+1750204442.9604948 [illuminance_pub-2] [INFO] [1750204442.959615932] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204443.9608989 [illuminance_pub-2] [INFO] [1750204443.959737503] [illuminance_sensor]: RAW=204 → 80.0%
+1750204444.0084431 [ble_node-6] [INFO] [1750204444.007140299] [ble_node]: Central connected: <bluezero.device.Device object at 0x7f4ff478d0>, auth check start
+1750204444.9633355 [illuminance_pub-2] [INFO] [1750204444.962641814] [illuminance_sensor]: RAW=204 → 80.0%
+1750204445.2646227 [ble_node-6] [INFO] [1750204445.262913413] [ble_node]: Read secret key success : mysecret
+1750204445.2838025 [ble_node-6] [INFO] [1750204445.281851006] [ble_node]: mysecret : mysecret
+1750204445.3565028 [ble_node-6] [INFO] [1750204445.355614707] [ble_node]: [ble_gatt_server] Authenticated after 1.3s, auth success
+1750204445.9648950 [illuminance_pub-2] [INFO] [1750204445.964135398] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204446.9698367 [illuminance_pub-2] [INFO] [1750204446.966531865] [illuminance_sensor]: RAW=204 → 80.0%
+1750204447.9630320 [illuminance_pub-2] [INFO] [1750204447.960471975] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204448.3310308 [ble_node-6] [INFO] [1750204448.328290623] [ble_node]: alarm_write:1
+1750204448.3327181 [ble_node-6] [INFO] [1750204448.331118768] [ble_node]: Config Published: [True, True, 90]
+1750204448.3417559 [light_srv-4] [INFO] [1750204448.338568117] [light_actuator]: 💤 불을 끕니다.
+1750204448.9730213 [illuminance_pub-2] [INFO] [1750204448.968199091] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204449.9658635 [illuminance_pub-2] [INFO] [1750204449.962806682] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204450.9664397 [illuminance_pub-2] [INFO] [1750204450.961102598] [illuminance_sensor]: RAW=204 → 80.0%
+1750204451.9668286 [illuminance_pub-2] [INFO] [1750204451.964944621] [illuminance_sensor]: RAW=204 → 80.0%
+1750204451.9736242 [illuminance_pub-2] [INFO] [1750204451.972487600] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750204451.9825864 [decision_node-7] [INFO] [1750204451.979689414] [decision_node]: [INFO] send light request: False
+1750204451.9848578 [light_srv-4] [INFO] [1750204451.984046769] [light_actuator]: 💤 불을 끕니다.
+1750204452.3256857 [battery_pub-3] [WARN] [1750204452.323157254] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750204452.3318963 [battery_pub-3] [INFO] [1750204452.326977428] [battery_sensor]: I2C 초기화 성공
+1750204452.9640369 [illuminance_pub-2] [INFO] [1750204452.962766990] [illuminance_sensor]: RAW=204 → 80.0%
+1750204453.9633062 [illuminance_pub-2] [INFO] [1750204453.962466346] [illuminance_sensor]: RAW=204 → 80.0%
+1750204454.9766476 [illuminance_pub-2] [INFO] [1750204454.975473490] [illuminance_sensor]: RAW=204 → 80.0%
+1750204454.9978244 [imu_pub-1] [WARN] [1750204454.996978489] [imu_sensor]: FALL! Roll=-3.9°, Pitch=65.2°
+1750204455.0159044 [decision_node-7] [INFO] [1750204455.012832754] [decision_node]: [INFO] send buzzer request: 3.0 seconds
+1750204455.0211096 [imu_pub-1] [WARN] [1750204455.020354066] [imu_sensor]: FALL! Roll=-4.4°, Pitch=65.1°
+1750204455.0247662 [buzzer_srv-5] [INFO] [1750204455.022583790] [buzzer_actuator]: 🔊 Buzzer ON (Duty: 90%) 3.0Sec
+1750204455.0367806 [imu_pub-1] [WARN] [1750204455.033925849] [imu_sensor]: FALL! Roll=-3.8°, Pitch=65.1°
+1750204455.0484219 [imu_pub-1] [WARN] [1750204455.047096802] [imu_sensor]: FALL! Roll=-3.8°, Pitch=66.1°
+1750204455.0601695 [imu_pub-1] [WARN] [1750204455.059429392] [imu_sensor]: FALL! Roll=-4.4°, Pitch=65.2°
+1750204455.0774014 [imu_pub-1] [WARN] [1750204455.076682609] [imu_sensor]: FALL! Roll=-3.9°, Pitch=65.4°
+1750204455.1386352 [imu_pub-1] [WARN] [1750204455.137627134] [imu_sensor]: FALL! Roll=-5.9°, Pitch=65.8°
+1750204455.1532798 [imu_pub-1] [WARN] [1750204455.149755021] [imu_sensor]: FALL! Roll=-3.6°, Pitch=65.8°
+1750204455.1763532 [imu_pub-1] [WARN] [1750204455.174584791] [imu_sensor]: FALL! Roll=-4.7°, Pitch=66.1°
+1750204455.1872268 [imu_pub-1] [WARN] [1750204455.185951721] [imu_sensor]: FALL! Roll=-3.5°, Pitch=65.1°
+1750204455.2243688 [imu_pub-1] [WARN] [1750204455.222624787] [imu_sensor]: FALL! Roll=-3.1°, Pitch=68.8°
+1750204455.2443316 [imu_pub-1] [WARN] [1750204455.240988218] [imu_sensor]: FALL! Roll=4.6°, Pitch=67.8°
+1750204455.2639163 [imu_pub-1] [WARN] [1750204455.262809048] [imu_sensor]: FALL! Roll=-72.9°, Pitch=85.9°
+1750204455.2806628 [imu_pub-1] [WARN] [1750204455.278610517] [imu_sensor]: FALL! Roll=1.8°, Pitch=67.5°
+1750204455.3028510 [imu_pub-1] [WARN] [1750204455.302143130] [imu_sensor]: FALL! Roll=-12.3°, Pitch=66.6°
+1750204455.5387273 [imu_pub-1] [WARN] [1750204455.537682462] [imu_sensor]: FALL! Roll=110.5°, Pitch=-54.8°
+1750204455.9679859 [illuminance_pub-2] [INFO] [1750204455.966386993] [illuminance_sensor]: RAW=204 → 80.0%
+1750204456.9691594 [illuminance_pub-2] [INFO] [1750204456.965061179] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204457.9644396 [illuminance_pub-2] [INFO] [1750204457.963581498] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204458.9606431 [illuminance_pub-2] [INFO] [1750204458.959841207] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204459.9619405 [illuminance_pub-2] [INFO] [1750204459.959256282] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204460.9638534 [illuminance_pub-2] [INFO] [1750204460.962724773] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204461.9662404 [illuminance_pub-2] [INFO] [1750204461.962244778] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204461.9679611 [illuminance_pub-2] [INFO] [1750204461.967173980] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750204461.9714975 [decision_node-7] [INFO] [1750204461.969851570] [decision_node]: [INFO] send light request: False
+1750204461.9749990 [light_srv-4] [INFO] [1750204461.974287369] [light_actuator]: 💤 불을 끕니다.
+1750204462.3291090 [battery_pub-3] [WARN] [1750204462.324926551] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750204462.3385844 [battery_pub-3] [INFO] [1750204462.332939785] [battery_sensor]: I2C 초기화 성공
+1750204462.9644630 [illuminance_pub-2] [INFO] [1750204462.960877310] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204463.9627323 [illuminance_pub-2] [INFO] [1750204463.960823575] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204464.6278014 [ble_node-6] [INFO] [1750204464.626480959] [ble_node]: alarm_write:0
+1750204464.6382582 [ble_node-6] [INFO] [1750204464.637363300] [ble_node]: Config Published: [True, False, 90]
+1750204464.6464870 [light_srv-4] [INFO] [1750204464.645212721] [light_actuator]: 💤 불을 끕니다.
+1750204464.9634230 [illuminance_pub-2] [INFO] [1750204464.962657902] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750204465.7461846 [imu_pub-1] [WARN] [1750204465.744525033] [imu_sensor]: FALL! Roll=97.9°, Pitch=89.1°
+1750204465.7716596 [imu_pub-1] [WARN] [1750204465.769245378] [imu_sensor]: FALL! Roll=-24.0°, Pitch=78.8°
+1750204465.8321059 [imu_pub-1] [WARN] [1750204465.830896769] [imu_sensor]: FALL! Roll=-1.2°, Pitch=70.3°
+1750204465.8626752 [imu_pub-1] [WARN] [1750204465.861834344] [imu_sensor]: FALL! Roll=-28.9°, Pitch=66.2°
+1750204465.9714737 [illuminance_pub-2] [INFO] [1750204465.968452923] [illuminance_sensor]: RAW=204 → 80.0%
+1750204465.9879456 [imu_pub-1] [WARN] [1750204465.986633041] [imu_sensor]: FALL! Roll=-4.3°, Pitch=65.1°
+1750204466.0723219 [imu_pub-1] [WARN] [1750204466.071047200] [imu_sensor]: FALL! Roll=-10.7°, Pitch=65.5°
+1750204466.1078796 [imu_pub-1] [WARN] [1750204466.106814663] [imu_sensor]: FALL! Roll=-0.9°, Pitch=65.9°
+1750204466.1242325 [imu_pub-1] [WARN] [1750204466.123381442] [imu_sensor]: FALL! Roll=-7.1°, Pitch=66.4°
+1750204466.1470389 [imu_pub-1] [WARN] [1750204466.144167280] [imu_sensor]: FALL! Roll=-0.6°, Pitch=66.6°
+1750204466.1694591 [imu_pub-1] [WARN] [1750204466.167970021] [imu_sensor]: FALL! Roll=-2.1°, Pitch=65.1°
+1750204466.1870537 [imu_pub-1] [WARN] [1750204466.186275083] [imu_sensor]: FALL! Roll=-5.0°, Pitch=66.6°
+1750204466.2292843 [imu_pub-1] [WARN] [1750204466.227640984] [imu_sensor]: FALL! Roll=-2.8°, Pitch=65.4°
+1750204466.2384801 [imu_pub-1] [WARN] [1750204466.237738702] [imu_sensor]: FALL! Roll=-6.6°, Pitch=67.7°
+1750204466.2510188 [imu_pub-1] [WARN] [1750204466.248084622] [imu_sensor]: FALL! Roll=-10.1°, Pitch=67.9°
+1750204466.2610409 [imu_pub-1] [WARN] [1750204466.258035229] [imu_sensor]: FALL! Roll=-9.4°, Pitch=67.4°
+1750204466.2689395 [imu_pub-1] [WARN] [1750204466.267950245] [imu_sensor]: FALL! Roll=-4.8°, Pitch=68.0°
+1750204466.2831650 [imu_pub-1] [WARN] [1750204466.282208060] [imu_sensor]: FALL! Roll=-3.0°, Pitch=68.2°
+1750204466.2966180 [imu_pub-1] [WARN] [1750204466.294710185] [imu_sensor]: FALL! Roll=-3.8°, Pitch=67.0°
+1750204466.3097904 [imu_pub-1] [WARN] [1750204466.306792092] [imu_sensor]: FALL! Roll=-3.4°, Pitch=66.1°
+1750204466.3190725 [imu_pub-1] [WARN] [1750204466.318188966] [imu_sensor]: FALL! Roll=-5.4°, Pitch=66.6°
+1750204466.3354795 [imu_pub-1] [WARN] [1750204466.333820085] [imu_sensor]: FALL! Roll=-7.1°, Pitch=67.2°
+1750204466.3484457 [imu_pub-1] [WARN] [1750204466.347031890] [imu_sensor]: FALL! Roll=-2.6°, Pitch=68.4°
+1750204466.3580747 [imu_pub-1] [WARN] [1750204466.356806833] [imu_sensor]: FALL! Roll=-0.1°, Pitch=67.6°
+1750204466.3689590 [imu_pub-1] [WARN] [1750204466.367727711] [imu_sensor]: FALL! Roll=-6.3°, Pitch=68.0°
+1750204466.3781204 [imu_pub-1] [WARN] [1750204466.375984017] [imu_sensor]: FALL! Roll=-7.3°, Pitch=68.7°
+1750204466.3993318 [imu_pub-1] [WARN] [1750204466.393547122] [imu_sensor]: FALL! Roll=-7.3°, Pitch=68.7°
+1750204466.4109371 [imu_pub-1] [WARN] [1750204466.410218474] [imu_sensor]: FALL! Roll=-2.7°, Pitch=67.6°
+1750204466.4265978 [imu_pub-1] [WARN] [1750204466.425745112] [imu_sensor]: FALL! Roll=1.4°, Pitch=67.0°
+1750204466.4443145 [imu_pub-1] [WARN] [1750204466.441041068] [imu_sensor]: FALL! Roll=-7.4°, Pitch=69.4°
+1750204466.4522073 [imu_pub-1] [WARN] [1750204466.451374450] [imu_sensor]: FALL! Roll=-2.8°, Pitch=66.8°
+1750204466.4620547 [imu_pub-1] [WARN] [1750204466.460661341] [imu_sensor]: FALL! Roll=-3.7°, Pitch=67.6°
+1750204466.4799588 [imu_pub-1] [WARN] [1750204466.478812478] [imu_sensor]: FALL! Roll=-4.8°, Pitch=66.3°
+1750204466.5330222 [imu_pub-1] [WARN] [1750204466.529015903] [imu_sensor]: FALL! Roll=69.6°, Pitch=85.1°
+1750204466.5731590 [imu_pub-1] [WARN] [1750204466.568768113] [imu_sensor]: FALL! Roll=-19.4°, Pitch=77.5°
+1750204466.5953341 [imu_pub-1] [WARN] [1750204466.594029731] [imu_sensor]: FALL! Roll=-27.9°, Pitch=65.2°
+1750204466.9868991 [illuminance_pub-2] [INFO] [1750204466.980362546] [illuminance_sensor]: RAW=204 → 80.0%
+1750204467.9645650 [illuminance_pub-2] [INFO] [1750204467.962791160] [illuminance_sensor]: RAW=204 → 80.0%
+1750204468.9652231 [illuminance_pub-2] [INFO] [1750204468.962118459] [illuminance_sensor]: RAW=204 → 80.0%
+1750204469.9688878 [illuminance_pub-2] [INFO] [1750204469.963652947] [illuminance_sensor]: RAW=204 → 80.0%
+1750204470.9695868 [illuminance_pub-2] [INFO] [1750204470.967278884] [illuminance_sensor]: RAW=204 → 80.0%
+1750204471.9709752 [illuminance_pub-2] [INFO] [1750204471.965065739] [illuminance_sensor]: RAW=204 → 80.0%
+1750204471.9760833 [illuminance_pub-2] [INFO] [1750204471.974814979] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750204471.9862576 [light_srv-4] [INFO] [1750204471.985199787] [light_actuator]: 💤 불을 끕니다.
+1750204471.9893019 [decision_node-7] [INFO] [1750204471.987725656] [decision_node]: [INFO] send light request: False
+1750204472.3262477 [battery_pub-3] [WARN] [1750204472.323886328] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750204472.3291066 [battery_pub-3] [INFO] [1750204472.326072848] [battery_sensor]: I2C 초기화 성공
+1750204472.9205680 [ble_node-6] [INFO] [1750204472.918790919] [ble_node]: alarm_write:1
+1750204472.9387219 [ble_node-6] [INFO] [1750204472.935394494] [ble_node]: Config Published: [True, True, 90]
+1750204472.9624181 [light_srv-4] [INFO] [1750204472.961192369] [light_actuator]: 💤 불을 끕니다.
+1750204472.9724004 [illuminance_pub-2] [INFO] [1750204472.965490946] [illuminance_sensor]: RAW=204 → 80.0%
+1750204473.9610362 [imu_pub-1] [WARN] [1750204473.957204204] [imu_sensor]: FALL! Roll=6.5°, Pitch=69.8°
+1750204473.9631140 [buzzer_srv-5] [INFO] [1750204473.959403650] [buzzer_actuator]: 🔊 Buzzer ON (Duty: 90%) 3.0Sec
+1750204473.9691234 [decision_node-7] [INFO] [1750204473.961165933] [decision_node]: [INFO] send buzzer request: 3.0 seconds
+1750204473.9759011 [illuminance_pub-2] [INFO] [1750204473.963409045] [illuminance_sensor]: RAW=206 → 80.7843137254902%
+1750204473.9797864 [imu_pub-1] [WARN] [1750204473.973631966] [imu_sensor]: FALL! Roll=-8.6°, Pitch=71.3°
+1750204474.0029094 [imu_pub-1] [WARN] [1750204474.000366037] [imu_sensor]: FALL! Roll=150.8°, Pitch=83.1°
+1750204474.1426558 [imu_pub-1] [WARN] [1750204474.141708460] [imu_sensor]: FALL! Roll=-5.1°, Pitch=65.7°
+1750204474.1618800 [imu_pub-1] [WARN] [1750204474.161143865] [imu_sensor]: FALL! Roll=-3.5°, Pitch=68.8°
+1750204474.9693868 [illuminance_pub-2] [INFO] [1750204474.966330126] [illuminance_sensor]: RAW=204 → 80.0%
+1750204475.9655685 [illuminance_pub-2] [INFO] [1750204475.962166171] [illuminance_sensor]: RAW=204 → 80.0%
+1750204476.9717481 [illuminance_pub-2] [INFO] [1750204476.968329342] [illuminance_sensor]: RAW=204 → 80.0%
+1750204477.9680533 [illuminance_pub-2] [INFO] [1750204477.967302960] [illuminance_sensor]: RAW=204 → 80.0%
+1750204478.9652956 [illuminance_pub-2] [INFO] [1750204478.964207466] [illuminance_sensor]: RAW=204 → 80.0%
+1750204479.9648945 [illuminance_pub-2] [INFO] [1750204479.962895294] [illuminance_sensor]: RAW=204 → 80.0%
+1750204480.0028098 [ble_node-6] [INFO] [1750204479.999012496] [ble_node]: alarm_write:0
+1750204480.0044551 [ble_node-6] [INFO] [1750204480.001398478] [ble_node]: Config Published: [True, False, 90]
+1750204480.0108209 [light_srv-4] [INFO] [1750204480.009975374] [light_actuator]: 💤 불을 끕니다.
+1750204480.4099302 [imu_pub-1] [WARN] [1750204480.408986417] [imu_sensor]: FALL! Roll=-0.5°, Pitch=65.8°
+1750204480.4362299 [imu_pub-1] [WARN] [1750204480.432547476] [imu_sensor]: FALL! Roll=-84.7°, Pitch=85.4°
+1750204480.4680250 [imu_pub-1] [WARN] [1750204480.465560387] [imu_sensor]: FALL! Roll=-162.6°, Pitch=81.3°
+1750204480.5427840 [imu_pub-1] [WARN] [1750204480.541855778] [imu_sensor]: FALL! Roll=7.6°, Pitch=65.5°
+1750204480.5656738 [imu_pub-1] [WARN] [1750204480.561018186] [imu_sensor]: FALL! Roll=0.2°, Pitch=69.6°
+1750204480.5762017 [imu_pub-1] [WARN] [1750204480.574408156] [imu_sensor]: FALL! Roll=-3.2°, Pitch=72.6°
+1750204480.6048212 [imu_pub-1] [WARN] [1750204480.602548161] [imu_sensor]: FALL! Roll=4.0°, Pitch=75.0°
+1750204480.6236563 [imu_pub-1] [WARN] [1750204480.622784912] [imu_sensor]: FALL! Roll=-5.5°, Pitch=77.9°
+1750204480.6363075 [imu_pub-1] [WARN] [1750204480.635359759] [imu_sensor]: FALL! Roll=1.6°, Pitch=75.5°
+1750204480.6473432 [imu_pub-1] [WARN] [1750204480.645677160] [imu_sensor]: FALL! Roll=2.6°, Pitch=75.7°
+1750204480.6600847 [imu_pub-1] [WARN] [1750204480.658635912] [imu_sensor]: FALL! Roll=-5.8°, Pitch=75.9°
+1750204480.6755805 [imu_pub-1] [WARN] [1750204480.673818091] [imu_sensor]: FALL! Roll=-1.0°, Pitch=75.2°
+1750204480.6926000 [imu_pub-1] [WARN] [1750204480.690684183] [imu_sensor]: FALL! Roll=-3.7°, Pitch=72.3°
+1750204480.7043366 [imu_pub-1] [WARN] [1750204480.703353251] [imu_sensor]: FALL! Roll=-5.7°, Pitch=72.2°
+1750204480.7175462 [imu_pub-1] [WARN] [1750204480.715842747] [imu_sensor]: FALL! Roll=-0.1°, Pitch=72.8°
+1750204480.7264874 [imu_pub-1] [WARN] [1750204480.725744134] [imu_sensor]: FALL! Roll=-6.1°, Pitch=72.8°
+1750204480.7377653 [imu_pub-1] [WARN] [1750204480.737023898] [imu_sensor]: FALL! Roll=-1.3°, Pitch=73.1°
+1750204480.7484825 [imu_pub-1] [WARN] [1750204480.747393466] [imu_sensor]: FALL! Roll=-2.1°, Pitch=72.4°
+1750204480.7677593 [imu_pub-1] [WARN] [1750204480.763119344] [imu_sensor]: FALL! Roll=-2.5°, Pitch=71.6°
+1750204480.7824659 [imu_pub-1] [WARN] [1750204480.776957997] [imu_sensor]: FALL! Roll=-1.2°, Pitch=69.9°
+1750204480.7872677 [imu_pub-1] [WARN] [1750204480.786455942] [imu_sensor]: FALL! Roll=-1.7°, Pitch=70.5°
+1750204480.7962825 [imu_pub-1] [WARN] [1750204480.795439020] [imu_sensor]: FALL! Roll=-1.6°, Pitch=70.3°
+1750204480.8075955 [imu_pub-1] [WARN] [1750204480.806804414] [imu_sensor]: FALL! Roll=-2.3°, Pitch=70.2°
+1750204480.8227072 [imu_pub-1] [WARN] [1750204480.820966249] [imu_sensor]: FALL! Roll=-3.5°, Pitch=69.5°
+1750204480.8353391 [imu_pub-1] [WARN] [1750204480.831777110] [imu_sensor]: FALL! Roll=-6.5°, Pitch=68.8°
+1750204480.8460851 [imu_pub-1] [WARN] [1750204480.842828154] [imu_sensor]: FALL! Roll=1.2°, Pitch=71.2°
+1750204480.8643851 [imu_pub-1] [WARN] [1750204480.863464013] [imu_sensor]: FALL! Roll=0.7°, Pitch=71.7°
+1750204480.8810880 [imu_pub-1] [WARN] [1750204480.880296123] [imu_sensor]: FALL! Roll=-0.9°, Pitch=66.5°
+1750204480.8922112 [imu_pub-1] [WARN] [1750204480.889755976] [imu_sensor]: FALL! Roll=-0.1°, Pitch=65.7°
+1750204480.9606111 [illuminance_pub-2] [INFO] [1750204480.959885822] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204481.0063870 [imu_pub-1] [WARN] [1750204481.004093017] [imu_sensor]: FALL! Roll=-8.0°, Pitch=66.6°
+1750204481.1029475 [imu_pub-1] [WARN] [1750204481.100401884] [imu_sensor]: FALL! Roll=-144.8°, Pitch=-40.1°
+1750204481.5429778 [imu_pub-1] [WARN] [1750204481.542120264] [imu_sensor]: FALL! Roll=28.9°, Pitch=70.7°
+1750204481.5616748 [imu_pub-1] [WARN] [1750204481.560300234] [imu_sensor]: FALL! Roll=-8.9°, Pitch=65.2°
+1750204481.6393034 [imu_pub-1] [WARN] [1750204481.637893931] [imu_sensor]: FALL! Roll=-9.4°, Pitch=68.9°
+1750204481.7389970 [imu_pub-1] [WARN] [1750204481.738272173] [imu_sensor]: FALL! Roll=0.0°, Pitch=65.1°
+1750204481.7585211 [imu_pub-1] [WARN] [1750204481.756814918] [imu_sensor]: FALL! Roll=-0.6°, Pitch=65.8°
+1750204481.7758729 [imu_pub-1] [WARN] [1750204481.769511654] [imu_sensor]: FALL! Roll=-0.7°, Pitch=67.6°
+1750204481.7854004 [imu_pub-1] [WARN] [1750204481.784318446] [imu_sensor]: FALL! Roll=0.8°, Pitch=68.2°
+1750204481.8046632 [imu_pub-1] [WARN] [1750204481.802298882] [imu_sensor]: FALL! Roll=1.1°, Pitch=66.2°
+1750204481.9814646 [illuminance_pub-2] [INFO] [1750204481.974700141] [illuminance_sensor]: RAW=204 → 80.0%
+1750204481.9938056 [illuminance_pub-2] [INFO] [1750204481.992793112] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750204482.0025871 [decision_node-7] [INFO] [1750204482.001504119] [decision_node]: [INFO] send light request: False
+1750204482.0071471 [light_srv-4] [INFO] [1750204482.006228786] [light_actuator]: 💤 불을 끕니다.
+1750204482.3202534 [battery_pub-3] [WARN] [1750204482.318243059] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750204482.3263888 [battery_pub-3] [INFO] [1750204482.320751947] [battery_sensor]: I2C 초기화 성공
+1750204482.9681637 [illuminance_pub-2] [INFO] [1750204482.965947699] [illuminance_sensor]: RAW=204 → 80.0%
+1750204483.4564409 [imu_pub-1] [WARN] [1750204483.455740210] [imu_sensor]: FALL! Roll=-1.0°, Pitch=69.2°
+1750204483.5051541 [imu_pub-1] [WARN] [1750204483.504342056] [imu_sensor]: FALL! Roll=-4.9°, Pitch=77.2°
+1750204483.5072598 [ble_node-6] [INFO] [1750204483.506365022] [ble_node]: alarm_write:1
+1750204483.5102813 [ble_node-6] [INFO] [1750204483.509613312] [ble_node]: Config Published: [True, True, 90]
+1750204483.5172112 [light_srv-4] [INFO] [1750204483.515107473] [light_actuator]: 💤 불을 끕니다.
+1750204483.9659362 [illuminance_pub-2] [INFO] [1750204483.964331038] [illuminance_sensor]: RAW=204 → 80.0%
+1750204484.5227885 [imu_pub-1] [WARN] [1750204484.521699249] [imu_sensor]: FALL! Roll=-10.2°, Pitch=67.1°
+1750204484.5255883 [decision_node-7] [INFO] [1750204484.524968298] [decision_node]: [INFO] send buzzer request: 3.0 seconds
+1750204484.5282621 [buzzer_srv-5] [INFO] [1750204484.525654182] [buzzer_actuator]: 🔊 Buzzer ON (Duty: 90%) 3.0Sec
+1750204484.5380266 [imu_pub-1] [WARN] [1750204484.537087371] [imu_sensor]: FALL! Roll=-4.5°, Pitch=76.7°
+1750204484.9642444 [illuminance_pub-2] [INFO] [1750204484.962614972] [illuminance_sensor]: RAW=204 → 80.0%
+1750204485.9709160 [illuminance_pub-2] [INFO] [1750204485.967874058] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204486.9648428 [illuminance_pub-2] [INFO] [1750204486.963989420] [illuminance_sensor]: RAW=204 → 80.0%
+1750204487.1113629 [decision_node-7] [INFO] [1750204487.110657380] [decision_node]: [INFO] send buzzer request: 3.0 seconds
+1750204487.1157188 [imu_pub-1] [WARN] [1750204487.111541596] [imu_sensor]: FALL! Roll=-26.2°, Pitch=-71.3°
+1750204487.1405790 [imu_pub-1] [WARN] [1750204487.139747471] [imu_sensor]: FALL! Roll=-30.1°, Pitch=-68.7°
+1750204487.1640956 [imu_pub-1] [WARN] [1750204487.161701523] [imu_sensor]: FALL! Roll=-127.6°, Pitch=-67.1°
+1750204487.2012544 [imu_pub-1] [WARN] [1750204487.200158152] [imu_sensor]: FALL! Roll=-94.0°, Pitch=-78.5°
+1750204487.2222581 [imu_pub-1] [WARN] [1750204487.219234468] [imu_sensor]: FALL! Roll=-51.5°, Pitch=-78.5°
+1750204487.2421184 [imu_pub-1] [WARN] [1750204487.241379519] [imu_sensor]: FALL! Roll=-25.8°, Pitch=-73.9°
+1750204487.2534666 [imu_pub-1] [WARN] [1750204487.251149722] [imu_sensor]: FALL! Roll=-68.8°, Pitch=-85.5°
+1750204487.2663419 [imu_pub-1] [WARN] [1750204487.265270446] [imu_sensor]: FALL! Roll=-32.1°, Pitch=-78.2°
+1750204487.2770216 [imu_pub-1] [WARN] [1750204487.276153862] [imu_sensor]: FALL! Roll=-36.4°, Pitch=-72.7°
+1750204487.2914150 [imu_pub-1] [WARN] [1750204487.289519648] [imu_sensor]: FALL! Roll=-36.3°, Pitch=-76.0°
+1750204487.3044686 [imu_pub-1] [WARN] [1750204487.303142746] [imu_sensor]: FALL! Roll=-34.8°, Pitch=-73.7°
+1750204487.3144801 [imu_pub-1] [WARN] [1750204487.313247724] [imu_sensor]: FALL! Roll=-32.7°, Pitch=-71.1°
+1750204487.3277905 [imu_pub-1] [WARN] [1750204487.326140920] [imu_sensor]: FALL! Roll=-29.3°, Pitch=-67.2°
+1750204487.3402920 [imu_pub-1] [WARN] [1750204487.339420596] [imu_sensor]: FALL! Roll=-31.1°, Pitch=-73.5°
+1750204487.3534596 [imu_pub-1] [WARN] [1750204487.349379760] [imu_sensor]: FALL! Roll=-10.3°, Pitch=-76.7°
+1750204487.3639376 [imu_pub-1] [WARN] [1750204487.361625702] [imu_sensor]: FALL! Roll=12.4°, Pitch=-72.0°
+1750204487.3718569 [imu_pub-1] [WARN] [1750204487.369748862] [imu_sensor]: FALL! Roll=-152.3°, Pitch=-88.4°
+1750204487.5396669 [buzzer_srv-5] [INFO] [1750204487.536899886] [buzzer_actuator]: 🔊 Buzzer ON (Duty: 90%) 3.0Sec
+1750204487.9652700 [illuminance_pub-2] [INFO] [1750204487.964375289] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204488.9682064 [illuminance_pub-2] [INFO] [1750204488.963314319] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204489.9631655 [illuminance_pub-2] [INFO] [1750204489.961839465] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204490.9628341 [illuminance_pub-2] [INFO] [1750204490.962001620] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204491.9647815 [illuminance_pub-2] [INFO] [1750204491.961185746] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204491.9692166 [illuminance_pub-2] [INFO] [1750204491.968494949] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750204491.9749055 [decision_node-7] [INFO] [1750204491.973056544] [decision_node]: [INFO] send light request: False
+1750204491.9800913 [light_srv-4] [INFO] [1750204491.977229086] [light_actuator]: 💤 불을 끕니다.
+1750204492.3171709 [battery_pub-3] [WARN] [1750204492.316490007] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750204492.3188541 [battery_pub-3] [INFO] [1750204492.318246160] [battery_sensor]: I2C 초기화 성공
+1750204492.4601431 [ble_node-6] [INFO] [1750204492.459018982] [ble_node]: alarm_write:0
+1750204492.4665473 [ble_node-6] [INFO] [1750204492.464951288] [ble_node]: Config Published: [True, False, 90]
+1750204492.4708099 [light_srv-4] [INFO] [1750204492.468855128] [light_actuator]: 💤 불을 끕니다.
+1750204492.9640377 [illuminance_pub-2] [INFO] [1750204492.959920638] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204493.1148252 [imu_pub-1] [WARN] [1750204493.113069013] [imu_sensor]: FALL! Roll=2.1°, Pitch=68.4°
+1750204493.1564984 [imu_pub-1] [WARN] [1750204493.150440466] [imu_sensor]: FALL! Roll=9.7°, Pitch=85.9°
+1750204493.2367315 [imu_pub-1] [WARN] [1750204493.230219054] [imu_sensor]: FALL! Roll=-1.5°, Pitch=69.1°
+1750204493.2575188 [imu_pub-1] [WARN] [1750204493.255815153] [imu_sensor]: FALL! Roll=1.0°, Pitch=66.7°
+1750204493.6940484 [imu_pub-1] [WARN] [1750204493.693291244] [imu_sensor]: FALL! Roll=82.5°, Pitch=-74.6°
+1750204493.9674397 [illuminance_pub-2] [INFO] [1750204493.964473450] [illuminance_sensor]: RAW=204 → 80.0%
+1750204494.0454557 [imu_pub-1] [WARN] [1750204494.044611684] [imu_sensor]: FALL! Roll=1.9°, Pitch=-75.1°
+1750204494.0564821 [imu_pub-1] [WARN] [1750204494.054906827] [imu_sensor]: FALL! Roll=-6.1°, Pitch=-69.8°
+1750204494.0669887 [imu_pub-1] [WARN] [1750204494.065520171] [imu_sensor]: FALL! Roll=-6.5°, Pitch=-75.6°
+1750204494.0746169 [imu_pub-1] [WARN] [1750204494.073797329] [imu_sensor]: FALL! Roll=-13.1°, Pitch=-72.9°
+1750204494.0906413 [imu_pub-1] [WARN] [1750204494.089839817] [imu_sensor]: FALL! Roll=8.0°, Pitch=-75.0°
+1750204494.1065426 [imu_pub-1] [WARN] [1750204494.105566362] [imu_sensor]: FALL! Roll=-18.6°, Pitch=-82.5°
+1750204494.1152360 [imu_pub-1] [WARN] [1750204494.114373739] [imu_sensor]: FALL! Roll=5.3°, Pitch=-84.5°
+1750204494.1283851 [imu_pub-1] [WARN] [1750204494.123981850] [imu_sensor]: FALL! Roll=14.9°, Pitch=-82.1°
+1750204494.1421084 [imu_pub-1] [WARN] [1750204494.138934753] [imu_sensor]: FALL! Roll=2.8°, Pitch=-80.7°
+1750204494.1555636 [imu_pub-1] [WARN] [1750204494.154298839] [imu_sensor]: FALL! Roll=2.4°, Pitch=-73.2°
+1750204494.1727760 [imu_pub-1] [WARN] [1750204494.170720842] [imu_sensor]: FALL! Roll=-14.4°, Pitch=-74.6°
+1750204494.1918266 [imu_pub-1] [WARN] [1750204494.190439431] [imu_sensor]: FALL! Roll=-8.7°, Pitch=-71.3°
+1750204494.2094390 [imu_pub-1] [WARN] [1750204494.205197872] [imu_sensor]: FALL! Roll=-3.7°, Pitch=-72.3°
+1750204494.2212768 [imu_pub-1] [WARN] [1750204494.217725943] [imu_sensor]: FALL! Roll=-5.5°, Pitch=-73.4°
+1750204494.2347443 [imu_pub-1] [WARN] [1750204494.232239071] [imu_sensor]: FALL! Roll=-8.2°, Pitch=-74.8°
+1750204494.2482882 [imu_pub-1] [WARN] [1750204494.245235805] [imu_sensor]: FALL! Roll=-5.3°, Pitch=-73.6°
+1750204494.2688394 [imu_pub-1] [WARN] [1750204494.265485908] [imu_sensor]: FALL! Roll=-4.5°, Pitch=-72.7°
+1750204494.2789032 [imu_pub-1] [WARN] [1750204494.277932312] [imu_sensor]: FALL! Roll=-8.3°, Pitch=-77.3°
+1750204494.2915692 [imu_pub-1] [WARN] [1750204494.290164792] [imu_sensor]: FALL! Roll=-6.1°, Pitch=-76.0°
+1750204494.3096442 [imu_pub-1] [WARN] [1750204494.307997802] [imu_sensor]: FALL! Roll=12.7°, Pitch=-79.2°
+1750204494.3246434 [imu_pub-1] [WARN] [1750204494.320844426] [imu_sensor]: FALL! Roll=16.7°, Pitch=-79.3°
+1750204494.3336890 [imu_pub-1] [WARN] [1750204494.332857629] [imu_sensor]: FALL! Roll=3.1°, Pitch=-80.1°
+1750204494.3490596 [imu_pub-1] [WARN] [1750204494.347058964] [imu_sensor]: FALL! Roll=-23.9°, Pitch=-83.4°
+1750204494.3623903 [imu_pub-1] [WARN] [1750204494.360398287] [imu_sensor]: FALL! Roll=5.3°, Pitch=-75.5°
+1750204494.9651568 [illuminance_pub-2] [INFO] [1750204494.963146198] [illuminance_sensor]: RAW=204 → 80.0%
+1750204495.9687009 [illuminance_pub-2] [INFO] [1750204495.961530895] [illuminance_sensor]: RAW=204 → 80.0%
+1750204496.9624326 [illuminance_pub-2] [INFO] [1750204496.961656321] [illuminance_sensor]: RAW=204 → 80.0%
+1750204497.0888619 [ble_node-6] [INFO] [1750204497.081381362] [ble_node]: alarm_write:1
+1750204497.0897434 [ble_node-6] [INFO] [1750204497.083743436] [ble_node]: Config Published: [True, True, 90]
+1750204497.0943825 [light_srv-4] [INFO] [1750204497.092874236] [light_actuator]: 💤 불을 끕니다.
+1750204497.9652367 [illuminance_pub-2] [INFO] [1750204497.962845556] [illuminance_sensor]: RAW=206 → 80.7843137254902%
+1750204498.9631484 [illuminance_pub-2] [INFO] [1750204498.961427535] [illuminance_sensor]: RAW=204 → 80.0%
+1750204499.8603094 [imu_pub-1] [WARN] [1750204499.854741530] [imu_sensor]: FALL! Roll=7.8°, Pitch=65.9°
+1750204499.8615372 [decision_node-7] [INFO] [1750204499.860050230] [decision_node]: [INFO] send buzzer request: 3.0 seconds
+1750204499.8666356 [buzzer_srv-5] [INFO] [1750204499.863913922] [buzzer_actuator]: 🔊 Buzzer ON (Duty: 90%) 3.0Sec
+1750204499.8767750 [imu_pub-1] [WARN] [1750204499.874333416] [imu_sensor]: FALL! Roll=3.7°, Pitch=67.8°
+1750204499.8915989 [imu_pub-1] [WARN] [1750204499.890383719] [imu_sensor]: FALL! Roll=0.0°, Pitch=66.5°
+1750204499.9671698 [illuminance_pub-2] [INFO] [1750204499.966421208] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204500.2810912 [imu_pub-1] [WARN] [1750204500.279389040] [imu_sensor]: FALL! Roll=127.5°, Pitch=-68.2°
+1750204500.2921948 [decision_node-7] [INFO] [1750204500.288995800] [decision_node]: [INFO] send buzzer request: 3.0 seconds
+1750204500.9717422 [illuminance_pub-2] [INFO] [1750204500.969607600] [illuminance_sensor]: RAW=204 → 80.0%
+1750204501.8442380 [ble_node-6] [INFO] [1750204501.837605645] [ble_node]: alarm_write:0
+1750204501.8447716 [ble_node-6] [INFO] [1750204501.840051071] [ble_node]: Config Published: [True, False, 90]
+1750204501.8503408 [light_srv-4] [INFO] [1750204501.846228357] [light_actuator]: 💤 불을 끕니다.
+1750204501.9640944 [illuminance_pub-2] [INFO] [1750204501.961873560] [illuminance_sensor]: RAW=204 → 80.0%
+1750204501.9697151 [illuminance_pub-2] [INFO] [1750204501.968921746] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750204501.9747682 [light_srv-4] [INFO] [1750204501.972655791] [light_actuator]: 💤 불을 끕니다.
+1750204501.9765975 [decision_node-7] [INFO] [1750204501.976066173] [decision_node]: [INFO] send light request: False
+1750204502.3181057 [battery_pub-3] [WARN] [1750204502.316567591] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750204502.3230233 [battery_pub-3] [INFO] [1750204502.321933568] [battery_sensor]: I2C 초기화 성공
+1750204502.8692384 [buzzer_srv-5] [INFO] [1750204502.868112720] [buzzer_actuator]: 🔊 Buzzer ON (Duty: 90%) 3.0Sec
+1750204502.9669383 [illuminance_pub-2] [INFO] [1750204502.964281036] [illuminance_sensor]: RAW=204 → 80.0%
+1750204503.9639757 [illuminance_pub-2] [INFO] [1750204503.963122097] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204504.9689245 [illuminance_pub-2] [INFO] [1750204504.967493914] [illuminance_sensor]: RAW=204 → 80.0%
+1750204505.9701197 [illuminance_pub-2] [INFO] [1750204505.967369620] [illuminance_sensor]: RAW=204 → 80.0%
+1750204506.3345842 [imu_pub-1] [WARN] [1750204506.328974157] [imu_sensor]: FALL! Roll=6.7°, Pitch=69.6°
+1750204506.9646988 [illuminance_pub-2] [INFO] [1750204506.963991371] [illuminance_sensor]: RAW=206 → 80.7843137254902%
+1750204507.9655259 [illuminance_pub-2] [INFO] [1750204507.961182027] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204508.9685326 [illuminance_pub-2] [INFO] [1750204508.963787588] [illuminance_sensor]: RAW=204 → 80.0%
+1750204509.9756289 [illuminance_pub-2] [INFO] [1750204509.971046171] [illuminance_sensor]: RAW=204 → 80.0%
+1750204510.6256115 [imu_pub-1] [WARN] [1750204510.624263010] [imu_sensor]: FALL! Roll=0.0°, Pitch=67.8°
+1750204510.6399424 [imu_pub-1] [WARN] [1750204510.638089941] [imu_sensor]: FALL! Roll=0.8°, Pitch=67.1°
+1750204510.6591637 [imu_pub-1] [WARN] [1750204510.657259905] [imu_sensor]: FALL! Roll=0.5°, Pitch=66.9°
+1750204510.6700222 [imu_pub-1] [WARN] [1750204510.667491419] [imu_sensor]: FALL! Roll=0.3°, Pitch=67.7°
+1750204510.6923466 [imu_pub-1] [WARN] [1750204510.690571835] [imu_sensor]: FALL! Roll=1.7°, Pitch=67.2°
+1750204510.7038584 [imu_pub-1] [WARN] [1750204510.702985517] [imu_sensor]: FALL! Roll=0.8°, Pitch=66.1°
+1750204510.7247431 [imu_pub-1] [WARN] [1750204510.715769937] [imu_sensor]: FALL! Roll=1.4°, Pitch=65.6°
+1750204510.9619346 [illuminance_pub-2] [INFO] [1750204510.961213461] [illuminance_sensor]: RAW=207 → 81.17647058823529%
+1750204511.9422112 [imu_pub-1] [WARN] [1750204511.940070692] [imu_sensor]: FALL! Roll=1.0°, Pitch=70.9°
+1750204511.9586008 [imu_pub-1] [WARN] [1750204511.957864278] [imu_sensor]: FALL! Roll=2.8°, Pitch=68.8°
+1750204511.9627097 [illuminance_pub-2] [INFO] [1750204511.961779174] [illuminance_sensor]: RAW=206 → 80.7843137254902%
+1750204511.9722795 [illuminance_pub-2] [INFO] [1750204511.968937545] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750204511.9751401 [light_srv-4] [INFO] [1750204511.969381967] [light_actuator]: 💤 불을 끕니다.
+1750204511.9807944 [decision_node-7] [INFO] [1750204511.973873377] [decision_node]: [INFO] send light request: False
+1750204512.0626645 [imu_pub-1] [WARN] [1750204512.061656611] [imu_sensor]: FALL! Roll=0.6°, Pitch=67.1°
+1750204512.0890756 [imu_pub-1] [WARN] [1750204512.088170593] [imu_sensor]: FALL! Roll=1.8°, Pitch=67.4°
+1750204512.1054914 [imu_pub-1] [WARN] [1750204512.102479280] [imu_sensor]: FALL! Roll=3.4°, Pitch=66.7°
+1750204512.1408606 [imu_pub-1] [WARN] [1750204512.135225676] [imu_sensor]: FALL! Roll=0.1°, Pitch=65.9°
+1750204512.1652870 [imu_pub-1] [WARN] [1750204512.161494975] [imu_sensor]: FALL! Roll=0.5°, Pitch=65.6°
+1750204512.1925974 [imu_pub-1] [WARN] [1750204512.188787914] [imu_sensor]: FALL! Roll=0.4°, Pitch=67.2°
+1750204512.2251513 [imu_pub-1] [WARN] [1750204512.222663950] [imu_sensor]: FALL! Roll=0.8°, Pitch=67.1°
+1750204512.3216000 [battery_pub-3] [WARN] [1750204512.320865771] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750204512.3328464 [battery_pub-3] [INFO] [1750204512.322972162] [battery_sensor]: I2C 초기화 성공
+1750204512.9722097 [illuminance_pub-2] [INFO] [1750204512.970935433] [illuminance_sensor]: RAW=204 → 80.0%
+1750204513.9648318 [illuminance_pub-2] [INFO] [1750204513.962265776] [illuminance_sensor]: RAW=204 → 80.0%
+1750204514.9677954 [illuminance_pub-2] [INFO] [1750204514.960429105] [illuminance_sensor]: RAW=204 → 80.0%
+1750204515.9648192 [illuminance_pub-2] [INFO] [1750204515.963850118] [illuminance_sensor]: RAW=204 → 80.0%
+1750204516.9706535 [illuminance_pub-2] [INFO] [1750204516.967878388] [illuminance_sensor]: RAW=204 → 80.0%
+1750204517.6770475 [ble_node-6] [INFO] [1750204517.676125666] [ble_node]: volume_write:10
+1750204517.6796148 [ble_node-6] [INFO] [1750204517.678772609] [ble_node]: Config Published: [True, False, 10]
+1750204517.6843505 [light_srv-4] [INFO] [1750204517.683414832] [light_actuator]: 💤 불을 끕니다.
+1750204517.8289332 [ble_node-6] [INFO] [1750204517.827877744] [ble_node]: volume_write:20
+1750204517.8439209 [light_srv-4] [INFO] [1750204517.843053276] [light_actuator]: 💤 불을 끕니다.
+1750204517.8695314 [ble_node-6] [INFO] [1750204517.866315357] [ble_node]: Config Published: [True, False, 20]
+1750204517.9659557 [illuminance_pub-2] [INFO] [1750204517.961457832] [illuminance_sensor]: RAW=204 → 80.0%
+1750204517.9775727 [ble_node-6] [INFO] [1750204517.976648382] [ble_node]: volume_write:30
+1750204517.9833515 [ble_node-6] [INFO] [1750204517.978942976] [ble_node]: Config Published: [True, False, 30]
+1750204517.9867136 [light_srv-4] [INFO] [1750204517.983979400] [light_actuator]: 💤 불을 끕니다.
+1750204518.1574001 [ble_node-6] [INFO] [1750204518.156492375] [ble_node]: volume_write:40
+1750204518.1740692 [ble_node-6] [INFO] [1750204518.171169337] [ble_node]: Config Published: [True, False, 40]
+1750204518.1777105 [light_srv-4] [INFO] [1750204518.176888645] [light_actuator]: 💤 불을 끕니다.
+1750204518.3118970 [ble_node-6] [INFO] [1750204518.307070093] [ble_node]: volume_write:50
+1750204518.3190615 [ble_node-6] [INFO] [1750204518.314752719] [ble_node]: Config Published: [True, False, 50]
+1750204518.3217077 [light_srv-4] [INFO] [1750204518.317116368] [light_actuator]: 💤 불을 끕니다.
+1750204518.4917336 [ble_node-6] [INFO] [1750204518.487774135] [ble_node]: volume_write:60
+1750204518.4959910 [ble_node-6] [INFO] [1750204518.490901055] [ble_node]: Config Published: [True, False, 60]
+1750204518.5021064 [light_srv-4] [INFO] [1750204518.501148551] [light_actuator]: 💤 불을 끕니다.
+1750204518.6391466 [ble_node-6] [INFO] [1750204518.638301074] [ble_node]: volume_write:70
+1750204518.6487153 [ble_node-6] [INFO] [1750204518.646743639] [ble_node]: Config Published: [True, False, 70]
+1750204518.6547937 [light_srv-4] [INFO] [1750204518.653765215] [light_actuator]: 💤 불을 끕니다.
+1750204518.8370700 [ble_node-6] [INFO] [1750204518.830156624] [ble_node]: volume_write:80
+1750204518.8392510 [imu_pub-1] [WARN] [1750204518.832801715] [imu_sensor]: FALL! Roll=-2.8°, Pitch=65.4°
+1750204518.8642843 [ble_node-6] [INFO] [1750204518.859842507] [ble_node]: Config Published: [True, False, 80]
+1750204518.8655400 [light_srv-4] [INFO] [1750204518.859892211] [light_actuator]: 💤 불을 끕니다.
+1750204518.9823635 [illuminance_pub-2] [INFO] [1750204518.974149502] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204519.9650166 [illuminance_pub-2] [INFO] [1750204519.962895951] [illuminance_sensor]: RAW=207 → 81.17647058823529%
+1750204520.5165141 [ble_node-6] [INFO] [1750204520.510261427] [ble_node]: alarm_write:1
+1750204520.5254862 [ble_node-6] [INFO] [1750204520.518050738] [ble_node]: Config Published: [True, True, 80]
+1750204520.5406759 [light_srv-4] [INFO] [1750204520.537094370] [light_actuator]: 💤 불을 끕니다.
+1750204520.9726105 [illuminance_pub-2] [INFO] [1750204520.969482690] [illuminance_sensor]: RAW=204 → 80.0%
+1750204521.6349094 [imu_pub-1] [WARN] [1750204521.632235174] [imu_sensor]: FALL! Roll=-12.4°, Pitch=74.5°
+1750204521.6382298 [buzzer_srv-5] [INFO] [1750204521.633606849] [buzzer_actuator]: 🔊 Buzzer ON (Duty: 80%) 3.0Sec
+1750204521.6406357 [decision_node-7] [INFO] [1750204521.637429171] [decision_node]: [INFO] send buzzer request: 3.0 seconds
+1750204521.7569418 [imu_pub-1] [WARN] [1750204521.756159985] [imu_sensor]: FALL! Roll=-2.1°, Pitch=66.1°
+1750204521.9683268 [illuminance_pub-2] [INFO] [1750204521.964721037] [illuminance_sensor]: RAW=207 → 81.17647058823529%
+1750204521.9688706 [illuminance_pub-2] [INFO] [1750204521.967362220] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750204521.9751034 [decision_node-7] [INFO] [1750204521.974458055] [decision_node]: [INFO] send light request: False
+1750204521.9791074 [light_srv-4] [INFO] [1750204521.978094379] [light_actuator]: 💤 불을 끕니다.
+1750204522.3205352 [battery_pub-3] [WARN] [1750204522.318278702] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750204522.3261144 [battery_pub-3] [INFO] [1750204522.322530910] [battery_sensor]: I2C 초기화 성공
+1750204522.9643211 [illuminance_pub-2] [INFO] [1750204522.961654558] [illuminance_sensor]: RAW=204 → 80.0%
+1750204523.9655309 [illuminance_pub-2] [INFO] [1750204523.964326500] [illuminance_sensor]: RAW=204 → 80.0%
+1750204524.9626765 [illuminance_pub-2] [INFO] [1750204524.960930416] [illuminance_sensor]: RAW=204 → 80.0%
+1750204525.0279429 [ble_node-6] [INFO] [1750204525.027230446] [ble_node]: volume_write:70
+1750204525.0418887 [ble_node-6] [INFO] [1750204525.039714258] [ble_node]: Config Published: [True, True, 70]
+1750204525.0453880 [light_srv-4] [INFO] [1750204525.044299223] [light_actuator]: 💤 불을 끕니다.
+1750204525.1797073 [ble_node-6] [INFO] [1750204525.178558789] [ble_node]: volume_write:60
+1750204525.1934221 [ble_node-6] [INFO] [1750204525.189606908] [ble_node]: Config Published: [True, True, 60]
+1750204525.1993177 [light_srv-4] [INFO] [1750204525.198565470] [light_actuator]: 💤 불을 끕니다.
+1750204525.3443978 [ble_node-6] [INFO] [1750204525.342298760] [ble_node]: volume_write:50
+1750204525.3589602 [ble_node-6] [INFO] [1750204525.357576884] [ble_node]: Config Published: [True, True, 50]
+1750204525.3724098 [light_srv-4] [INFO] [1750204525.370293935] [light_actuator]: 💤 불을 끕니다.
+1750204525.9364071 [ble_node-6] [INFO] [1750204525.935742075] [ble_node]: volume_write:40
+1750204525.9460597 [light_srv-4] [INFO] [1750204525.942881983] [light_actuator]: 💤 불을 끕니다.
+1750204525.9536004 [ble_node-6] [INFO] [1750204525.950208520] [ble_node]: Config Published: [True, True, 40]
+1750204525.9670219 [illuminance_pub-2] [INFO] [1750204525.965910196] [illuminance_sensor]: RAW=204 → 80.0%
+1750204526.0973027 [ble_node-6] [INFO] [1750204526.093257223] [ble_node]: volume_write:30
+1750204526.1090205 [ble_node-6] [INFO] [1750204526.106020921] [ble_node]: Config Published: [True, True, 30]
+1750204526.1156986 [light_srv-4] [INFO] [1750204526.111272511] [light_actuator]: 💤 불을 끕니다.
+1750204526.2300570 [ble_node-6] [INFO] [1750204526.228758150] [ble_node]: volume_write:20
+1750204526.2368217 [ble_node-6] [INFO] [1750204526.235828355] [ble_node]: Config Published: [True, True, 20]
+1750204526.2413132 [light_srv-4] [INFO] [1750204526.240144637] [light_actuator]: 💤 불을 끕니다.
+1750204526.4802468 [ble_node-6] [INFO] [1750204526.471698238] [ble_node]: volume_write:30
+1750204526.4819970 [light_srv-4] [INFO] [1750204526.481021315] [light_actuator]: 💤 불을 끕니다.
+1750204526.4883153 [ble_node-6] [INFO] [1750204526.485828389] [ble_node]: Config Published: [True, True, 30]
+1750204526.6517799 [ble_node-6] [INFO] [1750204526.648082353] [ble_node]: volume_write:40
+1750204526.6532943 [ble_node-6] [INFO] [1750204526.651743602] [ble_node]: Config Published: [True, True, 40]
+1750204526.6598964 [light_srv-4] [INFO] [1750204526.658085202] [light_actuator]: 💤 불을 끕니다.
+1750204526.8289928 [ble_node-6] [INFO] [1750204526.828013348] [ble_node]: volume_write:50
+1750204526.8400013 [ble_node-6] [INFO] [1750204526.837983772] [ble_node]: Config Published: [True, True, 50]
+1750204526.8442314 [light_srv-4] [INFO] [1750204526.843385619] [light_actuator]: 💤 불을 끕니다.
+1750204526.9699559 [illuminance_pub-2] [INFO] [1750204526.967405394] [illuminance_sensor]: RAW=204 → 80.0%
+1750204527.0119090 [ble_node-6] [INFO] [1750204527.008770485] [ble_node]: volume_write:60
+1750204527.0193596 [ble_node-6] [INFO] [1750204527.017656065] [ble_node]: Config Published: [True, True, 60]
+1750204527.0278318 [light_srv-4] [INFO] [1750204527.023853018] [light_actuator]: 💤 불을 끕니다.
+1750204527.2786281 [ble_node-6] [INFO] [1750204527.277080157] [ble_node]: volume_write:70
+1750204527.2830684 [ble_node-6] [INFO] [1750204527.282376116] [ble_node]: Config Published: [True, True, 70]
+1750204527.2922089 [light_srv-4] [INFO] [1750204527.291392788] [light_actuator]: 💤 불을 끕니다.
+1750204527.4913595 [ble_node-6] [INFO] [1750204527.490603340] [ble_node]: volume_write:80
+1750204527.4986186 [ble_node-6] [INFO] [1750204527.497214975] [ble_node]: Config Published: [True, True, 80]
+1750204527.5006492 [light_srv-4] [INFO] [1750204527.497432788] [light_actuator]: 💤 불을 끕니다.
+1750204527.9561980 [ble_node-6] [INFO] [1750204527.951640392] [ble_node]: volume_write:70
+1750204527.9609835 [light_srv-4] [INFO] [1750204527.957579902] [light_actuator]: 💤 불을 끕니다.
+1750204527.9671965 [ble_node-6] [INFO] [1750204527.965496341] [ble_node]: Config Published: [True, True, 70]
+1750204527.9730532 [illuminance_pub-2] [INFO] [1750204527.965854098] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204528.1171901 [ble_node-6] [INFO] [1750204528.116279338] [ble_node]: volume_write:60
+1750204528.1206367 [ble_node-6] [INFO] [1750204528.119228630] [ble_node]: Config Published: [True, True, 60]
+1750204528.1269798 [light_srv-4] [INFO] [1750204528.122131978] [light_actuator]: 💤 불을 끕니다.
+1750204528.3524055 [ble_node-6] [INFO] [1750204528.349743424] [ble_node]: volume_write:50
+1750204528.3609402 [ble_node-6] [INFO] [1750204528.360258640] [ble_node]: Config Published: [True, True, 50]
+1750204528.3669240 [light_srv-4] [INFO] [1750204528.366184614] [light_actuator]: 💤 불을 끕니다.
+1750204528.5099800 [ble_node-6] [INFO] [1750204528.508988708] [ble_node]: volume_write:40
+1750204528.5141768 [ble_node-6] [INFO] [1750204528.511328746] [ble_node]: Config Published: [True, True, 40]
+1750204528.5290303 [light_srv-4] [INFO] [1750204528.527939582] [light_actuator]: 💤 불을 끕니다.
+1750204528.5550168 [imu_pub-1] [WARN] [1750204528.551379069] [imu_sensor]: FALL! Roll=37.7°, Pitch=68.1°
+1750204528.5642169 [buzzer_srv-5] [INFO] [1750204528.561538936] [buzzer_actuator]: 🔊 Buzzer ON (Duty: 40%) 3.0Sec
+1750204528.5666678 [decision_node-7] [INFO] [1750204528.564529821] [decision_node]: [INFO] send buzzer request: 3.0 seconds
+1750204528.6077666 [imu_pub-1] [WARN] [1750204528.606141521] [imu_sensor]: FALL! Roll=152.5°, Pitch=85.6°
+1750204528.6337872 [imu_pub-1] [WARN] [1750204528.632496264] [imu_sensor]: FALL! Roll=-0.8°, Pitch=69.1°
+1750204528.6472216 [imu_pub-1] [WARN] [1750204528.645624053] [imu_sensor]: FALL! Roll=-0.3°, Pitch=68.1°
+1750204528.6600919 [imu_pub-1] [WARN] [1750204528.659157950] [imu_sensor]: FALL! Roll=147.1°, Pitch=83.8°
+1750204528.7082746 [imu_pub-1] [WARN] [1750204528.705140673] [imu_sensor]: FALL! Roll=2.4°, Pitch=67.3°
+1750204528.7203326 [imu_pub-1] [WARN] [1750204528.713801217] [imu_sensor]: FALL! Roll=-0.8°, Pitch=73.8°
+1750204528.7343724 [imu_pub-1] [WARN] [1750204528.733458364] [imu_sensor]: FALL! Roll=-5.9°, Pitch=74.3°
+1750204528.7456286 [imu_pub-1] [WARN] [1750204528.744729648] [imu_sensor]: FALL! Roll=-5.8°, Pitch=73.0°
+1750204528.7563143 [imu_pub-1] [WARN] [1750204528.755420159] [imu_sensor]: FALL! Roll=0.8°, Pitch=72.6°
+1750204528.7683189 [imu_pub-1] [WARN] [1750204528.767421252] [imu_sensor]: FALL! Roll=1.0°, Pitch=72.1°
+1750204528.7798038 [imu_pub-1] [WARN] [1750204528.778953238] [imu_sensor]: FALL! Roll=-2.9°, Pitch=72.3°
+1750204528.7931330 [imu_pub-1] [WARN] [1750204528.791914436] [imu_sensor]: FALL! Roll=1.2°, Pitch=72.5°
+1750204528.8054776 [imu_pub-1] [WARN] [1750204528.804723875] [imu_sensor]: FALL! Roll=1.7°, Pitch=71.6°
+1750204528.8181567 [imu_pub-1] [WARN] [1750204528.817369908] [imu_sensor]: FALL! Roll=-2.0°, Pitch=70.2°
+1750204528.8272550 [imu_pub-1] [WARN] [1750204528.826375061] [imu_sensor]: FALL! Roll=-8.7°, Pitch=71.4°
+1750204528.8443234 [imu_pub-1] [WARN] [1750204528.840857525] [imu_sensor]: FALL! Roll=0.7°, Pitch=69.9°
+1750204528.8510108 [imu_pub-1] [WARN] [1750204528.850150213] [imu_sensor]: FALL! Roll=1.8°, Pitch=67.4°
+1750204528.9669526 [illuminance_pub-2] [INFO] [1750204528.963957140] [illuminance_sensor]: RAW=206 → 80.7843137254902%
+1750204529.1470032 [ble_node-6] [INFO] [1750204529.145091886] [ble_node]: volume_write:50
+1750204529.1575603 [ble_node-6] [INFO] [1750204529.156597835] [ble_node]: Config Published: [True, True, 50]
+1750204529.1617541 [light_srv-4] [INFO] [1750204529.160894395] [light_actuator]: 💤 불을 끕니다.
+1750204529.3238189 [ble_node-6] [INFO] [1750204529.321398614] [ble_node]: volume_write:60
+1750204529.3330963 [ble_node-6] [INFO] [1750204529.332245679] [ble_node]: Config Published: [True, True, 60]
+1750204529.3381486 [light_srv-4] [INFO] [1750204529.337117605] [light_actuator]: 💤 불을 끕니다.
+1750204529.5075684 [ble_node-6] [INFO] [1750204529.506389645] [ble_node]: volume_write:70
+1750204529.5127029 [ble_node-6] [INFO] [1750204529.510913555] [ble_node]: Config Published: [True, True, 70]
+1750204529.5181620 [light_srv-4] [INFO] [1750204529.517083156] [light_actuator]: 💤 불을 끕니다.
+1750204529.6481066 [ble_node-6] [INFO] [1750204529.647207885] [ble_node]: volume_write:80
+1750204529.6710188 [light_srv-4] [INFO] [1750204529.664668714] [light_actuator]: 💤 불을 끕니다.
+1750204529.6744566 [ble_node-6] [INFO] [1750204529.666459164] [ble_node]: Config Published: [True, True, 80]
+1750204529.8564410 [ble_node-6] [INFO] [1750204529.854525079] [ble_node]: volume_write:90
+1750204529.8909023 [ble_node-6] [INFO] [1750204529.872949439] [ble_node]: Config Published: [True, True, 90]
+1750204529.8937633 [light_srv-4] [INFO] [1750204529.888672596] [light_actuator]: 💤 불을 끕니다.
+1750204529.9622719 [illuminance_pub-2] [INFO] [1750204529.961533429] [illuminance_sensor]: RAW=204 → 80.0%
+1750204529.9780626 [ble_node-6] [INFO] [1750204529.976948700] [ble_node]: volume_write:100
+1750204529.9910405 [ble_node-6] [INFO] [1750204529.987137566] [ble_node]: Config Published: [True, True, 100]
+1750204530.0048425 [light_srv-4] [INFO] [1750204529.999486268] [light_actuator]: 💤 불을 끕니다.
+1750204530.2803500 [ble_node-6] [INFO] [1750204530.277532257] [ble_node]: volume_write:90
+1750204530.2871983 [light_srv-4] [INFO] [1750204530.285574214] [light_actuator]: 💤 불을 끕니다.
+1750204530.2949195 [ble_node-6] [INFO] [1750204530.287843808] [ble_node]: Config Published: [True, True, 90]
+1750204530.4888158 [ble_node-6] [INFO] [1750204530.488102871] [ble_node]: volume_write:80
+1750204530.4937429 [ble_node-6] [INFO] [1750204530.490597926] [ble_node]: Config Published: [True, True, 80]
+1750204530.4991004 [light_srv-4] [INFO] [1750204530.498189239] [light_actuator]: 💤 불을 끕니다.
+1750204530.6734025 [ble_node-6] [INFO] [1750204530.672479686] [ble_node]: volume_write:70
+1750204530.6797969 [ble_node-6] [INFO] [1750204530.676409637] [ble_node]: Config Published: [True, True, 70]
+1750204530.6880939 [light_srv-4] [INFO] [1750204530.686871872] [light_actuator]: 💤 불을 끕니다.
+1750204530.8482287 [ble_node-6] [INFO] [1750204530.847431479] [ble_node]: volume_write:60
+1750204530.8655381 [light_srv-4] [INFO] [1750204530.861970572] [light_actuator]: 💤 불을 끕니다.
+1750204530.8672302 [ble_node-6] [INFO] [1750204530.864708366] [ble_node]: Config Published: [True, True, 60]
+1750204530.9627192 [illuminance_pub-2] [INFO] [1750204530.961963642] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204531.0008976 [ble_node-6] [INFO] [1750204531.000069407] [ble_node]: volume_write:50
+1750204531.0228081 [ble_node-6] [INFO] [1750204531.017425811] [ble_node]: Config Published: [True, True, 50]
+1750204531.0240605 [light_srv-4] [INFO] [1750204531.019090502] [light_actuator]: 💤 불을 끕니다.
+1750204531.1842122 [ble_node-6] [INFO] [1750204531.178202732] [ble_node]: volume_write:40
+1750204531.1888630 [ble_node-6] [INFO] [1750204531.188041861] [ble_node]: Config Published: [True, True, 40]
+1750204531.1973846 [light_srv-4] [INFO] [1750204531.195181621] [light_actuator]: 💤 불을 끕니다.
+1750204531.3482814 [ble_node-6] [INFO] [1750204531.342845531] [ble_node]: volume_write:30
+1750204531.3579607 [ble_node-6] [INFO] [1750204531.356761054] [ble_node]: Config Published: [True, True, 30]
+1750204531.3626800 [light_srv-4] [INFO] [1750204531.361221965] [light_actuator]: 💤 불을 끕니다.
+1750204531.5087104 [ble_node-6] [INFO] [1750204531.506108414] [ble_node]: volume_write:20
+1750204531.5205650 [ble_node-6] [INFO] [1750204531.518791317] [ble_node]: Config Published: [True, True, 20]
+1750204531.5263288 [light_srv-4] [INFO] [1750204531.522155718] [light_actuator]: 💤 불을 끕니다.
+1750204531.5280046 [imu_pub-1] [WARN] [1750204531.526097669] [imu_sensor]: FALL! Roll=6.1°, Pitch=68.3°
+1750204531.5318589 [decision_node-7] [INFO] [1750204531.530866077] [decision_node]: [INFO] send buzzer request: 3.0 seconds
+1750204531.5666502 [buzzer_srv-5] [INFO] [1750204531.565713237] [buzzer_actuator]: 🔊 Buzzer ON (Duty: 20%) 3.0Sec
+1750204531.6676109 [ble_node-6] [INFO] [1750204531.658173161] [ble_node]: volume_write:10
+1750204531.6838765 [light_srv-4] [INFO] [1750204531.677615457] [light_actuator]: 💤 불을 끕니다.
+1750204531.6870525 [ble_node-6] [INFO] [1750204531.681385428] [ble_node]: Config Published: [True, True, 10]
+1750204531.9328392 [ble_node-6] [INFO] [1750204531.929857920] [ble_node]: volume_write:20
+1750204531.9401979 [ble_node-6] [INFO] [1750204531.935806727] [ble_node]: Config Published: [True, True, 20]
+1750204531.9417248 [light_srv-4] [INFO] [1750204531.940539283] [light_actuator]: 💤 불을 끕니다.
+1750204531.9641988 [illuminance_pub-2] [INFO] [1750204531.962717188] [illuminance_sensor]: RAW=204 → 80.0%
+1750204531.9738543 [illuminance_pub-2] [INFO] [1750204531.971082309] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750204531.9793901 [decision_node-7] [INFO] [1750204531.971387529] [decision_node]: [INFO] send light request: False
+1750204531.9833066 [light_srv-4] [INFO] [1750204531.971387085] [light_actuator]: 💤 불을 끕니다.
+1750204532.1149268 [ble_node-6] [INFO] [1750204532.109768566] [ble_node]: volume_write:30
+1750204532.1189563 [ble_node-6] [INFO] [1750204532.117342490] [ble_node]: Config Published: [True, True, 30]
+1750204532.1242948 [light_srv-4] [INFO] [1750204532.122752689] [light_actuator]: 💤 불을 끕니다.
+1750204532.3004434 [ble_node-6] [INFO] [1750204532.299134695] [ble_node]: volume_write:40
+1750204532.3072314 [light_srv-4] [INFO] [1750204532.305861440] [light_actuator]: 💤 불을 끕니다.
+1750204532.3111079 [ble_node-6] [INFO] [1750204532.307071060] [ble_node]: Config Published: [True, True, 40]
+1750204532.3231866 [battery_pub-3] [WARN] [1750204532.322072890] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750204532.3298573 [battery_pub-3] [INFO] [1750204532.329074096] [battery_sensor]: I2C 초기화 성공
+1750204532.4779239 [ble_node-6] [INFO] [1750204532.476755321] [ble_node]: volume_write:50
+1750204532.4868762 [ble_node-6] [INFO] [1750204532.485412458] [ble_node]: Config Published: [True, True, 50]
+1750204532.4959064 [light_srv-4] [INFO] [1750204532.489054338] [light_actuator]: 💤 불을 끕니다.
+1750204532.6600173 [ble_node-6] [INFO] [1750204532.659168077] [ble_node]: volume_write:60
+1750204532.6684375 [light_srv-4] [INFO] [1750204532.665961803] [light_actuator]: 💤 불을 끕니다.
+1750204532.6764917 [ble_node-6] [INFO] [1750204532.669781477] [ble_node]: Config Published: [True, True, 60]
+1750204532.8362622 [ble_node-6] [INFO] [1750204532.834954458] [ble_node]: volume_write:70
+1750204532.8478029 [light_srv-4] [INFO] [1750204532.846956255] [light_actuator]: 💤 불을 끕니다.
+1750204532.8507612 [ble_node-6] [INFO] [1750204532.849920084] [ble_node]: Config Published: [True, True, 70]
+1750204532.9624822 [illuminance_pub-2] [INFO] [1750204532.961703324] [illuminance_sensor]: RAW=204 → 80.0%
+1750204533.0542066 [ble_node-6] [INFO] [1750204533.052751647] [ble_node]: volume_write:80
+1750204533.0704858 [ble_node-6] [INFO] [1750204533.069683166] [ble_node]: Config Published: [True, True, 80]
+1750204533.0734487 [light_srv-4] [INFO] [1750204533.072189462] [light_actuator]: 💤 불을 끕니다.
+1750204533.3998241 [ble_node-6] [INFO] [1750204533.398242567] [ble_node]: volume_write:90
+1750204533.4070563 [ble_node-6] [INFO] [1750204533.405373179] [ble_node]: Config Published: [True, True, 90]
+1750204533.4150410 [light_srv-4] [INFO] [1750204533.410885267] [light_actuator]: 💤 불을 끕니다.
+1750204533.7297900 [ble_node-6] [INFO] [1750204533.728984525] [ble_node]: volume_write:80
+1750204533.7382033 [ble_node-6] [INFO] [1750204533.736270525] [ble_node]: Config Published: [True, True, 80]
+1750204533.7420785 [light_srv-4] [INFO] [1750204533.737439646] [light_actuator]: 💤 불을 끕니다.
+1750204533.9489446 [ble_node-6] [INFO] [1750204533.948045780] [ble_node]: volume_write:70
+1750204533.9541397 [ble_node-6] [INFO] [1750204533.950904758] [ble_node]: Config Published: [True, True, 70]
+1750204533.9623451 [illuminance_pub-2] [INFO] [1750204533.961512122] [illuminance_sensor]: RAW=204 → 80.0%
+1750204533.9640396 [light_srv-4] [INFO] [1750204533.962224412] [light_actuator]: 💤 불을 끕니다.
+1750204534.1302245 [ble_node-6] [INFO] [1750204534.128741161] [ble_node]: volume_write:60
+1750204534.1372151 [ble_node-6] [INFO] [1750204534.136102808] [ble_node]: Config Published: [True, True, 60]
+1750204534.1432304 [light_srv-4] [INFO] [1750204534.140587904] [light_actuator]: 💤 불을 끕니다.
+1750204534.2993495 [ble_node-6] [INFO] [1750204534.296984859] [ble_node]: volume_write:50
+1750204534.3113890 [ble_node-6] [INFO] [1750204534.310652162] [ble_node]: Config Published: [True, True, 50]
+1750204534.3180439 [light_srv-4] [INFO] [1750204534.316628376] [light_actuator]: 💤 불을 끕니다.
+1750204534.4843025 [ble_node-6] [INFO] [1750204534.483291605] [ble_node]: volume_write:40
+1750204534.4929636 [ble_node-6] [INFO] [1750204534.487813570] [ble_node]: Config Published: [True, True, 40]
+1750204534.5242221 [light_srv-4] [INFO] [1750204534.521889347] [light_actuator]: 💤 불을 끕니다.
+1750204534.7184923 [ble_node-6] [INFO] [1750204534.716582010] [ble_node]: volume_write:30
+1750204534.7226276 [ble_node-6] [INFO] [1750204534.721703490] [ble_node]: Config Published: [True, True, 30]
+1750204534.7282467 [light_srv-4] [INFO] [1750204534.726718600] [light_actuator]: 💤 불을 끕니다.
+1750204534.9685907 [illuminance_pub-2] [INFO] [1750204534.967644632] [illuminance_sensor]: RAW=206 → 80.7843137254902%
+1750204535.0085807 [imu_pub-1] [WARN] [1750204535.005544177] [imu_sensor]: FALL! Roll=2.2°, Pitch=68.0°
+1750204535.0120921 [decision_node-7] [INFO] [1750204535.006870629] [decision_node]: [INFO] send buzzer request: 3.0 seconds
+1750204535.0151355 [buzzer_srv-5] [INFO] [1750204535.012770122] [buzzer_actuator]: 🔊 Buzzer ON (Duty: 30%) 3.0Sec
+1750204535.0803950 [imu_pub-1] [WARN] [1750204535.073264253] [imu_sensor]: FALL! Roll=1.4°, Pitch=71.4°
+1750204535.0881538 [imu_pub-1] [WARN] [1750204535.087379756] [imu_sensor]: FALL! Roll=6.3°, Pitch=71.7°
+1750204535.2082620 [imu_pub-1] [WARN] [1750204535.205980926] [imu_sensor]: FALL! Roll=-0.3°, Pitch=67.2°
+1750204535.2196391 [decision_node-7] [INFO] [1750204535.219006178] [decision_node]: [INFO] send buzzer request: 3.0 seconds
+1750204535.6929293 [ble_node-6] [INFO] [1750204535.691880832] [ble_node]: volume_write:40
+1750204535.7034457 [ble_node-6] [INFO] [1750204535.701086206] [ble_node]: Config Published: [True, True, 40]
+1750204535.7172880 [light_srv-4] [INFO] [1750204535.714741769] [light_actuator]: 💤 불을 끕니다.
+1750204535.8650529 [ble_node-6] [INFO] [1750204535.864222240] [ble_node]: volume_write:50
+1750204535.8715978 [ble_node-6] [INFO] [1750204535.870689839] [ble_node]: Config Published: [True, True, 50]
+1750204535.8794589 [light_srv-4] [INFO] [1750204535.877952376] [light_actuator]: 💤 불을 끕니다.
+1750204535.9633539 [illuminance_pub-2] [INFO] [1750204535.961789625] [illuminance_sensor]: RAW=204 → 80.0%
+1750204536.0110939 [ble_node-6] [INFO] [1750204536.009078894] [ble_node]: volume_write:60
+1750204536.0224466 [ble_node-6] [INFO] [1750204536.018993985] [ble_node]: Config Published: [True, True, 60]
+1750204536.0270038 [light_srv-4] [INFO] [1750204536.021068433] [light_actuator]: 💤 불을 끕니다.
+1750204536.1868246 [ble_node-6] [INFO] [1750204536.185917343] [ble_node]: volume_write:70
+1750204536.2068965 [light_srv-4] [INFO] [1750204536.204182926] [light_actuator]: 💤 불을 끕니다.
+1750204536.2094569 [ble_node-6] [INFO] [1750204536.206979071] [ble_node]: Config Published: [True, True, 70]
+1750204536.9619281 [illuminance_pub-2] [INFO] [1750204536.959743739] [illuminance_sensor]: RAW=204 → 80.0%
+1750204537.9657323 [illuminance_pub-2] [INFO] [1750204537.964703357] [illuminance_sensor]: RAW=204 → 80.0%
+1750204538.0213919 [buzzer_srv-5] [INFO] [1750204538.020250490] [buzzer_actuator]: 🔊 Buzzer ON (Duty: 30%) 3.0Sec
+1750204538.9682651 [illuminance_pub-2] [INFO] [1750204538.963449080] [illuminance_sensor]: RAW=204 → 80.0%
+1750204539.9655375 [illuminance_pub-2] [INFO] [1750204539.963633072] [illuminance_sensor]: RAW=204 → 80.0%
+1750204540.9700294 [illuminance_pub-2] [INFO] [1750204540.967088077] [illuminance_sensor]: RAW=204 → 80.0%
+1750204541.9627471 [illuminance_pub-2] [INFO] [1750204541.962039187] [illuminance_sensor]: RAW=204 → 80.0%
+1750204541.9802966 [decision_node-7] [INFO] [1750204541.976885925] [decision_node]: [INFO] send light request: False
+1750204541.9828570 [light_srv-4] [INFO] [1750204541.978554950] [light_actuator]: 💤 불을 끕니다.
+1750204541.9857543 [illuminance_pub-2] [INFO] [1750204541.969759202] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750204542.3253293 [battery_pub-3] [WARN] [1750204542.324535501] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750204542.3287096 [battery_pub-3] [INFO] [1750204542.326758632] [battery_sensor]: I2C 초기화 성공
+1750204542.9705379 [illuminance_pub-2] [INFO] [1750204542.969297852] [illuminance_sensor]: RAW=204 → 80.0%
+1750204543.9636858 [illuminance_pub-2] [INFO] [1750204543.962604385] [illuminance_sensor]: RAW=204 → 80.0%
+1750204544.9654210 [illuminance_pub-2] [INFO] [1750204544.964706649] [illuminance_sensor]: RAW=204 → 80.0%
+1750204545.9827878 [illuminance_pub-2] [INFO] [1750204545.981505933] [illuminance_sensor]: RAW=204 → 80.0%
+1750204546.9625845 [illuminance_pub-2] [INFO] [1750204546.959740604] [illuminance_sensor]: RAW=204 → 80.0%
+1750204547.1707604 [ble_node-6] [INFO] [1750204547.168643109] [ble_node]: light_write:1
+1750204547.1881797 [ble_node-6] [INFO] [1750204547.181519289] [ble_node]: Config Published: [True, True, 70]
+1750204547.1965940 [light_srv-4] [INFO] [1750204547.193597956] [light_actuator]: 💤 불을 끕니다.
+1750204547.9660850 [illuminance_pub-2] [INFO] [1750204547.964478521] [illuminance_sensor]: RAW=204 → 80.0%
+1750204548.8013513 [ble_node-6] [INFO] [1750204548.798969381] [ble_node]: light_write:0
+1750204548.8112206 [ble_node-6] [INFO] [1750204548.808561549] [ble_node]: Config Published: [False, True, 70]
+1750204548.8146415 [light_srv-4] [INFO] [1750204548.812211558] [light_actuator]: 💤 불을 끕니다.
+1750204548.9643273 [illuminance_pub-2] [INFO] [1750204548.962542693] [illuminance_sensor]: RAW=204 → 80.0%
+1750204549.9617350 [illuminance_pub-2] [INFO] [1750204549.960947717] [illuminance_sensor]: RAW=217 → 85.09803921568627%
+1750204550.9670312 [illuminance_pub-2] [INFO] [1750204550.964992126] [illuminance_sensor]: RAW=238 → 93.33333333333333%
+1750204551.9804378 [illuminance_pub-2] [INFO] [1750204551.977208641] [illuminance_sensor]: RAW=236 → 92.54901960784314%
+1750204551.9992628 [illuminance_pub-2] [INFO] [1750204551.994837988] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750204552.0004206 [decision_node-7] [INFO] [1750204551.996749159] [decision_node]: [INFO] send light request: False
+1750204552.0086415 [light_srv-4] [INFO] [1750204552.002856464] [light_actuator]: 💤 불을 끕니다.
+1750204552.3274872 [battery_pub-3] [WARN] [1750204552.325777068] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750204552.3397236 [battery_pub-3] [INFO] [1750204552.327626905] [battery_sensor]: I2C 초기화 성공
+1750204552.9605775 [illuminance_pub-2] [INFO] [1750204552.959652476] [illuminance_sensor]: RAW=235 → 92.15686274509804%
+1750204553.9668045 [illuminance_pub-2] [INFO] [1750204553.963749205] [illuminance_sensor]: RAW=235 → 92.15686274509804%
+1750204554.9623556 [illuminance_pub-2] [INFO] [1750204554.960972098] [illuminance_sensor]: RAW=235 → 92.15686274509804%
+1750204555.9631639 [illuminance_pub-2] [INFO] [1750204555.961799800] [illuminance_sensor]: RAW=235 → 92.15686274509804%
+1750204556.9721618 [illuminance_pub-2] [INFO] [1750204556.961892101] [illuminance_sensor]: RAW=235 → 92.15686274509804%
+1750204557.9668403 [illuminance_pub-2] [INFO] [1750204557.966143558] [illuminance_sensor]: RAW=235 → 92.15686274509804%
+1750204558.9772093 [illuminance_pub-2] [INFO] [1750204558.973196292] [illuminance_sensor]: RAW=235 → 92.15686274509804%
+1750204559.9649558 [illuminance_pub-2] [INFO] [1750204559.963805708] [illuminance_sensor]: RAW=235 → 92.15686274509804%
+1750204560.9735570 [illuminance_pub-2] [INFO] [1750204560.969007385] [illuminance_sensor]: RAW=235 → 92.15686274509804%
+1750204561.9626350 [illuminance_pub-2] [INFO] [1750204561.961802325] [illuminance_sensor]: RAW=235 → 92.15686274509804%
+1750204561.9684701 [illuminance_pub-2] [INFO] [1750204561.965831535] [illuminance_sensor]: [INFO] Illuminance publish: isNight=True
+1750204561.9719982 [decision_node-7] [INFO] [1750204561.970858442] [decision_node]: [INFO] send light request: False
+1750204561.9744055 [light_srv-4] [INFO] [1750204561.971261920] [light_actuator]: 💤 불을 끕니다.
+1750204562.3227165 [battery_pub-3] [WARN] [1750204562.321731950] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750204562.3301299 [battery_pub-3] [INFO] [1750204562.329403225] [battery_sensor]: I2C 초기화 성공
+1750204562.9694095 [illuminance_pub-2] [INFO] [1750204562.968700049] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204563.9663494 [illuminance_pub-2] [INFO] [1750204563.965628072] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204564.9775875 [illuminance_pub-2] [INFO] [1750204564.970468482] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204565.9665744 [illuminance_pub-2] [INFO] [1750204565.965156359] [illuminance_sensor]: RAW=206 → 80.7843137254902%
+1750204566.9657345 [illuminance_pub-2] [INFO] [1750204566.964874718] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204567.9659488 [illuminance_pub-2] [INFO] [1750204567.964530376] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204568.5620406 [ble_node-6] [INFO] [1750204568.560007223] [ble_node]: light_write:1
+1750204568.5741923 [light_srv-4] [INFO] [1750204568.572837644] [light_actuator]: 💡 불을 켭니다.
+1750204568.5797067 [ble_node-6] [INFO] [1750204568.578259344] [ble_node]: Config Published: [True, True, 70]
+1750204568.9649520 [illuminance_pub-2] [INFO] [1750204568.964283331] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204569.9642191 [illuminance_pub-2] [INFO] [1750204569.963147425] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204570.5379810 [ble_node-6] [INFO] [1750204570.535486801] [ble_node]: light_write:0
+1750204570.5390513 [ble_node-6] [INFO] [1750204570.537429008] [ble_node]: Config Published: [False, True, 70]
+1750204570.5484467 [light_srv-4] [INFO] [1750204570.544486251] [light_actuator]: 💤 불을 끕니다.
+1750204570.9663951 [illuminance_pub-2] [INFO] [1750204570.961519375] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204571.9748631 [illuminance_pub-2] [INFO] [1750204571.972090532] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204571.9836490 [illuminance_pub-2] [INFO] [1750204571.977054420] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750204571.9881301 [decision_node-7] [INFO] [1750204571.979244644] [decision_node]: [INFO] send light request: False
+1750204571.9909294 [light_srv-4] [INFO] [1750204571.988974126] [light_actuator]: 💤 불을 끕니다.
+1750204572.3202915 [battery_pub-3] [WARN] [1750204572.318335341] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750204572.3293853 [battery_pub-3] [INFO] [1750204572.326803518] [battery_sensor]: I2C 초기화 성공
+1750204572.9678726 [illuminance_pub-2] [INFO] [1750204572.965395080] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204573.9783316 [illuminance_pub-2] [INFO] [1750204573.973913959] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204574.9630494 [illuminance_pub-2] [INFO] [1750204574.962356955] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204575.9675550 [illuminance_pub-2] [INFO] [1750204575.966360576] [illuminance_sensor]: RAW=206 → 80.7843137254902%
+1750204576.9644134 [illuminance_pub-2] [INFO] [1750204576.962566683] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204577.9767780 [illuminance_pub-2] [INFO] [1750204577.975386407] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204578.9640141 [illuminance_pub-2] [INFO] [1750204578.963145156] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204579.9639168 [illuminance_pub-2] [INFO] [1750204579.962895408] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204580.9627278 [illuminance_pub-2] [INFO] [1750204580.961867668] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204581.9697814 [illuminance_pub-2] [INFO] [1750204581.968878813] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204581.9772549 [decision_node-7] [INFO] [1750204581.976631570] [decision_node]: [INFO] send light request: False
+1750204581.9811912 [light_srv-4] [INFO] [1750204581.977558655] [light_actuator]: 💤 불을 끕니다.
+1750204581.9869850 [illuminance_pub-2] [INFO] [1750204581.979395660] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750204582.3265893 [battery_pub-3] [WARN] [1750204582.324742537] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750204582.3472061 [battery_pub-3] [INFO] [1750204582.343209898] [battery_sensor]: I2C 초기화 성공
+1750204582.9712272 [illuminance_pub-2] [INFO] [1750204582.968973828] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204583.8325515 [ble_node-6] [INFO] [1750204583.830905070] [ble_node]: Central disconnected: <bluezero.device.Device object at 0x7f6cfbe810>
+1750204583.9641972 [illuminance_pub-2] [INFO] [1750204583.962905686] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204584.9672561 [illuminance_pub-2] [INFO] [1750204584.966476585] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204585.9722548 [illuminance_pub-2] [INFO] [1750204585.969392806] [illuminance_sensor]: RAW=206 → 80.7843137254902%
+1750204586.9619901 [illuminance_pub-2] [INFO] [1750204586.961249352] [illuminance_sensor]: RAW=206 → 80.7843137254902%
+1750204587.9682400 [illuminance_pub-2] [INFO] [1750204587.965490899] [illuminance_sensor]: RAW=206 → 80.7843137254902%
+1750204588.9666522 [illuminance_pub-2] [INFO] [1750204588.965229000] [illuminance_sensor]: RAW=212 → 83.13725490196079%
+1750204589.9704127 [illuminance_pub-2] [INFO] [1750204589.966641739] [illuminance_sensor]: RAW=216 → 84.70588235294117%
+1750204590.9772401 [illuminance_pub-2] [INFO] [1750204590.967737444] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750204591.9608121 [illuminance_pub-2] [INFO] [1750204591.959936848] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204591.9732919 [illuminance_pub-2] [INFO] [1750204591.969607423] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750204591.9800320 [light_srv-4] [INFO] [1750204591.972507920] [light_actuator]: 💤 불을 끕니다.
+1750204591.9830141 [decision_node-7] [INFO] [1750204591.972600382] [decision_node]: [INFO] send light request: False
+1750204592.3240113 [battery_pub-3] [WARN] [1750204592.321668127] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750204592.3256269 [battery_pub-3] [INFO] [1750204592.323347947] [battery_sensor]: I2C 초기화 성공
+1750204592.9665992 [illuminance_pub-2] [INFO] [1750204592.963141263] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204593.9655635 [illuminance_pub-2] [INFO] [1750204593.964043420] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204594.9648561 [illuminance_pub-2] [INFO] [1750204594.961974638] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204595.9719093 [illuminance_pub-2] [INFO] [1750204595.966268680] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204596.9655154 [illuminance_pub-2] [INFO] [1750204596.964681767] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204597.9739182 [illuminance_pub-2] [INFO] [1750204597.973071985] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204598.9618676 [illuminance_pub-2] [INFO] [1750204598.961106210] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204599.9759560 [illuminance_pub-2] [INFO] [1750204599.970475943] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204600.9619110 [illuminance_pub-2] [INFO] [1750204600.960019271] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204601.9670663 [illuminance_pub-2] [INFO] [1750204601.965966477] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204601.9721551 [illuminance_pub-2] [INFO] [1750204601.971306288] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750204601.9788442 [decision_node-7] [INFO] [1750204601.978144756] [decision_node]: [INFO] send light request: False
+1750204601.9848990 [light_srv-4] [INFO] [1750204601.983438883] [light_actuator]: 💤 불을 끕니다.
+1750204602.3265705 [battery_pub-3] [WARN] [1750204602.325909627] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750204602.3315983 [battery_pub-3] [INFO] [1750204602.330297168] [battery_sensor]: I2C 초기화 성공
+1750204602.9713564 [illuminance_pub-2] [INFO] [1750204602.963369434] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204603.9672356 [illuminance_pub-2] [INFO] [1750204603.961099390] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204604.9658473 [illuminance_pub-2] [INFO] [1750204604.965056894] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204605.9665201 [illuminance_pub-2] [INFO] [1750204605.963274924] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204606.9693866 [illuminance_pub-2] [INFO] [1750204606.962311987] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204607.9684875 [illuminance_pub-2] [INFO] [1750204607.964640693] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204608.9758627 [illuminance_pub-2] [INFO] [1750204608.963490150] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204609.9683247 [illuminance_pub-2] [INFO] [1750204609.964881625] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204610.9711308 [illuminance_pub-2] [INFO] [1750204610.966341047] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204611.9655859 [illuminance_pub-2] [INFO] [1750204611.960799356] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204611.9661195 [illuminance_pub-2] [INFO] [1750204611.964293015] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750204611.9703922 [decision_node-7] [INFO] [1750204611.968393762] [decision_node]: [INFO] send light request: False
+1750204611.9727938 [light_srv-4] [INFO] [1750204611.969110868] [light_actuator]: 💤 불을 끕니다.
+1750204612.3184657 [battery_pub-3] [WARN] [1750204612.317644164] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750204612.3264208 [battery_pub-3] [INFO] [1750204612.324633260] [battery_sensor]: I2C 초기화 성공
+1750204612.9693015 [illuminance_pub-2] [INFO] [1750204612.964195766] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204613.9622996 [illuminance_pub-2] [INFO] [1750204613.961323132] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204614.9652624 [illuminance_pub-2] [INFO] [1750204614.960595780] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204615.9648678 [illuminance_pub-2] [INFO] [1750204615.962248486] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204616.9628363 [illuminance_pub-2] [INFO] [1750204616.962017078] [illuminance_sensor]: RAW=208 → 81.56862745098039%
+1750204617.9683599 [illuminance_pub-2] [INFO] [1750204617.966744079] [illuminance_sensor]: RAW=207 → 81.17647058823529%
+1750204618.9632788 [illuminance_pub-2] [INFO] [1750204618.962520464] [illuminance_sensor]: RAW=207 → 81.17647058823529%
+1750204619.9659796 [illuminance_pub-2] [INFO] [1750204619.962332079] [illuminance_sensor]: RAW=207 → 81.17647058823529%
+1750204620.9670463 [illuminance_pub-2] [INFO] [1750204620.966159517] [illuminance_sensor]: RAW=207 → 81.17647058823529%
+1750204621.1484742 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1750204621.2191489 [light_srv-4] Traceback (most recent call last):
+1750204621.2337379 [light_srv-4]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/light_srv", line 33, in <module>
+1750204621.2387404 [light_srv-4]     sys.exit(load_entry_point('actuator_pkg==0.0.0', 'console_scripts', 'light_srv')())
+1750204621.2449410 [light_srv-4]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.2498167 [light_srv-4]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/light_service.py", line 50, in main
+1750204621.2557359 [light_srv-4]     rclpy.spin(node)
+1750204621.2607470 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750204621.2662814 [light_srv-4]     executor.spin_once()
+1750204621.2751496 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750204621.2829702 [light_srv-4]     self._spin_once_impl(timeout_sec)
+1750204621.2856858 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 740, in _spin_once_impl
+1750204621.2912073 [light_srv-4]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+1750204621.2985668 [light_srv-4]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.3014817 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+1750204621.3072479 [light_srv-4]     return next(self._cb_iter)
+1750204621.3083022 [light_srv-4]            ^^^^^^^^^^^^^^^^^^^
+1750204621.3093848 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+1750204621.3101892 [light_srv-4]     wait_set.wait(timeout_nsec)
+1750204621.3109298 [light_srv-4] KeyboardInterrupt
+1750204621.3334527 [battery_pub-3] Traceback (most recent call last):
+1750204621.3401518 [battery_pub-3]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/battery_pub", line 33, in <module>
+1750204621.3441117 [battery_pub-3]     sys.exit(load_entry_point('sensor_pkg==0.0.0', 'console_scripts', 'battery_pub')())
+1750204621.3447909 [battery_pub-3]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.3455474 [battery_pub-3]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/battery_node.py", line 62, in main
+1750204621.3463283 [battery_pub-3]     rclpy.spin(node)
+1750204621.3472455 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750204621.3564928 [battery_pub-3]     executor.spin_once()
+1750204621.3584776 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750204621.3611028 [battery_pub-3]     self._spin_once_impl(timeout_sec)
+1750204621.3647203 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 740, in _spin_once_impl
+1750204621.3700333 [battery_pub-3]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+1750204621.3756700 [battery_pub-3]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.3767235 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+1750204621.3787115 [battery_pub-3]     return next(self._cb_iter)
+1750204621.3846269 [battery_pub-3]            ^^^^^^^^^^^^^^^^^^^
+1750204621.3914647 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+1750204621.3958716 [battery_pub-3]     wait_set.wait(timeout_nsec)
+1750204621.3993773 [battery_pub-3] KeyboardInterrupt
+1750204621.4101655 [imu_pub-1] [WARN] [1750204621.156496650] [imu_sensor]: I2C-1 연결 불량 발생
+1750204621.4185560 [imu_pub-1] Failed to publish log message to rosout: publisher's context is invalid, at /home/dongjae/ros2_humble_ws/src/ros2/rcl/rcl/src/rcl/publisher.c:389
+1750204621.4198289 [imu_pub-1] [INFO] [1750204621.168453968] [imu_sensor]: I2C-3 초기화 성공
+1750204621.4243276 [imu_pub-1] Failed to publish log message to rosout: publisher's context is invalid, at /home/dongjae/ros2_humble_ws/src/ros2/rcl/rcl/src/rcl/publisher.c:389
+1750204621.4280372 [decision_node-7] Traceback (most recent call last):
+1750204621.4327142 [decision_node-7]   File "/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/decision_pkg/decision_node", line 33, in <module>
+1750204621.4376433 [decision_node-7]     sys.exit(load_entry_point('decision_pkg==0.0.0', 'console_scripts', 'decision_node')())
+1750204621.4423790 [decision_node-7]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.4447520 [decision_node-7]   File "/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/python3.11/site-packages/decision_pkg/decision_node.py", line 118, in main
+1750204621.4494600 [decision_node-7]     rclpy.spin(node)
+1750204621.4554598 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750204621.4589429 [decision_node-7]     executor.spin_once()
+1750204621.4620092 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750204621.4658742 [decision_node-7]     self._spin_once_impl(timeout_sec)
+1750204621.4691882 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 740, in _spin_once_impl
+1750204621.4727144 [decision_node-7]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+1750204621.4766521 [decision_node-7]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.4801946 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+1750204621.4837191 [decision_node-7]     return next(self._cb_iter)
+1750204621.4856653 [decision_node-7]            ^^^^^^^^^^^^^^^^^^^
+1750204621.4889822 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+1750204621.4964945 [decision_node-7]     wait_set.wait(timeout_nsec)
+1750204621.4977381 [decision_node-7] KeyboardInterrupt
+1750204621.5010414 [vision_node-8] Traceback (most recent call last):
+1750204621.5084956 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/vision_pkg/vision_node", line 33, in <module>
+1750204621.5096331 [vision_node-8]     sys.exit(load_entry_point('vision_pkg==0.0.0', 'console_scripts', 'vision_node')())
+1750204621.5107007 [vision_node-8]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.5129552 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/object_detection_node.py", line 41, in main
+1750204621.5149233 [vision_node-8]     rclpy.spin(node)
+1750204621.5180914 [vision_node-8]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750204621.5252874 [vision_node-8]     executor.spin_once()
+1750204621.5266290 [vision_node-8]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750204621.5285780 [vision_node-8]     self._spin_once_impl(timeout_sec)
+1750204621.5304515 [vision_node-8]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 746, in _spin_once_impl
+1750204621.5366197 [vision_node-8]     handler()
+1750204621.5378885 [vision_node-8]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/task.py", line 254, in __call__
+1750204621.5396104 [vision_node-8]     self._handler.send(None)
+1750204621.5444491 [vision_node-8]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 447, in handler
+1750204621.5525098 [vision_node-8]     await call_coroutine(entity, arg)
+1750204621.5537825 [vision_node-8]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 361, in _execute_timer
+1750204621.5609846 [vision_node-8]     await await_or_execute(tmr.callback)
+1750204621.5620608 [vision_node-8]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 107, in await_or_execute
+1750204621.5726640 [vision_node-8]     return callback(*args)
+1750204621.5745649 [vision_node-8]            ^^^^^^^^^^^^^^^
+1750204621.5805099 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/object_detection_node.py", line 25, in process_frame
+1750204621.5815797 [vision_node-8]     detections = self.detector.detect(frame)
+1750204621.5826049 [vision_node-8]                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.5958009 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolo_detector.py", line 31, in detect
+1750204621.5977626 [vision_node-8]     pred = self.model(img, augment=False)
+1750204621.6045606 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.6166584 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+1750204621.6180153 [vision_node-8]     return self._call_impl(*args, **kwargs)
+1750204621.6285322 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.6298094 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+1750204621.6377358 [vision_node-8]     return forward_call(*args, **kwargs)
+1750204621.6485229 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.6497021 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolov5/models/common.py", line 700, in forward
+1750204621.6557457 [vision_node-8]     y = self.model(im, augment=augment, visualize=visualize) if augment or visualize else self.model(im)
+1750204621.6564269 [vision_node-8]                                                                                           ^^^^^^^^^^^^^^
+1750204621.6573353 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+1750204621.6587801 [vision_node-8]     return self._call_impl(*args, **kwargs)
+1750204621.6612058 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.6642768 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+1750204621.6668224 [vision_node-8]     return forward_call(*args, **kwargs)
+1750204621.6722703 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.6745915 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolov5/models/yolo.py", line 270, in forward
+1750204621.6797636 [vision_node-8]     return self._forward_once(x, profile, visualize)  # single-scale inference, train
+1750204621.6832564 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.6885307 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolov5/models/yolo.py", line 169, in _forward_once
+1750204621.6896844 [vision_node-8]     x = m(x)  # run
+1750204621.6915925 [vision_node-8]         ^^^^
+1750204621.6974556 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+1750204621.6999943 [vision_node-8]     return self._call_impl(*args, **kwargs)
+1750204621.7039895 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.7069831 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+1750204621.7093728 [vision_node-8]     return forward_call(*args, **kwargs)
+1750204621.7133913 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.7144854 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolov5/models/common.py", line 247, in forward
+1750204621.7150598 [vision_node-8]     return self.cv3(torch.cat((self.m(self.cv1(x)), self.cv2(x)), 1))
+1750204621.7162249 [vision_node-8]                                ^^^^^^^^^^^^^^^^^^^
+1750204621.7172887 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+1750204621.7181547 [vision_node-8]     return self._call_impl(*args, **kwargs)
+1750204621.7193677 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.7207217 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+1750204621.7217047 [vision_node-8]     return forward_call(*args, **kwargs)
+1750204621.7226737 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.7238879 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/container.py", line 240, in forward
+1750204621.7253487 [vision_node-8]     input = module(input)
+1750204621.7263718 [vision_node-8]             ^^^^^^^^^^^^^
+1750204621.7273538 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+1750204621.7285025 [vision_node-8]     return self._call_impl(*args, **kwargs)
+1750204621.7297461 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.7309058 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+1750204621.7319562 [vision_node-8]     return forward_call(*args, **kwargs)
+1750204621.7327430 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.7339694 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolov5/models/common.py", line 181, in forward
+1750204621.7349429 [vision_node-8]     return x + self.cv2(self.cv1(x)) if self.add else self.cv2(self.cv1(x))
+1750204621.7358332 [vision_node-8]                                                                ^^^^^^^^^^^
+1750204621.7368925 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+1750204621.7411315 [buzzer_srv-5] Traceback (most recent call last):
+1750204621.7426860 [buzzer_srv-5]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/buzzer_srv", line 33, in <module>
+1750204621.7435036 [buzzer_srv-5]     sys.exit(load_entry_point('actuator_pkg==0.0.0', 'console_scripts', 'buzzer_srv')())
+1750204621.7447340 [buzzer_srv-5]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.7457914 [buzzer_srv-5]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/buzzer_service.py", line 51, in main
+1750204621.7464530 [buzzer_srv-5]     rclpy.shutdown()
+1750204621.7472417 [buzzer_srv-5]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 130, in shutdown
+1750204621.7482624 [buzzer_srv-5]     _shutdown(context=context)
+1750204621.7496803 [buzzer_srv-5]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/utilities.py", line 58, in shutdown
+1750204621.7509050 [buzzer_srv-5]     return context.shutdown()
+1750204621.7522144 [buzzer_srv-5]            ^^^^^^^^^^^^^^^^^^
+1750204621.7534060 [buzzer_srv-5]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/context.py", line 102, in shutdown
+1750204621.7547045 [buzzer_srv-5]     self.__context.shutdown()
+1750204621.7563822 [buzzer_srv-5] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at /home/dongjae/ros2_humble_ws/src/ros2/rcl/rcl/src/rcl/init.c:241
+1750204621.7588377 [ERROR] [decision_node-7]: process has died [pid 25440, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/decision_pkg/decision_node --ros-args -r __node:=decision_node'].
+1750204621.7616241 [illuminance_pub-2] Traceback (most recent call last):
+1750204621.7630599 [illuminance_pub-2]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/illuminance_pub", line 33, in <module>
+1750204621.7645116 [illuminance_pub-2]     sys.exit(load_entry_point('sensor_pkg==0.0.0', 'console_scripts', 'illuminance_pub')())
+1750204621.7658591 [illuminance_pub-2]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.7671154 [illuminance_pub-2]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/illuminance_node.py", line 71, in main
+1750204621.7686157 [illuminance_pub-2]     rclpy.shutdown()
+1750204621.7703521 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 130, in shutdown
+1750204621.7716897 [illuminance_pub-2]     _shutdown(context=context)
+1750204621.7731404 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/utilities.py", line 58, in shutdown
+1750204621.7745492 [illuminance_pub-2]     return context.shutdown()
+1750204621.7760963 [illuminance_pub-2]            ^^^^^^^^^^^^^^^^^^
+1750204621.7775998 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/context.py", line 102, in shutdown
+1750204621.7788358 [illuminance_pub-2]     self.__context.shutdown()
+1750204621.7802610 [illuminance_pub-2] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at /home/dongjae/ros2_humble_ws/src/ros2/rcl/rcl/src/rcl/init.c:241
+1750204621.7829361 [imu_pub-1] Traceback (most recent call last):
+1750204621.7844427 [imu_pub-1]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/imu_pub", line 33, in <module>
+1750204621.7859228 [imu_pub-1]     sys.exit(load_entry_point('sensor_pkg==0.0.0', 'console_scripts', 'imu_pub')())
+1750204621.7872241 [imu_pub-1]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.7889061 [imu_pub-1]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/imu_node.py", line 132, in main
+1750204621.7903724 [imu_pub-1]     rclpy.shutdown()
+1750204621.7919135 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 130, in shutdown
+1750204621.7934194 [imu_pub-1]     _shutdown(context=context)
+1750204621.7947133 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/utilities.py", line 58, in shutdown
+1750204621.7962828 [imu_pub-1]     return context.shutdown()
+1750204621.7976339 [imu_pub-1]            ^^^^^^^^^^^^^^^^^^
+1750204621.7991011 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/context.py", line 102, in shutdown
+1750204621.8005710 [imu_pub-1]     self.__context.shutdown()
+1750204621.8018594 [imu_pub-1] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at /home/dongjae/ros2_humble_ws/src/ros2/rcl/rcl/src/rcl/init.c:241
+1750204621.8046908 [vision_node-8]     return self._call_impl(*args, **kwargs)
+1750204621.8059597 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.8072035 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+1750204621.8102465 [vision_node-8]     return forward_call(*args, **kwargs)
+1750204621.8116462 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.8132355 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolov5/models/common.py", line 91, in forward_fuse
+1750204621.8144293 [vision_node-8]     return self.act(self.conv(x))
+1750204621.8161597 [vision_node-8]                     ^^^^^^^^^^^^
+1750204621.8179059 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+1750204621.8196144 [vision_node-8]     return self._call_impl(*args, **kwargs)
+1750204621.8207045 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.8214912 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+1750204621.8232183 [vision_node-8]     return forward_call(*args, **kwargs)
+1750204621.8247201 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.8259869 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 554, in forward
+1750204621.8275743 [vision_node-8]     return self._conv_forward(input, self.weight, self.bias)
+1750204621.8290381 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750204621.8303449 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 549, in _conv_forward
+1750204621.8318539 [vision_node-8]     return F.conv2d(
+1750204621.8335783 [vision_node-8]            ^^^^^^^^^
+1750204621.8347876 [vision_node-8] KeyboardInterrupt
+1750204621.8469462 [ERROR] [imu_pub-1]: process has died [pid 25428, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/imu_pub --ros-args -r __node:=imu_sensor'].
+1750204621.8654017 [ERROR] [light_srv-4]: process has died [pid 25434, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/light_srv --ros-args -r __node:=light_actuator'].
+1750204621.9010766 [ERROR] [battery_pub-3]: process has died [pid 25432, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/battery_pub --ros-args -r __node:=battery_sensor'].
+1750204621.9202857 [ERROR] [buzzer_srv-5]: process has died [pid 25436, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/buzzer_srv --ros-args -r __node:=buzzer_actuator'].
+1750204621.9691927 [ERROR] [illuminance_pub-2]: process has died [pid 25430, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/illuminance_pub --ros-args -r __node:=illuminance_sensor'].
+1750204623.5591564 [ERROR] [vision_node-8]: process has died [pid 25442, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/vision_pkg/vision_node --ros-args -r __node:=vision_node'].
+1750204626.1886237 [ERROR] [ble_node-6]: process[ble_node-6] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+1750204626.1901243 [INFO] [ble_node-6]: sending signal 'SIGTERM' to process[ble_node-6]
+1750204631.1947267 [ERROR] [ble_node-6]: process[ble_node-6] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+1750204631.1984174 [INFO] [ble_node-6]: sending signal 'SIGKILL' to process[ble_node-6]
+1750204631.2240036 [ERROR] [ble_node-6]: process has died [pid 25438, exit code -9, cmd '/home/dongjae/ros2_kart_ws/install/app_interface_pkg/lib/app_interface_pkg/ble_node --ros-args -r __node:=ble_node'].

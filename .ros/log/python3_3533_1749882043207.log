@@ -1,0 +1,2 @@
+[INFO] [1749882043.434381534] [Battery_state_publisher]: I2C 초기화 성공
+[INFO] [1749882043.435999446] [Battery_state_publisher]: Battery State Publisher started, publishing on /battery_state/data

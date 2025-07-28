@@ -1,0 +1,536 @@
+1750085675.8883495 [INFO] [launch]: All log files can be found below /home/dongjae/.ros/log/2025-06-16-23-54-35-885793-raspberrypi-2794
+1750085675.8887846 [INFO] [launch]: Default logging verbosity is set to INFO
+1750085676.1761940 [INFO] [imu_pub-1]: process started with pid [2795]
+1750085676.1772091 [INFO] [illuminance_pub-2]: process started with pid [2797]
+1750085676.1777751 [INFO] [battery_pub-3]: process started with pid [2799]
+1750085676.1782179 [INFO] [light_srv-4]: process started with pid [2801]
+1750085676.1786084 [INFO] [buzzer_srv-5]: process started with pid [2803]
+1750085676.1872070 [INFO] [ble_node-6]: process started with pid [2805]
+1750085676.1878879 [INFO] [decision_node-7]: process started with pid [2807]
+1750085676.1883729 [INFO] [vision_node-8]: process started with pid [2809]
+1750085678.1754279 [buzzer_srv-5] [INFO] [1750085678.174574844] [buzzer_actuator]: 🔔 PWM Buzzer Control Node Started
+1750085678.2799766 [illuminance_pub-2] [INFO] [1750085678.275960722] [illuminance_sensor]: Initialized PCF8591 at 0x48
+1750085679.0257442 [battery_pub-3] [INFO] [1750085679.024841936] [battery_sensor]: I2C 초기화 성공
+1750085679.0316055 [battery_pub-3] [INFO] [1750085679.030726164] [battery_sensor]: Battery State Publisher started, publishing on /battery_state/data
+1750085679.0677948 [buzzer_srv-5] [INFO] [1750085679.066480749] [buzzer_actuator]: 🔊 Buzzer ON (Duty: 99%)
+1750085679.1518493 [light_srv-4] [INFO] [1750085679.148934674] [light_actuator]: 💡 불을 켭니다.
+1750085679.2298222 [illuminance_pub-2] [ERROR] [1750085679.228551225] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085679.3105221 [ble_node-6] [INFO] [1750085679.309886675] [ble_node]: Loaded config from disk
+1750085679.3427801 [ble_node-6] [INFO] [1750085679.342089483] [ble_node]: Using adapter: D8:3A:DD:F2:4C:84
+1750085679.3947604 [ble_node-6] [INFO] [1750085679.394004128] [ble_node]: BLE GATT Server started
+1750085679.4037716 [ble_node-6] [INFO] [1750085679.403076765] [ble_node]: Config service added
+1750085679.4713540 [imu_pub-1] [INFO] [1750085679.470504660] [imu_sensor]: I2C 초기화 성공
+1750085679.4733315 [imu_pub-1] [INFO] [1750085679.472629408] [imu_sensor]: MPU9250 Gyro publisher started, publishing on /imu/data
+1750085680.2282226 [illuminance_pub-2] [ERROR] [1750085680.227087946] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085681.2277045 [illuminance_pub-2] [ERROR] [1750085681.227080921] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085682.2277851 [illuminance_pub-2] [ERROR] [1750085682.227151602] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085683.2278099 [illuminance_pub-2] [ERROR] [1750085683.227185305] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085684.0665846 [buzzer_srv-5] [INFO] [1750085684.065568140] [buzzer_actuator]: 🔇 Buzzer OFF
+1750085684.1149800 [decision_node-7] [INFO] [1750085684.114299118] [decision_node]: ✅ 요청 성공: 부저가 켜졌습니다.
+1750085684.1171851 [decision_node-7] [INFO] [1750085684.116637569] [decision_node]: ✅ 요청 성공: 불이 켜졌습니다.
+1750085684.1211107 [decision_node-7] [INFO] [1750085684.120553585] [decision_node]: ✅ 요청 성공: 부저가 켜졌습니다.
+1750085684.2278223 [illuminance_pub-2] [ERROR] [1750085684.227202696] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085685.2279596 [illuminance_pub-2] [ERROR] [1750085685.227294144] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085686.2277246 [illuminance_pub-2] [ERROR] [1750085686.227093023] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085687.2281656 [illuminance_pub-2] [ERROR] [1750085687.227534715] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085688.2279100 [illuminance_pub-2] [ERROR] [1750085688.227216637] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085688.9532027 [battery_pub-3] [INFO] [1750085688.952581202] [battery_sensor]: Battery: 91%
+1750085689.2276957 [illuminance_pub-2] [ERROR] [1750085689.227079764] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085690.2285559 [illuminance_pub-2] [ERROR] [1750085690.227487799] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085691.2279081 [illuminance_pub-2] [ERROR] [1750085691.227234802] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085692.2283359 [illuminance_pub-2] [ERROR] [1750085692.227603157] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085693.2281260 [illuminance_pub-2] [ERROR] [1750085693.227508647] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085694.2277794 [illuminance_pub-2] [ERROR] [1750085694.227109455] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085695.2277353 [illuminance_pub-2] [ERROR] [1750085695.227075728] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085696.2278333 [illuminance_pub-2] [ERROR] [1750085696.227203447] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085696.7454777 [vision_node-8] /home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolov5/utils/general.py:32: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+1750085696.7461753 [vision_node-8]   import pkg_resources as pkg
+1750085697.2295609 [illuminance_pub-2] [ERROR] [1750085697.228844493] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085698.2289338 [illuminance_pub-2] [ERROR] [1750085698.228213592] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085698.9535658 [battery_pub-3] [INFO] [1750085698.952850087] [battery_sensor]: Battery: 91%
+1750085699.2289517 [illuminance_pub-2] [ERROR] [1750085699.228249949] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085700.2283623 [illuminance_pub-2] [ERROR] [1750085700.227667034] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085701.2278585 [illuminance_pub-2] [ERROR] [1750085701.227205454] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085702.2277050 [illuminance_pub-2] [ERROR] [1750085702.227071264] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085702.8534434 [vision_node-8] Fusing layers... 
+1750085703.2290385 [illuminance_pub-2] [ERROR] [1750085703.228362106] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085704.1035810 [vision_node-8] Model summary: 157 layers, 7012822 parameters, 0 gradients, 15.8 GFLOPs
+1750085704.1506698 [vision_node-8] [0:56:28.363059156] [2809] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:326 [0mlibcamera v0.5.0+59-d83ff0a4
+1750085704.2302489 [illuminance_pub-2] [ERROR] [1750085704.229643432] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085704.2696955 [vision_node-8] [0:56:28.482099336] [2909] [1;33m WARN [1;37mRPiSdn [1;34msdn.cpp:40 [0mUsing legacy SDN tuning - please consider moving SDN inside rpi.denoise
+1750085704.2720571 [vision_node-8] [0:56:28.484527786] [2909] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:447 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx708@1a to Unicam device /dev/media3 and ISP device /dev/media0
+1750085704.2724335 [vision_node-8] [0:56:28.484597545] [2909] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1121 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+1750085704.3014929 [vision_node-8] [0:56:28.513910796] [2809] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1205 [0mconfiguring streams: (0) 640x480-XBGR8888 (1) 1536x864-SBGGR10_CSI2P
+1750085704.3026693 [vision_node-8] [0:56:28.514379442] [2909] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:622 [0mSensor: /base/soc/i2c0mux/i2c@1/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10 - Selected unicam format: 1536x864-pBAA
+1750085705.2277565 [illuminance_pub-2] [ERROR] [1750085705.227086967] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085706.2278070 [illuminance_pub-2] [ERROR] [1750085706.227157824] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085707.2293897 [illuminance_pub-2] [ERROR] [1750085707.228443639] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085708.2301157 [illuminance_pub-2] [ERROR] [1750085708.229226608] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085708.9555454 [battery_pub-3] [INFO] [1750085708.954528008] [battery_sensor]: Battery: 91%
+1750085709.2297974 [illuminance_pub-2] [ERROR] [1750085709.228820531] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085710.2298949 [illuminance_pub-2] [ERROR] [1750085710.228896139] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085710.8167312 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8171151 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8174012 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8176014 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8177691 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8179357 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8181083 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8183041 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8186047 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8187993 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8189757 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8192160 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8193839 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8196030 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8197684 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8199277 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8200989 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8202796 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8204465 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8206935 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8208475 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8209884 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8211317 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8212671 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8214018 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8215349 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8217173 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8218565 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8219903 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8221211 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8222523 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8223836 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8225169 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8226485 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8228192 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8229537 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8231373 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8232718 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8234084 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8235447 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8236930 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8238873 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8240318 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8242044 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8243465 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8244920 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8246295 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8247983 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8249991 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8251448 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8252857 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8254182 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8255479 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8256779 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8258076 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8259745 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8261158 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8262498 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085710.8263800 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085711.2299743 [illuminance_pub-2] [ERROR] [1750085711.228986897] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085712.2297566 [illuminance_pub-2] [ERROR] [1750085712.228782141] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085713.2300389 [illuminance_pub-2] [ERROR] [1750085713.229006459] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085714.2299292 [illuminance_pub-2] [ERROR] [1750085714.228958134] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085715.2311559 [illuminance_pub-2] [ERROR] [1750085715.230125712] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085716.2297459 [illuminance_pub-2] [ERROR] [1750085716.228768657] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085716.7179301 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7183132 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7185309 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7188683 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7191777 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7193575 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7195168 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7196779 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7198339 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7200651 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7202249 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7203789 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7205391 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7206900 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7208371 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7210314 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7211874 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7213433 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7214897 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7216349 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7217803 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7219253 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7221158 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7222655 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7224119 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7225566 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7227356 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7228820 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7230260 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7232955 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7234516 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7236016 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7237496 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7238989 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7240448 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7242310 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7243836 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7245317 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7246788 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7248247 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7249682 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7251120 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7252960 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7254481 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7255931 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7257380 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7258832 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7260301 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7261753 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7263544 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7265255 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7266750 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7268209 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7269666 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7271590 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7273099 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7274981 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7276506 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085716.7278070 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085717.2298951 [illuminance_pub-2] [ERROR] [1750085717.228891616] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085718.2300191 [illuminance_pub-2] [ERROR] [1750085718.229082281] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085718.9557641 [battery_pub-3] [INFO] [1750085718.954793734] [battery_sensor]: Battery: 91%
+1750085719.2313004 [illuminance_pub-2] [ERROR] [1750085719.229908648] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085720.2298031 [illuminance_pub-2] [ERROR] [1750085720.228835547] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085721.2293866 [illuminance_pub-2] [ERROR] [1750085721.228477037] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085722.2298005 [illuminance_pub-2] [ERROR] [1750085722.228734842] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085722.6181312 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6185846 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6188395 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6191089 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6193652 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6195529 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6197629 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6199794 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6201878 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6204171 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6205866 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6207449 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6208999 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6210544 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6212060 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6213715 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6215336 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6217134 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6218722 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6220245 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6221771 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6223266 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6224837 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6226468 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6228089 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6229601 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6231997 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6233618 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6235085 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6236532 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6238215 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6239672 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6241241 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6243103 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6244578 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6246035 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6247485 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6248930 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6250370 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6251800 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6253238 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6254661 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6256089 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6257508 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6258936 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6260369 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6261797 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6263220 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6264648 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6266079 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6267507 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6268930 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6270657 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6272442 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6273923 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6275373 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6276813 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6278450 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085722.6279941 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085723.2306662 [illuminance_pub-2] [ERROR] [1750085723.229649867] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085724.2300105 [illuminance_pub-2] [ERROR] [1750085724.229017218] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085725.2297149 [illuminance_pub-2] [ERROR] [1750085725.228743625] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085726.2297611 [illuminance_pub-2] [ERROR] [1750085726.228757034] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085727.2300036 [illuminance_pub-2] [ERROR] [1750085727.229010388] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085728.2297459 [illuminance_pub-2] [ERROR] [1750085728.228774302] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085728.5167658 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5171480 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5173473 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5175292 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5177388 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5179210 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5180879 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5182543 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5184445 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5186374 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5188191 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5189869 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5192502 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5194232 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5195820 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5197358 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5198891 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5200830 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5202315 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5203793 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5205269 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5206730 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5208204 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5209668 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5211120 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5212564 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5213990 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5215433 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5216875 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5218303 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5219738 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5221181 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5222604 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5224049 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5225484 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5226934 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5228386 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5229826 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5231721 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5233221 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5234954 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5236442 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5237906 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5239358 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5240798 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5242245 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5243702 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5245254 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5246766 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5248311 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5249789 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5251262 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5252721 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5254214 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5255759 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5257239 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5258718 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5260162 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.5261605 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085728.9558027 [battery_pub-3] [INFO] [1750085728.954540237] [battery_sensor]: Battery: 91%
+1750085729.2294009 [illuminance_pub-2] [ERROR] [1750085729.228432794] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085730.2298121 [illuminance_pub-2] [ERROR] [1750085730.228741525] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085731.2294312 [illuminance_pub-2] [ERROR] [1750085731.228555707] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085732.2299471 [illuminance_pub-2] [ERROR] [1750085732.229025979] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750085732.2836080 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1750085732.3367624 [ble_node-6] Advertisement registered
+1750085732.3389952 [ble_node-6] Traceback (most recent call last):
+1750085732.3426940 [ble_node-6]   File "/home/dongjae/ros2_kart_ws/install/app_interface_pkg/lib/python3.11/site-packages/app_interface_pkg/ble_node.py", line 115, in main
+1750085732.3484912 [ble_node-6]     rclpy.spin(node)
+1750085732.3535519 [ble_node-6]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750085732.3615632 [ble_node-6]     executor.spin_once()
+1750085732.3623650 [ble_node-6]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750085732.3722208 [decision_node-7] Traceback (most recent call last):
+1750085732.3792284 [decision_node-7]   File "/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/decision_pkg/decision_node", line 33, in <module>
+1750085732.3852775 [decision_node-7]     sys.exit(load_entry_point('decision_pkg==0.0.0', 'console_scripts', 'decision_node')())
+1750085732.3864598 [decision_node-7]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750085732.3876271 [decision_node-7]   File "/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/python3.11/site-packages/decision_pkg/decision_node.py", line 64, in main
+1750085732.3903284 [decision_node-7]     rclpy.spin(node)
+1750085732.3929796 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750085732.3956051 [decision_node-7]     executor.spin_once()
+1750085732.3979909 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750085732.3995497 [decision_node-7]     self._spin_once_impl(timeout_sec)
+1750085732.4013388 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 740, in _spin_once_impl
+1750085732.4024155 [decision_node-7]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+1750085732.4033401 [decision_node-7]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750085732.4043405 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+1750085732.4120870 [battery_pub-3] Traceback (most recent call last):
+1750085732.4137490 [battery_pub-3]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/battery_pub", line 33, in <module>
+1750085732.4154522 [battery_pub-3]     sys.exit(load_entry_point('sensor_pkg==0.0.0', 'console_scripts', 'battery_pub')())
+1750085732.4181082 [battery_pub-3]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750085732.4201565 [battery_pub-3]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/battery_node.py", line 62, in main
+1750085732.4248612 [battery_pub-3]     rclpy.spin(node)
+1750085732.4263599 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750085732.4295516 [battery_pub-3]     executor.spin_once()
+1750085732.4328992 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750085732.4361589 [battery_pub-3]     self._spin_once_impl(timeout_sec)
+1750085732.4437404 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 740, in _spin_once_impl
+1750085732.4502101 [battery_pub-3]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+1750085732.4562104 [battery_pub-3]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750085732.4600639 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+1750085732.4671035 [battery_pub-3]     return next(self._cb_iter)
+1750085732.4730022 [battery_pub-3]            ^^^^^^^^^^^^^^^^^^^
+1750085732.4741204 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+1750085732.4948983 [battery_pub-3]     wait_set.wait(timeout_nsec)
+1750085732.4962511 [battery_pub-3] KeyboardInterrupt
+1750085732.5386114 [ble_node-6]     self._spin_once_impl(timeout_sec)
+1750085732.5451055 [ble_node-6]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 748, in _spin_once_impl
+1750085732.5625932 [ble_node-6]     raise handler.exception()
+1750085732.5637512 [ble_node-6]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/task.py", line 254, in __call__
+1750085732.5698373 [ble_node-6]     self._handler.send(None)
+1750085732.5920579 [ble_node-6]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 447, in handler
+1750085732.5929573 [ble_node-6]     await call_coroutine(entity, arg)
+1750085732.5938840 [ble_node-6]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 372, in _execute_subscription
+1750085732.5948727 [ble_node-6]     await await_or_execute(sub.callback, msg)
+1750085732.5957029 [ble_node-6]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 107, in await_or_execute
+1750085732.6035697 [ble_node-6]     return callback(*args)
+1750085732.6123226 [ble_node-6]            ^^^^^^^^^^^^^^^
+1750085732.6137803 [ble_node-6]   File "/home/dongjae/ros2_kart_ws/install/app_interface_pkg/lib/python3.11/site-packages/app_interface_pkg/ble_node.py", line 85, in battery_listener_callback
+1750085732.6266577 [ble_node-6]     self.periph.update_battery_state(percentage)
+1750085732.6341143 [ble_node-6]   File "/home/dongjae/ros2_kart_ws/install/app_interface_pkg/lib/python3.11/site-packages/app_interface_pkg/ble_periph.py", line 129, in update_battery_state
+1750085732.6419275 [ble_node-6]     self.notify_characteristic.set_value(list(percentage.to_bytes(2,byteorder='little',signed=True)))
+1750085732.6437807 [ble_node-6]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750085732.6596055 [ble_node-6] AttributeError: 'NoneType' object has no attribute 'set_value'
+1750085732.6610031 [ble_node-6] 
+1750085732.6736979 [ble_node-6] During handling of the above exception, another exception occurred:
+1750085732.6803868 [ble_node-6] 
+1750085732.6830597 [ble_node-6] Traceback (most recent call last):
+1750085732.6963034 [ble_node-6]   File "/home/dongjae/ros2_kart_ws/install/app_interface_pkg/lib/app_interface_pkg/ble_node", line 33, in <module>
+1750085732.6977768 [ble_node-6]     sys.exit(load_entry_point('app_interface_pkg==0.0.0', 'console_scripts', 'ble_node')())
+1750085732.7099295 [ble_node-6]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750085732.7271378 [ble_node-6]   File "/home/dongjae/ros2_kart_ws/install/app_interface_pkg/lib/python3.11/site-packages/app_interface_pkg/ble_node.py", line 119, in main
+1750085732.7284877 [ble_node-6]     thread.join()
+1750085732.7334907 [ble_node-6]   File "/usr/lib/python3.11/threading.py", line 1112, in join
+1750085732.7425444 [ble_node-6]     self._wait_for_tstate_lock()
+1750085732.7519097 [ble_node-6]   File "/usr/lib/python3.11/threading.py", line 1132, in _wait_for_tstate_lock
+1750085732.7605267 [ble_node-6]     if lock.acquire(block, timeout):
+1750085732.7660441 [ble_node-6]        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750085732.7871156 [ble_node-6] KeyboardInterrupt
+1750085732.8065512 [light_srv-4] Traceback (most recent call last):
+1750085732.8104031 [light_srv-4]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/light_srv", line 33, in <module>
+1750085732.8125668 [light_srv-4]     sys.exit(load_entry_point('actuator_pkg==0.0.0', 'console_scripts', 'light_srv')())
+1750085732.8219862 [light_srv-4]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750085732.8241994 [light_srv-4]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/light_service.py", line 45, in main
+1750085732.8328712 [light_srv-4]     rclpy.spin(node)
+1750085732.8372898 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750085732.8489265 [light_srv-4]     executor.spin_once()
+1750085732.8499854 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750085732.8568130 [light_srv-4]     self._spin_once_impl(timeout_sec)
+1750085732.8642719 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 740, in _spin_once_impl
+1750085732.8815536 [light_srv-4]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+1750085732.8912013 [light_srv-4]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750085732.8926148 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+1750085732.8946424 [ERROR] [buzzer_srv-5]: process has died [pid 2803, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/buzzer_srv --ros-args -r __node:=buzzer_actuator'].
+1750085732.9136803 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9146380 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9276488 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9284151 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9291108 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9297426 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9304113 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9361863 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9371545 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9379172 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9386673 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9405508 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9413099 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9419904 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9427547 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9437666 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9444206 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9449861 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9456046 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9462831 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9468896 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9477527 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9485261 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9493012 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9500442 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9507558 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9517004 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9525576 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9534001 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9541929 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9549608 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9557204 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9564912 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9572442 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9579537 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9586494 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9596012 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9603209 [vision_node-8] 에러발생: Given groups=1, weight of size [32, 3, 6, 6], expected input[1, 1, 640, 640] to have 3 channels, but got 1 channels instead
+1750085732.9645462 [vision_node-8] Traceback (most recent call last):
+1750085732.9658949 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/vision_pkg/vision_node", line 33, in <module>
+1750085732.9679699 [vision_node-8]     sys.exit(load_entry_point('vision_pkg==0.0.0', 'console_scripts', 'vision_node')())
+1750085732.9699252 [vision_node-8]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750085732.9717507 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/object_detection_node.py", line 41, in main
+1750085732.9733543 [vision_node-8]     rclpy.spin(node)
+1750085732.9751263 [vision_node-8]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750085732.9760005 [vision_node-8]     executor.spin_once()
+1750085732.9770780 [vision_node-8]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750085732.9779975 [vision_node-8]     self._spin_once_impl(timeout_sec)
+1750085732.9787264 [vision_node-8]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 740, in _spin_once_impl
+1750085732.9840889 [vision_node-8]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+1750085732.9852192 [vision_node-8]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750085732.9914725 [vision_node-8]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+1750085732.9926541 [vision_node-8]     return next(self._cb_iter)
+1750085732.9937298 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^
+1750085732.9949119 [vision_node-8]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+1750085733.0005302 [vision_node-8]     wait_set.wait(timeout_nsec)
+1750085733.0017095 [vision_node-8] KeyboardInterrupt
+1750085733.0047019 [ERROR] [light_srv-4]: process has died [pid 2801, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/light_srv --ros-args -r __node:=light_actuator'].
+1750085733.0139797 [decision_node-7]     return next(self._cb_iter)
+1750085733.0180225 [decision_node-7]            ^^^^^^^^^^^^^^^^^^^
+1750085733.0193973 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+1750085733.0205710 [decision_node-7]     wait_set.wait(timeout_nsec)
+1750085733.0215750 [decision_node-7] KeyboardInterrupt
+1750085733.0238080 [ERROR] [battery_pub-3]: process has died [pid 2799, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/battery_pub --ros-args -r __node:=battery_sensor'].
+1750085733.0267460 [light_srv-4]     return next(self._cb_iter)
+1750085733.0279231 [light_srv-4]            ^^^^^^^^^^^^^^^^^^^
+1750085733.0290632 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+1750085733.0301561 [light_srv-4]     wait_set.wait(timeout_nsec)
+1750085733.0313172 [light_srv-4] KeyboardInterrupt
+1750085733.0345275 [imu_pub-1] Traceback (most recent call last):
+1750085733.0359035 [imu_pub-1]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/imu_pub", line 33, in <module>
+1750085733.0372546 [imu_pub-1]     sys.exit(load_entry_point('sensor_pkg==0.0.0', 'console_scripts', 'imu_pub')())
+1750085733.0415745 [imu_pub-1]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750085733.0429499 [imu_pub-1]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/imu_node.py", line 100, in main
+1750085733.0441818 [imu_pub-1]     rclpy.shutdown()
+1750085733.0452423 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 130, in shutdown
+1750085733.0464456 [imu_pub-1]     _shutdown(context=context)
+1750085733.0477662 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/utilities.py", line 58, in shutdown
+1750085733.0490403 [imu_pub-1]     return context.shutdown()
+1750085733.0502472 [imu_pub-1]            ^^^^^^^^^^^^^^^^^^
+1750085733.0515444 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/context.py", line 102, in shutdown
+1750085733.0525887 [imu_pub-1]     self.__context.shutdown()
+1750085733.0538690 [imu_pub-1] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at /home/dongjae/ros2_humble_ws/src/ros2/rcl/rcl/src/rcl/init.c:241
+1750085733.0566034 [buzzer_srv-5] Traceback (most recent call last):
+1750085733.0579240 [buzzer_srv-5]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/buzzer_srv", line 33, in <module>
+1750085733.0591745 [buzzer_srv-5]     sys.exit(load_entry_point('actuator_pkg==0.0.0', 'console_scripts', 'buzzer_srv')())
+1750085733.0603280 [buzzer_srv-5]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750085733.0612383 [buzzer_srv-5]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/buzzer_service.py", line 51, in main
+1750085733.0621450 [buzzer_srv-5]     rclpy.shutdown()
+1750085733.0632262 [buzzer_srv-5]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 130, in shutdown
+1750085733.0643733 [buzzer_srv-5]     _shutdown(context=context)
+1750085733.0654991 [buzzer_srv-5]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/utilities.py", line 58, in shutdown
+1750085733.0666335 [buzzer_srv-5]     return context.shutdown()
+1750085733.0677195 [buzzer_srv-5]            ^^^^^^^^^^^^^^^^^^
+1750085733.0686615 [buzzer_srv-5]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/context.py", line 102, in shutdown
+1750085733.0696142 [buzzer_srv-5]     self.__context.shutdown()
+1750085733.0706766 [buzzer_srv-5] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at /home/dongjae/ros2_humble_ws/src/ros2/rcl/rcl/src/rcl/init.c:241
+1750085733.0731139 [illuminance_pub-2] Traceback (most recent call last):
+1750085733.0741744 [illuminance_pub-2]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/illuminance_pub", line 33, in <module>
+1750085733.0754356 [illuminance_pub-2]     sys.exit(load_entry_point('sensor_pkg==0.0.0', 'console_scripts', 'illuminance_pub')())
+1750085733.0768816 [illuminance_pub-2]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750085733.0780232 [illuminance_pub-2]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/illuminance_node.py", line 55, in main
+1750085733.0791991 [illuminance_pub-2]     rclpy.shutdown()
+1750085733.0802441 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 130, in shutdown
+1750085733.0813830 [illuminance_pub-2]     _shutdown(context=context)
+1750085733.0825677 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/utilities.py", line 58, in shutdown
+1750085733.0835261 [illuminance_pub-2]     return context.shutdown()
+1750085733.0845070 [illuminance_pub-2]            ^^^^^^^^^^^^^^^^^^
+1750085733.0854652 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/context.py", line 102, in shutdown
+1750085733.0862191 [illuminance_pub-2]     self.__context.shutdown()
+1750085733.0872378 [illuminance_pub-2] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at /home/dongjae/ros2_humble_ws/src/ros2/rcl/rcl/src/rcl/init.c:241
+1750085733.1113079 [ERROR] [ble_node-6]: process has died [pid 2805, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/app_interface_pkg/lib/app_interface_pkg/ble_node --ros-args -r __node:=ble_node'].
+1750085733.1523192 [ERROR] [illuminance_pub-2]: process has died [pid 2797, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/illuminance_pub --ros-args -r __node:=illuminance_sensor'].
+1750085733.2426813 [ERROR] [decision_node-7]: process has died [pid 2807, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/decision_pkg/decision_node --ros-args -r __node:=decision_node'].
+1750085733.3111010 [ERROR] [imu_pub-1]: process has died [pid 2795, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/imu_pub --ros-args -r __node:=imu_sensor'].
+1750085734.8469224 [ERROR] [vision_node-8]: process has died [pid 2809, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/vision_pkg/vision_node --ros-args -r __node:=vision_node'].

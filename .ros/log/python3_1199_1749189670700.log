@@ -1,0 +1,215 @@
+[INFO] [1749189670.891486863] [ble_gatt_server]: Loaded config from disk
+[INFO] [1749189670.924565296] [ble_gatt_server]: Using adapter: D8:3A:DD:F2:4C:84
+[INFO] [1749189670.976957582] [ble_gatt_server]: BLE GATT Server started
+[INFO] [1749189670.981351493] [ble_gatt_server]: Config service added
+[INFO] [1749189732.179277008] [ble_gatt_server]: Central disconnected: <bluezero.device.Device object at 0x7fa077de10>
+[INFO] [1749189756.605112637] [ble_gatt_server]: Central connected: <bluezero.device.Device object at 0x7fa07d0950>, auth check start
+[INFO] [1749189757.818932107] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749189757.825269040] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749189757.964513342] [ble_gatt_server]: light_read
+[INFO] [1749189758.025137766] [ble_gatt_server]: alarm_read
+[INFO] [1749189758.085164898] [ble_gatt_server]: volume_read
+[INFO] [1749189761.564463324] [ble_gatt_server]: alarm_write:1
+[INFO] [1749189763.485266904] [ble_gatt_server]: alarm_write:0
+[INFO] [1749189764.294939859] [ble_gatt_server]: alarm_write:1
+[INFO] [1749189764.714295253] [ble_gatt_server]: alarm_write:0
+[INFO] [1749189766.184573250] [ble_gatt_server]: alarm_write:1
+[INFO] [1749189766.754407767] [ble_gatt_server]: alarm_write:0
+[INFO] [1749189775.153502693] [ble_gatt_server]: light_write:0
+[INFO] [1749189775.813948752] [ble_gatt_server]: light_write:1
+[INFO] [1749189776.235233203] [ble_gatt_server]: light_write:0
+[INFO] [1749189777.584694768] [ble_gatt_server]: volume_write:33
+[INFO] [1749189777.914357440] [ble_gatt_server]: volume_write:43
+[INFO] [1749189778.244369962] [ble_gatt_server]: volume_write:53
+[INFO] [1749189778.754382990] [ble_gatt_server]: volume_write:43
+[INFO] [1749189778.933877371] [ble_gatt_server]: volume_write:33
+[INFO] [1749189779.084396956] [ble_gatt_server]: volume_write:23
+[INFO] [1749189779.264363389] [ble_gatt_server]: volume_write:13
+[INFO] [1749189779.534327760] [ble_gatt_server]: volume_write:23
+[INFO] [1749189779.684351812] [ble_gatt_server]: volume_write:33
+[INFO] [1749189779.834347586] [ble_gatt_server]: volume_write:43
+[INFO] [1749189779.983900901] [ble_gatt_server]: volume_write:53
+[INFO] [1749189780.104350957] [ble_gatt_server]: volume_write:63
+[INFO] [1749189780.254292343] [ble_gatt_server]: volume_write:73
+[INFO] [1749189780.405218369] [ble_gatt_server]: volume_write:83
+[INFO] [1749189780.554931219] [ble_gatt_server]: volume_write:93
+[INFO] [1749189780.704305239] [ble_gatt_server]: volume_write:103
+[INFO] [1749189780.853895257] [ble_gatt_server]: volume_write:113
+[INFO] [1749189782.235044427] [ble_gatt_server]: volume_write:103
+[INFO] [1749189782.924705797] [ble_gatt_server]: volume_write:93
+[INFO] [1749189783.524015657] [ble_gatt_server]: volume_write:83
+[INFO] [1749189802.754522741] [ble_gatt_server]: alarm_write:1
+[INFO] [1749189802.965275361] [ble_gatt_server]: alarm_write:0
+[INFO] [1749189803.145338273] [ble_gatt_server]: alarm_write:1
+[INFO] [1749189803.294769531] [ble_gatt_server]: alarm_write:0
+[INFO] [1749189805.545563427] [ble_gatt_server]: alarm_write:1
+[INFO] [1749189805.694797335] [ble_gatt_server]: alarm_write:0
+[INFO] [1749189805.875171892] [ble_gatt_server]: alarm_write:1
+[INFO] [1749189806.024909556] [ble_gatt_server]: alarm_write:0
+[INFO] [1749189806.264932395] [ble_gatt_server]: volume_write:93
+[INFO] [1749189806.414785002] [ble_gatt_server]: volume_write:103
+[INFO] [1749189806.564886458] [ble_gatt_server]: volume_write:113
+[INFO] [1749189806.714520678] [ble_gatt_server]: volume_write:123
+[INFO] [1749189806.895482990] [ble_gatt_server]: volume_write:133
+[INFO] [1749189806.984639397] [ble_gatt_server]: volume_write:143
+[INFO] [1749189807.194598282] [ble_gatt_server]: volume_write:133
+[INFO] [1749189807.345332419] [ble_gatt_server]: volume_write:123
+[INFO] [1749189807.494812195] [ble_gatt_server]: volume_write:113
+[INFO] [1749189807.645458648] [ble_gatt_server]: volume_write:103
+[INFO] [1749189807.795149089] [ble_gatt_server]: volume_write:93
+[INFO] [1749189807.944864716] [ble_gatt_server]: volume_write:83
+[INFO] [1749189808.125511437] [ble_gatt_server]: volume_write:73
+[INFO] [1749189808.424855672] [ble_gatt_server]: volume_write:83
+[INFO] [1749189808.574763667] [ble_gatt_server]: volume_write:93
+[INFO] [1749189808.725188732] [ble_gatt_server]: volume_write:103
+[INFO] [1749189808.874771322] [ble_gatt_server]: volume_write:113
+[INFO] [1749189809.025186073] [ble_gatt_server]: volume_write:123
+[INFO] [1749189809.174843626] [ble_gatt_server]: volume_write:133
+[INFO] [1749189809.294814999] [ble_gatt_server]: volume_write:143
+[INFO] [1749189809.564543517] [ble_gatt_server]: volume_write:133
+[INFO] [1749189809.745515403] [ble_gatt_server]: volume_write:123
+[INFO] [1749189809.894518405] [ble_gatt_server]: volume_write:113
+[INFO] [1749189810.075138738] [ble_gatt_server]: volume_write:103
+[INFO] [1749189810.223648299] [ble_gatt_server]: volume_write:93
+[INFO] [1749189810.373610349] [ble_gatt_server]: volume_write:83
+[INFO] [1749189810.524614743] [ble_gatt_server]: volume_write:73
+[INFO] [1749189810.704795857] [ble_gatt_server]: volume_write:63
+[INFO] [1749189810.855485068] [ble_gatt_server]: volume_write:53
+[INFO] [1749189811.034523728] [ble_gatt_server]: volume_write:43
+[INFO] [1749189811.184541037] [ble_gatt_server]: volume_write:33
+[INFO] [1749189811.364528171] [ble_gatt_server]: volume_write:23
+[INFO] [1749189811.484538563] [ble_gatt_server]: volume_write:13
+[INFO] [1749189811.635581253] [ble_gatt_server]: volume_write:3
+[INFO] [1749189811.784594940] [ble_gatt_server]: volume_write:0
+[INFO] [1749189811.934574953] [ble_gatt_server]: volume_write:0
+[INFO] [1749189812.085501181] [ble_gatt_server]: volume_write:0
+[INFO] [1749189812.234586960] [ble_gatt_server]: volume_write:0
+[INFO] [1749189812.774882599] [ble_gatt_server]: volume_write:10
+[INFO] [1749189812.924858335] [ble_gatt_server]: volume_write:20
+[INFO] [1749189813.105559018] [ble_gatt_server]: volume_write:30
+[INFO] [1749189813.254718723] [ble_gatt_server]: volume_write:40
+[INFO] [1749189813.404853364] [ble_gatt_server]: volume_write:50
+[INFO] [1749189813.524539721] [ble_gatt_server]: volume_write:60
+[INFO] [1749189813.704860778] [ble_gatt_server]: volume_write:70
+[INFO] [1749189813.855484786] [ble_gatt_server]: volume_write:80
+[INFO] [1749189813.975202920] [ble_gatt_server]: volume_write:90
+[INFO] [1749189814.153645381] [ble_gatt_server]: volume_write:100
+[INFO] [1749189814.305504972] [ble_gatt_server]: volume_write:110
+[INFO] [1749189814.454780231] [ble_gatt_server]: volume_write:120
+[INFO] [1749189814.605204018] [ble_gatt_server]: volume_write:130
+[INFO] [1749189814.785008449] [ble_gatt_server]: volume_write:140
+[INFO] [1749189814.933633472] [ble_gatt_server]: volume_write:150
+[INFO] [1749189815.084561107] [ble_gatt_server]: volume_write:160
+[INFO] [1749189815.204711127] [ble_gatt_server]: volume_write:170
+[INFO] [1749189815.384859982] [ble_gatt_server]: volume_write:180
+[INFO] [1749189815.534765995] [ble_gatt_server]: volume_write:190
+[INFO] [1749189815.684846952] [ble_gatt_server]: volume_write:200
+[INFO] [1749189815.835467719] [ble_gatt_server]: volume_write:210
+[INFO] [1749189816.134921174] [ble_gatt_server]: volume_write:220
+[INFO] [1749189816.914587563] [ble_gatt_server]: volume_write:230
+[INFO] [1749189818.204919449] [ble_gatt_server]: volume_write:240
+[INFO] [1749189818.385566763] [ble_gatt_server]: volume_write:250
+[INFO] [1749189818.564855642] [ble_gatt_server]: volume_write:255
+[INFO] [1749189818.834739973] [ble_gatt_server]: volume_write:245
+[INFO] [1749189819.015156011] [ble_gatt_server]: volume_write:235
+[INFO] [1749189819.164906914] [ble_gatt_server]: volume_write:225
+[INFO] [1749189819.343638297] [ble_gatt_server]: volume_write:215
+[INFO] [1749189820.845570128] [ble_gatt_server]: volume_write:205
+[INFO] [1749189820.995162884] [ble_gatt_server]: volume_write:195
+[INFO] [1749189821.144590974] [ble_gatt_server]: volume_write:185
+[INFO] [1749189821.295226074] [ble_gatt_server]: volume_write:175
+[INFO] [1749189821.444845052] [ble_gatt_server]: volume_write:165
+[INFO] [1749189821.594802824] [ble_gatt_server]: volume_write:155
+[INFO] [1749189821.715180101] [ble_gatt_server]: volume_write:145
+[INFO] [1749189821.924864265] [ble_gatt_server]: volume_write:155
+[INFO] [1749189822.105561060] [ble_gatt_server]: volume_write:165
+[INFO] [1749189822.404620758] [ble_gatt_server]: volume_write:155
+[INFO] [1749189822.584861019] [ble_gatt_server]: volume_write:145
+[INFO] [1749189822.704621504] [ble_gatt_server]: volume_write:135
+[INFO] [1749189822.885214355] [ble_gatt_server]: volume_write:125
+[INFO] [1749189823.033651546] [ble_gatt_server]: volume_write:115
+[INFO] [1749189823.184876419] [ble_gatt_server]: volume_write:105
+[INFO] [1749189823.335177262] [ble_gatt_server]: volume_write:95
+[INFO] [1749189823.515093470] [ble_gatt_server]: volume_write:85
+[INFO] [1749189823.664856446] [ble_gatt_server]: volume_write:75
+[INFO] [1749189823.814814737] [ble_gatt_server]: volume_write:65
+[INFO] [1749189823.995182700] [ble_gatt_server]: volume_write:55
+[INFO] [1749189827.925700127] [ble_gatt_server]: light_write:1
+[INFO] [1749189828.345591932] [ble_gatt_server]: light_write:0
+[INFO] [1749189828.825606180] [ble_gatt_server]: light_write:1
+[INFO] [1749189829.184942673] [ble_gatt_server]: light_write:0
+[INFO] [1749189829.691449384] [ble_gatt_server]: alarm_write:1
+[INFO] [1749189829.875294839] [ble_gatt_server]: alarm_write:0
+[INFO] [1749189830.055224287] [ble_gatt_server]: alarm_write:1
+[INFO] [1749189830.355214977] [ble_gatt_server]: alarm_write:0
+[INFO] [1749189830.533664473] [ble_gatt_server]: alarm_write:1
+[INFO] [1749189830.714683468] [ble_gatt_server]: alarm_write:0
+[INFO] [1749189830.863656747] [ble_gatt_server]: alarm_write:1
+[INFO] [1749189831.045546717] [ble_gatt_server]: alarm_write:0
+[INFO] [1749189831.944832866] [ble_gatt_server]: volume_write:45
+[INFO] [1749189832.123664600] [ble_gatt_server]: volume_write:35
+[INFO] [1749189832.304739928] [ble_gatt_server]: volume_write:45
+[INFO] [1749189832.485545258] [ble_gatt_server]: volume_write:55
+[INFO] [1749189832.634891534] [ble_gatt_server]: volume_write:45
+[INFO] [1749189832.814805037] [ble_gatt_server]: volume_write:35
+[INFO] [1749189832.935175573] [ble_gatt_server]: volume_write:25
+[INFO] [1749189833.295175116] [ble_gatt_server]: volume_write:35
+[INFO] [1749190076.209568108] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749190076.216307523] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749190076.329117977] [ble_gatt_server]: light_read
+[INFO] [1749190076.389291616] [ble_gatt_server]: alarm_read
+[INFO] [1749190076.449075329] [ble_gatt_server]: volume_read
+[INFO] [1749190267.413974490] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749190267.416711363] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749190267.533565742] [ble_gatt_server]: light_read
+[INFO] [1749190267.594613346] [ble_gatt_server]: alarm_read
+[INFO] [1749190267.654313293] [ble_gatt_server]: volume_read
+[INFO] [1749190409.887207931] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749190409.892276971] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749190410.006775555] [ble_gatt_server]: light_read
+[INFO] [1749190410.067346348] [ble_gatt_server]: alarm_read
+[INFO] [1749190410.126979579] [ble_gatt_server]: volume_read
+[INFO] [1749190569.046517735] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749190569.049469940] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749190569.165234324] [ble_gatt_server]: light_read
+[INFO] [1749190569.225218937] [ble_gatt_server]: alarm_read
+[INFO] [1749190569.285223679] [ble_gatt_server]: volume_read
+[INFO] [1749190939.885289614] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749190939.887999657] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749190940.035575102] [ble_gatt_server]: light_read
+[INFO] [1749190940.094954034] [ble_gatt_server]: alarm_read
+[INFO] [1749190940.155164603] [ble_gatt_server]: volume_read
+[INFO] [1749190968.115663821] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749190968.118546513] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749191080.497820040] [ble_gatt_server]: Central disconnected: <bluezero.device.Device object at 0x7fa07d23d0>
+[INFO] [1749191106.189245461] [ble_gatt_server]: Central connected: <bluezero.device.Device object at 0x7fa07d1790>, auth check start
+[INFO] [1749191107.504475168] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749191107.505881640] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749191107.616692438] [ble_gatt_server]: light_read
+[INFO] [1749191107.676723441] [ble_gatt_server]: alarm_read
+[INFO] [1749191107.736955371] [ble_gatt_server]: volume_read
+[INFO] [1749191333.375777212] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749191333.378474723] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749191333.495184387] [ble_gatt_server]: light_read
+[INFO] [1749191333.555829970] [ble_gatt_server]: alarm_read
+[INFO] [1749191333.615179658] [ble_gatt_server]: volume_read
+[INFO] [1749191347.025096202] [ble_gatt_server]: alarm_write:1
+[INFO] [1749191379.605859300] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749191379.608765755] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749191379.725038708] [ble_gatt_server]: light_read
+[INFO] [1749191379.785049358] [ble_gatt_server]: alarm_read
+[INFO] [1749191379.845049396] [ble_gatt_server]: volume_read
+[INFO] [1749191534.857467197] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749191534.862678674] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749191534.976734703] [ble_gatt_server]: light_read
+[INFO] [1749191535.037037587] [ble_gatt_server]: alarm_read
+[INFO] [1749191535.096725988] [ble_gatt_server]: volume_read
+[INFO] [1749191537.977295035] [ble_gatt_server]: light_read
+[INFO] [1749191538.036808119] [ble_gatt_server]: alarm_read
+[INFO] [1749191538.097070465] [ble_gatt_server]: volume_read
+[INFO] [1749191566.927645239] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749191566.932476584] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749191567.047194372] [ble_gatt_server]: light_read
+[INFO] [1749191567.107898043] [ble_gatt_server]: alarm_read
+[INFO] [1749191567.167236173] [ble_gatt_server]: volume_read
+[INFO] [1749191952.348123939] [ble_gatt_server]: Central disconnected: <bluezero.device.Device object at 0x7fa07ea690>

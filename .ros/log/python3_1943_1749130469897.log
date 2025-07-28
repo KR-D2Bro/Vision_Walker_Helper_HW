@@ -1,0 +1,8 @@
+[INFO] [1749130470.090558044] [ble_gatt_server]: Loaded config from disk
+[INFO] [1749130470.111781307] [ble_gatt_server]: Using adapter: D8:3A:DD:F2:4C:84
+[INFO] [1749130470.143082222] [ble_gatt_server]: BLE GATT Server started
+[INFO] [1749130470.151563494] [ble_gatt_server]: Config service added
+[INFO] [1749130472.773111119] [ble_gatt_server]: Central connected: <bluezero.device.Device object at 0x7f7aec5f50>, auth check start
+[INFO] [1749130479.625029207] [ble_gatt_server]: Read secret key success : 12
+
+[INFO] [1749130479.628112929] [ble_gatt_server]: 12 : 18

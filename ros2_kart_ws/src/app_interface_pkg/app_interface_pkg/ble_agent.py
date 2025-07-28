@@ -1,13 +1,19 @@
 from dbus_next.service import ServiceInterface, method
+from dbus_next.errors import DBusError
 from dbus_next.aio import MessageBus
 from dbus_next.constants import BusType
 
 # D-Bus object path for the agent
 AGENT_PATH = '/test/agent'
 
+class RejectedError(DBusError):
+    def __init__(self, text: str):
+        super().__init__('org.bluez.Error.Rejected', text)
+
 class Agent(ServiceInterface):
-    def __init__(self):
+    def __init__(self, ble_periph):
         super().__init__('org.bluez.Agent1')
+        self.ble_periph = ble_periph
 
     @method()
     def Release(self) -> None:
@@ -15,6 +21,7 @@ class Agent(ServiceInterface):
 
     @method()
     def RequestPinCode(self, device: 'o') -> 's':
+        print('PinCode Requested')
         return '0000'
 
     @method()
@@ -23,7 +30,7 @@ class Agent(ServiceInterface):
 
     @method()
     def RequestPasskey(self, device: 'o') -> 'u':
-        return 0
+        return 123456
 
     @method()
     def DisplayPasskey(self, device: 'o', passkey: 'u', entered: 'u') -> None:
@@ -31,25 +38,27 @@ class Agent(ServiceInterface):
 
     @method()
     def RequestConfirmation(self, device: 'o', passkey: 'u') -> None:
-        # 자동 승인
+        print('Confirmation Requested')
         return
 
     @method()
     def RequestAuthorization(self, device: 'o') -> None:
         return
+        
 
     @method()
     def AuthorizeService(self, device: 'o', uuid: 's') -> None:
+        print(f'[Agent] AuthorizeService for {device}, service {uuid} → auto-allow')
         return
 
     @method()
     def Cancel(self) -> None:
         pass
 
-async def register_agent() -> MessageBus:
+async def register_agent(ble_periph) -> MessageBus:
     # 시스템 버스에 연결
     bus = await MessageBus(bus_type=BusType.SYSTEM).connect()
-    agent = Agent()
+    agent = Agent(ble_periph)
     # 에이전트 객체를 D-Bus에 등록
     bus.export(AGENT_PATH, agent)
     # Introspection 데이터를 가져와 ProxyObject 생성
@@ -62,7 +71,7 @@ async def register_agent() -> MessageBus:
     # AgentManager1 인터페이스 얻기
     mgr = proxy.get_interface('org.bluez.AgentManager1')
     # 에이전트 등록 및 기본 에이전트 지정
-    await mgr.call_register_agent(AGENT_PATH, 'NoInputNoOutput')
+    await mgr.call_register_agent(AGENT_PATH, 'KeyboardDisplay')
     await mgr.call_request_default_agent(AGENT_PATH)
     return bus
 

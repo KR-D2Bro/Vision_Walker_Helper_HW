@@ -1,0 +1,6 @@
+float32 time	#0:turn off, else: n Sec 
+int32 duty_cycle  # 0~100 (%), turn_on이 true일 때만 의미 있음
+---
+
+bool success
+

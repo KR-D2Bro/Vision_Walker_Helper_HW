@@ -11,7 +11,12 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
     ],
-    install_requires=['setuptools'],
+    install_requires=[
+        'setuptools',
+        'smbus2',
+        'rclpy',
+        'numpy',
+        ],
     zip_safe=True,
     maintainer='dongjae',
     maintainer_email='dongjae@todo.todo',
@@ -21,6 +26,8 @@ setup(
     entry_points={
         'console_scripts': [
             'imu_pub = sensor_pkg.imu_node:main',
+            'illuminance_pub = sensor_pkg.illuminance_node:main',
+            'battery_pub = sensor_pkg.battery_node:main',
         ],
     },
 )

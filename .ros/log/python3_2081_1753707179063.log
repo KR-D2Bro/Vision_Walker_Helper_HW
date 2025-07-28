@@ -1,0 +1,4 @@
+[INFO] [1753707180.765599498] [illuminance_sensor]: Initialized PCF8591 at 0x48
+[ERROR] [1753707181.556970043] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1753707182.552119706] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+[ERROR] [1753707183.552426266] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error

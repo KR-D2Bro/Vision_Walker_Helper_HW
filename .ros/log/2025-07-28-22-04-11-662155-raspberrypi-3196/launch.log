@@ -1,0 +1,221 @@
+1753707851.6665804 [INFO] [launch]: All log files can be found below /home/dongjae/.ros/log/2025-07-28-22-04-11-662155-raspberrypi-3196
+1753707851.6672599 [INFO] [launch]: Default logging verbosity is set to INFO
+1753707852.1675663 [INFO] [imu_pub-1]: process started with pid [3295]
+1753707852.1690328 [INFO] [illuminance_pub-2]: process started with pid [3297]
+1753707852.1759727 [INFO] [battery_pub-3]: process started with pid [3299]
+1753707852.1775749 [INFO] [light_srv-4]: process started with pid [3301]
+1753707852.1877675 [INFO] [buzzer_srv-5]: process started with pid [3303]
+1753707852.1884112 [INFO] [ble_node-6]: process started with pid [3306]
+1753707852.1890163 [INFO] [decision_node-7]: process started with pid [3308]
+1753707852.1895587 [INFO] [vision_node-8]: process started with pid [3310]
+1753707853.5325689 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1753707853.6212547 [buzzer_srv-5] Traceback (most recent call last):
+1753707853.6217997 [buzzer_srv-5]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/buzzer_srv", line 10, in <module>
+1753707853.6224966 [buzzer_srv-5]     from importlib.metadata import distribution
+1753707853.6229789 [buzzer_srv-5]   File "/usr/lib/python3.11/importlib/metadata/__init__.py", line 7, in <module>
+1753707853.6251876 [ERROR] [imu_pub-1]: process has died [pid 3295, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/imu_pub --ros-args -r __node:=imu_sensor'].
+1753707853.6259162 [ERROR] [light_srv-4]: process has died [pid 3301, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/light_srv --ros-args -r __node:=light_actuator'].
+1753707853.6275308 [ble_node-6] Traceback (most recent call last):
+1753707853.6286039 [ble_node-6]   File "/home/dongjae/ros2_kart_ws/install/app_interface_pkg/lib/app_interface_pkg/ble_node", line 10, in <module>
+1753707853.6323881 [ble_node-6]     from importlib.metadata import distribution
+1753707853.6326048 [ble_node-6]   File "/usr/lib/python3.11/importlib/metadata/__init__.py", line 17, in <module>
+1753707853.6328316 [ble_node-6]     from . import _adapters, _meta
+1753707853.6330161 [ble_node-6]   File "/usr/lib/python3.11/importlib/metadata/_adapters.py", line 3, in <module>
+1753707853.6337361 [ERROR] [buzzer_srv-5]: process has died [pid 3303, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/buzzer_srv --ros-args -r __node:=buzzer_actuator'].
+1753707853.6357281 [buzzer_srv-5]     import pathlib
+1753707853.6364822 [buzzer_srv-5]   File "/usr/lib/python3.11/pathlib.py", line 111, in <module>
+1753707853.6372268 [buzzer_srv-5]     class _WindowsFlavour(_Flavour):
+1753707853.6378274 [buzzer_srv-5]   File "/usr/lib/python3.11/pathlib.py", line 115, in _WindowsFlavour
+1753707853.6381674 [buzzer_srv-5]     import ntpath
+1753707853.6384752 [buzzer_srv-5]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707853.6390941 [buzzer_srv-5]   File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+1753707853.6396027 [buzzer_srv-5]   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+1753707853.6399195 [buzzer_srv-5]   File "<frozen importlib._bootstrap>", line 982, in exec_module
+1753707853.6401825 [buzzer_srv-5]   File "<frozen ntpath>", line 578, in <module>
+1753707853.6404517 [buzzer_srv-5]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707853.6406944 [buzzer_srv-5]   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+1753707853.6409435 [buzzer_srv-5]   File "<frozen importlib._bootstrap>", line 1080, in _find_spec
+1753707853.6411874 [buzzer_srv-5]   File "<frozen importlib._bootstrap_external>", line 1504, in find_spec
+1753707853.6416728 [buzzer_srv-5]   File "<frozen importlib._bootstrap_external>", line 1476, in _get_spec
+1753707853.6421356 [buzzer_srv-5]   File "<frozen importlib._bootstrap_external>", line 1640, in find_spec
+1753707853.6425114 [buzzer_srv-5]   File "<frozen importlib._bootstrap_external>", line 128, in _path_join
+1753707853.6428823 [buzzer_srv-5]   File "<frozen importlib._bootstrap_external>", line 128, in <listcomp>
+1753707853.6439378 [buzzer_srv-5] KeyboardInterrupt
+1753707853.6463294 [battery_pub-3] Traceback (most recent call last):
+1753707853.6469438 [battery_pub-3]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/battery_pub", line 33, in <module>
+1753707853.6476345 [battery_pub-3]     sys.exit(load_entry_point('sensor_pkg==0.0.0', 'console_scripts', 'battery_pub')())
+1753707853.6479692 [battery_pub-3]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1753707853.6482992 [battery_pub-3]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/battery_pub", line 25, in importlib_load_entry_point
+1753707853.6486733 [battery_pub-3]     return next(matches).load()
+1753707853.6489835 [battery_pub-3]            ^^^^^^^^^^^^^^^^^^^^
+1753707853.6492960 [battery_pub-3]   File "/usr/lib/python3.11/importlib/metadata/__init__.py", line 202, in load
+1753707853.6495471 [battery_pub-3]     module = import_module(match.group('module'))
+1753707853.6497657 [battery_pub-3]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1753707853.6500094 [battery_pub-3]   File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+1753707853.6502726 [battery_pub-3]     return _bootstrap._gcd_import(name[level:], package, level)
+1753707853.6504798 [battery_pub-3]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1753707853.6516616 [battery_pub-3]   File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+1753707853.6525686 [battery_pub-3]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707853.6531663 [battery_pub-3]   File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+1753707853.6536026 [battery_pub-3]   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+1753707853.6540060 [battery_pub-3]   File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+1753707853.6544540 [battery_pub-3]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+1753707853.6548021 [battery_pub-3]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/battery_node.py", line 2, in <module>
+1753707853.6555951 [battery_pub-3]     from rclpy.node import Node
+1753707853.6566918 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/node.py", line 64, in <module>
+1753707853.6572859 [battery_pub-3]     from rclpy.parameter_service import ParameterService
+1753707853.6592133 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/parameter_service.py", line 18, in <module>
+1753707853.6602888 [vision_node-8] Traceback (most recent call last):
+1753707853.6607180 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/vision_pkg/vision_node", line 10, in <module>
+1753707853.6610537 [vision_node-8]     from importlib.metadata import distribution
+1753707853.6613331 [vision_node-8]   File "/usr/lib/python3.11/importlib/metadata/__init__.py", line 17, in <module>
+1753707853.6615400 [vision_node-8]     from . import _adapters, _meta
+1753707853.6617341 [vision_node-8]   File "/usr/lib/python3.11/importlib/metadata/_adapters.py", line 3, in <module>
+1753707853.6634529 [vision_node-8]     import email.message
+1753707853.6672981 [vision_node-8]   File "/usr/lib/python3.11/email/message.py", line 15, in <module>
+1753707853.6688673 [light_srv-4] Traceback (most recent call last):
+1753707853.6694806 [light_srv-4]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/light_srv", line 10, in <module>
+1753707853.6698589 [light_srv-4]     from importlib.metadata import distribution
+1753707853.6701691 [light_srv-4]   File "/usr/lib/python3.11/importlib/metadata/__init__.py", line 7, in <module>
+1753707853.6704426 [light_srv-4]     import pathlib
+1753707853.6706965 [light_srv-4]   File "/usr/lib/python3.11/pathlib.py", line 111, in <module>
+1753707853.6711171 [light_srv-4]     class _WindowsFlavour(_Flavour):
+1753707853.6715834 [light_srv-4]   File "/usr/lib/python3.11/pathlib.py", line 115, in _WindowsFlavour
+1753707853.6719236 [light_srv-4]     import ntpath
+1753707853.6722147 [light_srv-4]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707853.6724963 [light_srv-4]   File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+1753707853.6727347 [light_srv-4]   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+1753707853.6729820 [light_srv-4]   File "<frozen importlib._bootstrap>", line 982, in exec_module
+1753707853.6732786 [light_srv-4]   File "<frozen ntpath>", line 493, in <module>
+1753707853.6734905 [light_srv-4]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707853.6736829 [light_srv-4]   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+1753707853.6738601 [light_srv-4]   File "<frozen importlib._bootstrap>", line 1080, in _find_spec
+1753707853.6740365 [light_srv-4]   File "<frozen importlib._bootstrap_external>", line 1504, in find_spec
+1753707853.6742177 [light_srv-4]   File "<frozen importlib._bootstrap_external>", line 1476, in _get_spec
+1753707853.6744382 [light_srv-4]   File "<frozen importlib._bootstrap_external>", line 1640, in find_spec
+1753707853.6746652 [light_srv-4]   File "<frozen importlib._bootstrap_external>", line 128, in _path_join
+1753707853.6751719 [light_srv-4] KeyboardInterrupt
+1753707853.6766107 [imu_pub-1] Traceback (most recent call last):
+1753707853.6821790 [imu_pub-1]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/imu_pub", line 10, in <module>
+1753707853.6873791 [imu_pub-1]     from importlib.metadata import distribution
+1753707853.6876562 [imu_pub-1]   File "/usr/lib/python3.11/importlib/metadata/__init__.py", line 7, in <module>
+1753707853.6878664 [imu_pub-1]     import pathlib
+1753707853.6880562 [imu_pub-1]   File "/usr/lib/python3.11/pathlib.py", line 111, in <module>
+1753707853.6882801 [imu_pub-1]     class _WindowsFlavour(_Flavour):
+1753707853.6884737 [imu_pub-1]   File "/usr/lib/python3.11/pathlib.py", line 115, in _WindowsFlavour
+1753707853.6886287 [imu_pub-1]     import ntpath
+1753707853.6887877 [imu_pub-1]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707853.6889551 [imu_pub-1]   File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+1753707853.6891041 [imu_pub-1]   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+1753707853.6893342 [imu_pub-1]   File "<frozen importlib._bootstrap>", line 982, in exec_module
+1753707853.6895130 [imu_pub-1]   File "<frozen ntpath>", line 564, in <module>
+1753707853.6897125 [imu_pub-1]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707853.6899009 [imu_pub-1]   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+1753707853.6900902 [imu_pub-1]   File "<frozen importlib._bootstrap>", line 1080, in _find_spec
+1753707853.6903021 [imu_pub-1]   File "<frozen importlib._bootstrap_external>", line 1504, in find_spec
+1753707853.6905057 [imu_pub-1]   File "<frozen importlib._bootstrap_external>", line 1476, in _get_spec
+1753707853.6909499 [imu_pub-1]   File "<frozen importlib._bootstrap_external>", line -1, in find_spec
+1753707853.6916223 [imu_pub-1] KeyboardInterrupt
+1753707853.6929374 [decision_node-7] Traceback (most recent call last):
+1753707853.6935353 [decision_node-7]   File "/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/decision_pkg/decision_node", line 10, in <module>
+1753707853.6940444 [decision_node-7]     from importlib.metadata import distribution
+1753707853.6945922 [decision_node-7]   File "/usr/lib/python3.11/importlib/metadata/__init__.py", line 8, in <module>
+1753707853.6954520 [decision_node-7]     import zipfile
+1753707853.6961620 [decision_node-7]   File "/usr/lib/python3.11/zipfile.py", line 13, in <module>
+1753707853.6966970 [decision_node-7]     import shutil
+1753707853.6973059 [decision_node-7]   File "/usr/lib/python3.11/shutil.py", line 22, in <module>
+1753707853.6987188 [decision_node-7]     import bz2
+1753707853.6998711 [decision_node-7]   File "/usr/lib/python3.11/bz2.py", line 17, in <module>
+1753707853.7020295 [illuminance_pub-2] Traceback (most recent call last):
+1753707853.7030210 [illuminance_pub-2]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/illuminance_pub", line 33, in <module>
+1753707853.7042229 [illuminance_pub-2]     sys.exit(load_entry_point('sensor_pkg==0.0.0', 'console_scripts', 'illuminance_pub')())
+1753707853.7052298 [illuminance_pub-2]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1753707853.7062922 [illuminance_pub-2]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/illuminance_pub", line 25, in importlib_load_entry_point
+1753707853.7075839 [illuminance_pub-2]     return next(matches).load()
+1753707853.7089942 [illuminance_pub-2]            ^^^^^^^^^^^^^^^^^^^^
+1753707853.7102828 [illuminance_pub-2]   File "/usr/lib/python3.11/importlib/metadata/__init__.py", line 202, in load
+1753707853.7114916 [illuminance_pub-2]     module = import_module(match.group('module'))
+1753707853.7124305 [illuminance_pub-2]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1753707853.7132301 [illuminance_pub-2]   File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+1753707853.7138543 [illuminance_pub-2]     return _bootstrap._gcd_import(name[level:], package, level)
+1753707853.7145486 [illuminance_pub-2]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1753707853.7153683 [illuminance_pub-2]   File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+1753707853.7159524 [illuminance_pub-2]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707853.7168031 [illuminance_pub-2]   File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+1753707853.7177622 [illuminance_pub-2]   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+1753707853.7186480 [illuminance_pub-2]   File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+1753707853.7198329 [illuminance_pub-2]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+1753707853.7210522 [illuminance_pub-2]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/illuminance_node.py", line 2, in <module>
+1753707853.7224000 [illuminance_pub-2]     import rclpy
+1753707853.7233446 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 48, in <module>
+1753707853.7239366 [illuminance_pub-2]     from rclpy.parameter import Parameter
+1753707853.7245233 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/parameter.py", line 18, in <module>
+1753707853.7264330 [ble_node-6]     import email.message
+1753707853.7272851 [ble_node-6]   File "/usr/lib/python3.11/email/message.py", line 15, in <module>
+1753707853.7278237 [ble_node-6]     from email import utils
+1753707853.7283804 [ble_node-6]   File "/usr/lib/python3.11/email/utils.py", line 40, in <module>
+1753707853.7295313 [vision_node-8]     from email import utils
+1753707853.7301457 [vision_node-8]   File "/usr/lib/python3.11/email/utils.py", line 40, in <module>
+1753707853.7350214 [illuminance_pub-2]     from rcl_interfaces.msg import Parameter as ParameterMsg
+1753707853.7355604 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rcl_interfaces/lib/python3.11/site-packages/rcl_interfaces/msg/__init__.py", line 1, in <module>
+1753707853.7375216 [battery_pub-3]     from rcl_interfaces.srv import DescribeParameters, GetParameters, GetParameterTypes
+1753707853.7384768 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rcl_interfaces/lib/python3.11/site-packages/rcl_interfaces/srv/__init__.py", line 3, in <module>
+1753707853.7399893 [vision_node-8]     from email.charset import Charset
+1753707853.7416449 [vision_node-8]   File "/usr/lib/python3.11/email/charset.py", line 15, in <module>
+1753707853.7441065 [ble_node-6]     from email.charset import Charset
+1753707853.7447860 [ble_node-6]   File "/usr/lib/python3.11/email/charset.py", line 15, in <module>
+1753707853.7478180 [battery_pub-3]     from rcl_interfaces.srv._get_parameters import GetParameters  # noqa: F401
+1753707853.7488468 [battery_pub-3]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1753707853.7497675 [battery_pub-3]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707853.7509356 [battery_pub-3]   File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+1753707853.7514994 [battery_pub-3]   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+1753707853.7518291 [battery_pub-3]   File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+1753707853.7522049 [battery_pub-3]   File "<frozen importlib._bootstrap_external>", line 1069, in get_code
+1753707853.7526851 [battery_pub-3]   File "<frozen importlib._bootstrap_external>", line 729, in _compile_bytecode
+1753707853.7536721 [battery_pub-3] KeyboardInterrupt
+1753707853.7565424 [illuminance_pub-2]     from rcl_interfaces.msg._floating_point_range import FloatingPointRange  # noqa: F401
+1753707853.7582352 [illuminance_pub-2]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1753707853.7592626 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rcl_interfaces/lib/python3.11/site-packages/rcl_interfaces/msg/_floating_point_range.py", line 12, in <module>
+1753707853.7631290 [decision_node-7]     from _bz2 import BZ2Compressor, BZ2Decompressor
+1753707853.7651398 [decision_node-7]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707853.7664156 [decision_node-7]   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+1753707853.7676246 [decision_node-7]   File "<frozen importlib._bootstrap>", line 1080, in _find_spec
+1753707853.7687602 [decision_node-7]   File "<frozen importlib._bootstrap_external>", line 1504, in find_spec
+1753707853.7700627 [decision_node-7]   File "<frozen importlib._bootstrap_external>", line 1476, in _get_spec
+1753707853.7714894 [decision_node-7]   File "<frozen importlib._bootstrap_external>", line 1612, in find_spec
+1753707853.7723405 [decision_node-7]   File "<frozen importlib._bootstrap_external>", line 147, in _path_stat
+1753707853.7734432 [decision_node-7] KeyboardInterrupt
+1753707853.7767870 [ble_node-6]     import email.quoprimime
+1753707853.7777967 [ble_node-6]   File "/usr/lib/python3.11/email/quoprimime.py", line 44, in <module>
+1753707853.7788076 [ERROR] [decision_node-7]: process has died [pid 3308, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/decision_pkg/decision_node --ros-args -r __node:=decision_node'].
+1753707853.7805285 [vision_node-8]     import email.quoprimime
+1753707853.7810442 [vision_node-8]   File "/usr/lib/python3.11/email/quoprimime.py", line 44, in <module>
+1753707853.7840011 [illuminance_pub-2]     import rosidl_parser.definition  # noqa: E402, I100
+1753707853.7855661 [illuminance_pub-2]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1753707853.7867367 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rosidl_parser/lib/python3.11/site-packages/rosidl_parser/definition.py", line 211, in <module>
+1753707853.7888033 [vision_node-8]     from string import ascii_letters, digits, hexdigits
+1753707853.7915959 [ble_node-6]     from string import ascii_letters, digits, hexdigits
+1753707853.7927916 [ble_node-6]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707853.7940149 [ble_node-6]   File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+1753707853.7952213 [ble_node-6]   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+1753707853.7963302 [ble_node-6]   File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+1753707853.7977231 [ble_node-6]   File "<frozen importlib._bootstrap_external>", line 1069, in get_code
+1753707853.7989488 [ble_node-6]   File "<frozen importlib._bootstrap_external>", line 729, in _compile_bytecode
+1753707853.8001599 [ble_node-6] KeyboardInterrupt
+1753707853.8024824 [vision_node-8]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707853.8036749 [vision_node-8]   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+1753707853.8042986 [vision_node-8]   File "<frozen importlib._bootstrap>", line 1080, in _find_spec
+1753707853.8049073 [vision_node-8]   File "<frozen importlib._bootstrap_external>", line 1504, in find_spec
+1753707853.8053839 [vision_node-8]   File "<frozen importlib._bootstrap_external>", line 1476, in _get_spec
+1753707853.8059509 [vision_node-8]   File "<frozen importlib._bootstrap_external>", line -1, in find_spec
+1753707853.8067231 [vision_node-8] KeyboardInterrupt
+1753707853.8097765 [illuminance_pub-2]     class BoundedString(AbstractString):
+1753707853.8113785 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rosidl_parser/lib/python3.11/site-packages/rosidl_parser/definition.py", line 211, in BoundedString
+1753707853.8121817 [illuminance_pub-2]     class BoundedString(AbstractString):
+1753707853.8133650 [illuminance_pub-2]     
+1753707853.8140776 [illuminance_pub-2] KeyboardInterrupt
+1753707853.8369007 [ERROR] [vision_node-8]: process has died [pid 3310, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/vision_pkg/vision_node --ros-args -r __node:=vision_node'].
+1753707853.9477365 [ERROR] [illuminance_pub-2]: process has died [pid 3297, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/illuminance_pub --ros-args -r __node:=illuminance_sensor'].
+1753707853.9608636 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1753707853.9621921 [ERROR] [ble_node-6]: process has died [pid 3306, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/app_interface_pkg/lib/app_interface_pkg/ble_node --ros-args -r __node:=ble_node'].
+1753707853.9719093 [ERROR] [battery_pub-3]: process has died [pid 3299, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/battery_pub --ros-args -r __node:=battery_sensor'].

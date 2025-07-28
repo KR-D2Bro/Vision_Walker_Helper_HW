@@ -1,0 +1,216 @@
+1750215466.9896626 [INFO] [launch]: All log files can be found below /home/dongjae/.ros/log/2025-06-18-11-57-46-953358-raspberrypi-704
+1750215466.9900985 [INFO] [launch]: Default logging verbosity is set to INFO
+1750215467.2916672 [INFO] [imu_pub-1]: process started with pid [940]
+1750215467.2923920 [INFO] [illuminance_pub-2]: process started with pid [942]
+1750215467.2929759 [INFO] [battery_pub-3]: process started with pid [944]
+1750215467.2936866 [INFO] [light_srv-4]: process started with pid [946]
+1750215467.2942183 [INFO] [buzzer_srv-5]: process started with pid [948]
+1750215467.2946844 [INFO] [ble_node-6]: process started with pid [950]
+1750215467.3035946 [INFO] [decision_node-7]: process started with pid [952]
+1750215467.3040543 [INFO] [vision_node-8]: process started with pid [954]
+1750215469.8276811 [buzzer_srv-5] [INFO] [1750215469.821763933] [buzzer_actuator]: 🔔 PWM Buzzer Control Node Started
+1750215470.2133987 [decision_node-7] [INFO] [1750215470.212664525] [decision_node]: Loaded config from disk
+1750215470.3303931 [battery_pub-3] [INFO] [1750215470.327591321] [battery_sensor]: I2C 초기화 성공
+1750215470.3362041 [battery_pub-3] [INFO] [1750215470.333004544] [battery_sensor]: Battery State Publisher started, publishing on /battery_state/data
+1750215470.3942285 [illuminance_pub-2] [INFO] [1750215470.393392525] [illuminance_sensor]: Initialized PCF8591 at 0x48
+1750215470.4332576 [imu_pub-1] [INFO] [1750215470.432311340] [imu_sensor]: I2C-3 초기화 성공
+1750215470.8223207 [imu_pub-1] [INFO] [1750215470.819183173] [imu_sensor]: FallDetectionNode started: roll_thr=65.0°, pitch_thr=65.0°
+1750215470.8806129 [ble_node-6] [INFO] [1750215470.879955914] [ble_node]: Using adapter: D8:3A:DD:F2:4C:84
+1750215470.9357195 [ble_node-6] [INFO] [1750215470.935183654] [ble_node]: BLE GATT Server started
+1750215470.9423132 [ble_node-6] [INFO] [1750215470.941687988] [ble_node]: Config service added
+1750215471.3393643 [illuminance_pub-2] [INFO] [1750215471.338706987] [illuminance_sensor]: RAW=244 → 95.68627450980392%
+1750215472.3393176 [illuminance_pub-2] [INFO] [1750215472.338589672] [illuminance_sensor]: RAW=246 → 96.47058823529412%
+1750215473.3395615 [illuminance_pub-2] [INFO] [1750215473.338880857] [illuminance_sensor]: RAW=246 → 96.47058823529412%
+1750215474.3391864 [illuminance_pub-2] [INFO] [1750215474.338524930] [illuminance_sensor]: RAW=245 → 96.07843137254902%
+1750215475.3398113 [illuminance_pub-2] [INFO] [1750215475.338910633] [illuminance_sensor]: RAW=246 → 96.47058823529412%
+1750215476.3396060 [illuminance_pub-2] [INFO] [1750215476.338917484] [illuminance_sensor]: RAW=246 → 96.47058823529412%
+1750215477.3394613 [illuminance_pub-2] [INFO] [1750215477.338755688] [illuminance_sensor]: RAW=243 → 95.29411764705881%
+1750215478.1867898 [imu_pub-1] [WARN] [1750215478.182700168] [imu_sensor]: FALL! Roll=-67.2°, Pitch=4.0°
+1750215478.1878240 [decision_node-7] [INFO] [1750215478.185152706] [decision_node]: [INFO] send buzzer request: 3.0 seconds
+1750215478.1888061 [buzzer_srv-5] [INFO] [1750215478.185854706] [buzzer_actuator]: 🔊 Buzzer ON (Duty: 90%) 3.0Sec
+1750215478.1940796 [imu_pub-1] [WARN] [1750215478.193440891] [imu_sensor]: FALL! Roll=-69.0°, Pitch=3.7°
+1750215478.2732522 [imu_pub-1] [WARN] [1750215478.272563965] [imu_sensor]: FALL! Roll=-67.1°, Pitch=2.5°
+1750215478.2835200 [imu_pub-1] [WARN] [1750215478.282856094] [imu_sensor]: FALL! Roll=-68.6°, Pitch=2.0°
+1750215478.2934713 [imu_pub-1] [WARN] [1750215478.292794446] [imu_sensor]: FALL! Roll=-66.7°, Pitch=2.0°
+1750215478.3032999 [imu_pub-1] [WARN] [1750215478.302590798] [imu_sensor]: FALL! Roll=-69.2°, Pitch=2.8°
+1750215478.3133039 [imu_pub-1] [WARN] [1750215478.312627483] [imu_sensor]: FALL! Roll=-67.6°, Pitch=3.2°
+1750215478.3238690 [imu_pub-1] [WARN] [1750215478.323152780] [imu_sensor]: FALL! Roll=-66.0°, Pitch=3.8°
+1750215478.3333008 [imu_pub-1] [WARN] [1750215478.332666150] [imu_sensor]: FALL! Roll=-65.3°, Pitch=4.2°
+1750215478.3409767 [illuminance_pub-2] [INFO] [1750215478.340279242] [illuminance_sensor]: RAW=244 → 95.68627450980392%
+1750215478.3453588 [imu_pub-1] [WARN] [1750215478.344669446] [imu_sensor]: FALL! Roll=-66.6°, Pitch=4.2°
+1750215478.3542862 [imu_pub-1] [WARN] [1750215478.353023409] [imu_sensor]: FALL! Roll=-68.1°, Pitch=4.6°
+1750215478.3637803 [imu_pub-1] [WARN] [1750215478.363049539] [imu_sensor]: FALL! Roll=-71.4°, Pitch=4.4°
+1750215478.3733048 [imu_pub-1] [WARN] [1750215478.372620724] [imu_sensor]: FALL! Roll=-72.3°, Pitch=4.1°
+1750215478.3834631 [imu_pub-1] [WARN] [1750215478.382609446] [imu_sensor]: FALL! Roll=-72.1°, Pitch=5.2°
+1750215478.3953683 [imu_pub-1] [WARN] [1750215478.394245854] [imu_sensor]: FALL! Roll=-72.9°, Pitch=5.7°
+1750215478.4041004 [imu_pub-1] [WARN] [1750215478.402955113] [imu_sensor]: FALL! Roll=-72.9°, Pitch=6.6°
+1750215478.4134009 [imu_pub-1] [WARN] [1750215478.412676168] [imu_sensor]: FALL! Roll=-72.7°, Pitch=6.5°
+1750215478.4233809 [imu_pub-1] [WARN] [1750215478.422574576] [imu_sensor]: FALL! Roll=-73.1°, Pitch=8.0°
+1750215478.4336793 [imu_pub-1] [WARN] [1750215478.432966687] [imu_sensor]: FALL! Roll=-75.6°, Pitch=5.8°
+1750215478.4434340 [imu_pub-1] [WARN] [1750215478.442651168] [imu_sensor]: FALL! Roll=-76.3°, Pitch=6.9°
+1750215478.4534564 [imu_pub-1] [WARN] [1750215478.452754650] [imu_sensor]: FALL! Roll=-75.3°, Pitch=5.7°
+1750215478.4633937 [imu_pub-1] [WARN] [1750215478.462590946] [imu_sensor]: FALL! Roll=-73.5°, Pitch=3.3°
+1750215478.4790618 [imu_pub-1] [WARN] [1750215478.475604335] [imu_sensor]: FALL! Roll=-73.8°, Pitch=2.2°
+1750215478.4911489 [imu_pub-1] [WARN] [1750215478.488509446] [imu_sensor]: FALL! Roll=-71.8°, Pitch=1.2°
+1750215478.5011528 [imu_pub-1] [WARN] [1750215478.499720872] [imu_sensor]: FALL! Roll=-70.6°, Pitch=-1.6°
+1750215478.5113356 [imu_pub-1] [WARN] [1750215478.510112650] [imu_sensor]: FALL! Roll=-67.5°, Pitch=0.1°
+1750215478.5210528 [imu_pub-1] [WARN] [1750215478.519983353] [imu_sensor]: FALL! Roll=-68.8°, Pitch=-1.0°
+1750215478.5314252 [imu_pub-1] [WARN] [1750215478.530135279] [imu_sensor]: FALL! Roll=-71.4°, Pitch=-1.6°
+1750215478.5418832 [imu_pub-1] [WARN] [1750215478.540862853] [imu_sensor]: FALL! Roll=-71.1°, Pitch=-1.3°
+1750215478.5518048 [imu_pub-1] [WARN] [1750215478.550685353] [imu_sensor]: FALL! Roll=-70.3°, Pitch=-1.1°
+1750215478.5613816 [imu_pub-1] [WARN] [1750215478.560384687] [imu_sensor]: FALL! Roll=-70.9°, Pitch=0.4°
+1750215478.5711670 [imu_pub-1] [WARN] [1750215478.570022316] [imu_sensor]: FALL! Roll=-72.3°, Pitch=1.5°
+1750215478.5801649 [imu_pub-1] [WARN] [1750215478.579299335] [imu_sensor]: FALL! Roll=-72.8°, Pitch=2.9°
+1750215478.5901923 [imu_pub-1] [WARN] [1750215478.589114335] [imu_sensor]: FALL! Roll=-73.3°, Pitch=4.0°
+1750215478.5997257 [imu_pub-1] [WARN] [1750215478.598716965] [imu_sensor]: FALL! Roll=-74.6°, Pitch=5.2°
+1750215478.6095283 [imu_pub-1] [WARN] [1750215478.607356983] [imu_sensor]: FALL! Roll=-77.4°, Pitch=5.0°
+1750215478.6154184 [imu_pub-1] [WARN] [1750215478.614701298] [imu_sensor]: FALL! Roll=-77.9°, Pitch=5.9°
+1750215478.6248972 [imu_pub-1] [WARN] [1750215478.622674242] [imu_sensor]: FALL! Roll=-78.2°, Pitch=6.3°
+1750215478.6333556 [imu_pub-1] [WARN] [1750215478.632683835] [imu_sensor]: FALL! Roll=-75.6°, Pitch=5.7°
+1750215478.6432681 [imu_pub-1] [WARN] [1750215478.642556187] [imu_sensor]: FALL! Roll=-74.6°, Pitch=5.3°
+1750215478.6532841 [imu_pub-1] [WARN] [1750215478.652614798] [imu_sensor]: FALL! Roll=-73.6°, Pitch=5.2°
+1750215478.6633096 [imu_pub-1] [WARN] [1750215478.662531076] [imu_sensor]: FALL! Roll=-69.7°, Pitch=5.0°
+1750215478.6732826 [imu_pub-1] [WARN] [1750215478.672628742] [imu_sensor]: FALL! Roll=-66.8°, Pitch=4.2°
+1750215478.6832821 [imu_pub-1] [WARN] [1750215478.682542335] [imu_sensor]: FALL! Roll=-68.6°, Pitch=4.0°
+1750215478.6934245 [imu_pub-1] [WARN] [1750215478.692764131] [imu_sensor]: FALL! Roll=-69.5°, Pitch=2.8°
+1750215478.7035866 [imu_pub-1] [WARN] [1750215478.702549631] [imu_sensor]: FALL! Roll=-71.0°, Pitch=2.4°
+1750215478.7134743 [imu_pub-1] [WARN] [1750215478.712765316] [imu_sensor]: FALL! Roll=-72.2°, Pitch=1.3°
+1750215478.7234740 [imu_pub-1] [WARN] [1750215478.722731020] [imu_sensor]: FALL! Roll=-73.0°, Pitch=2.0°
+1750215478.7334597 [imu_pub-1] [WARN] [1750215478.732749353] [imu_sensor]: FALL! Roll=-73.9°, Pitch=3.0°
+1750215478.7434883 [imu_pub-1] [WARN] [1750215478.742803742] [imu_sensor]: FALL! Roll=-71.5°, Pitch=2.8°
+1750215478.7533982 [imu_pub-1] [WARN] [1750215478.752750039] [imu_sensor]: FALL! Roll=-68.9°, Pitch=3.4°
+1750215478.7633598 [imu_pub-1] [WARN] [1750215478.762648316] [imu_sensor]: FALL! Roll=-69.1°, Pitch=2.8°
+1750215478.7731898 [imu_pub-1] [WARN] [1750215478.772513150] [imu_sensor]: FALL! Roll=-66.9°, Pitch=3.0°
+1750215478.7833738 [imu_pub-1] [WARN] [1750215478.782651687] [imu_sensor]: FALL! Roll=-67.5°, Pitch=2.3°
+1750215478.7932146 [imu_pub-1] [WARN] [1750215478.792530427] [imu_sensor]: FALL! Roll=-67.3°, Pitch=2.6°
+1750215478.8034422 [imu_pub-1] [WARN] [1750215478.802614724] [imu_sensor]: FALL! Roll=-67.6°, Pitch=2.1°
+1750215478.8133719 [imu_pub-1] [WARN] [1750215478.812691427] [imu_sensor]: FALL! Roll=-68.6°, Pitch=2.5°
+1750215478.8233101 [imu_pub-1] [WARN] [1750215478.822594427] [imu_sensor]: FALL! Roll=-69.7°, Pitch=3.4°
+1750215478.8335030 [imu_pub-1] [WARN] [1750215478.832744372] [imu_sensor]: FALL! Roll=-70.8°, Pitch=3.7°
+1750215478.8434029 [imu_pub-1] [WARN] [1750215478.842670705] [imu_sensor]: FALL! Roll=-70.3°, Pitch=4.6°
+1750215478.8532796 [imu_pub-1] [WARN] [1750215478.852599427] [imu_sensor]: FALL! Roll=-69.5°, Pitch=3.8°
+1750215478.8632166 [imu_pub-1] [WARN] [1750215478.862479001] [imu_sensor]: FALL! Roll=-69.4°, Pitch=5.1°
+1750215478.8737810 [imu_pub-1] [WARN] [1750215478.872685335] [imu_sensor]: FALL! Roll=-68.5°, Pitch=4.4°
+1750215478.8832021 [imu_pub-1] [WARN] [1750215478.882493094] [imu_sensor]: FALL! Roll=-66.9°, Pitch=4.3°
+1750215478.8932545 [imu_pub-1] [WARN] [1750215478.892596316] [imu_sensor]: FALL! Roll=-66.6°, Pitch=4.5°
+1750215478.9032695 [imu_pub-1] [WARN] [1750215478.902539168] [imu_sensor]: FALL! Roll=-69.6°, Pitch=5.0°
+1750215478.9134409 [imu_pub-1] [WARN] [1750215478.912756742] [imu_sensor]: FALL! Roll=-69.4°, Pitch=5.8°
+1750215478.9235253 [imu_pub-1] [WARN] [1750215478.922713057] [imu_sensor]: FALL! Roll=-71.7°, Pitch=6.1°
+1750215478.9335310 [imu_pub-1] [WARN] [1750215478.932840390] [imu_sensor]: FALL! Roll=-72.7°, Pitch=5.1°
+1750215478.9434140 [imu_pub-1] [WARN] [1750215478.942695261] [imu_sensor]: FALL! Roll=-74.5°, Pitch=4.6°
+1750215478.9533825 [imu_pub-1] [WARN] [1750215478.952734131] [imu_sensor]: FALL! Roll=-68.9°, Pitch=4.2°
+1750215478.9634485 [imu_pub-1] [WARN] [1750215478.962766612] [imu_sensor]: FALL! Roll=-66.1°, Pitch=3.3°
+1750215478.9737642 [imu_pub-1] [WARN] [1750215478.973065205] [imu_sensor]: FALL! Roll=-66.4°, Pitch=1.6°
+1750215479.0333204 [imu_pub-1] [WARN] [1750215479.032568131] [imu_sensor]: FALL! Roll=-66.1°, Pitch=0.8°
+1750215479.0433075 [imu_pub-1] [WARN] [1750215479.042469242] [imu_sensor]: FALL! Roll=-66.4°, Pitch=0.9°
+1750215479.3390851 [illuminance_pub-2] [INFO] [1750215479.338386242] [illuminance_sensor]: RAW=244 → 95.68627450980392%
+1750215479.8043215 [imu_pub-1] [WARN] [1750215479.802525334] [imu_sensor]: FALL! Roll=-67.2°, Pitch=9.5°
+1750215479.8143728 [imu_pub-1] [WARN] [1750215479.813612538] [imu_sensor]: FALL! Roll=-78.8°, Pitch=9.0°
+1750215479.8239601 [imu_pub-1] [WARN] [1750215479.823006482] [imu_sensor]: FALL! Roll=-73.4°, Pitch=8.2°
+1750215479.8334796 [imu_pub-1] [WARN] [1750215479.832745834] [imu_sensor]: FALL! Roll=-69.9°, Pitch=8.3°
+1750215479.8435524 [imu_pub-1] [WARN] [1750215479.842771853] [imu_sensor]: FALL! Roll=-65.3°, Pitch=10.1°
+1750215479.8532503 [imu_pub-1] [WARN] [1750215479.852589853] [imu_sensor]: FALL! Roll=-65.8°, Pitch=5.7°
+1750215479.9037442 [imu_pub-1] [WARN] [1750215479.903031797] [imu_sensor]: FALL! Roll=-66.9°, Pitch=0.3°
+1750215479.9136107 [imu_pub-1] [WARN] [1750215479.912850204] [imu_sensor]: FALL! Roll=-66.8°, Pitch=-2.2°
+1750215480.0134461 [imu_pub-1] [WARN] [1750215480.012781982] [imu_sensor]: FALL! Roll=-67.9°, Pitch=1.3°
+1750215480.0237477 [imu_pub-1] [WARN] [1750215480.023016760] [imu_sensor]: FALL! Roll=-70.7°, Pitch=2.0°
+1750215480.0334454 [imu_pub-1] [WARN] [1750215480.032685538] [imu_sensor]: FALL! Roll=-70.5°, Pitch=3.3°
+1750215480.0437534 [imu_pub-1] [WARN] [1750215480.042975241] [imu_sensor]: FALL! Roll=-70.0°, Pitch=3.6°
+1750215480.0537915 [imu_pub-1] [WARN] [1750215480.053052964] [imu_sensor]: FALL! Roll=-69.8°, Pitch=4.4°
+1750215480.0634077 [imu_pub-1] [WARN] [1750215480.062621445] [imu_sensor]: FALL! Roll=-65.4°, Pitch=2.8°
+1750215480.1036501 [imu_pub-1] [WARN] [1750215480.102925982] [imu_sensor]: FALL! Roll=-68.3°, Pitch=6.8°
+1750215480.1138508 [imu_pub-1] [WARN] [1750215480.113181223] [imu_sensor]: FALL! Roll=-69.4°, Pitch=6.4°
+1750215480.1237290 [imu_pub-1] [WARN] [1750215480.122956334] [imu_sensor]: FALL! Roll=-74.4°, Pitch=6.3°
+1750215480.1334331 [imu_pub-1] [WARN] [1750215480.132717241] [imu_sensor]: FALL! Roll=-74.9°, Pitch=6.6°
+1750215480.1443160 [imu_pub-1] [WARN] [1750215480.143575556] [imu_sensor]: FALL! Roll=-72.5°, Pitch=5.8°
+1750215480.1534889 [imu_pub-1] [WARN] [1750215480.152698223] [imu_sensor]: FALL! Roll=-73.1°, Pitch=6.0°
+1750215480.1633694 [imu_pub-1] [WARN] [1750215480.162586964] [imu_sensor]: FALL! Roll=-72.4°, Pitch=6.3°
+1750215480.1735530 [imu_pub-1] [WARN] [1750215480.172873741] [imu_sensor]: FALL! Roll=-71.6°, Pitch=6.9°
+1750215480.1840742 [imu_pub-1] [WARN] [1750215480.183340241] [imu_sensor]: FALL! Roll=-69.5°, Pitch=4.2°
+1750215480.1938665 [imu_pub-1] [WARN] [1750215480.193143908] [imu_sensor]: FALL! Roll=-71.1°, Pitch=8.4°
+1750215480.2035947 [imu_pub-1] [WARN] [1750215480.202907741] [imu_sensor]: FALL! Roll=-75.7°, Pitch=7.4°
+1750215480.2135787 [imu_pub-1] [WARN] [1750215480.212906001] [imu_sensor]: FALL! Roll=-83.1°, Pitch=6.1°
+1750215480.2238848 [imu_pub-1] [WARN] [1750215480.223162538] [imu_sensor]: FALL! Roll=-79.3°, Pitch=8.4°
+1750215480.2342300 [imu_pub-1] [WARN] [1750215480.233511315] [imu_sensor]: FALL! Roll=-77.6°, Pitch=4.8°
+1750215480.2432969 [imu_pub-1] [WARN] [1750215480.242536223] [imu_sensor]: FALL! Roll=-78.8°, Pitch=4.7°
+1750215480.2534659 [imu_pub-1] [WARN] [1750215480.252763371] [imu_sensor]: FALL! Roll=-78.1°, Pitch=6.1°
+1750215480.2580969 [battery_pub-3] [WARN] [1750215480.256615741] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750215480.2595510 [battery_pub-3] [INFO] [1750215480.258616075] [battery_sensor]: I2C 초기화 성공
+1750215480.2663541 [imu_pub-1] [WARN] [1750215480.263740223] [imu_sensor]: FALL! Roll=-73.2°, Pitch=5.2°
+1750215480.2754788 [imu_pub-1] [WARN] [1750215480.274320593] [imu_sensor]: FALL! Roll=-70.6°, Pitch=2.7°
+1750215480.2854521 [imu_pub-1] [WARN] [1750215480.282624426] [imu_sensor]: FALL! Roll=-71.3°, Pitch=4.6°
+1750215480.2935734 [imu_pub-1] [WARN] [1750215480.292891778] [imu_sensor]: FALL! Roll=-72.1°, Pitch=1.0°
+1750215480.3038886 [imu_pub-1] [WARN] [1750215480.302863630] [imu_sensor]: FALL! Roll=-74.1°, Pitch=1.7°
+1750215480.3135161 [imu_pub-1] [WARN] [1750215480.312828075] [imu_sensor]: FALL! Roll=-73.4°, Pitch=2.0°
+1750215480.3236294 [imu_pub-1] [WARN] [1750215480.322895834] [imu_sensor]: FALL! Roll=-73.2°, Pitch=1.4°
+1750215480.3336756 [imu_pub-1] [WARN] [1750215480.332888278] [imu_sensor]: FALL! Roll=-75.3°, Pitch=0.7°
+1750215480.3390155 [illuminance_pub-2] [INFO] [1750215480.338328278] [illuminance_sensor]: RAW=245 → 96.07843137254902%
+1750215480.3438795 [illuminance_pub-2] [INFO] [1750215480.342188575] [illuminance_sensor]: [INFO] Illuminance publish: isNight=True
+1750215480.3460016 [decision_node-7] [INFO] [1750215480.343724538] [decision_node]: [INFO] send light request: True
+1750215480.3472548 [imu_pub-1] [WARN] [1750215480.345105371] [imu_sensor]: FALL! Roll=-73.5°, Pitch=1.0°
+1750215480.3595395 [imu_pub-1] [WARN] [1750215480.356832204] [imu_sensor]: FALL! Roll=-68.3°, Pitch=-0.7°
+1750215480.3657038 [imu_pub-1] [WARN] [1750215480.365024963] [imu_sensor]: FALL! Roll=-69.2°, Pitch=0.8°
+1750215480.3743856 [imu_pub-1] [WARN] [1750215480.373696038] [imu_sensor]: FALL! Roll=-67.8°, Pitch=0.5°
+1750215480.3853838 [imu_pub-1] [WARN] [1750215480.384729778] [imu_sensor]: FALL! Roll=-72.2°, Pitch=-4.0°
+1750215480.3882420 [light_srv-4] [INFO] [1750215480.387145852] [light_actuator]: 💡 불을 켭니다.
+1750215480.4001994 [imu_pub-1] [WARN] [1750215480.399418519] [imu_sensor]: FALL! Roll=-65.2°, Pitch=-0.4°
+1750215480.4136276 [imu_pub-1] [WARN] [1750215480.412726241] [imu_sensor]: FALL! Roll=-68.1°, Pitch=-3.2°
+1750215480.4235103 [imu_pub-1] [WARN] [1750215480.422757871] [imu_sensor]: FALL! Roll=-75.8°, Pitch=3.8°
+1750215480.4334846 [imu_pub-1] [WARN] [1750215480.432765834] [imu_sensor]: FALL! Roll=-78.3°, Pitch=-2.7°
+1750215480.4435649 [imu_pub-1] [WARN] [1750215480.442800038] [imu_sensor]: FALL! Roll=-72.3°, Pitch=2.0°
+1750215480.4735897 [imu_pub-1] [WARN] [1750215480.472866149] [imu_sensor]: FALL! Roll=-73.5°, Pitch=3.3°
+1750215480.4834123 [imu_pub-1] [WARN] [1750215480.482699630] [imu_sensor]: FALL! Roll=-71.4°, Pitch=3.6°
+1750215480.5034642 [imu_pub-1] [WARN] [1750215480.502731334] [imu_sensor]: FALL! Roll=-67.3°, Pitch=2.1°
+1750215480.5136333 [imu_pub-1] [WARN] [1750215480.512916556] [imu_sensor]: FALL! Roll=-71.5°, Pitch=4.6°
+1750215480.5234721 [imu_pub-1] [WARN] [1750215480.522760519] [imu_sensor]: FALL! Roll=-68.0°, Pitch=0.4°
+1750215481.3420830 [illuminance_pub-2] [INFO] [1750215481.339334074] [illuminance_sensor]: RAW=244 → 95.68627450980392%
+1750215482.2173088 [imu_pub-1] [WARN] [1750215482.213665499] [imu_sensor]: FALL! Roll=-172.0°, Pitch=2.0°
+1750215482.2183917 [decision_node-7] [INFO] [1750215482.215560018] [decision_node]: [INFO] send buzzer request: 3.0 seconds
+1750215482.2213142 [buzzer_srv-5] [INFO] [1750215482.220150666] [buzzer_actuator]: 🔊 Buzzer ON (Duty: 90%) 3.0Sec
+1750215482.3405745 [illuminance_pub-2] [INFO] [1750215482.339782870] [illuminance_sensor]: RAW=240 → 94.11764705882352%
+1750215483.0990281 [imu_pub-1] [WARN] [1750215483.097931480] [imu_sensor]: FALL! Roll=-95.8°, Pitch=-64.9°
+1750215483.1115210 [imu_pub-1] [WARN] [1750215483.110454554] [imu_sensor]: FALL! Roll=-89.2°, Pitch=-55.2°
+1750215483.2141936 [imu_pub-1] [WARN] [1750215483.212767517] [imu_sensor]: FALL! Roll=-17.0°, Pitch=-66.0°
+1750215483.2633624 [imu_pub-1] [WARN] [1750215483.262629647] [imu_sensor]: FALL! Roll=-2.3°, Pitch=-73.4°
+1750215483.2734694 [imu_pub-1] [WARN] [1750215483.272786814] [imu_sensor]: FALL! Roll=-3.8°, Pitch=-65.5°
+1750215483.3231750 [imu_pub-1] [WARN] [1750215483.322419517] [imu_sensor]: FALL! Roll=1.2°, Pitch=-67.7°
+1750215483.3391314 [illuminance_pub-2] [INFO] [1750215483.338408536] [illuminance_sensor]: RAW=229 → 89.80392156862746%
+1750215483.4741743 [imu_pub-1] [WARN] [1750215483.472678665] [imu_sensor]: FALL! Roll=-39.5°, Pitch=-65.3°
+1750215484.3394921 [illuminance_pub-2] [INFO] [1750215484.338779406] [illuminance_sensor]: RAW=241 → 94.50980392156862%
+1750215485.3395176 [illuminance_pub-2] [INFO] [1750215485.338440164] [illuminance_sensor]: RAW=247 → 96.86274509803921%
+1750215486.3397391 [illuminance_pub-2] [INFO] [1750215486.338740793] [illuminance_sensor]: RAW=240 → 94.11764705882352%
+1750215487.3401227 [illuminance_pub-2] [INFO] [1750215487.339525256] [illuminance_sensor]: RAW=238 → 93.33333333333333%
+1750215488.3394785 [illuminance_pub-2] [INFO] [1750215488.338483848] [illuminance_sensor]: RAW=237 → 92.94117647058823%
+1750215489.1204255 [vision_node-8] /home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolov5/utils/general.py:32: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+1750215489.1208153 [vision_node-8]   import pkg_resources as pkg
+1750215489.3393481 [illuminance_pub-2] [INFO] [1750215489.338630421] [illuminance_sensor]: RAW=236 → 92.54901960784314%
+1750215490.2553930 [battery_pub-3] [WARN] [1750215490.252313939] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750215490.2558284 [battery_pub-3] [INFO] [1750215490.253884624] [battery_sensor]: I2C 초기화 성공
+1750215490.3391798 [illuminance_pub-2] [INFO] [1750215490.338520254] [illuminance_sensor]: RAW=236 → 92.54901960784314%
+1750215490.3426795 [illuminance_pub-2] [INFO] [1750215490.342050180] [illuminance_sensor]: [INFO] Illuminance publish: isNight=True
+1750215490.3504651 [decision_node-7] [INFO] [1750215490.345367809] [decision_node]: [INFO] send light request: True
+1750215490.3516712 [light_srv-4] [INFO] [1750215490.346062106] [light_actuator]: 💡 불을 켭니다.
+1750215491.3397577 [illuminance_pub-2] [INFO] [1750215491.339016827] [illuminance_sensor]: RAW=236 → 92.54901960784314%
+1750215492.3405156 [illuminance_pub-2] [INFO] [1750215492.339694456] [illuminance_sensor]: RAW=236 → 92.54901960784314%
+1750215493.3391092 [illuminance_pub-2] [INFO] [1750215493.338419252] [illuminance_sensor]: RAW=237 → 92.94117647058823%
+1750215494.3391769 [illuminance_pub-2] [INFO] [1750215494.338447159] [illuminance_sensor]: RAW=237 → 92.94117647058823%
+1750215495.3423688 [illuminance_pub-2] [INFO] [1750215495.340969251] [illuminance_sensor]: RAW=236 → 92.54901960784314%
+1750215496.3395915 [illuminance_pub-2] [INFO] [1750215496.338312250] [illuminance_sensor]: RAW=238 → 93.33333333333333%
+1750215496.4174535 [vision_node-8] Fusing layers... 
+1750215497.3412173 [illuminance_pub-2] [INFO] [1750215497.339627064] [illuminance_sensor]: RAW=237 → 92.94117647058823%
+1750215497.7774134 [vision_node-8] Model summary: 157 layers, 7012822 parameters, 0 gradients, 15.8 GFLOPs
+1750215497.8355374 [vision_node-8] [0:00:49.696151580] [954] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:326 [0mlibcamera v0.5.0+59-d83ff0a4
+1750215497.9580247 [vision_node-8] [0:00:49.818349766] [1060] [1;33m WARN [1;37mRPiSdn [1;34msdn.cpp:40 [0mUsing legacy SDN tuning - please consider moving SDN inside rpi.denoise
+1750215497.9604516 [vision_node-8] [0:00:49.821134340] [1060] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:447 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx708@1a to Unicam device /dev/media2 and ISP device /dev/media1
+1750215497.9608214 [vision_node-8] [0:00:49.821206414] [1060] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1121 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+1750215497.9699330 [vision_node-8] [0:00:49.830594543] [954] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1205 [0mconfiguring streams: (0) 640x480-XBGR8888 (1) 1536x864-SBGGR10_CSI2P
+1750215497.9711335 [vision_node-8] [0:00:49.831831506] [1060] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:622 [0mSensor: /base/soc/i2c0mux/i2c@1/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10 - Selected unicam format: 1536x864-pBAA
+1750215498.3444886 [illuminance_pub-2] [INFO] [1750215498.343673379] [illuminance_sensor]: RAW=236 → 92.54901960784314%
+1750215499.3448699 [illuminance_pub-2] [INFO] [1750215499.343239989] [illuminance_sensor]: RAW=235 → 92.15686274509804%
+1750215500.2633903 [battery_pub-3] [WARN] [1750215500.257286192] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750215500.2716827 [battery_pub-3] [INFO] [1750215500.269380822] [battery_sensor]: I2C 초기화 성공
+1750215500.3397465 [illuminance_pub-2] [INFO] [1750215500.338720840] [illuminance_sensor]: RAW=243 → 95.29411764705881%
+1750215500.3440228 [illuminance_pub-2] [INFO] [1750215500.342737526] [illuminance_sensor]: [INFO] Illuminance publish: isNight=True
+1750215500.3549232 [decision_node-7] [INFO] [1750215500.351391322] [decision_node]: [INFO] send light request: True
+1750215500.3578556 [light_srv-4] [INFO] [1750215500.356734359] [light_actuator]: 💡 불을 켭니다.
+                                                                                                                                                                                                                                                                                      

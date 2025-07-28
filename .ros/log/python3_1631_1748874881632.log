@@ -1,0 +1,6 @@
+[INFO] [1748874881.825565139] [ble_gatt_server]: Loaded config from disk
+[INFO] [1748874881.848238602] [ble_gatt_server]: Using adapter: D8:3A:DD:F2:4C:84
+[INFO] [1748874888.342272810] [ble_gatt_server]: Central connected: <bluezero.device.Device object at 0x7f78dc0250>
+[INFO] [1748874908.692730046] [ble_gatt_server]: Central disconnected: <bluezero.device.Device object at 0x7f7417f3d0>
+[INFO] [1748874925.568641318] [ble_gatt_server]: Central connected: <bluezero.device.Device object at 0x7f7417ee50>
+[INFO] [1748874929.613422866] [ble_gatt_server]: Central disconnected: <bluezero.device.Device object at 0x7f7417f4d0>

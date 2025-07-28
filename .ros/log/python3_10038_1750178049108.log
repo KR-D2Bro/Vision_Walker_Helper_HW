@@ -1,0 +1,2 @@
+[INFO] [1750178049.655536520] [imu_sensor]: I2C-3 초기화 성공
+[INFO] [1750178050.047641567] [imu_sensor]: FallDetectionNode started: roll_thr=65.0°, pitch_thr=65.0°
