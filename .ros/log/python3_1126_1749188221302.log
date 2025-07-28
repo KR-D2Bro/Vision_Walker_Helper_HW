@@ -1,0 +1,32 @@
+[INFO] [1749188221.493467706] [ble_gatt_server]: Loaded config from disk
+[INFO] [1749188221.511871253] [ble_gatt_server]: Using adapter: D8:3A:DD:F2:4C:84
+[INFO] [1749188221.536352727] [ble_gatt_server]: BLE GATT Server started
+[INFO] [1749188221.540849973] [ble_gatt_server]: Config service added
+[INFO] [1749188252.388013139] [ble_gatt_server]: Central connected: <bluezero.device.Device object at 0x7f8047d3d0>, auth check start
+[INFO] [1749188253.131579253] [ble_gatt_server]: Central disconnected: <bluezero.device.Device object at 0x7f7e98ead0>
+[INFO] [1749188264.709889410] [ble_gatt_server]: Central connected: <bluezero.device.Device object at 0x7f6df9eed0>, auth check start
+[INFO] [1749188265.780037486] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749188265.781610697] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749188303.606860215] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749188303.609559270] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749188502.545906544] [ble_gatt_server]: Central disconnected: <bluezero.device.Device object at 0x7f6df9ca50>
+[INFO] [1749188516.678741829] [ble_gatt_server]: Central connected: <bluezero.device.Device object at 0x7f6df81150>, auth check start
+[INFO] [1749188518.017304959] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749188518.019943243] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749188661.767066016] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749188661.769722915] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749188845.267765083] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749188845.270319410] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749189048.817349179] [ble_gatt_server]: light_read
+[INFO] [1749189207.847030892] [ble_gatt_server]: light_read
+[INFO] [1749189207.907643818] [ble_gatt_server]: light_read
+[INFO] [1749189231.517234120] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749189231.519872565] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749189231.666948657] [ble_gatt_server]: light_read
+[INFO] [1749189329.317947684] [ble_gatt_server]: light_read
+[INFO] [1749189329.377559481] [ble_gatt_server]: light_read
+[INFO] [1749189550.989645076] [ble_gatt_server]: light_read
+[INFO] [1749189551.049932123] [ble_gatt_server]: light_read
+[INFO] [1749189633.159111058] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749189633.160671102] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749189633.308934866] [ble_gatt_server]: light_read

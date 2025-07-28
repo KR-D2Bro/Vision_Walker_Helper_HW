@@ -1,0 +1,2 @@
+[INFO] [1750195027.311524404] [illuminance_sensor]: Initialized PCF8591 at 0x48
+[INFO] [1750195028.230686033] [illuminance_sensor]: RAW=222 → 87.05882352941177%

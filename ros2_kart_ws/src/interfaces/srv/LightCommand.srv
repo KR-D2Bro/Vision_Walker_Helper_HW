@@ -1,0 +1,4 @@
+bool turn_on     # True면 불을 켜라, False면 꺼라
+---
+bool success     # 실제로 동작했는지 여부 반환
+

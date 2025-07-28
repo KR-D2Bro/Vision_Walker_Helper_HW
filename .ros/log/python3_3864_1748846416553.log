@@ -1,0 +1,1 @@
+[ERROR] [1748846416.810128565] [ble_gatt_server]: Failed to read or parse JSON from /home/dongjae/config.conf: [Errno 2] No such file or directory: '/home/dongjae/config.conf'

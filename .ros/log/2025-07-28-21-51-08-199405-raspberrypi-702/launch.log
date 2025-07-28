@@ -1,0 +1,738 @@
+1753707068.2404227 [INFO] [launch]: All log files can be found below /home/dongjae/.ros/log/2025-07-28-21-51-08-199405-raspberrypi-702
+1753707068.2408535 [INFO] [launch]: Default logging verbosity is set to INFO
+1753707069.4658132 [INFO] [imu_pub-1]: process started with pid [1014]
+1753707069.4667382 [INFO] [illuminance_pub-2]: process started with pid [1016]
+1753707069.4673848 [INFO] [battery_pub-3]: process started with pid [1018]
+1753707069.4678199 [INFO] [light_srv-4]: process started with pid [1020]
+1753707069.4682407 [INFO] [buzzer_srv-5]: process started with pid [1022]
+1753707069.4687912 [INFO] [ble_node-6]: process started with pid [1024]
+1753707069.4693034 [INFO] [decision_node-7]: process started with pid [1026]
+1753707069.4778845 [INFO] [vision_node-8]: process started with pid [1028]
+1753707076.6757834 [buzzer_srv-5] [INFO] [1753707076.675002329] [buzzer_actuator]: 🔔 PWM Buzzer Control Node Started
+1753707079.4473968 [decision_node-7] [INFO] [1753707079.446619630] [decision_node]: Loaded config from disk
+1753707079.7763915 [battery_pub-3] [INFO] [1753707079.775686838] [battery_sensor]: I2C 초기화 성공
+1753707079.7781513 [battery_pub-3] [INFO] [1753707079.777531099] [battery_sensor]: Battery State Publisher started, publishing on /battery_state/data
+1753707079.9437594 [illuminance_pub-2] [INFO] [1753707079.824597004] [illuminance_sensor]: Initialized PCF8591 at 0x48
+1753707080.6962538 [illuminance_pub-2] [ERROR] [1753707080.694667271] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707080.9441297 [imu_pub-1] [INFO] [1753707080.943408351] [imu_sensor]: I2C-3 초기화 성공
+1753707080.9452581 [imu_pub-1] Traceback (most recent call last):
+1753707080.9455492 [imu_pub-1]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/imu_pub", line 33, in <module>
+1753707080.9457772 [imu_pub-1]     sys.exit(load_entry_point('sensor_pkg==0.0.0', 'console_scripts', 'imu_pub')())
+1753707080.9459453 [imu_pub-1]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1753707080.9460864 [imu_pub-1]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/imu_node.py", line 127, in main
+1753707080.9462180 [imu_pub-1]     node = ImuNode()
+1753707080.9463444 [imu_pub-1]            ^^^^^^^^^
+1753707080.9464695 [imu_pub-1]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/imu_node.py", line 26, in __init__
+1753707080.9475145 [imu_pub-1]     self._wakeup_imu()
+1753707080.9477866 [imu_pub-1]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/imu_node.py", line 68, in _wakeup_imu
+1753707080.9479320 [imu_pub-1]     self.bus.write_byte_data(self.addr_imu, 0x6B, 0x00)
+1753707080.9480860 [imu_pub-1]   File "/usr/lib/python3/dist-packages/smbus2/smbus2.py", line 455, in write_byte_data
+1753707081.0332358 [imu_pub-1]     ioctl(self.fd, I2C_SMBUS, msg)
+1753707081.0340841 [imu_pub-1] OSError: [Errno 5] Input/output error
+1753707081.4844410 [ERROR] [imu_pub-1]: process has died [pid 1014, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/imu_pub --ros-args -r __node:=imu_sensor'].
+1753707081.6948595 [illuminance_pub-2] [ERROR] [1753707081.693938164] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707082.6937804 [illuminance_pub-2] [ERROR] [1753707082.692588055] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707083.6933033 [illuminance_pub-2] [ERROR] [1753707083.692511758] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707084.6931129 [illuminance_pub-2] [ERROR] [1753707084.692577293] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707084.7350194 [ble_node-6] [INFO] [1753707084.734525991] [ble_node]: Using adapter: D8:3A:DD:F2:4C:84
+1753707085.4166467 [ble_node-6] [INFO] [1753707085.416186530] [ble_node]: BLE GATT Server started
+1753707085.4213648 [ble_node-6] [INFO] [1753707085.420924128] [ble_node]: Config service added
+1753707085.6929367 [illuminance_pub-2] [ERROR] [1753707085.692427753] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707086.6929028 [illuminance_pub-2] [ERROR] [1753707086.692387062] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707087.6927998 [illuminance_pub-2] [ERROR] [1753707087.692284592] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707088.6927149 [illuminance_pub-2] [ERROR] [1753707088.692205651] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707089.6928620 [illuminance_pub-2] [ERROR] [1753707089.692301694] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707089.6939740 [battery_pub-3] [WARN] [1753707089.692587870] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707089.6952202 [battery_pub-3] [INFO] [1753707089.694706009] [battery_sensor]: I2C 초기화 성공
+1753707089.6970251 [illuminance_pub-2] [INFO] [1753707089.696414860] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707089.6994860 [decision_node-7] [INFO] [1753707089.698560189] [decision_node]: [INFO] send light request: False
+1753707089.7646375 [light_srv-4] [INFO] [1753707089.764107323] [light_actuator]: 💤 불을 끕니다.
+1753707090.6933477 [illuminance_pub-2] [ERROR] [1753707090.692263776] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707091.6927118 [illuminance_pub-2] [ERROR] [1753707091.692193754] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707092.6927807 [illuminance_pub-2] [ERROR] [1753707092.692252808] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707093.6927497 [illuminance_pub-2] [ERROR] [1753707093.692218403] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707094.6933804 [illuminance_pub-2] [ERROR] [1753707094.692487242] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707095.6927409 [illuminance_pub-2] [ERROR] [1753707095.692224736] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707096.6953590 [illuminance_pub-2] [ERROR] [1753707096.694491696] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707097.6928270 [illuminance_pub-2] [ERROR] [1753707097.692317284] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707098.6932125 [illuminance_pub-2] [ERROR] [1753707098.692702754] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707099.6942301 [illuminance_pub-2] [ERROR] [1753707099.692648517] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707099.6965649 [battery_pub-3] [WARN] [1753707099.692878175] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707099.6981330 [battery_pub-3] [INFO] [1753707099.695648443] [battery_sensor]: I2C 초기화 성공
+1753707099.6994002 [illuminance_pub-2] [INFO] [1753707099.696613062] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707099.7026660 [decision_node-7] [INFO] [1753707099.702011008] [decision_node]: [INFO] send light request: False
+1753707099.7044234 [light_srv-4] [INFO] [1753707099.703253495] [light_actuator]: 💤 불을 끕니다.
+1753707100.6933210 [illuminance_pub-2] [ERROR] [1753707100.692675186] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707101.6927836 [illuminance_pub-2] [ERROR] [1753707101.692274767] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707102.6940689 [illuminance_pub-2] [ERROR] [1753707102.693321039] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707103.6934259 [illuminance_pub-2] [ERROR] [1753707103.692820674] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707104.6927960 [illuminance_pub-2] [ERROR] [1753707104.692284814] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707105.6927729 [illuminance_pub-2] [ERROR] [1753707105.692259846] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707106.6947062 [illuminance_pub-2] [ERROR] [1753707106.694149108] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707107.6930161 [illuminance_pub-2] [ERROR] [1753707107.692495600] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707108.6946230 [illuminance_pub-2] [ERROR] [1753707108.693897173] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707109.6937194 [battery_pub-3] [WARN] [1753707109.693169382] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707109.6964293 [illuminance_pub-2] [ERROR] [1753707109.695061916] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707109.6974218 [battery_pub-3] [INFO] [1753707109.695612931] [battery_sensor]: I2C 초기화 성공
+1753707109.6999378 [illuminance_pub-2] [INFO] [1753707109.698751973] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707109.7016084 [decision_node-7] [INFO] [1753707109.701156222] [decision_node]: [INFO] send light request: False
+1753707109.7053237 [light_srv-4] [INFO] [1753707109.703685631] [light_actuator]: 💤 불을 끕니다.
+1753707110.6931674 [illuminance_pub-2] [ERROR] [1753707110.692302729] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707111.6927428 [illuminance_pub-2] [ERROR] [1753707111.692227801] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707112.6926970 [illuminance_pub-2] [ERROR] [1753707112.692183925] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707113.6931553 [illuminance_pub-2] [ERROR] [1753707113.692350058] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707114.6948340 [illuminance_pub-2] [ERROR] [1753707114.694047776] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707115.6928422 [illuminance_pub-2] [ERROR] [1753707115.692324990] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707116.6929240 [illuminance_pub-2] [ERROR] [1753707116.692347000] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707117.6938198 [illuminance_pub-2] [ERROR] [1753707117.692348772] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707118.6930249 [illuminance_pub-2] [ERROR] [1753707118.692509101] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707119.6957610 [battery_pub-3] [WARN] [1753707119.692746092] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707119.6961498 [battery_pub-3] [INFO] [1753707119.694604585] [battery_sensor]: I2C 초기화 성공
+1753707119.6969652 [illuminance_pub-2] [ERROR] [1753707119.693005704] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707119.6981461 [decision_node-7] [INFO] [1753707119.697087217] [decision_node]: [INFO] send light request: False
+1753707119.7005565 [illuminance_pub-2] [INFO] [1753707119.698949394] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707119.7036402 [light_srv-4] [INFO] [1753707119.703155842] [light_actuator]: 💤 불을 끕니다.
+1753707120.6928144 [illuminance_pub-2] [ERROR] [1753707120.692235241] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707121.6927629 [illuminance_pub-2] [ERROR] [1753707121.692209896] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707122.6928608 [illuminance_pub-2] [ERROR] [1753707122.692305100] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707123.6927297 [illuminance_pub-2] [ERROR] [1753707123.692203769] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707124.6927180 [illuminance_pub-2] [ERROR] [1753707124.692186177] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707125.6943433 [illuminance_pub-2] [ERROR] [1753707125.693582679] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707126.6955445 [illuminance_pub-2] [ERROR] [1753707126.693973029] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707127.6928310 [illuminance_pub-2] [ERROR] [1753707127.692293523] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707128.6935945 [illuminance_pub-2] [ERROR] [1753707128.692925781] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707129.6939440 [battery_pub-3] [WARN] [1753707129.693353830] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707129.6962020 [illuminance_pub-2] [ERROR] [1753707129.695680101] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707129.7014179 [battery_pub-3] [INFO] [1753707129.700868176] [battery_sensor]: I2C 초기화 성공
+1753707129.7037878 [illuminance_pub-2] [INFO] [1753707129.703279434] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707129.7117143 [decision_node-7] [INFO] [1753707129.708083744] [decision_node]: [INFO] send light request: False
+1753707129.7127106 [light_srv-4] [INFO] [1753707129.709409436] [light_actuator]: 💤 불을 끕니다.
+1753707130.6927445 [illuminance_pub-2] [ERROR] [1753707130.692227983] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707131.6927624 [illuminance_pub-2] [ERROR] [1753707131.692210383] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707132.6952462 [illuminance_pub-2] [ERROR] [1753707132.694441538] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707133.6942649 [illuminance_pub-2] [ERROR] [1753707133.693445077] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707134.6941814 [illuminance_pub-2] [ERROR] [1753707134.693429389] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707135.6942105 [illuminance_pub-2] [ERROR] [1753707135.693427229] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707136.6945088 [illuminance_pub-2] [ERROR] [1753707136.693766224] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707137.6942980 [illuminance_pub-2] [ERROR] [1753707137.693318845] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707138.6940639 [illuminance_pub-2] [ERROR] [1753707138.693315226] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707139.6930201 [illuminance_pub-2] [ERROR] [1753707139.692425328] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707139.6939635 [battery_pub-3] [WARN] [1753707139.692514018] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707139.6954710 [battery_pub-3] [INFO] [1753707139.694926583] [battery_sensor]: I2C 초기화 성공
+1753707139.6982226 [illuminance_pub-2] [INFO] [1753707139.696859347] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707139.6991851 [decision_node-7] [INFO] [1753707139.698274010] [decision_node]: [INFO] send light request: False
+1753707139.7003131 [light_srv-4] [INFO] [1753707139.699267800] [light_actuator]: 💤 불을 끕니다.
+1753707140.6932933 [illuminance_pub-2] [ERROR] [1753707140.692684248] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707141.6944070 [illuminance_pub-2] [ERROR] [1753707141.693196689] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707142.6927791 [illuminance_pub-2] [ERROR] [1753707142.692268097] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707143.6927841 [illuminance_pub-2] [ERROR] [1753707143.692251724] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707144.6926975 [illuminance_pub-2] [ERROR] [1753707144.692194569] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707145.6927426 [illuminance_pub-2] [ERROR] [1753707145.692209326] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707146.6928253 [illuminance_pub-2] [ERROR] [1753707146.692292800] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707147.6928592 [illuminance_pub-2] [ERROR] [1753707147.692337581] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707148.6926978 [illuminance_pub-2] [ERROR] [1753707148.692198299] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707149.6950839 [illuminance_pub-2] [ERROR] [1753707149.694192776] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707149.6967905 [battery_pub-3] [WARN] [1753707149.695488960] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707149.7069008 [battery_pub-3] [INFO] [1753707149.702129648] [battery_sensor]: I2C 초기화 성공
+1753707149.7083576 [illuminance_pub-2] [INFO] [1753707149.703748068] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707149.7095685 [decision_node-7] [INFO] [1753707149.705424102] [decision_node]: [INFO] send light request: False
+1753707149.7110081 [light_srv-4] [INFO] [1753707149.705479956] [light_actuator]: 💤 불을 끕니다.
+1753707150.6928384 [illuminance_pub-2] [ERROR] [1753707150.692288298] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707151.6928084 [illuminance_pub-2] [ERROR] [1753707151.692301334] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707152.6928005 [illuminance_pub-2] [ERROR] [1753707152.692299694] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707153.6927059 [illuminance_pub-2] [ERROR] [1753707153.692199375] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707154.6929393 [illuminance_pub-2] [ERROR] [1753707154.692351649] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707155.6927168 [illuminance_pub-2] [ERROR] [1753707155.692205994] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707156.6928372 [illuminance_pub-2] [ERROR] [1753707156.692317322] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707157.6927369 [illuminance_pub-2] [ERROR] [1753707157.692218428] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707158.6928256 [illuminance_pub-2] [ERROR] [1753707158.692268101] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707159.6929846 [illuminance_pub-2] [ERROR] [1753707159.692357927] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707159.6940396 [battery_pub-3] [WARN] [1753707159.692589213] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707159.6954079 [battery_pub-3] [INFO] [1753707159.694828295] [battery_sensor]: I2C 초기화 성공
+1753707159.6967609 [illuminance_pub-2] [INFO] [1753707159.696170195] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707159.6989861 [decision_node-7] [INFO] [1753707159.698292829] [decision_node]: [INFO] send light request: False
+1753707159.7021992 [light_srv-4] [INFO] [1753707159.700173008] [light_actuator]: 💤 불을 끕니다.
+1753707160.6927383 [illuminance_pub-2] [ERROR] [1753707160.692222022] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707161.6927898 [illuminance_pub-2] [ERROR] [1753707161.692274251] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707162.6931429 [illuminance_pub-2] [ERROR] [1753707162.692633836] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707163.6927688 [illuminance_pub-2] [ERROR] [1753707163.692233604] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707164.6929927 [illuminance_pub-2] [ERROR] [1753707164.692449859] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707165.6944366 [illuminance_pub-2] [ERROR] [1753707165.693756926] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707166.6928883 [illuminance_pub-2] [ERROR] [1753707166.692223647] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707167.6927826 [illuminance_pub-2] [ERROR] [1753707167.692269276] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707168.6929023 [illuminance_pub-2] [ERROR] [1753707168.692338571] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707169.6942079 [battery_pub-3] [WARN] [1753707169.693158491] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707169.6951606 [illuminance_pub-2] [ERROR] [1753707169.693311940] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707169.6962941 [battery_pub-3] [INFO] [1753707169.695114147] [battery_sensor]: I2C 초기화 성공
+1753707169.7007887 [illuminance_pub-2] [INFO] [1753707169.697637228] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707169.7017326 [decision_node-7] [INFO] [1753707169.699128091] [decision_node]: [INFO] send light request: False
+1753707169.7026396 [light_srv-4] [INFO] [1753707169.700006435] [light_actuator]: 💤 불을 끕니다.
+1753707170.6927514 [illuminance_pub-2] [ERROR] [1753707170.692200911] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707171.6945770 [illuminance_pub-2] [ERROR] [1753707171.693832296] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707172.6947577 [illuminance_pub-2] [ERROR] [1753707172.694177163] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707173.6929021 [illuminance_pub-2] [ERROR] [1753707173.692361662] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707174.6928234 [illuminance_pub-2] [ERROR] [1753707174.692273260] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707175.6941705 [illuminance_pub-2] [ERROR] [1753707175.692438233] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707176.7009587 [illuminance_pub-2] [ERROR] [1753707176.697220055] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707177.6932585 [illuminance_pub-2] [ERROR] [1753707177.692671427] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707178.2123218 [vision_node-8] /home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolov5/utils/general.py:32: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+1753707178.2127125 [vision_node-8]   import pkg_resources as pkg
+1753707178.6981871 [illuminance_pub-2] [ERROR] [1753707178.694449772] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707179.6992900 [illuminance_pub-2] [ERROR] [1753707179.696348783] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707179.7105279 [illuminance_pub-2] [INFO] [1753707179.709817938] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707179.7149570 [battery_pub-3] [WARN] [1753707179.713090701] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707179.7193954 [decision_node-7] [INFO] [1753707179.715806817] [decision_node]: [INFO] send light request: False
+1753707179.7300019 [battery_pub-3] [INFO] [1753707179.728569933] [battery_sensor]: I2C 초기화 성공
+1753707179.7401633 [light_srv-4] [INFO] [1753707179.739583923] [light_actuator]: 💤 불을 끕니다.
+1753707180.6960301 [illuminance_pub-2] [ERROR] [1753707180.694379907] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707181.6940212 [illuminance_pub-2] [ERROR] [1753707181.693068711] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707182.6934118 [illuminance_pub-2] [ERROR] [1753707182.692855679] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707183.6980922 [illuminance_pub-2] [ERROR] [1753707183.697075688] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707184.7083499 [illuminance_pub-2] [ERROR] [1753707184.707339142] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707185.6941769 [illuminance_pub-2] [ERROR] [1753707185.692737160] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707186.6937504 [illuminance_pub-2] [ERROR] [1753707186.693177224] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707187.6938004 [illuminance_pub-2] [ERROR] [1753707187.692243194] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707188.6927903 [illuminance_pub-2] [ERROR] [1753707188.692271196] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707189.6932819 [illuminance_pub-2] [ERROR] [1753707189.692766724] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707189.6974134 [battery_pub-3] [WARN] [1753707189.695279699] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707189.7009890 [illuminance_pub-2] [INFO] [1753707189.696647496] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707189.7022057 [battery_pub-3] [INFO] [1753707189.696931244] [battery_sensor]: I2C 초기화 성공
+1753707189.7031000 [decision_node-7] [INFO] [1753707189.699159249] [decision_node]: [INFO] send light request: False
+1753707189.7039745 [light_srv-4] [INFO] [1753707189.700389060] [light_actuator]: 💤 불을 끕니다.
+1753707190.6927474 [illuminance_pub-2] [ERROR] [1753707190.692241408] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707191.6927755 [illuminance_pub-2] [ERROR] [1753707191.692218204] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707192.6927235 [illuminance_pub-2] [ERROR] [1753707192.692197400] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707193.6926887 [illuminance_pub-2] [ERROR] [1753707193.692177761] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707194.6927161 [illuminance_pub-2] [ERROR] [1753707194.692192625] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707195.6940074 [illuminance_pub-2] [ERROR] [1753707195.693058576] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707196.6929543 [illuminance_pub-2] [ERROR] [1753707196.692376092] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707197.6938493 [illuminance_pub-2] [ERROR] [1753707197.692946677] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707198.6927028 [illuminance_pub-2] [ERROR] [1753707198.692192640] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707199.6928577 [illuminance_pub-2] [ERROR] [1753707199.692270466] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707199.6938572 [battery_pub-3] [WARN] [1753707199.692485675] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707199.6951983 [battery_pub-3] [INFO] [1753707199.694388631] [battery_sensor]: I2C 초기화 성공
+1753707199.6968396 [illuminance_pub-2] [INFO] [1753707199.696155899] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707199.7000401 [decision_node-7] [INFO] [1753707199.698677278] [decision_node]: [INFO] send light request: False
+1753707199.7017248 [light_srv-4] [INFO] [1753707199.700899020] [light_actuator]: 💤 불을 끕니다.
+1753707200.6928327 [illuminance_pub-2] [ERROR] [1753707200.692271581] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707201.6927094 [illuminance_pub-2] [ERROR] [1753707201.692196248] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707202.6944203 [illuminance_pub-2] [ERROR] [1753707202.693631938] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707203.6944320 [illuminance_pub-2] [ERROR] [1753707203.693638357] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707204.6943984 [illuminance_pub-2] [ERROR] [1753707204.693626157] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707204.8865540 [vision_node-8] Fusing layers... 
+1753707205.6956108 [illuminance_pub-2] [ERROR] [1753707205.694761944] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707206.6927898 [illuminance_pub-2] [ERROR] [1753707206.692263049] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707207.2511911 [vision_node-8] Model summary: 157 layers, 7012822 parameters, 0 gradients, 15.8 GFLOPs
+1753707207.4157159 [vision_node-8] [0:04:37.089570536] [1028] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:326 [0mlibcamera v0.5.0+59-d83ff0a4
+1753707207.6093469 [vision_node-8] [0:04:37.283186040] [2208] [1;33m WARN [1;37mRPiSdn [1;34msdn.cpp:40 [0mUsing legacy SDN tuning - please consider moving SDN inside rpi.denoise
+1753707207.6118779 [vision_node-8] [0:04:37.285785844] [2208] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:447 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx708@1a to Unicam device /dev/media4 and ISP device /dev/media0
+1753707207.6121900 [vision_node-8] [0:04:37.285856309] [2208] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1121 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+1753707207.6343143 [vision_node-8] [0:04:37.308227933] [1028] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1205 [0mconfiguring streams: (0) 640x480-XBGR8888 (1) 1536x864-SBGGR10_CSI2P
+1753707207.6352918 [vision_node-8] [0:04:37.308706797] [2208] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:622 [0mSensor: /base/soc/i2c0mux/i2c@1/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10 - Selected unicam format: 1536x864-pBAA
+1753707207.6927102 [illuminance_pub-2] [ERROR] [1753707207.692207198] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707208.6974401 [illuminance_pub-2] [ERROR] [1753707208.696776503] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707209.6952786 [illuminance_pub-2] [ERROR] [1753707209.693870969] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707209.6964087 [battery_pub-3] [WARN] [1753707209.695681476] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707209.7064061 [battery_pub-3] [INFO] [1753707209.700401851] [battery_sensor]: I2C 초기화 성공
+1753707209.7076428 [illuminance_pub-2] [INFO] [1753707209.701480136] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707209.7087152 [decision_node-7] [INFO] [1753707209.703899880] [decision_node]: [INFO] send light request: False
+1753707209.7222815 [light_srv-4] [INFO] [1753707209.717154167] [light_actuator]: 💤 불을 끕니다.
+1753707210.6952767 [illuminance_pub-2] [ERROR] [1753707210.694636871] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707211.7001541 [illuminance_pub-2] [ERROR] [1753707211.699555981] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707212.6974576 [illuminance_pub-2] [ERROR] [1753707212.696772683] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707213.6962209 [illuminance_pub-2] [ERROR] [1753707213.695581371] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707214.6972034 [illuminance_pub-2] [ERROR] [1753707214.696554710] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707215.6982245 [illuminance_pub-2] [ERROR] [1753707215.692965430] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707216.6969471 [illuminance_pub-2] [ERROR] [1753707216.696140693] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707217.6942983 [illuminance_pub-2] [ERROR] [1753707217.693038820] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707218.7084479 [illuminance_pub-2] [ERROR] [1753707218.700772702] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707219.6936469 [illuminance_pub-2] [ERROR] [1753707219.692717545] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707219.6962483 [battery_pub-3] [WARN] [1753707219.692940883] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707219.6983438 [battery_pub-3] [INFO] [1753707219.695173047] [battery_sensor]: I2C 초기화 성공
+1753707219.6994343 [illuminance_pub-2] [INFO] [1753707219.697069628] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707219.7039199 [light_srv-4] [INFO] [1753707219.703318590] [light_actuator]: 💤 불을 끕니다.
+1753707219.7051914 [decision_node-7] [INFO] [1753707219.704744457] [decision_node]: [INFO] send light request: False
+1753707220.6963286 [illuminance_pub-2] [ERROR] [1753707220.695473033] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707221.6947472 [illuminance_pub-2] [ERROR] [1753707221.694098948] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707222.6951270 [illuminance_pub-2] [ERROR] [1753707222.693842099] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707223.6955705 [illuminance_pub-2] [ERROR] [1753707223.694892216] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707224.6970108 [illuminance_pub-2] [ERROR] [1753707224.695822156] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707225.7013171 [illuminance_pub-2] [ERROR] [1753707225.699794735] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707226.6954038 [illuminance_pub-2] [ERROR] [1753707226.694779713] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707227.7081473 [illuminance_pub-2] [ERROR] [1753707227.707453727] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707228.7066894 [illuminance_pub-2] [ERROR] [1753707228.704759887] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707229.6965103 [illuminance_pub-2] [ERROR] [1753707229.695173575] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707229.7006385 [battery_pub-3] [WARN] [1753707229.695469323] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707229.7047300 [illuminance_pub-2] [INFO] [1753707229.702133735] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707229.7096136 [decision_node-7] [INFO] [1753707229.704061224] [decision_node]: [INFO] send light request: False
+1753707229.7142701 [battery_pub-3] [INFO] [1753707229.705375161] [battery_sensor]: I2C 초기화 성공
+1753707229.7154257 [light_srv-4] [INFO] [1753707229.707441783] [light_actuator]: 💤 불을 끕니다.
+1753707230.7090819 [illuminance_pub-2] [ERROR] [1753707230.697594173] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707231.7009873 [illuminance_pub-2] [ERROR] [1753707231.695729362] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707232.6950722 [illuminance_pub-2] [ERROR] [1753707232.694424720] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707233.6973352 [illuminance_pub-2] [ERROR] [1753707233.695661291] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707234.7022369 [illuminance_pub-2] [ERROR] [1753707234.695405635] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707235.6963656 [illuminance_pub-2] [ERROR] [1753707235.695744595] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707236.6999395 [illuminance_pub-2] [ERROR] [1753707236.698997523] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707237.6959479 [illuminance_pub-2] [ERROR] [1753707237.695021209] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707238.6942515 [illuminance_pub-2] [ERROR] [1753707238.693113531] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707239.7064826 [illuminance_pub-2] [ERROR] [1753707239.698888301] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707239.7069914 [illuminance_pub-2] [INFO] [1753707239.704355720] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707239.7079782 [battery_pub-3] [WARN] [1753707239.702105355] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707239.7085388 [battery_pub-3] [INFO] [1753707239.704014750] [battery_sensor]: I2C 초기화 성공
+1753707239.7205806 [decision_node-7] [INFO] [1753707239.712973044] [decision_node]: [INFO] send light request: False
+1753707239.7219646 [light_srv-4] [INFO] [1753707239.719821994] [light_actuator]: 💤 불을 끕니다.
+1753707240.6952870 [illuminance_pub-2] [ERROR] [1753707240.694764700] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707241.6946211 [illuminance_pub-2] [ERROR] [1753707241.694012711] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707242.7106552 [illuminance_pub-2] [ERROR] [1753707242.706827213] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707243.6943538 [illuminance_pub-2] [ERROR] [1753707243.693546227] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707244.7101505 [illuminance_pub-2] [ERROR] [1753707244.707623299] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707245.6987803 [illuminance_pub-2] [ERROR] [1753707245.694720571] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707246.6954122 [illuminance_pub-2] [ERROR] [1753707246.694748581] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707247.6933773 [illuminance_pub-2] [ERROR] [1753707247.692798183] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707248.7007289 [illuminance_pub-2] [ERROR] [1753707248.697830800] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707249.6958876 [illuminance_pub-2] [ERROR] [1753707249.695223460] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707249.7022545 [battery_pub-3] [WARN] [1753707249.697954298] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707249.7027516 [battery_pub-3] [INFO] [1753707249.700610487] [battery_sensor]: I2C 초기화 성공
+1753707249.7039540 [illuminance_pub-2] [INFO] [1753707249.702397952] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707249.7221682 [decision_node-7] [INFO] [1753707249.717939704] [decision_node]: [INFO] send light request: False
+1753707249.7260804 [light_srv-4] [INFO] [1753707249.723241562] [light_actuator]: 💤 불을 끕니다.
+1753707250.6974947 [illuminance_pub-2] [ERROR] [1753707250.696863779] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707251.7149341 [illuminance_pub-2] [ERROR] [1753707251.710467094] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707252.6962078 [illuminance_pub-2] [ERROR] [1753707252.695389824] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707253.7006629 [illuminance_pub-2] [ERROR] [1753707253.700054428] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707254.6999323 [illuminance_pub-2] [ERROR] [1753707254.696094650] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707255.7058072 [illuminance_pub-2] [ERROR] [1753707255.701549575] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707256.6947711 [illuminance_pub-2] [ERROR] [1753707256.694126953] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707257.6959133 [illuminance_pub-2] [ERROR] [1753707257.695170217] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707258.6965740 [illuminance_pub-2] [ERROR] [1753707258.695983603] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707259.6994636 [illuminance_pub-2] [ERROR] [1753707259.695068819] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707259.7068238 [battery_pub-3] [WARN] [1753707259.700579922] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707259.7084529 [illuminance_pub-2] [INFO] [1753707259.704115203] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707259.7161248 [battery_pub-3] [INFO] [1753707259.711235933] [battery_sensor]: I2C 초기화 성공
+1753707259.7206225 [light_srv-4] [INFO] [1753707259.719964291] [light_actuator]: 💤 불을 끕니다.
+1753707259.7259152 [decision_node-7] [INFO] [1753707259.721734422] [decision_node]: [INFO] send light request: False
+1753707260.6984849 [illuminance_pub-2] [ERROR] [1753707260.696451899] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707261.7018571 [illuminance_pub-2] [ERROR] [1753707261.695419240] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707262.6997766 [illuminance_pub-2] [ERROR] [1753707262.699192815] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707263.6957128 [illuminance_pub-2] [ERROR] [1753707263.694588207] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707264.6949718 [illuminance_pub-2] [ERROR] [1753707264.694323158] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707265.7063904 [illuminance_pub-2] [ERROR] [1753707265.705292262] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707266.6994379 [illuminance_pub-2] [ERROR] [1753707266.698765283] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707267.6984558 [illuminance_pub-2] [ERROR] [1753707267.695412117] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707268.7054548 [illuminance_pub-2] [ERROR] [1753707268.702648851] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707269.6942451 [illuminance_pub-2] [ERROR] [1753707269.693368766] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707269.6953080 [battery_pub-3] [WARN] [1753707269.694427789] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707269.6978345 [battery_pub-3] [INFO] [1753707269.697208997] [battery_sensor]: I2C 초기화 성공
+1753707269.7051592 [illuminance_pub-2] [INFO] [1753707269.704346782] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707269.7192249 [decision_node-7] [INFO] [1753707269.717821464] [decision_node]: [INFO] send light request: False
+1753707269.7205565 [light_srv-4] [INFO] [1753707269.719040490] [light_actuator]: 💤 불을 끕니다.
+1753707270.7081037 [illuminance_pub-2] [ERROR] [1753707270.704911248] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707271.6970694 [illuminance_pub-2] [ERROR] [1753707271.696499394] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707272.6991994 [illuminance_pub-2] [ERROR] [1753707272.698387305] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707273.7106903 [illuminance_pub-2] [ERROR] [1753707273.707460211] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707274.6929820 [illuminance_pub-2] [ERROR] [1753707274.692423451] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707275.6930108 [illuminance_pub-2] [ERROR] [1753707275.692483451] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707276.6970844 [illuminance_pub-2] [ERROR] [1753707276.696474190] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707277.7081964 [illuminance_pub-2] [ERROR] [1753707277.705279948] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707278.6965804 [illuminance_pub-2] [ERROR] [1753707278.696040026] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707279.6990917 [illuminance_pub-2] [ERROR] [1753707279.694645689] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707279.7208362 [illuminance_pub-2] [INFO] [1753707279.705036358] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707279.7218404 [decision_node-7] [INFO] [1753707279.714768420] [decision_node]: [INFO] send light request: False
+1753707279.7231195 [light_srv-4] [INFO] [1753707279.716198618] [light_actuator]: 💤 불을 끕니다.
+1753707279.7247009 [battery_pub-3] [WARN] [1753707279.724150105] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707279.7270310 [battery_pub-3] [INFO] [1753707279.726279225] [battery_sensor]: I2C 초기화 성공
+1753707280.6971447 [illuminance_pub-2] [ERROR] [1753707280.696483874] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707281.6970327 [illuminance_pub-2] [ERROR] [1753707281.696247541] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707282.7081053 [illuminance_pub-2] [ERROR] [1753707282.707176179] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707283.6946931 [illuminance_pub-2] [ERROR] [1753707283.692921283] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707284.6930027 [illuminance_pub-2] [ERROR] [1753707284.692438397] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707285.6981432 [illuminance_pub-2] [ERROR] [1753707285.694855287] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707286.7121344 [illuminance_pub-2] [ERROR] [1753707286.711512326] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707287.7102668 [illuminance_pub-2] [ERROR] [1753707287.706081066] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707288.7020051 [illuminance_pub-2] [ERROR] [1753707288.700203029] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707289.7005517 [battery_pub-3] [WARN] [1753707289.699151588] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707289.7022505 [battery_pub-3] [INFO] [1753707289.701008277] [battery_sensor]: I2C 초기화 성공
+1753707289.7039897 [illuminance_pub-2] [ERROR] [1753707289.702257877] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707289.7120152 [illuminance_pub-2] [INFO] [1753707289.711244682] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707289.7135041 [decision_node-7] [INFO] [1753707289.713124408] [decision_node]: [INFO] send light request: False
+1753707289.7154224 [light_srv-4] [INFO] [1753707289.713975537] [light_actuator]: 💤 불을 끕니다.
+1753707290.6957054 [illuminance_pub-2] [ERROR] [1753707290.692860120] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707291.7044630 [illuminance_pub-2] [ERROR] [1753707291.700922989] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707292.6977506 [illuminance_pub-2] [ERROR] [1753707292.696959278] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707293.7031667 [illuminance_pub-2] [ERROR] [1753707293.696487319] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707294.6975021 [illuminance_pub-2] [ERROR] [1753707294.696094356] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707295.6981897 [illuminance_pub-2] [ERROR] [1753707295.696904949] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707296.6983232 [illuminance_pub-2] [ERROR] [1753707296.695461784] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707297.6994929 [illuminance_pub-2] [ERROR] [1753707297.698658304] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707298.6941552 [illuminance_pub-2] [ERROR] [1753707298.692542193] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707299.6983457 [battery_pub-3] [WARN] [1753707299.697060563] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707299.7009721 [illuminance_pub-2] [ERROR] [1753707299.698009306] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707299.7025964 [illuminance_pub-2] [INFO] [1753707299.701023741] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707299.7041261 [battery_pub-3] [INFO] [1753707299.703146138] [battery_sensor]: I2C 초기화 성공
+1753707299.7058337 [light_srv-4] [INFO] [1753707299.704544761] [light_actuator]: 💤 불을 끕니다.
+1753707299.7074001 [decision_node-7] [INFO] [1753707299.706252798] [decision_node]: [INFO] send light request: False
+1753707300.6937649 [illuminance_pub-2] [ERROR] [1753707300.693013485] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707301.6957102 [illuminance_pub-2] [ERROR] [1753707301.695045791] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707302.6972234 [illuminance_pub-2] [ERROR] [1753707302.696546210] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707303.6976299 [illuminance_pub-2] [ERROR] [1753707303.696502516] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707304.6967788 [illuminance_pub-2] [ERROR] [1753707304.696206571] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707305.7029002 [illuminance_pub-2] [ERROR] [1753707305.700632167] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707306.7062447 [illuminance_pub-2] [ERROR] [1753707306.702549964] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707307.6968269 [illuminance_pub-2] [ERROR] [1753707307.695959056] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707308.6975288 [illuminance_pub-2] [ERROR] [1753707308.696435943] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707309.6956816 [illuminance_pub-2] [ERROR] [1753707309.694896319] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707309.6997654 [illuminance_pub-2] [INFO] [1753707309.698042831] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707309.7035666 [battery_pub-3] [WARN] [1753707309.699269802] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707309.7081013 [light_srv-4] [INFO] [1753707309.700211433] [light_actuator]: 💤 불을 끕니다.
+1753707309.7116294 [decision_node-7] [INFO] [1753707309.703573635] [decision_node]: [INFO] send light request: False
+1753707309.7140765 [battery_pub-3] [INFO] [1753707309.705255059] [battery_sensor]: I2C 초기화 성공
+1753707310.7092712 [illuminance_pub-2] [ERROR] [1753707310.705048034] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707311.6975815 [illuminance_pub-2] [ERROR] [1753707311.696912780] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707312.7047467 [illuminance_pub-2] [ERROR] [1753707312.704212334] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707313.6959167 [illuminance_pub-2] [ERROR] [1753707313.694391499] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707314.6999412 [illuminance_pub-2] [ERROR] [1753707314.698138654] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707315.7023816 [illuminance_pub-2] [ERROR] [1753707315.701114567] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707316.6971381 [illuminance_pub-2] [ERROR] [1753707316.695758484] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707317.7054589 [illuminance_pub-2] [ERROR] [1753707317.704047726] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707318.6974802 [illuminance_pub-2] [ERROR] [1753707318.696482423] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707319.6942012 [battery_pub-3] [WARN] [1753707319.693586234] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707319.6962624 [illuminance_pub-2] [ERROR] [1753707319.695303790] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707319.6989379 [battery_pub-3] [INFO] [1753707319.698280094] [battery_sensor]: I2C 초기화 성공
+1753707319.7004063 [illuminance_pub-2] [INFO] [1753707319.699783404] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707319.7129068 [light_srv-4] [INFO] [1753707319.712388525] [light_actuator]: 💤 불을 끕니다.
+1753707319.7139983 [decision_node-7] [INFO] [1753707319.713531235] [decision_node]: [INFO] send light request: False
+1753707320.6983171 [illuminance_pub-2] [ERROR] [1753707320.697407687] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707321.6964245 [illuminance_pub-2] [ERROR] [1753707321.693824441] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707322.6939940 [illuminance_pub-2] [ERROR] [1753707322.693293794] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707323.6931560 [illuminance_pub-2] [ERROR] [1753707323.692491639] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707324.7006981 [illuminance_pub-2] [ERROR] [1753707324.696788702] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707325.6978507 [illuminance_pub-2] [ERROR] [1753707325.696857505] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707326.7118454 [illuminance_pub-2] [ERROR] [1753707326.706623660] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707327.6982059 [illuminance_pub-2] [ERROR] [1753707327.696375275] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707328.6931829 [illuminance_pub-2] [ERROR] [1753707328.692385947] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707329.6999805 [battery_pub-3] [WARN] [1753707329.698327847] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707329.7059448 [battery_pub-3] [INFO] [1753707329.702450083] [battery_sensor]: I2C 초기화 성공
+1753707329.7069221 [illuminance_pub-2] [ERROR] [1753707329.702459565] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707329.7072909 [illuminance_pub-2] [INFO] [1753707329.705225513] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707329.7218482 [light_srv-4] [INFO] [1753707329.721277263] [light_actuator]: 💤 불을 끕니다.
+1753707329.7262588 [decision_node-7] [INFO] [1753707329.722704219] [decision_node]: [INFO] send light request: False
+1753707330.6954763 [illuminance_pub-2] [ERROR] [1753707330.694792173] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707331.6969795 [illuminance_pub-2] [ERROR] [1753707331.696435662] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707332.6972167 [illuminance_pub-2] [ERROR] [1753707332.696662434] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707333.7002125 [illuminance_pub-2] [ERROR] [1753707333.693960327] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707334.7089794 [illuminance_pub-2] [ERROR] [1753707334.704565946] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707335.6993515 [illuminance_pub-2] [ERROR] [1753707335.698412909] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707336.6986935 [illuminance_pub-2] [ERROR] [1753707336.697330794] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707337.6986284 [illuminance_pub-2] [ERROR] [1753707337.696847801] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707338.6983051 [illuminance_pub-2] [ERROR] [1753707338.695203670] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707339.6952798 [illuminance_pub-2] [ERROR] [1753707339.694578892] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707339.6999397 [battery_pub-3] [WARN] [1753707339.698493920] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707339.7027042 [battery_pub-3] [INFO] [1753707339.701067549] [battery_sensor]: I2C 초기화 성공
+1753707339.7038791 [illuminance_pub-2] [INFO] [1753707339.702246074] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707339.7070177 [decision_node-7] [INFO] [1753707339.702464653] [decision_node]: [INFO] send light request: False
+1753707339.7081139 [light_srv-4] [INFO] [1753707339.706128194] [light_actuator]: 💤 불을 끕니다.
+1753707340.6975443 [illuminance_pub-2] [ERROR] [1753707340.694898874] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707341.6989131 [illuminance_pub-2] [ERROR] [1753707341.698279531] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707342.6963193 [illuminance_pub-2] [ERROR] [1753707342.695565779] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707343.6990275 [illuminance_pub-2] [ERROR] [1753707343.694175535] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707344.6942840 [illuminance_pub-2] [ERROR] [1753707344.692456689] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707345.6942270 [illuminance_pub-2] [ERROR] [1753707345.693124190] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707346.6956294 [illuminance_pub-2] [ERROR] [1753707346.695095662] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707347.7029579 [illuminance_pub-2] [ERROR] [1753707347.697061076] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707348.6966789 [illuminance_pub-2] [ERROR] [1753707348.696143910] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707349.6973007 [battery_pub-3] [WARN] [1753707349.694754713] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707349.6977713 [battery_pub-3] [INFO] [1753707349.696438768] [battery_sensor]: I2C 초기화 성공
+1753707349.6986809 [illuminance_pub-2] [ERROR] [1753707349.695344189] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707349.7040956 [illuminance_pub-2] [INFO] [1753707349.699030601] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707349.7049034 [decision_node-7] [INFO] [1753707349.700707303] [decision_node]: [INFO] send light request: False
+1753707349.7064059 [light_srv-4] [INFO] [1753707349.704835150] [light_actuator]: 💤 불을 끕니다.
+1753707350.6949987 [illuminance_pub-2] [ERROR] [1753707350.694287480] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707351.6992879 [illuminance_pub-2] [ERROR] [1753707351.698746295] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707352.6954877 [illuminance_pub-2] [ERROR] [1753707352.694806800] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707353.6943169 [illuminance_pub-2] [ERROR] [1753707353.692981072] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707354.6965191 [illuminance_pub-2] [ERROR] [1753707354.695145112] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707355.6928883 [illuminance_pub-2] [ERROR] [1753707355.692355231] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707356.6982970 [illuminance_pub-2] [ERROR] [1753707356.695770908] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707357.6987896 [illuminance_pub-2] [ERROR] [1753707357.698157747] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707358.6949272 [illuminance_pub-2] [ERROR] [1753707358.693592381] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707359.6969755 [illuminance_pub-2] [ERROR] [1753707359.695915957] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707359.6990175 [battery_pub-3] [WARN] [1753707359.696468580] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707359.7007804 [illuminance_pub-2] [INFO] [1753707359.698583088] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707359.7061691 [battery_pub-3] [INFO] [1753707359.700589094] [battery_sensor]: I2C 초기화 성공
+1753707359.7073977 [light_srv-4] [INFO] [1753707359.704895556] [light_actuator]: 💤 불을 끕니다.
+1753707359.7082646 [decision_node-7] [INFO] [1753707359.705955838] [decision_node]: [INFO] send light request: False
+1753707360.6965709 [illuminance_pub-2] [ERROR] [1753707360.695803722] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707361.6935260 [illuminance_pub-2] [ERROR] [1753707361.692771997] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707362.6994133 [illuminance_pub-2] [ERROR] [1753707362.697180134] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707363.6973500 [illuminance_pub-2] [ERROR] [1753707363.696774575] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707364.6934547 [illuminance_pub-2] [ERROR] [1753707364.692803903] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707365.6953230 [illuminance_pub-2] [ERROR] [1753707365.694721429] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707366.6983578 [illuminance_pub-2] [ERROR] [1753707366.695061809] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707367.6965868 [illuminance_pub-2] [ERROR] [1753707367.695464450] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707368.6938894 [illuminance_pub-2] [ERROR] [1753707368.693246793] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707369.6971545 [illuminance_pub-2] [ERROR] [1753707369.695632364] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707369.7013607 [battery_pub-3] [WARN] [1753707369.700852679] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707369.7075939 [illuminance_pub-2] [INFO] [1753707369.701123499] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707369.7126777 [battery_pub-3] [INFO] [1753707369.704211898] [battery_sensor]: I2C 초기화 성공
+1753707369.7153571 [decision_node-7] [INFO] [1753707369.704577850] [decision_node]: [INFO] send light request: False
+1753707369.7166405 [light_srv-4] [INFO] [1753707369.705573094] [light_actuator]: 💤 불을 끕니다.
+1753707370.7003088 [illuminance_pub-2] [ERROR] [1753707370.697210231] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707371.7147069 [illuminance_pub-2] [ERROR] [1753707371.714094813] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707372.6998413 [illuminance_pub-2] [ERROR] [1753707372.699121975] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707373.7020168 [illuminance_pub-2] [ERROR] [1753707373.701402096] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707374.7044258 [illuminance_pub-2] [ERROR] [1753707374.699674539] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707375.7074010 [illuminance_pub-2] [ERROR] [1753707375.706170731] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707376.7023964 [illuminance_pub-2] [ERROR] [1753707376.701106694] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707377.6974158 [illuminance_pub-2] [ERROR] [1753707377.696847841] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707378.7021899 [illuminance_pub-2] [ERROR] [1753707378.701620957] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707379.6955411 [battery_pub-3] [WARN] [1753707379.694924144] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707379.6980269 [illuminance_pub-2] [ERROR] [1753707379.696581420] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707379.7054675 [illuminance_pub-2] [INFO] [1753707379.701295335] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707379.7118120 [decision_node-7] [INFO] [1753707379.702270670] [decision_node]: [INFO] send light request: False
+1753707379.7188227 [battery_pub-3] [INFO] [1753707379.704728445] [battery_sensor]: I2C 초기화 성공
+1753707379.7198918 [light_srv-4] [INFO] [1753707379.713358795] [light_actuator]: 💤 불을 끕니다.
+1753707380.7032146 [illuminance_pub-2] [ERROR] [1753707380.701314608] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707381.7004695 [illuminance_pub-2] [ERROR] [1753707381.699884017] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707382.6967201 [illuminance_pub-2] [ERROR] [1753707382.695316322] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707383.6964200 [illuminance_pub-2] [ERROR] [1753707383.695756325] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707384.6998425 [illuminance_pub-2] [ERROR] [1753707384.697114644] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707385.7064445 [illuminance_pub-2] [ERROR] [1753707385.703713371] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707386.7009714 [illuminance_pub-2] [ERROR] [1753707386.699360697] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707387.6966443 [illuminance_pub-2] [ERROR] [1753707387.693093760] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707388.7020640 [illuminance_pub-2] [ERROR] [1753707388.700274627] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707389.6978741 [battery_pub-3] [WARN] [1753707389.695566019] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707389.6988618 [illuminance_pub-2] [ERROR] [1753707389.696088622] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707389.6998675 [illuminance_pub-2] [INFO] [1753707389.699267653] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707389.7044210 [battery_pub-3] [INFO] [1753707389.700144449] [battery_sensor]: I2C 초기화 성공
+1753707389.7055109 [decision_node-7] [INFO] [1753707389.703362036] [decision_node]: [INFO] send light request: False
+1753707389.7078764 [light_srv-4] [INFO] [1753707389.707323787] [light_actuator]: 💤 불을 끕니다.
+1753707390.6986580 [illuminance_pub-2] [ERROR] [1753707390.694317613] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707391.6970477 [illuminance_pub-2] [ERROR] [1753707391.696343907] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707392.7038743 [illuminance_pub-2] [ERROR] [1753707392.702981095] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707393.6942320 [illuminance_pub-2] [ERROR] [1753707393.693337454] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707394.7022505 [illuminance_pub-2] [ERROR] [1753707394.699321387] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707395.7059755 [illuminance_pub-2] [ERROR] [1753707395.703023918] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707396.6963093 [illuminance_pub-2] [ERROR] [1753707396.695597324] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707397.6963482 [illuminance_pub-2] [ERROR] [1753707397.695269270] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707398.6968789 [illuminance_pub-2] [ERROR] [1753707398.696147407] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707399.6982167 [battery_pub-3] [WARN] [1753707399.696098525] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707399.7053757 [illuminance_pub-2] [ERROR] [1753707399.699186813] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707399.7061894 [illuminance_pub-2] [INFO] [1753707399.702882929] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707399.7100048 [battery_pub-3] [INFO] [1753707399.703489627] [battery_sensor]: I2C 초기화 성공
+1753707399.7169068 [decision_node-7] [INFO] [1753707399.714497232] [decision_node]: [INFO] send light request: False
+1753707399.7182252 [light_srv-4] [INFO] [1753707399.714565548] [light_actuator]: 💤 불을 끕니다.
+1753707400.6977661 [illuminance_pub-2] [ERROR] [1753707400.696192034] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707401.6965294 [illuminance_pub-2] [ERROR] [1753707401.695767958] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707402.6962621 [illuminance_pub-2] [ERROR] [1753707402.695685149] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707403.6974025 [illuminance_pub-2] [ERROR] [1753707403.696339077] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707404.6990614 [illuminance_pub-2] [ERROR] [1753707404.697000320] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707405.6969385 [illuminance_pub-2] [ERROR] [1753707405.693888556] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707406.7005820 [illuminance_pub-2] [ERROR] [1753707406.700008470] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707407.7011983 [illuminance_pub-2] [ERROR] [1753707407.697956136] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707408.6949568 [illuminance_pub-2] [ERROR] [1753707408.694318731] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707409.6942275 [battery_pub-3] [WARN] [1753707409.693337827] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707409.6968577 [illuminance_pub-2] [ERROR] [1753707409.696207962] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707409.7017608 [battery_pub-3] [INFO] [1753707409.697421006] [battery_sensor]: I2C 초기화 성공
+1753707409.7038486 [illuminance_pub-2] [INFO] [1753707409.700446645] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707409.7071600 [decision_node-7] [INFO] [1753707409.705537568] [decision_node]: [INFO] send light request: False
+1753707409.7122169 [light_srv-4] [INFO] [1753707409.706617313] [light_actuator]: 💤 불을 끕니다.
+1753707410.7052658 [illuminance_pub-2] [ERROR] [1753707410.703982614] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707411.6960747 [illuminance_pub-2] [ERROR] [1753707411.695532588] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707412.6961915 [illuminance_pub-2] [ERROR] [1753707412.695584094] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707413.6973121 [illuminance_pub-2] [ERROR] [1753707413.695849604] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707414.6980608 [illuminance_pub-2] [ERROR] [1753707414.696533642] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707415.7008307 [illuminance_pub-2] [ERROR] [1753707415.700004591] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707416.6959248 [illuminance_pub-2] [ERROR] [1753707416.695288606] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707417.7022991 [illuminance_pub-2] [ERROR] [1753707417.699435180] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707418.7022247 [illuminance_pub-2] [ERROR] [1753707418.701599175] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707419.6972075 [illuminance_pub-2] [ERROR] [1753707419.696018023] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707419.6993501 [battery_pub-3] [WARN] [1753707419.696145007] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707419.7038229 [illuminance_pub-2] [INFO] [1753707419.700028497] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707419.7059262 [battery_pub-3] [INFO] [1753707419.700149055] [battery_sensor]: I2C 초기화 성공
+1753707419.7075455 [decision_node-7] [INFO] [1753707419.703520831] [decision_node]: [INFO] send light request: False
+1753707419.7105689 [light_srv-4] [INFO] [1753707419.704657373] [light_actuator]: 💤 불을 끕니다.
+1753707420.6942136 [illuminance_pub-2] [ERROR] [1753707420.692831996] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707421.7011409 [illuminance_pub-2] [ERROR] [1753707421.694543703] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707422.6941144 [illuminance_pub-2] [ERROR] [1753707422.693478740] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707423.7053592 [illuminance_pub-2] [ERROR] [1753707423.704408568] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707424.6951151 [illuminance_pub-2] [ERROR] [1753707424.694455582] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707425.6974156 [illuminance_pub-2] [ERROR] [1753707425.696685059] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707426.6930730 [illuminance_pub-2] [ERROR] [1753707426.692521733] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707427.6942203 [illuminance_pub-2] [ERROR] [1753707427.693245529] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707428.6931899 [illuminance_pub-2] [ERROR] [1753707428.692611445] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707429.6982396 [illuminance_pub-2] [ERROR] [1753707429.696796314] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707429.6993320 [battery_pub-3] [WARN] [1753707429.697234935] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707429.7023039 [decision_node-7] [INFO] [1753707429.700856808] [decision_node]: [INFO] send light request: False
+1753707429.7033362 [battery_pub-3] [INFO] [1753707429.701157870] [battery_sensor]: I2C 초기화 성공
+1753707429.7043433 [illuminance_pub-2] [INFO] [1753707429.701471266] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707429.7168832 [light_srv-4] [INFO] [1753707429.715659623] [light_actuator]: 💤 불을 끕니다.
+1753707430.6955431 [illuminance_pub-2] [ERROR] [1753707430.694986556] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707431.6960733 [illuminance_pub-2] [ERROR] [1753707431.695433902] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707432.7022512 [illuminance_pub-2] [ERROR] [1753707432.697099644] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707433.6966300 [illuminance_pub-2] [ERROR] [1753707433.696029050] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707434.7035484 [illuminance_pub-2] [ERROR] [1753707434.697638660] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707435.6929910 [illuminance_pub-2] [ERROR] [1753707435.692407477] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707436.6976931 [illuminance_pub-2] [ERROR] [1753707436.696940039] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707437.7055662 [illuminance_pub-2] [ERROR] [1753707437.703719852] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707438.6935923 [illuminance_pub-2] [ERROR] [1753707438.692929718] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707439.6952734 [battery_pub-3] [WARN] [1753707439.694552662] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707439.6963620 [illuminance_pub-2] [ERROR] [1753707439.695389717] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707439.7063682 [battery_pub-3] [INFO] [1753707439.699612177] [battery_sensor]: I2C 초기화 성공
+1753707439.7073286 [illuminance_pub-2] [INFO] [1753707439.699612214] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707439.7116609 [decision_node-7] [INFO] [1753707439.710381850] [decision_node]: [INFO] send light request: False
+1753707439.7184680 [light_srv-4] [INFO] [1753707439.711840678] [light_actuator]: 💤 불을 끕니다.
+1753707440.6975987 [illuminance_pub-2] [ERROR] [1753707440.696968900] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707441.6975105 [illuminance_pub-2] [ERROR] [1753707441.696695674] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707442.7006269 [illuminance_pub-2] [ERROR] [1753707442.696196147] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707443.6964569 [illuminance_pub-2] [ERROR] [1753707443.695495801] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707444.6961937 [illuminance_pub-2] [ERROR] [1753707444.695679733] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707445.6942129 [illuminance_pub-2] [ERROR] [1753707445.692973584] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707446.7022436 [illuminance_pub-2] [ERROR] [1753707446.697805541] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707447.6959186 [illuminance_pub-2] [ERROR] [1753707447.695317656] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707448.6982894 [illuminance_pub-2] [ERROR] [1753707448.693491063] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707449.6933987 [illuminance_pub-2] [ERROR] [1753707449.692880496] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707449.6944540 [battery_pub-3] [WARN] [1753707449.693941926] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707449.6973898 [illuminance_pub-2] [INFO] [1753707449.696689651] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707449.6985793 [battery_pub-3] [INFO] [1753707449.697994642] [battery_sensor]: I2C 초기화 성공
+1753707449.7040198 [light_srv-4] [INFO] [1753707449.702876968] [light_actuator]: 💤 불을 끕니다.
+1753707449.7083547 [decision_node-7] [INFO] [1753707449.707035279] [decision_node]: [INFO] send light request: False
+1753707450.6959085 [illuminance_pub-2] [ERROR] [1753707450.694290213] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707451.6988263 [illuminance_pub-2] [ERROR] [1753707451.694591110] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707452.6953597 [illuminance_pub-2] [ERROR] [1753707452.693823984] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707453.7000415 [illuminance_pub-2] [ERROR] [1753707453.699507532] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707454.7057874 [illuminance_pub-2] [ERROR] [1753707454.703897571] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707455.6959426 [illuminance_pub-2] [ERROR] [1753707455.695346094] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707456.6965666 [illuminance_pub-2] [ERROR] [1753707456.694892715] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707457.7046309 [illuminance_pub-2] [ERROR] [1753707457.697574644] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707458.6974096 [illuminance_pub-2] [ERROR] [1753707458.696753980] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707459.6964712 [illuminance_pub-2] [ERROR] [1753707459.695772664] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707459.6997926 [battery_pub-3] [WARN] [1753707459.698045434] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707459.7063360 [battery_pub-3] [INFO] [1753707459.700025217] [battery_sensor]: I2C 초기화 성공
+1753707459.7106016 [illuminance_pub-2] [INFO] [1753707459.704050710] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707459.7151034 [decision_node-7] [INFO] [1753707459.714521414] [decision_node]: [INFO] send light request: False
+1753707459.7163885 [light_srv-4] [INFO] [1753707459.714826514] [light_actuator]: 💤 불을 끕니다.
+1753707460.6969156 [illuminance_pub-2] [ERROR] [1753707460.695105539] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707461.6975048 [illuminance_pub-2] [ERROR] [1753707461.694406452] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707462.6981862 [illuminance_pub-2] [ERROR] [1753707462.694187652] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707463.6975856 [illuminance_pub-2] [ERROR] [1753707463.696896896] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707464.7069263 [illuminance_pub-2] [ERROR] [1753707464.703201623] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707465.6999698 [illuminance_pub-2] [ERROR] [1753707465.699315116] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707466.6967819 [illuminance_pub-2] [ERROR] [1753707466.696112363] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707467.6942832 [illuminance_pub-2] [ERROR] [1753707467.692792775] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707468.6952684 [illuminance_pub-2] [ERROR] [1753707468.694665242] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707469.6972504 [battery_pub-3] [WARN] [1753707469.696057494] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707469.7034178 [illuminance_pub-2] [ERROR] [1753707469.693630369] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707469.7051754 [battery_pub-3] [INFO] [1753707469.703953459] [battery_sensor]: I2C 초기화 성공
+1753707469.7072554 [illuminance_pub-2] [INFO] [1753707469.706246785] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707469.7136114 [light_srv-4] [INFO] [1753707469.707057765] [light_actuator]: 💤 불을 끕니다.
+1753707469.7146332 [decision_node-7] [INFO] [1753707469.708367645] [decision_node]: [INFO] send light request: False
+1753707470.7010472 [illuminance_pub-2] [ERROR] [1753707470.697711734] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707471.6965632 [illuminance_pub-2] [ERROR] [1753707471.696023680] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707472.7016082 [illuminance_pub-2] [ERROR] [1753707472.699320196] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707473.7128246 [illuminance_pub-2] [ERROR] [1753707473.712076561] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707474.7002573 [illuminance_pub-2] [ERROR] [1753707474.699428088] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707475.6967895 [illuminance_pub-2] [ERROR] [1753707475.696231114] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707476.6931708 [illuminance_pub-2] [ERROR] [1753707476.692571962] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707477.6971664 [illuminance_pub-2] [ERROR] [1753707477.695420172] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707478.7042043 [illuminance_pub-2] [ERROR] [1753707478.703321155] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707479.7053511 [illuminance_pub-2] [ERROR] [1753707479.701897237] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707479.7102883 [battery_pub-3] [WARN] [1753707479.704634203] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707479.7114115 [illuminance_pub-2] [INFO] [1753707479.704810873] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707479.7123470 [decision_node-7] [INFO] [1753707479.708361671] [decision_node]: [INFO] send light request: False
+1753707479.7182713 [battery_pub-3] [INFO] [1753707479.714145294] [battery_sensor]: I2C 초기화 성공
+1753707479.7196672 [light_srv-4] [INFO] [1753707479.715790514] [light_actuator]: 💤 불을 끕니다.
+1753707480.7001901 [illuminance_pub-2] [ERROR] [1753707480.699613263] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707481.7011020 [illuminance_pub-2] [ERROR] [1753707481.696567791] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707482.6984534 [illuminance_pub-2] [ERROR] [1753707482.695137095] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707483.7160313 [illuminance_pub-2] [ERROR] [1753707483.714829255] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707484.7035520 [illuminance_pub-2] [ERROR] [1753707484.697630390] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707485.6947005 [illuminance_pub-2] [ERROR] [1753707485.694176632] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707486.6982269 [illuminance_pub-2] [ERROR] [1753707486.695790926] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707487.7025409 [illuminance_pub-2] [ERROR] [1753707487.701814962] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707488.6951480 [illuminance_pub-2] [ERROR] [1753707488.694474750] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707489.6980762 [battery_pub-3] [WARN] [1753707489.695968135] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707489.6991870 [illuminance_pub-2] [ERROR] [1753707489.697262366] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707489.7049544 [battery_pub-3] [INFO] [1753707489.704117049] [battery_sensor]: I2C 초기화 성공
+1753707489.7102394 [illuminance_pub-2] [INFO] [1753707489.707271338] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707489.7112691 [decision_node-7] [INFO] [1753707489.709455903] [decision_node]: [INFO] send light request: False
+1753707489.7171426 [light_srv-4] [INFO] [1753707489.715664313] [light_actuator]: 💤 불을 끕니다.
+1753707490.7011166 [illuminance_pub-2] [ERROR] [1753707490.699721233] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707491.6945879 [illuminance_pub-2] [ERROR] [1753707491.694041335] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707492.7010100 [illuminance_pub-2] [ERROR] [1753707492.699865922] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707493.6971347 [illuminance_pub-2] [ERROR] [1753707493.696485907] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707494.6930864 [illuminance_pub-2] [ERROR] [1753707494.692535953] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707495.7161541 [illuminance_pub-2] [ERROR] [1753707495.715329808] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707496.6948192 [illuminance_pub-2] [ERROR] [1753707496.694297380] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707497.6978102 [illuminance_pub-2] [ERROR] [1753707497.693431417] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707498.6932514 [illuminance_pub-2] [ERROR] [1753707498.692666827] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707499.6939414 [illuminance_pub-2] [ERROR] [1753707499.693142615] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707499.7012398 [battery_pub-3] [WARN] [1753707499.695605409] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707499.7064381 [battery_pub-3] [INFO] [1753707499.697350242] [battery_sensor]: I2C 초기화 성공
+1753707499.7080030 [illuminance_pub-2] [INFO] [1753707499.698715993] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707499.7094262 [decision_node-7] [INFO] [1753707499.703257794] [decision_node]: [INFO] send light request: False
+1753707499.7158246 [light_srv-4] [INFO] [1753707499.712254652] [light_actuator]: 💤 불을 끕니다.
+1753707500.6978700 [illuminance_pub-2] [ERROR] [1753707500.696034622] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707501.6972294 [illuminance_pub-2] [ERROR] [1753707501.696508132] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707502.6935971 [illuminance_pub-2] [ERROR] [1753707502.692676625] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707503.6988597 [illuminance_pub-2] [ERROR] [1753707503.697892884] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707504.7005556 [illuminance_pub-2] [ERROR] [1753707504.699816629] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707505.6982398 [illuminance_pub-2] [ERROR] [1753707505.696375705] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707506.6986344 [illuminance_pub-2] [ERROR] [1753707506.697022163] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707507.6969080 [illuminance_pub-2] [ERROR] [1753707507.695643319] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707508.6963911 [illuminance_pub-2] [ERROR] [1753707508.694654910] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707509.6968961 [illuminance_pub-2] [ERROR] [1753707509.696206758] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707509.6984115 [battery_pub-3] [WARN] [1753707509.696679138] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707509.7025666 [battery_pub-3] [INFO] [1753707509.700676316] [battery_sensor]: I2C 초기화 성공
+1753707509.7055736 [illuminance_pub-2] [INFO] [1753707509.704959722] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707509.7142267 [decision_node-7] [INFO] [1753707509.710759845] [decision_node]: [INFO] send light request: False
+1753707509.7151928 [light_srv-4] [INFO] [1753707509.711500157] [light_actuator]: 💤 불을 끕니다.
+1753707510.6954851 [illuminance_pub-2] [ERROR] [1753707510.694854785] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707511.6990016 [illuminance_pub-2] [ERROR] [1753707511.697776866] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707512.6929801 [illuminance_pub-2] [ERROR] [1753707512.692406529] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707513.6929078 [illuminance_pub-2] [ERROR] [1753707513.692325991] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707514.6943259 [illuminance_pub-2] [ERROR] [1753707514.693422533] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707515.7023516 [illuminance_pub-2] [ERROR] [1753707515.696965053] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707516.6979690 [illuminance_pub-2] [ERROR] [1753707516.697231059] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707517.6935530 [illuminance_pub-2] [ERROR] [1753707517.692905967] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707518.7075768 [illuminance_pub-2] [ERROR] [1753707518.703477007] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707519.7049127 [illuminance_pub-2] [ERROR] [1753707519.704127947] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707519.7099791 [battery_pub-3] [WARN] [1753707519.706603444] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707519.7105675 [battery_pub-3] [INFO] [1753707519.709117461] [battery_sensor]: I2C 초기화 성공
+1753707519.7213955 [illuminance_pub-2] [INFO] [1753707519.715823788] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707519.7223494 [decision_node-7] [INFO] [1753707519.719366067] [decision_node]: [INFO] send light request: False
+1753707519.7235320 [light_srv-4] [INFO] [1753707519.720420479] [light_actuator]: 💤 불을 끕니다.
+1753707520.6947231 [illuminance_pub-2] [ERROR] [1753707520.693385274] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707521.6949806 [illuminance_pub-2] [ERROR] [1753707521.694408666] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707522.6966293 [illuminance_pub-2] [ERROR] [1753707522.694265904] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707523.7011423 [illuminance_pub-2] [ERROR] [1753707523.700014416] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707524.6997426 [illuminance_pub-2] [ERROR] [1753707524.699164564] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707525.6943190 [illuminance_pub-2] [ERROR] [1753707525.692920580] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707526.6943390 [illuminance_pub-2] [ERROR] [1753707526.693288810] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707527.7014272 [illuminance_pub-2] [ERROR] [1753707527.700619040] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707528.6948886 [illuminance_pub-2] [ERROR] [1753707528.694361741] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707529.6931958 [illuminance_pub-2] [ERROR] [1753707529.692640371] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707529.6943636 [battery_pub-3] [WARN] [1753707529.693428814] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707529.6973014 [battery_pub-3] [INFO] [1753707529.696375395] [battery_sensor]: I2C 초기화 성공
+1753707529.7032876 [illuminance_pub-2] [INFO] [1753707529.702532859] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707529.7106276 [decision_node-7] [INFO] [1753707529.709685697] [decision_node]: [INFO] send light request: False
+1753707529.7117558 [light_srv-4] [INFO] [1753707529.710727293] [light_actuator]: 💤 불을 끕니다.
+1753707530.6942105 [illuminance_pub-2] [ERROR] [1753707530.693430332] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707531.6975911 [illuminance_pub-2] [ERROR] [1753707531.696018554] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707532.6975954 [illuminance_pub-2] [ERROR] [1753707532.696107223] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707533.6984277 [illuminance_pub-2] [ERROR] [1753707533.695076534] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707534.7137504 [illuminance_pub-2] [ERROR] [1753707534.712285938] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707535.6964049 [illuminance_pub-2] [ERROR] [1753707535.695770846] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707536.7024872 [illuminance_pub-2] [ERROR] [1753707536.699236383] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707537.7055659 [illuminance_pub-2] [ERROR] [1753707537.704416271] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707538.7001212 [illuminance_pub-2] [ERROR] [1753707538.699397534] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707539.6935527 [illuminance_pub-2] [ERROR] [1753707539.692993065] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707539.6982868 [battery_pub-3] [WARN] [1753707539.696946279] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1753707539.6994407 [illuminance_pub-2] [INFO] [1753707539.697488309] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1753707539.7002368 [decision_node-7] [INFO] [1753707539.698458996] [decision_node]: [INFO] send light request: False
+1753707539.7065377 [battery_pub-3] [INFO] [1753707539.703884778] [battery_sensor]: I2C 초기화 성공
+1753707539.7087741 [light_srv-4] [INFO] [1753707539.704741685] [light_actuator]: 💤 불을 끕니다.
+1753707540.6952848 [illuminance_pub-2] [ERROR] [1753707540.694357946] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707541.6986129 [illuminance_pub-2] [ERROR] [1753707541.698033024] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1753707542.7014794 [illuminance_pub-2] [ERROR] [1753707542.698056117] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          

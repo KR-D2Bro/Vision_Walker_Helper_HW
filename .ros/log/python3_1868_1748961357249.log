@@ -1,0 +1,14 @@
+[INFO] [1748961357.441630047] [ble_gatt_server]: Loaded config from disk
+[INFO] [1748961357.465052515] [ble_gatt_server]: Using adapter: D8:3A:DD:F2:4C:84
+[INFO] [1748961357.487292772] [ble_gatt_server]: BLE GATT Server started
+[INFO] [1748961357.491734120] [ble_gatt_server]: Config service added
+[INFO] [1748961361.334756675] [ble_gatt_server]: light_read
+[INFO] [1748961364.076368442] [ble_gatt_server]: light_read
+[INFO] [1748961371.816878051] [ble_gatt_server]: light_read
+[INFO] [1748961372.404558579] [ble_gatt_server]: light_read
+[INFO] [1748961374.966064244] [ble_gatt_server]: light_read
+[INFO] [1748961375.506547746] [ble_gatt_server]: light_read
+[INFO] [1748961376.094571290] [ble_gatt_server]: light_read
+[INFO] [1748961377.036457377] [ble_gatt_server]: light_read
+[INFO] [1748961377.485941129] [ble_gatt_server]: light_read
+[INFO] [1748961377.804514961] [ble_gatt_server]: light_read

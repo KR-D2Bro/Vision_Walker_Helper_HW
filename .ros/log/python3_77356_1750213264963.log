@@ -1,0 +1,83 @@
+[INFO] [1750213265.394790798] [battery_sensor]: I2C 초기화 성공
+[INFO] [1750213265.398213215] [battery_sensor]: Battery State Publisher started, publishing on /battery_state/data
+[WARN] [1750213275.345194486] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213275.347237940] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213285.349050992] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213285.355852106] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213295.350034046] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213295.357922777] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213305.348387952] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213305.354231284] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213315.367515534] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213315.369653691] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213325.352607228] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213325.354825051] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213335.351179513] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213335.353367300] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213345.345374817] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213345.348690035] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213355.349377310] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213355.363999870] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213365.349336864] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213365.352796044] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213375.347427560] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213375.349537701] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213385.350345852] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213385.352180552] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213395.349301694] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213395.361812934] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213405.345134685] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213405.351509943] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213415.386684825] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213415.416529476] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213425.349383404] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213425.361403061] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213435.354077843] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213435.355970006] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213445.354607771] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213445.370703513] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213455.344465706] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213455.347773205] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213465.351111577] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213465.358787917] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213475.347810614] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213475.354722778] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213485.352511765] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213485.355891487] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213495.350561489] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213495.354735295] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213505.352302618] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213505.357694060] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213515.348152557] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213515.354180344] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213525.343941575] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213525.352674074] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213535.347549204] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213535.357128065] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213545.358320973] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213545.366870679] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213555.359238584] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213555.371049238] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213565.348329300] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213565.351058734] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213575.349605707] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213575.351368744] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213585.349231361] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213585.359095667] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213595.354669338] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213595.370291994] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213605.348236472] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213605.362162516] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213615.356350647] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213615.368141770] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213625.344559364] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213625.347090357] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213635.346505550] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213635.348702028] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213645.347944871] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213645.353890590] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213655.344172233] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213655.350849241] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213665.346533510] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+[INFO] [1750213665.348390918] [battery_sensor]: I2C 초기화 성공
+[WARN] [1750213675.350612439] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도

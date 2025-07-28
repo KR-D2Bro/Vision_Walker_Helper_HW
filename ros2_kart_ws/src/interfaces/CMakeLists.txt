@@ -28,6 +28,13 @@ endif()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Imu.msg"
+  "msg/Config.msg"
+  "msg/BatteryState.msg"
+  "msg/Illuminance.msg"
+  "msg/Vision.msg"
+  "srv/LightCommand.srv"
+  "srv/BuzzerCommand.srv"
+  "srv/ConfigSrv.srv"
   DEPENDENCIES geometry_msgs
 )
 

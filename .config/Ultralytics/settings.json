@@ -1,0 +1,21 @@
+{
+  "settings_version": "0.0.6",
+  "datasets_dir": "/home/dongjae/datasets",
+  "weights_dir": "/home/dongjae/weights",
+  "runs_dir": "/home/dongjae/runs",
+  "uuid": "5b8a9c77197174597911c541f2da503fff2d245e5b2f47e2d94ea3547006c8ef",
+  "sync": true,
+  "api_key": "",
+  "openai_api_key": "",
+  "clearml": true,
+  "comet": true,
+  "dvc": true,
+  "hub": true,
+  "mlflow": true,
+  "neptune": true,
+  "raytune": true,
+  "tensorboard": false,
+  "wandb": false,
+  "vscode_msg": true,
+  "openvino_msg": true
+}

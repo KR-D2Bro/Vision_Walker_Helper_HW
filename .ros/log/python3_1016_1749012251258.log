@@ -1,0 +1,6 @@
+[INFO] [1749012251.449264170] [ble_gatt_server]: Loaded config from disk
+[INFO] [1749012251.472377757] [ble_gatt_server]: Using adapter: D8:3A:DD:F2:4C:84
+[INFO] [1749012251.503819470] [ble_gatt_server]: BLE GATT Server started
+[INFO] [1749012251.508213890] [ble_gatt_server]: Config service added
+[INFO] [1749012251.581245953] [ble_gatt_server]: Central disconnected: <bluezero.device.Device object at 0x7f801e7110>
+[INFO] [1749012259.325552947] [ble_gatt_server]: Central connected: <bluezero.device.Device object at 0x7f80116d10>, auth check start

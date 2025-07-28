@@ -653,3 +653,1211 @@ ls
 ls src/
 cd src/
 ros2 pkg create --build-type ament_python --license Apache-2.0 actuator_pkg
+source ros2_humble_venv/
+source ros2_humble_venv/bin/activate
+cd ros2_kart_ws/
+vim src/app_interface_pkg/app_interface_pkg/ble_
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+sudo poweroff 
+ls
+cd ros2_kart_ws/
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+rm src/app_interface_pkg/app_interface_pkg/.ble_node.py.swp 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+cp src/app_interface_pkg/app_interface_pkg/ble_node.py src/app_interface_pkg/app_interface_pkg/ble_periph.py
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py
+clear
+cd ros2_kart_ws/
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+rm src/app_interface_pkg/app_interface_pkg/.ble_periph.py.swp 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+cd ros2_kart_ws/
+rm src/app_interface_pkg/app_interface_pkg/.ble_node.py.swp 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py
+clear
+cd ros2_kart_ws/
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+sudo poweroff 
+cd ros2_kart_ws/
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+rm src/app_interface_pkg/app_interface_pkg/.ble_periph.py.swp 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+rm src/app_interface_pkg/app_interface_pkg/.ble_periph.py.swp 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/app_interface_pkg/package.xml 
+vim src/app_interface_pkg/setup.py 
+colcon build
+vim src/interfaces/msg/Config.msg 
+colcon build
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+colcon build
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+colcon build
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+ls
+cd ros2_kart_ws/
+rm src/app_interface_pkg/app_interface_pkg/.ble_periph.py.swp 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/interfaces/msg/
+vim src/interfaces/msg/config.msg
+vim src/interfaces/msg/Imu.msg 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py
+vim src/interfaces/msg/config.msg
+vim src/interfaces/CMakeLists.txt 
+mv src/interfaces/msg/config.msg src/interfaces/msg/Config.msg
+vim src/interfaces/package.xml 
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+cd ros2_kart_ws/
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+rm src/app_interface_pkg/app_interface_pkg/.ble_node.py.swp 
+ls
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+rm src/app_interface_pkg/app_interface_pkg/.ble_node.py.swp 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+cd ros2_kart_ws/
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+rm src/app_interface_pkg/app_interface_pkg/.ble_periph.py.swp 
+colcon build
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+colcon build
+ros2 run app_interface_pkg ble_node 
+cd ..
+ls
+vim config.conf
+ros2 run app_interface_pkg ble_node 
+vim config.conf 
+ros2 run app_interface_pkg ble_node 
+vim config.conf 
+ros2 run app_interface_pkg ble_node 
+cd ros2_kart_ws/
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+ros2 run app_interface_pkg ble_node 
+colcon build --select-packages app_interface_pkg
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+cd ros2_kart_ws/
+ls
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+colcon build
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+colcon build
+sudo poweroff 
+cd ros2_
+cd ros2_kart_ws/
+colcon build
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+colcon build
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+ros2 run app_interface_pkg ble_node 
+sudo poweroff 
+cd ros2_kart_ws/
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+ls ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/peripheral.py 
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/advertisement.py 
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/GATT.py 
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/localGATT.py 
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/peripheral.py 
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/localGATT.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build
+ros2 run app_interface_pkg ble_node 
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/localGATT.py 
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/peripheral.py 
+sudo poweroff 
+cd ros2_kart_ws/
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build
+ros2 run app_interface_pkg ble_node 
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/localGATT.py 
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/peripheral.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build
+ros2 run app_interface_pkg ble_node 
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/localGATT.py 
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/peripheral.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+sudo poweroff
+cd ros2_kart_ws/
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/peripheral.py 
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/peripheral.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/peripheral.py 
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/localGATT.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/peripheral.py 
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/localGATT.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+sudo bluetoothctl 
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+sudo poweroff 
+btmon
+sudo btmon
+clear
+cd ros2_kart_ws/
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+sudo poweroff 
+sudo btmon
+clear
+sudo btmon
+clear
+sudo btmon
+clear
+sudo btmon
+clear
+sudo btmon
+clear
+sudo btmon
+clear
+sudo btmon
+cd ros2_kart_ws/
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim ~/secretKey.txt 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+cd ros2_kart_ws/
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+cd ..
+vim secretKey.txt
+cd ros2_kart_ws/
+colcon build --packages-select app_interface_pkg
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+ros2 run app_interface_pkg ble_node 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim ~/secretKey.txt 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+ros2 run app_interface_pkg ble_node 
+bluetoothctl 
+ros2 run app_interface_pkg ble_node 
+bluetoothctl 
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+bluetoothctl 
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+bluetoothctl 
+ls /var/lib/bluetooth/
+sudo ls /var/lib/bluetooth/
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+colcon build --packages-select app_interface_pkg
+bluetoothctl 
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+ls ~/ros2_humble_venv/lib/python3.11/site-packages/dbus_next/errors.py 
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/dbus_next/errors.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+ls src/app_interface_pkg/app_interface_pkg/
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/dbus_next/errors.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+colcon build --packages-select app_interface_pkg
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim ~/secretKey.txt 
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim ~/secretKey.txt 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+cd ros2_kart_ws/
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+ls
+cd ros2_kart_ws/
+ls
+vim src/sensor_pkg/sensor_pkg/battery_node.py
+clear
+cd ros2_kart_ws/
+vim src/sensor_pkg/sensor_pkg/battery_node.py 
+rm src/sensor_pkg/sensor_pkg/.battery_node.py.swo
+rm src/sensor_pkg/sensor_pkg/.battery_node.py.swp 
+vim src/sensor_pkg/sensor_pkg/battery_node.py 
+rm src/sensor_pkg/sensor_pkg/.imu_node.py.swp 
+vim src/sensor_pkg/sensor_pkg/battery_node.py 
+vim src/interfaces/msg/Battery_state.msg
+vim src/interfaces/package.xml 
+vim src/interfaces/CMakeLists.txt 
+vim src/sensor_pkg/sensor_pkg/battery_node.py 
+colcon build
+vim src/sensor_pkg/sensor_pkg/battery_node.py 
+colcon build
+source install/setup.bash 
+ros2 interface show interfaces/msg/BatteryState
+vim src/sensor_pkg/setup.py 
+vim src/sensor_pkg/package.xml 
+vim src/sensor_pkg/sensor_pkg/battery_node.py 
+colcon build --packages-select sensor_pkg
+ros2 topic echo /battry_state/data
+ros2 run sensor_pkg battery_pub 
+vim src/sensor_pkg/sensor_pkg/battery_node.py 
+colcon build --packages-select sensor_pkg
+ros2 run sensor_pkg battery_pub 
+source install/setup.bash
+ros2 run sensor_pkg battery_pub 
+vim src/sensor_pkg/sensor_pkg/battery_node.py 
+colcon build --packages-select sensor_pkg
+ros2 run sensor_pkg battery_pub 
+vim src/sensor_pkg/sensor_pkg/battery_node.py 
+colcon build --packages-select sensor_pkg
+ros2 run sensor_pkg battery_pub 
+vim src/sensor_pkg/sensor_pkg/battery_node.py 
+colcon build --packages-select sensor_pkg
+ros2 run sensor_pkg battery_pub 
+sudo poweroff 
+clear
+cd ros2_kart_ws/
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+vim src/interfaces/msg/Imu.msg 
+mv src/interfaces/msg/Battery_state.msg src/interfaces/msg/BatteryState.msg
+vim src/interfaces/CMakeLists.txt 
+ls src/sensor_pkg/sensor_pkg/
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+vim src/sensor_pkg/sensor_pkg/i
+vim src/sensor_pkg/sensor_pkg/illuminance_node.py 
+source install/setup.bash
+ros2 topic echo /battery_state/data
+ls
+vim ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py 
+vim ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py 
+cd ros2_kart_ws/
+vim src/sensor_pkg/sensor_pkg/battery_node.py
+rm src/sensor_pkg/sensor_pkg/.battery_node.py.swp 
+vim src/sensor_pkg/sensor_pkg/battery_node.py
+clear
+vim ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py 
+rm ros2_kart_ws/src/sensor_pkg/sensor_pkg/.illuminance_node.py.swp 
+vim ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py 
+vim ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py 
+vim ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py 
+vim ros2_kart_ws/src/sensor_pkg/sensor_pkg/imu_node.py
+vim ros2_kart_ws/src/sensor_pkg/sensor_pkg/illuminance_node.py 
+cd ros2_kart_ws/
+vim src/sensor_pkg/sensor_pkg/battery_node.py 
+rm src/sensor_pkg/sensor_pkg/.battery_node.py.swp 
+vim src/sensor_pkg/sensor_pkg/battery_node.py 
+cd ros2_kart_ws/
+vim src/sensor_pkg/sensor_pkg/battery_node.py 
+cd ros2_kart_ws/
+vim src/sensor_pkg/sensor_pkg/illuminance_node.py 
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+vim src/sensor_pkg/sensor_pkg/illuminance_node.py 
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+ls /dev/i2c-*
+vim src/sensor_pkg/sensor_pkg/battery_node.py
+cd ros2_kart_ws/
+vim src/sensor_pkg/sensor_pkg/battery_node.py
+sudo poweroff 
+cd ros2_kart_ws/
+vim src/sensor_pkg/sensor_pkg/battery_node.py 
+sudo poweroff 
+ros2 run sensor_pkg battery_pub 
+sudo poweroff 
+ros2 topic info /battery_state
+ros2 topic info /battery_state/data
+ros2 topic echo /battery_state/data
+cd ros2_kart_ws/
+mkdir src/interfaces/srv
+vim src/interfaces/srv/LightCommand.srv
+ls
+vim src/actuator_pkg/actuator_pkg/light_service.py
+vim src/actuator_pkg/setup.py 
+vim src/interfaces/CMakeLists.txt 
+vim src/interfaces/package.xml 
+colcon build
+ls
+ros2 run actuator_pkg light_srv 
+vim src/actuator_pkg/actuator_pkg/light_service.py
+pip3 list | grep RPi
+pip3 list
+which pip3
+pip3 install RPi.GPIO
+vim src/actuator_pkg/actuator_pkg/light_service.py
+vim src/actuator_pkg/setup.py 
+vim src/actuator_pkg/package.xml 
+colcon build
+vim src/decision_pkg/decision_pkg/decision_node.py 
+vim src/decision_pkg/package.xml 
+colcon build
+source install/setup.bash 
+vim src/decision_pkg/setup.py 
+colcon build
+source install/setup.bash 
+ros2 run decision_pkg decision_node 
+vim src/decision_pkg/decision_pkg/decision_node.py 
+colcon build
+ros2 run decision_pkg decision_node 
+ros2 run actuator_pkg light_srv 
+ros2 run decision_pkg decision_node 
+vim src/decision_pkg/decision_pkg/decision_node.py 
+ros2 run decision_pkg decision_node 
+vim src/decision_pkg/decision_pkg/decision_node.py 
+ros2 run sensor_pkg battery_pub 
+sudo poweroff 
+ros2 run sensor_pkg battery_pub 
+cd ros2_kart_ws/
+vim src/sensor_pkg/setup.py 
+ros2 run sensor_pkg battery_pub 
+source install/setup.bash 
+ros2 run actuator_pkg light_srv 
+ros2 run sensor_pkg battery_pub 
+vim src/sensor_pkg/sensor_pkg/battery_node.py 
+colcon build --packages-select 
+ros2 run sensor_pkg battery_pub 
+vim src/sensor_pkg/sensor_pkg/battery_node.py 
+vim src/actuator_pkg/actuator_pkg/buzzer_service.py
+vim src/actuator_pkg/actuator_pkg/light_service.py 
+vim src/actuator_pkg/actuator_pkg/buzzer_service.py
+vim src/decision_pkg/decision_pkg/decision_node.py 
+vim src/interfaces/srv/
+vim src/interfaces/srv/BuzzerCommand.srv
+vim src/decision_pkg/setup.py 
+vim src/decision_pkg/package.xml 
+vim src/actuator_pkg/setup.py 
+vim src/actuator_pkg/package.xml 
+colcon build
+ros2 run decision_pkg decision_node 
+vim src/interfaces/CMakeLists.txt 
+colcon build
+ros2 run decision_pkg decision_node 
+source install/setup.bash 
+ros2 run decision_pkg decision_node 
+vim src/decision_pkg/decision_pkg/decision_node.py 
+colcon build --packages-select decision_pkg
+ros2 run actuator_pkg light_srv 
+colcon build --packages-select decision_pkg
+ros2 run actuator_pkg light_srv 
+ls
+vim yolo_test.py
+./ros2_humble_venv/bin/python3 yolo_test.py 
+ls /dev/video*
+sudo raspi-config 
+v4l2-ctl --list-devices
+sudo modprobe bcm2835-v4l2
+echo "bcm2835-v4l2" | sudo tee -a /etc/modules
+ls /dev/video*
+./ros2_humble_venv/bin/python3 yolo_test.py 
+libcamera-hello 
+dmesg | grep -i video
+v4l2-ctl --device=/dev/video0 --all
+sudo raspi-config 
+ls
+vim yolo_test.py 
+./ros2_humble_venv/bin/python3 yolo_test.py 
+vim yolo_test.py 
+./ros2_humble_venv/bin/python3 -c "import cv2; print(cv2.__version__)"
+vim yolo_test.py 
+./ros2_humble_venv/bin/python3 yolo_test.py 
+./ros2_humble_venv/bin/python3 -c "import cv2; print(cv2.__version__)"
+which picamera2
+vim yolo_test.py 
+rm .yolo_test.py.swp 
+vim yolo_test.py 
+./ros2_humble_venv/bin/python3 yolo_test.py 
+sudo apt update
+sudo apt install -y python3-picamera2
+./ros2_humble_venv/bin/python3 yolo_test.py 
+vim yolo_test.py 
+./ros2_humble_venv/bin/python3 yolo_test.py 
+vim yolo_test.py 
+./ros2_humble_venv/bin/python3 yolo_test.py 
+vim yolo_test.py 
+./ros2_humble_venv/bin/python3 yolo_test.py 
+sudo apt install xserver-xorg raspberrypi-ui-mods
+sudo reboot 
+sudo raspi-config 
+sudo reboot 
+sudo raspi-config 
+ls
+vim yolo_test.py 
+cd ros2_kart_ws/
+colcon build
+colcon build --packages-select vision_pkg
+clear
+cd ros2_kart_ws/src/vision_pkg/vision_pkg/
+vim yolo_detector.py 
+rm .yolo_detector.py.swo 
+vim yolo_detector.py 
+vim yolo_detector.py
+sudo poweroff 
+clear
+ros2 run vision_pkg vision_node 
+cd ros2_kart_ws/
+vim src/vision_pkg/setup.py 
+vim src/vision_pkg/vision_pkg/object_detection_node.py 
+colcon build
+ros2 run vision_pkg vision_node 
+vim src/vision_pkg/vision_pkg/object_detection_node.py 
+vim src/vision_pkg/setup.py 
+vim src/vision_pkg/vision_pkg/object_detection_node.py 
+ros2 run vision_pkg vision_node 
+colcon build --packages-select vision_pkg
+ros2 run vision_pkg vision_node 
+vim src/vision_pkg/vision_pkg/object_detection_node.py 
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+cd ros2_kart_ws/src/vision_pkg/vision_pkg/
+ls
+vim object_detection_node.py 
+vim yolo_detector.py 
+vim object_detection_node.py 
+vim yolo_detector.py 
+cd yolov5/
+ls
+cd utils/
+ls
+vim plots.py 
+cd ../..
+ls
+vim yolo_detector.py 
+cd yolov5/utils/
+ls
+vim general.py 
+cd ../..
+vim yolo_detector.py 
+ros2 run vision_pkg vision_node 
+cd ros2_kart_ws/
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+source install/setup.bash 
+ros2 run vision_pkg vision_node 
+colcon build --packages-select vision_pkg
+ros2 run vision_pkg vision_node 
+vim ~/yolo_test.py 
+colcon build --packages-select vision_pkg
+ros2 run vision_pkg vision_node 
+vim ros2_kart_ws/src/vision_pkg/vision_pkg/yolo_detector.py 
+ros2 run vision_pkg vision_node 
+ls
+cd ros2_kart_ws/
+ls
+vim src/actuator_pkg/actuator_pkg/buzzer_service.py 
+clear
+cd ros2_kart_ws/
+vim src/actuator_pkg/actuator_pkg/buzzer_service.py 
+vim src/interfaces/srv/BuzzerCommand.srv 
+vim src/actuator_pkg/actuator_pkg/buzzer_service.py 
+ros2 run actuator_pkg buzzer_srv 
+vim src/actuator_pkg/setup.py 
+vim src/actuator_pkg/package.xml 
+ros2 run actuator_pkg light_srv 
+vim src/actuator_pkg/actuator_pkg/buzzer_service.py 
+ros2 run actuator_pkg buzzer_srv 
+vim src/actuator_pkg/actuator_pkg/buzzer_service.py 
+ros2 run actuator_pkg buzzer_srv 
+clear
+cd ros2_kart_ws/
+vim src/actuator_pkg/actuator_pkg/buzzer_service.py 
+rm src/actuator_pkg/actuator_pkg/.buzzer_service.py.swp 
+vim src/actuator_pkg/actuator_pkg/buzzer_service.py 
+vim src/decision_pkg/decision_pkg/decision_node.py 
+colcon build
+vim src/decision_pkg/decision_pkg/decision_node.py 
+colcon build
+vim src/decision_pkg/decision_pkg/decision_node.py 
+colcon build
+ros2 run decision_pkg decision_node 
+colcon build --packages-select actuator_pkg
+ros2 run decision_pkg decision_node 
+vim src/decision_pkg/decision_pkg/decision_node.py 
+colcon build --packages-select actuator_pkg
+colcon build --packages-select decision_pkg
+ros2 run decision_pkg decision_node 
+vim src/decision_pkg/decision_pkg/decision_node.py 
+colcon build --packages-select decision_pkg
+ros2 run decision_pkg decision_node 
+clear
+cd ros2_kart_ws/
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+colcon build --packages-select decision_pkg
+ros2 run decision_pkg decision_node 
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+colcon build
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+rm -r src/kart/
+cd src/
+ros2 pkg create --build-type ament_python launch_pkg
+ls
+cd launch_pkg/
+ls
+mkdir launch
+cd launch
+launch.py
+vim launch.py
+vim ../setup.py 
+cd ..
+ls
+vim package.xml 
+vim setup.py 
+vim launch/launch.py 
+vim setup.py 
+cd ros2_kart_ws/
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+ros2 topic pub --once /battery_state/data interfaces/msg/BatteryState "data: 42"
+ros2 topic pub --once /battery_state/data interfaces/msg/BatteryState "percentage: 42"
+ls
+ls src/sensor_pkg/sensor_pkg/
+vim src/sensor_pkg/setup.py 
+vim src/actuator_pkg/setup.py 
+vim src/app_interface_pkg/
+vim src/app_interface_pkg/setup.py 
+vim src/decision_pkg/setup.py 
+vim src/vision_pkg/setup.py 
+colcon build
+ros2 launch launch_pkg launch.py
+source install/setup.bash 
+ros2 launch launch_pkg launch.py
+sudo poweroff 
+ls
+rm yolo_test.py 
+rm token_code.txt 
+cd ros2_kart_ws/
+ls
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+vim /boot/config.txt 
+vim /boot/firmware/config.txt 
+sudo vim /boot/firmware/config.txt 
+ls /dev/i2c-*
+sudo vim /boot/firmware/config.txt 
+sudo reboot 
+ls
+cd ros2_kart_ws/
+vim src/sensor_pkg/sensor_pkg/battery_node.py 
+ros2 run vision_pkg vision_node 
+cd ros2_kart_ws/
+source install/setup.sh 
+ros2 run vision_pkg vision_node 
+ros2 run app_interface_pkg ble_node 
+cd ros2_kart_ws/
+vim src/sensor_pkg/sensor_pkg/battery_node.py 
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+vim src/sensor_pkg/setup.py 
+vim src/sensor_pkg/package.xml 
+colcon build --packages-select sensor_pkg
+vim src/sensor_pkg/package.xml 
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+colcon build --packages-select sensor_pkg
+ros2 run sensor_pkg imu_pub 
+ls /dev/i2c-*
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+colcon build --packages-select sensor_pkg
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+ros2 run sensor_pkg imu_pub 
+i2cdetect -y 1
+i2cdetect -y 3
+ros2 run sensor_pkg imu_pub 
+i2cdetect -y 3
+ros2 run sensor_pkg imu_pub 
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+colcon build --packages-select sensor_pkg
+ros2 run sensor_pkg imu_pub 
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+colcon build --packages-select sensor_pkg
+ros2 run sensor_pkg imu_pub 
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+i2cdetect -y 0
+ls -l /dev/i2c-*
+sudo i2cdetect -y 0
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/sensor_pkg/sensor_pkg/battery_node.py 
+ros2 topic --once interfaces/msg /battery_state/data "percentage:30"
+ros2 topic --once 
+ros2 topic pub --once /battery_state/data interfaces/msg/BatteryState "percentage: 42"
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+sudo i2cdetect -y 3
+ros2 topic pub --once /battery_state/data interfaces/msg/BatteryState "percentage: 42"
+sudo i2cdetect -y 3
+sudo i2cdetect -y 1
+ros2 topic pub --once /battery_state/data interfaces/msg/BatteryState "percentage: 42"
+vim src/sensor_pkg/sensor_pkg/battery_node.py 
+rm src/sensor_pkg/sensor_pkg/.battery_node.py.swp 
+sudo i2cdetect -y 0
+sudo i2cdetect -y 1
+vim src/sensor_pkg/sensor_pkg/battery_node.py 
+ros2 run sensor_pkg battery_pub 
+sudo i2cdetect -y 1
+ros2 topic pub --once /battery_state/data interfaces/msg/BatteryState "percentage: 42"
+sudo i2cdetect -y 1
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+colcon build --packages-select sensor_pkg
+ros2 run sensor_pkg imu_pub 
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+colcon build --packages-select sensor_pkg
+ros2 run sensor_pkg imu_pub 
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+colcon build --packages-select sensor_pkg
+ros2 run sensor_pkg imu_pub 
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+colcon build --packages-select sensor_pkg
+ros2 run sensor_pkg imu_pub 
+wq
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+sudo i2cdetect -y 1
+ros2 run sensor_pkg imu_pub 
+ros2 launch launch_pkg launch.py
+vim src/actuator_pkg/actuator_pkg/buzzer_service.py 
+ros2 launch launch_pkg launch.py
+vim src/vision_pkg/vision_pkg/object_detection_node.py 
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg
+ros2 run vision_pkg vision_node 
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg
+ros2 run vision_pkg vision_node 
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg
+ros2 run vision_pkg vision_node 
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg
+ros2 run vision_pkg vision_node 
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg
+ros2 run vision_pkg vision_node 
+ls src/vision_pkg/vision_pkg/model/o
+ls src/vision_pkg/vision_pkg/model/
+colcon build --packages-select vision_pkg
+ros2 run vision_pkg vision_node 
+source install/setup.sh 
+ros2 run vision_pkg vision_node 
+vim src/vision_pkg/setup.py 
+colcon build --packages-select vision_pkg
+vim src/vision_pkg/setup.py 
+colcon build --packages-select vision_pkg
+ls install/vision_pkg/lib/python3.11/site-packages/vision_pkg/model/v5_gray.pt
+ros2 run vision_pkg vision_node 
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg
+ros2 run vision_pkg vision_node 
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+vim src/vision_pkg/vision_pkg/object_detection_node.py 
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg --symlink-install
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+vim src/vision_pkg/setup.py 
+colcon build --packages-select vision_pkg --symlink-install
+colcon build --packages-select vision_pkg 
+vim src/vision_pkg/setup.py 
+rm -rf build/ install/ log/
+colcon build --packages-select vision_pkg 
+vim src/vision_pkg/setup.py 
+colcon build --packages-select vision_pkg 
+vim src/vision_pkg/setup.py 
+colcon build --packages-select vision_pkg 
+vim src/vision_pkg/setup.py 
+colcon build --packages-select vision_pkg 
+vim src/vision_pkg/vision_pkg/model/__init__.py
+colcon build
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg 
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg 
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg 
+ros2 run vision_pkg vision_node 
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg 
+ros2 run vision_pkg vision_node 
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg 
+ros2 run vision_pkg vision_node 
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg 
+ros2 run vision_pkg vision_node 
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg 
+ros2 run vision_pkg vision_node 
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg 
+ros2 run vision_pkg vision_node 
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg 
+ros2 run vision_pkg vision_node 
+ls
+cd ros2_kart_ws/
+clear
+cd ros2_kart_ws/
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+rm src/sensor_pkg/sensor_pkg/.imu_node.py.swp 
+colcon build --packages-select sensor_pkg
+ros2 run sensor_pkg imu_pub 
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+colcon build --packages-select sensor_pkg
+ros2 run sensor_pkg imu_pub 
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+colcon build --packages-select sensor_pkg
+ros2 run sensor_pkg imu_pub 
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+vim src/sensor_pkg/setup.py 
+vim src/sensor_pkg/package.xml 
+colcon build --packages-select sensor_pkg
+ros2 run sensor_pkg imu_pub 
+vim src/sensor_pkg/package.xml 
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+colcon build --packages-select sensor_pkg
+ros2 run sensor_pkg imu_pub 
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+colcon build --packages-select sensor_pkg
+clear
+ls
+ros2 run decision_pkg decision_node 
+cd ros2_kart_ws/
+vim src/decision_pkg/decision_pkg/decision_node.py 
+vim src/interfaces/msg/Illuminance.msg 
+cd ros2_kart_ws/
+ls
+vim src/actuator_pkg/actuator_pkg/buzzer_service.py 
+ros2 launch launch_pkg launch.py
+vim src/actuator_pkg/actuator_pkg/buzzer_service.py 
+ros2 run actuator_pkg buzzer_srv 
+vim src/actuator_pkg/actuator_pkg/buzzer_service.py 
+vim src/interfaces/srv/BuzzerCommand.srv 
+vim src/actuator_pkg/actuator_pkg/buzzer_service.py 
+vim src/actuator_pkg/actuator_pkg/light_service.py 
+colcon build
+ros2 launch launch_pkg launch.py
+vim src/actuator_pkg/actuator_pkg/light_service.py 
+ros2 launch launch_pkg launch.py
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg
+ros2 run vision_pkg vision_node 
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg
+ros2 run vision_pkg vision_node 
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg
+vim src/actuator_pkg/actuator_pkg/light_service.py 
+colcon build --packages-select actuator_pkg
+ros2 launch launch_pkg launch.py
+vim src/actuator_pkg/actuator_pkg/light_service.py 
+colcon build --packages-select actuator_pkg
+ros2 launch launch_pkg launch.py
+vim src/decision_pkg/decision_pkg/decision_node.py 
+vim src/actuator_pkg/actuator_pkg/light_service.py 
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+vim src/sensor_pkg/sensor_pkg/illuminance_node.py 
+vim src/interfaces/msg/Illuminance.msg
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/interfaces/msg/Illuminance.msg
+vim src/sensor_pkg/sensor_pkg/illuminance_node.py 
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+vim src/sensor_pkg/sensor_pkg/illuminance_node.py 
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/vision_pkg/vision_pkg/object_detection_node.py 
+vim src/interfaces/msg/
+vim src/vision_pkg/vision_pkg/object_detection_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/sensor_pkg/sensor_pkg/illuminance_node.py 
+clear
+cd ros2_kart_ws/
+vim src/sensor_pkg/sensor_pkg/illuminance_node.py 
+rm src/sensor_pkg/sensor_pkg/.illuminance_node.py.swp 
+vim src/sensor_pkg/sensor_pkg/illuminance_node.py 
+cd ros2_kart_ws/
+vim src/interfaces/msg/Illuminance.msg 
+rm src/interfaces/msg/.Illuminance.msg.swp 
+clear
+vim src/decision_pkg/decision_pkg/decision_node.py 
+clear
+cd ros2_kart_ws/
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/decision_pkg/decision_pkg/decision_node.py 
+vim src/interfaces/srv/LightCommand.srv 
+vim src/interfaces/msg/Config.msg 
+vim src/decision_pkg/decision_pkg/decision_node.py 
+cd ros2_kart_ws/
+vim src/decision_pkg/decision_pkg/decision_node.py 
+rm src/decision_pkg/decision_pkg/.decision_node.py.swp 
+vim src/decision_pkg/decision_pkg/decision_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/sensor_pkg/sensor_pkg/illuminance_node.py 
+clear
+cd ros2_kart_ws/
+vim src/sensor_pkg/sensor_pkg/illuminance_node.py 
+rm src/sensor_pkg/sensor_pkg/.illuminance_node.py.swp 
+vim src/actuator_pkg/actuator_pkg/buzzer_service.py 
+clear
+cd ros2_kart_ws/
+vim src/decision_pkg/decision_pkg/decision_node.py 
+rm src/decision_pkg/decision_pkg/.decision_node.py.swp 
+vim src/decision_pkg/decision_pkg/decision_node.py 
+cd ros2_kart_ws/
+vim src/vision_pkg/vision_pkg/object_detection_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build
+ros2 launch launch_pkg launch.py
+vim src/sensor_pkg/sensor_pkg/illuminance_node.py 
+ros2 launch launch_pkg launch.py
+colcon build
+ros2 launch launch_pkg launch.py
+colcon build
+ros2 launch launch_pkg launch.py
+ls
+bluetooth
+sudo bluetooth
+sudo bluetoothctl 
+clear
+cd ros2_kart_ws/
+vim src/decision_pkg/decision_pkg/decision_node.py 
+rm src/decision_pkg/decision_pkg/.decision_node.py.swp 
+vim src/decision_pkg/decision_pkg/decision_node.py 
+colcom build
+colcon build
+ls
+vim ~/config.conf 
+ros2 launch launch_pkg launch.py
+cd ros2_kart_ws/
+clear
+vim src/sensor_pkg/setup.py
+vim src/sensor_pkg/package.xml 
+ls src/interfaces/msg/
+ls src/interfaces/srv/
+clear
+cd ros2_kart_ws/
+vim src/actuator_pkg/actuator_pkg/buzzer_service.py 
+rm src/actuator_pkg/actuator_pkg/.buzzer_service.py.swp 
+vim src/actuator_pkg/actuator_pkg/buzzer_service.py 
+vim src/decision_pkg/setup.py 
+vim src/decision_pkg/package.xml 
+vim src/vision_pkg/package.xml 
+vim src/interfaces/msg/
+vim src/interfaces/msg/Illuminance.msg 
+vim src/interfaces/CMakeLists.txt 
+colcon build
+cd ros2_kart_ws/
+cd ros2_kart_ws/
+vim src/vision_pkg/vision_pkg/object_detection_node.py 
+cd ros2_kart_ws/
+vim src/interfaces/msg/Illuminance.msg 
+colcon build
+ros2 launch launch_pkg launch.py
+cd ros2_kart_ws/
+vim src/sensor_pkg/sensor_pkg/illuminance_node.py 
+vim src/decision_pkg/decision_pkg/decision_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/decision_pkg/decision_pkg/decision_node.py 
+colcon build
+ros2 launch launch_pkg launch.py
+64;106;42M64;106;42M64;106;42M64;106;42M64;106;38M64;107;36M64;107;36M65;107;36M65;108;36M65;108;36M65;108;36M65;109;36M65;109;36M65;109;36M65;109;36M65;109;36M65;109;36M65;109;36M0;110;37M2;110;37M0;110;37m2;110;37m1;110;37M33;109;37M1;109;37mexit
+64;35;34M64;35;34M64;35;34M64;35;34M64;35;34M64;36;34M65;42;34M65;42;34M65;42;34M65;42;34M65;42;34M65;42;34
+exit
+vim ./.bashrc 
+cd ros2_kart_ws/
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+vim ~/ros2_humble_venv/lib/python3.11/site-packages/bluezero/peripheral.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+colcon build --packages-select app_interface_pkg
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_node.py 
+colcon build --packages-select app_interface_pkg
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+vim src/app_interface_pkg/app_interface_pkg/ble_periph.py 
+colcon build --packages-select app_interface_pkg
+ros2 run app_interface_pkg ble_node 
+vim src/app_interface_pkg/app_interface_pkg/ble_agent.py 
+ls
+cd ros2_kart_ws/
+vim src/decision_pkg/decision_pkg/decision_node.py 
+poweroff 
+sudo poweroff 
+i2cdetect -y 1
+sudo poweroff 
+cd ros2_kart_ws/
+vim src/sensor_pkg/sensor_pkg/imu_node.py 
+sudo poweroff 
+ros2 launch launch_pkg launch.py
+ros2 run vision_pkg vision_node 
+vim ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py 
+vim ros2_kart_ws/src/interfaces/msg/
+vim ros2_kart_ws/src/interfaces/msg/Vision.msg 
+cd ros2_kart_ws/
+colcon build
+ros2 run vision_pkg vision_node 
+vim src/vision_pkg/vision_pkg/model/
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg
+ros2 run vision_pkg vision_node 
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg
+ros2 run vision_pkg vision_node 
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg
+vim src/vision_pkg/vision_pkg/yolo_detector.py 
+colcon build --packages-select vision_pkg
+ros2 run vision_pkg vision_node 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  vim start_ros2_launch.sh 
+vim /etc/systemd/system/ros2-auto-launch.service 
+vim start_ros2_launch.sh 
+vim .bashrc 
+vim start_ros2_launch.sh 
+vim /etc/systemd/system/ros2-auto-launch.service 
+sudo vim /etc/systemd/system/ros2-auto-launch.service 
+sudo systemctl restart ros2-auto-launch.service 
+sudo systemctl daemon-reload
+sudo systemctl enable ros2-auto-launch.service 
+sudo systemctl restart ros2-auto-launch.service 
+ros2 launch launch_pkg launch.py
+cd ros2_kart_ws/
+vim src/vision_pkg/vision_pkg/object_detection_node.py 
+sudo vim /usr/lib/python3/dist-packages/picamera2/picamera2.py 
+libcamera-hello
+sudo systemctl status ros2-auto-launch.service 
+ps aux | grep ros2
+sudo systemctl stop ros2-auto-launch.service 
+vim ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py 
+vim ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py 
+sudo systemctl status ros2-auto-launch.service 
+poweroff 

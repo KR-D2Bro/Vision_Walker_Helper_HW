@@ -1,0 +1,30 @@
+[INFO] [1749196576.481582822] [ble_gatt_server]: Loaded config from disk
+[INFO] [1749196576.515899437] [ble_gatt_server]: Using adapter: D8:3A:DD:F2:4C:84
+[INFO] [1749196576.561569907] [ble_gatt_server]: BLE GATT Server started
+[INFO] [1749196576.565941103] [ble_gatt_server]: Config service added
+[INFO] [1749196584.244176498] [ble_gatt_server]: light_read: 1
+[INFO] [1749196597.698483517] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749196597.705046664] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749196610.478492882] [ble_gatt_server]: light_read: 1
+[INFO] [1749196613.268334044] [ble_gatt_server]: light_write:0
+[INFO] [1749196613.275805326] [ble_gatt_server]: Config Published: [0, 0, 23]
+[INFO] [1749196618.625893490] [ble_gatt_server]: light_read: 0
+[INFO] [1749196619.525389348] [ble_gatt_server]: light_read: 0
+[INFO] [1749196622.045287019] [ble_gatt_server]: alarm_read: 0
+[INFO] [1749196626.905719879] [ble_gatt_server]: alarm_write:1
+[INFO] [1749196626.909515751] [ble_gatt_server]: Config Published: [0, 1, 23]
+[INFO] [1749196628.615288375] [ble_gatt_server]: alarm_read: 1
+[INFO] [1749196629.198021725] [ble_gatt_server]: alarm_read: 1
+[INFO] [1749196634.598394714] [ble_gatt_server]: volume_read: 23
+[INFO] [1749196638.335688458] [ble_gatt_server]: volume_write:52
+[INFO] [1749196638.339445275] [ble_gatt_server]: Config Published: [0, 1, 52]
+[INFO] [1749196640.448090648] [ble_gatt_server]: volume_read: 52
+[INFO] [1749196642.068423045] [ble_gatt_server]: volume_read: 52
+[INFO] [1749196650.935273253] [ble_gatt_server]: volume_read: 52
+[INFO] [1749196656.828304373] [ble_gatt_server]: volume_write:35
+[INFO] [1749196656.835645659] [ble_gatt_server]: Config Published: [0, 1, 35]
+[INFO] [1749196658.855940606] [ble_gatt_server]: volume_read: 35
+[INFO] [1749196659.798311619] [ble_gatt_server]: volume_read: 35
+[INFO] [1749196666.903690074] [ble_gatt_server]: Central disconnected: <bluezero.device.Device object at 0x7f7e48ead0>
+[INFO] [1749196668.189368138] [ble_gatt_server]: Central connected: <bluezero.device.Device object at 0x7f6dae1b50>, auth check start
+[INFO] [1749196700.339558482] [ble_gatt_server]: Central disconnected: <bluezero.device.Device object at 0x7f6dad52d0>

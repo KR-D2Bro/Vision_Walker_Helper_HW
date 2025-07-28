@@ -2,41 +2,51 @@
 import rclpy
 from rclpy.node import Node
 from interfaces.msg import Imu
+from std_msgs.msg import Float32MultiArray
 from smbus2 import SMBus
-import struct
-import math
 import time
+import math
+import numpy as np
 
-MPU9250_ADDR      = 0x68
-PWR_MGMT_1        = 0x6B
-GYRO_CONFIG       = 0x1B
-GYRO_XOUT_H       = 0x43
-ACCEL_CONFIG      = 0x1C
 
-# 자이로 축 스케일 (±250°/s)
-GYRO_SCALE_MODIFIER_250DEG = 131.0
-
-class MPU9250GyroPublisher(Node):
+class ImuNode(Node):
     def __init__(self):
-        super().__init__('mpu9250_gyro_publisher')
+        super().__init__('imu_node')
+
+        # 1) IMU I2C 설정
+        self.init_bus(1)                # I2C 버스 번호 (imu : 3)
+        self.addr_imu = 0x69           # MPU-9250 IMU 주소
+
+        self.dt = 0.01 #100Hz
+        self.alpha = 0.98 #complementary filter 계수
+        self.roll = 0.0
+        self.pitch = 0.0
         
-        # 센서 초기화
-        self.pub = self.create_publisher(Imu, '/imu/data', 10)
-        self.timer = self.create_timer(2, self.timer_callback)  # 50Hz
-        self.init_bus()
-        self.get_logger().info('MPU9250 Gyro publisher started, publishing on /imu/data')
+        # 2) 센서 초기화
+        self._wakeup_imu()
+        self._config_imu()
+        self._bypass_enable()
 
-    def read_word_2c(self, reg_high):
-        # 두 바이트(High, Low) 읽어서 signed 16-bit로 변환
-        high = self.bus.read_byte_data(MPU9250_ADDR, reg_high)
-        low  = self.bus.read_byte_data(MPU9250_ADDR, reg_high+1)
-        val  = (high << 8) | low
-        if val & 0x8000:
-            return -((65535 - val) + 1)
-        else:
-            return val
+        # 3) 낙상 기준 (Roll/Pitch 임계각, 도 단위 → 라디안으로 변환)
+        self.declare_parameter('roll_threshold_deg', 65.0)
+        self.declare_parameter('pitch_threshold_deg', 65.0)
+        roll_thr  = self.get_parameter('roll_threshold_deg').value
+        pitch_thr = self.get_parameter('pitch_threshold_deg').value
+        self.roll_threshold  = math.radians(roll_thr)
+        self.pitch_threshold = math.radians(pitch_thr)
 
-    def init_bus(self):
+        # 4) 퍼블리셔 (/fall_alert 토픽)
+        self.pub_rp = self.create_publisher(Float32MultiArray, '/imu/roll_pitch', 10)
+        self.pub_alert = self.create_publisher(Imu, '/imu/alert', 10)
+
+        # 5) 타이머 (100Hz)
+        self.create_timer(self.dt, self.timer_cb)
+
+        self.get_logger().info(
+            f'FallDetectionNode started: roll_thr={roll_thr}°, pitch_thr={pitch_thr}°'
+        )
+    
+    def init_bus(self,bus_num:int):
         try:
             self.bus.close()
         except Exception:
@@ -44,60 +54,82 @@ class MPU9250GyroPublisher(Node):
 
         while True:
             try:
-                self.bus = SMBus(1)  # Raspberry Pi I2C bus 1
+                self.bus = SMBus(bus_num)
 
-                self.bus.write_byte_data(MPU9250_ADDR, PWR_MGMT_1, 0x00)  # sleep 해제
-                self.bus.write_byte_data(MPU9250_ADDR, GYRO_CONFIG, 0x00)  # ±250°/s 회전 감도
-                self.bus.write_byte_data(MPU9250_ADDR, ACCEL_CONFIG, 0x00) #가속도 감도
-                self.get_logger().info('I2C 초기화 성공')
+                self.get_logger().info('I2C-3 초기화 성공')
                 break
-
             except OSError as e:
-                self.get_logger().warn(f'I2C 초기화/설정 실패: {e!r}, 5초 후 재시도...')
+                self.get_logger().warn(f'I2C 초기화 실패: {e!r}, 5초 후 재시도...')
                 time.sleep(5)
+        
+    # ─── 센서 초기화 ─────────────────────────────────────────────────────────
+    def _wakeup_imu(self):
+        # PWR_MGMT_1 레지스터(0x6B) → 0x00으로 Sleep 해제
+        self.bus.write_byte_data(self.addr_imu, 0x6B, 0x00)
+        time.sleep(0.1)
 
+    def _config_imu(self):
+        # 자이로 (0x1B) 250 dps, 가속도 (0x1C) ±2g
+        self.bus.write_byte_data(self.addr_imu, 0x1B, 0x00)
+        self.bus.write_byte_data(self.addr_imu, 0x1C, 0x00)
+        time.sleep(0.1)
 
-    def timer_callback(self):
+    def _bypass_enable(self):
+        # INT_PIN_CFG 레지스터(0x37)에 바이패스 모드 설정
+        self.bus.write_byte_data(self.addr_imu, 0x37, 0x02)
+        time.sleep(0.1)
+
+    # ─── I2C 읽기 헬퍼 ────────────────────────────────────────────────────────
+    def _read_word(self, addr, reg):
+        hi = self.bus.read_byte_data(addr, reg)
+        lo = self.bus.read_byte_data(addr, reg+1)
+        val = (hi << 8) | lo
+        return val - 65536 if (val & 0x8000) else val
+
+    def read_accel(self):
+        # 가속도 레지스터: 0x3B, 0x3D, 0x3F (각 2바이트)
+        # ±2g → 16384 LSB/g
+        ax = self._read_word(self.addr_imu, 0x3B) / 16384.0
+        ay = self._read_word(self.addr_imu, 0x3D) / 16384.0
+        az = self._read_word(self.addr_imu, 0x3F) / 16384.0
+        return np.array([ax, ay, az])
+
+    # ─── 타이머 콜백: 낙상 감지 ────────────────────────────────────────────────
+    def timer_cb(self):
         try:
-            # 자이로 원시값 읽기
-            gx = self.read_word_2c(GYRO_XOUT_H)
-            gy = self.read_word_2c(GYRO_XOUT_H+2)
-            gz = self.read_word_2c(GYRO_XOUT_H+4)
+            accel = self.read_accel()
 
-            # 센서 스케일 적용 (raw → rad/s)
-            gx = math.radians(gx / GYRO_SCALE_MODIFIER_250DEG)
-            gy = math.radians(gy / GYRO_SCALE_MODIFIER_250DEG)
-            gz = math.radians(gz / GYRO_SCALE_MODIFIER_250DEG)
-        except OSError as e:
-            self.get_logger().warn(f'I2C 통신 오류: {e!r}, 버스 재초기화 시도')
-            self.init_bus()
-            return
+            # Roll = atan2(ay, az)
+            roll  = math.atan2(accel[1], accel[2])
+            # Pitch = atan2(-ax, sqrt(ay² + az²))
+            pitch = math.atan2(-accel[0], math.sqrt(accel[1]**2 + accel[2]**2))
 
-        imu_msg = Imu()
-        now = self.get_clock().now().to_msg()
-        imu_msg.header.stamp = now
-        imu_msg.header.frame_id = 'imu_link'
+            # 낙상 감지: 절대각이 임계치 초과 시 True
+            fall = (abs(roll)  > self.roll_threshold) or \
+                    (abs(pitch) > self.pitch_threshold)
 
-        # 자이로만 채우기 (가속도·자세는 0으로)
-        imu_msg.angular_velocity.x = gx
-        imu_msg.angular_velocity.y = gy
-        imu_msg.angular_velocity.z = gz
-
-        # covariance 미지정 상태
-        imu_msg.angular_velocity_covariance[0] = -1.0
-
-        self.pub.publish(imu_msg)
+            
+            # 로깅
+            if fall:
+                msg = Imu()
+                # 퍼블리시
+                self.pub_alert.publish(msg)
+                self.get_logger().warn(
+                    f'FALL! Roll={math.degrees(roll):.1f}°, '
+                    f'Pitch={math.degrees(pitch):.1f}°'
+                )
+        except:
+            self.get_logger().warn('I2C-1 연결 불량 발생')
+            self.init_bus(1)
 
 def main(args=None):
     rclpy.init(args=args)
-    node = MPU9250GyroPublisher()
+    node = ImuNode()
     try:
         rclpy.spin(node)
-    except KeyboardInterrupt:
-        pass
-    node.bus.close()
-    node.destroy_node()
-    rclpy.shutdown()
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()

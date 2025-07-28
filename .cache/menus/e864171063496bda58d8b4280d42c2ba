@@ -1,0 +1,495 @@
+1.2
+lxde-applications.menu
+20
+D/home/dongjae/.local/share/desktop-directories
+D~/.local/share/desktop-directories
+D/usr/local/share/desktop-directories
+D/usr/share/raspi-ui-overrides/desktop-directories
+D/usr/share/desktop-directories
+D/usr/share/gdm/desktop-directories
+D/var/lib/menu-xdg/desktop-directories
+D/home/dongjae/.local/share/applications
+D~/.local/share/applications
+D/usr/local/share/applications
+D/usr/share/raspi-ui-overrides/applications
+D/usr/share/applications
+D/usr/share/applications/screensavers
+D/usr/share/gdm/applications
+D/var/lib/menu-xdg/applications
+D/etc/xdg/menus/applications-merged
+D/home/dongjae/.config/menus/applications-merged
+F/home/dongjae/.config/menus/lxde-applications.menu
+F/etc/xdg/menus/lxde-applications.menu
+F/etc/xdg/menus/debian-menu.menu
+MATE;
++Applications
+Applications
+Applications
+applications-other
+lxde-menu-applications.directory
+4
+0
++Accessories
+Accessories
+Desktop accessories
+applications-accessories
+lxde-utility.directory
+4
+0
+-xarchiver.desktop
+Archiver
+A GTK+ only archive manager
+xarchiver
+
+10
+Archive manager
+xarchiver %f
+2
+0
+xarchiver
+
+GTK;Archiving;Compression;Utility
+GTK,android,archiver,archiving,comic book,compression,front end,frontend,library,7-zip,7z,7za,7zip,7zr,7zz,apk,ar,arj,bz2,bzip2,cab,cbz,compress,cpio,deb,epub,exe,gtar,gunzip,gz,gzip,iso,jar,jsonlz4,lbzip2,lha,lrz,lrzip,lsar,lunzip,lz,lz4,lzh,lzip,lzma,lzo,lzop,mksquashfs,mozlz4,oxt,pbzip2,pigz,plzip,rar,rar4,rar5,rpm,snap,squashfs,tar,unar,unarchiver,unarj,unrar,unsquashfs,unzip,xpi,xz,zip,zpaq,zst,Zstandard,zstd
+-galculator.desktop
+Calculator
+Perform simple and scientific calculations
+galculator
+
+10
+
+galculator
+2
+0
+galculator
+
+Utility
+
+-org.gnome.Evince.desktop
+Document Viewer
+View multi-page documents
+org.gnome.Evince
+
+10
+
+evince %U
+2
+0
+evince
+
+GNOME;GTK;Utility;Viewer;2DGraphics;VectorGraphics
+pdf,ps,postscript,dvi,xps,djvu,tiff,document,presentation,viewer,evince
+-pcmanfm.desktop
+File Manager
+Browse the file system and manage the files
+system-file-manager
+
+10
+File Manager
+pcmanfm %U
+2
+0
+pcmanfm
+
+FileTools;FileManager;Utility;Core;GTK
+
+-agnostics.desktop
+Raspberry Pi Diagnostics
+Test the Raspberry Pi hardware
+diagnostics
+
+11
+Raspberry Pi Diagnostics
+agnostics
+2
+0
+
+
+Utility
+
+-org.gnome.Screenshot.desktop
+Screenshot
+Save images of your screen or individual windows
+org.gnome.Screenshot
+
+11
+
+gnome-screenshot --interactive
+2
+-5
+
+
+GTK;GNOME;Utility;X-GNOME-Utilities
+snapshot,capture,print,screenshot
+-lxtask.desktop
+Task Manager
+Manage running processes
+utilities-system-monitor
+
+10
+Process manager
+lxtask
+2
+0
+lxtask
+
+GTK;Utility;Monitor
+task,kill,suspend,processor,memory,monitoring,performance
+-lxterminal.desktop
+Terminal
+Use the command line
+lxterminal
+
+10
+Terminal
+lxterminal
+0
+0
+lxterminal
+
+GTK;Utility;TerminalEmulator
+console,command line,execute
+-org.xfce.mousepad.desktop
+Text Editor
+Simple Text Editor
+org.xfce.mousepad
+
+10
+Text Editor
+mousepad %U
+2
+0
+mousepad
+
+Utility;TextEditor;GTK
+
+-vim.desktop
+Vim
+Edit text files
+gvim
+
+11
+Text Editor
+vim %F
+1
+0
+vim
+
+Utility;TextEditor
+Text,editor
+
++Graphics
+Graphics
+Graphics applications
+applications-graphics
+lxde-graphics.directory
+4
+0
+-eom.desktop
+Image Viewer
+Browse and rotate images
+eom
+
+10
+
+eom %U
+2
+0
+eom
+
+GTK;Graphics;2DGraphics;RasterGraphics;Viewer
+image,viewer,JPEG,PNG,TIFF,SVG,MATE,photos,browse,thumbnails,rotate
+
++Office
+Office
+Office Applications
+applications-office
+lxde-office.directory
+4
+0
+-libreoffice-draw.desktop
+LibreOffice Draw
+Create and edit drawings, flow charts, and logos by using Draw.
+libreoffice-draw
+
+10
+Drawing Program
+libreoffice --draw %U
+2
+0
+libreoffice
+
+Office;FlowChart;2DGraphics;VectorGraphics
+Vector,Schema,Diagram,Layout,OpenDocument Graphics,Microsoft Publisher,Microsoft Visio,Corel Draw,cdr,odg,svg,pdf,vsd
+
++Other
+Other
+Applications that do not fit in other categories
+applications-other
+lxde-other.directory
+4
+0
+-rp-bookshelf.desktop
+Bookshelf
+Download and read Raspberry Pi Press publications
+bookshelf
+
+11
+Bookshelf
+rp-bookshelf
+2
+0
+
+
+Help
+
+-debian-reference-common.desktop
+Debian Reference
+Debian Reference Guide
+debian-reference
+
+10
+
+debian-reference
+0
+0
+debian-reference
+
+Help
+user,shell,command,documentation,manual,help,guide,debian
+-raspi_getstart.desktop
+Get Started
+
+rpi
+
+10
+
+x-www-browser https://rptl.io/get-started
+2
+0
+/usr/bin/x-www-browser
+
+Help
+
+-raspi_help.desktop
+Help
+
+rpi
+
+10
+
+x-www-browser https://rptl.io/help
+2
+0
+/usr/bin/x-www-browser
+
+Help
+
+-raspi_resources.desktop
+Projects
+
+rpi
+
+10
+
+x-www-browser https://rptl.io/tutorials
+2
+0
+/usr/bin/x-www-browser
+
+Help
+
+-raspi_safety.desktop
+Safety Information
+
+rpi
+
+10
+
+x-www-browser https://rptl.io/safety-info
+2
+0
+/usr/bin/x-www-browser
+
+Help
+
+
++Development
+Programming
+Tools for software development
+applications-development
+lxde-development.directory
+4
+0
+-geany.desktop
+Geany Programmer's Editor
+A fast and lightweight IDE using GTK+
+geany
+
+10
+Integrated Development Environment
+geany %F
+2
+0
+geany
+
+GTK;Development;IDE;TextEditor
+Text,Editor
+-scratch.desktop
+Scratch
+Programming system and content development tool
+scratch
+
+10
+
+scratch %f
+0
+0
+scratch
+
+Application;Development;ComputerScience
+
+
++Multimedia
+Sound & Video
+Multimedia menu
+applications-multimedia
+lxde-audio-video.directory
+4
+0
+-pavucontrol.desktop
+PulseAudio Volume Control
+Adjust the volume level
+multimedia-volume-control
+
+11
+Volume Control
+pavucontrol
+2
+0
+
+
+AudioVideo;Audio;Mixer;GTK;Settings;X-XFCE-SettingsDialog;X-XFCE-HardwareSettings
+pavucontrol,Microphone,Volume,Fade,Balance,Headset,Speakers,Headphones,Audio,Mixer,Output,Input,Devices,Playback,Recording,System Sounds,Sound Card,Settings,Preferences
+-vlc.desktop
+VLC Media Player
+Read, capture, broadcast your multimedia streams
+vlc
+
+10
+Media player
+/usr/bin/vlc --started-from-file %U
+0
+0
+/usr/bin/vlc
+
+AudioVideo;Player;Recorder
+Player,Capture,DVD,Audio,Video,Server,Broadcast
+
+-
++DesktopSettings
+Preferences
+Personal preferences
+preferences-desktop
+lxde-settings.directory
+4
+0
+-pipanel.desktop
+Appearance Settings
+Configure the appearance of the desktop and windows
+preferences-desktop-theme
+
+11
+
+pipanel
+2
+0
+
+
+Settings
+
+-lxsession-default-apps.desktop
+Default applications for LXSession
+Change the default applications on LXDE
+preferences-desktop
+
+11
+
+lxsession-default-apps
+0
+1
+
+
+GTK;Settings;DesktopSettings;X-LXDE-Settings
+
+-rasputin.desktop
+Mouse and Keyboard Settings
+Configure mouse, keyboard, and other input devices
+preferences-desktop-peripherals
+
+11
+
+rasputin
+2
+0
+
+
+Settings
+
+-rpinters.desktop
+Printers
+Add and configure printers
+printer
+
+11
+
+rpinters
+2
+0
+
+
+Settings
+
+-rc_gui.desktop
+Raspberry Pi Configuration
+Configure Raspberry Pi system
+rpi
+
+11
+
+rc_gui
+2
+0
+
+
+Settings
+
+-raindrop.desktop
+Screen Configuration
+Configure monitor arrangement, scaling and orientation
+computer
+
+11
+
+raindrop
+2
+0
+
+
+Settings
+
+-xscreensaver-settings.desktop
+XScreenSaver Settings
+Change screensaver properties
+xscreensaver
+
+11
+
+xscreensaver-settings
+0
+0
+
+
+Settings;DesktopSettings;Security
+
+
+

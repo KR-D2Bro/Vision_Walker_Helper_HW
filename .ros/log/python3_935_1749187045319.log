@@ -1,0 +1,71 @@
+[INFO] [1749187045.620807841] [ble_gatt_server]: Loaded config from disk
+[INFO] [1749187045.697434431] [ble_gatt_server]: Using adapter: D8:3A:DD:F2:4C:84
+[INFO] [1749187045.723997655] [ble_gatt_server]: BLE GATT Server started
+[INFO] [1749187045.728378625] [ble_gatt_server]: Config service added
+[INFO] [1749187184.251600921] [ble_gatt_server]: Central connected: <bluezero.device.Device object at 0x7fa8430750>, auth check start
+[INFO] [1749187185.419287074] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187185.420855925] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187199.442432102] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187199.445161746] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187199.502269825] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187199.504910606] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187199.592547246] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187199.595108552] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187199.652619320] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187199.655401312] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187201.362653926] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187201.365583906] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187201.422197192] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187201.424843380] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187201.482635607] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187201.485251593] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187201.542171244] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187201.544786453] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187218.042384495] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187218.045399282] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187218.101921169] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187218.104879831] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187218.161342519] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187218.163930434] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187218.221356135] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187218.224060022] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187234.721517798] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187234.724201186] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187234.811445156] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187234.813996111] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187234.871593705] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187234.874166769] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187234.931417003] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187234.933968940] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187238.562117508] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187238.564999325] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187238.621483623] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187238.624250393] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187238.681499720] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187238.684091468] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187238.741477209] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187238.744052348] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187253.321590681] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187253.324298956] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187253.381564986] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187253.384285019] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187253.441513088] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187253.444105633] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187253.501528260] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187253.504115971] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187257.161579479] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187257.164398690] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187257.221574708] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187257.224193546] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187257.281573418] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187257.284100116] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187257.341554111] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187257.344264053] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187264.871421266] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187264.874036661] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187264.932507238] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187264.935590890] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187264.992749576] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187264.995985919] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749187265.050856350] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749187265.053264817] [ble_gatt_server]: mysecret : mysecret

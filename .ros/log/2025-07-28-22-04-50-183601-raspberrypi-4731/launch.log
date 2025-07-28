@@ -1,0 +1,204 @@
+1753707890.1876006 [INFO] [launch]: All log files can be found below /home/dongjae/.ros/log/2025-07-28-22-04-50-183601-raspberrypi-4731
+1753707890.1885750 [INFO] [launch]: Default logging verbosity is set to INFO
+1753707890.6424310 [INFO] [imu_pub-1]: process started with pid [4827]
+1753707890.6556399 [INFO] [illuminance_pub-2]: process started with pid [4829]
+1753707890.6562285 [INFO] [battery_pub-3]: process started with pid [4831]
+1753707890.6567891 [INFO] [light_srv-4]: process started with pid [4833]
+1753707890.6634409 [INFO] [buzzer_srv-5]: process started with pid [4835]
+1753707890.6674540 [INFO] [ble_node-6]: process started with pid [4837]
+1753707890.6680553 [INFO] [decision_node-7]: process started with pid [4839]
+1753707890.6684892 [INFO] [vision_node-8]: process started with pid [4842]
+1753707891.1893251 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1753707891.2896316 [decision_node-7] Traceback (most recent call last):
+1753707891.2900379 [decision_node-7]   File "/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/decision_pkg/decision_node", line 10, in <module>
+1753707891.2902231 [decision_node-7]     from importlib.metadata import distribution
+1753707891.2903771 [decision_node-7]   File "/usr/lib/python3.11/importlib/metadata/__init__.py", line 8, in <module>
+1753707891.2915418 [ERROR] [imu_pub-1]: process has died [pid 4827, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/imu_pub --ros-args -r __node:=imu_sensor'].
+1753707891.2921216 [ERROR] [buzzer_srv-5]: process has died [pid 4835, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/buzzer_srv --ros-args -r __node:=buzzer_actuator'].
+1753707891.2925451 [ERROR] [illuminance_pub-2]: process has died [pid 4829, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/illuminance_pub --ros-args -r __node:=illuminance_sensor'].
+1753707891.2929597 [ERROR] [ble_node-6]: process has died [pid 4837, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/app_interface_pkg/lib/app_interface_pkg/ble_node --ros-args -r __node:=ble_node'].
+1753707891.2933264 [ERROR] [vision_node-8]: process has died [pid 4842, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/vision_pkg/vision_node --ros-args -r __node:=vision_node'].
+1753707891.2941918 [decision_node-7]     import zipfile
+1753707891.2945561 [decision_node-7]   File "/usr/lib/python3.11/zipfile.py", line 13, in <module>
+1753707891.2947488 [decision_node-7]     import shutil
+1753707891.2949700 [decision_node-7]   File "/usr/lib/python3.11/shutil.py", line 22, in <module>
+1753707891.2951679 [decision_node-7]     import bz2
+1753707891.2953236 [decision_node-7]   File "/usr/lib/python3.11/bz2.py", line 17, in <module>
+1753707891.2954807 [decision_node-7]     from _bz2 import BZ2Compressor, BZ2Decompressor
+1753707891.2956386 [decision_node-7]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707891.2957850 [decision_node-7]   File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+1753707891.2959328 [decision_node-7]   File "<frozen importlib._bootstrap>", line 676, in _load_unlocked
+1753707891.2960854 [decision_node-7]   File "<frozen importlib._bootstrap>", line 579, in module_from_spec
+1753707891.2962332 [decision_node-7]   File "<frozen importlib._bootstrap>", line 551, in _init_module_attrs
+1753707891.2963943 [decision_node-7] KeyboardInterrupt
+1753707891.2969284 [ERROR] [decision_node-7]: process has died [pid 4839, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/decision_pkg/decision_node --ros-args -r __node:=decision_node'].
+1753707891.2973325 [ERROR] [light_srv-4]: process has died [pid 4833, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/light_srv --ros-args -r __node:=light_actuator'].
+1753707891.2976501 [ERROR] [battery_pub-3]: process has died [pid 4831, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/battery_pub --ros-args -r __node:=battery_sensor'].
+1753707891.2986312 [battery_pub-3] Traceback (most recent call last):
+1753707891.2991590 [battery_pub-3]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/battery_pub", line 10, in <module>
+1753707891.2994981 [battery_pub-3]     from importlib.metadata import distribution
+1753707891.2996855 [battery_pub-3]   File "/usr/lib/python3.11/importlib/metadata/__init__.py", line 8, in <module>
+1753707891.2998719 [battery_pub-3]     import zipfile
+1753707891.3000481 [battery_pub-3]   File "/usr/lib/python3.11/zipfile.py", line 13, in <module>
+1753707891.3002090 [battery_pub-3]     import shutil
+1753707891.3003688 [battery_pub-3]   File "/usr/lib/python3.11/shutil.py", line 29, in <module>
+1753707891.3005300 [battery_pub-3]     import lzma
+1753707891.3006968 [battery_pub-3]   File "/usr/lib/python3.11/lzma.py", line 27, in <module>
+1753707891.3008747 [battery_pub-3]     from _lzma import *
+1753707891.3010464 [battery_pub-3]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707891.3012214 [battery_pub-3]   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+1753707891.3014061 [battery_pub-3]   File "<frozen importlib._bootstrap>", line 1080, in _find_spec
+1753707891.3015685 [battery_pub-3]   File "<frozen importlib._bootstrap_external>", line 1504, in find_spec
+1753707891.3017340 [battery_pub-3]   File "<frozen importlib._bootstrap_external>", line 1476, in _get_spec
+1753707891.3019345 [battery_pub-3]   File "<frozen importlib._bootstrap_external>", line 1610, in find_spec
+1753707891.3021715 [battery_pub-3] KeyboardInterrupt
+1753707891.3032341 [buzzer_srv-5] Fatal Python error: init_import_site: Failed to import the site module
+1753707891.3037009 [buzzer_srv-5] Python runtime state: initialized
+1753707891.3039403 [buzzer_srv-5] Traceback (most recent call last):
+1753707891.3041143 [buzzer_srv-5]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707891.3042741 [buzzer_srv-5]   File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+1753707891.3044205 [buzzer_srv-5]   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+1753707891.3045688 [buzzer_srv-5]   File "<frozen importlib._bootstrap>", line 982, in exec_module
+1753707891.3047090 [buzzer_srv-5]   File "<frozen site>", line 635, in <module>
+1753707891.3048499 [buzzer_srv-5]   File "<frozen site>", line 622, in main
+1753707891.3050027 [buzzer_srv-5]   File "<frozen site>", line 403, in addsitepackages
+1753707891.3051987 [buzzer_srv-5]   File "<frozen site>", line 232, in addsitedir
+1753707891.3054714 [buzzer_srv-5]   File "<frozen site>", line 192, in addpackage
+1753707891.3058314 [buzzer_srv-5]   File "<string>", line 1, in <module>
+1753707891.3061895 [buzzer_srv-5]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707891.3064523 [buzzer_srv-5]   File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+1753707891.3066916 [buzzer_srv-5]   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+1753707891.3070142 [buzzer_srv-5]   File "<frozen importlib._bootstrap>", line 982, in exec_module
+1753707891.3077714 [buzzer_srv-5]   File "<frozen importlib.util>", line 14, in <module>
+1753707891.3092782 [buzzer_srv-5]   File "/usr/lib/python3.11/contextlib.py", line 395, in <module>
+1753707891.3107989 [buzzer_srv-5]     class redirect_stdout(_RedirectStream):
+1753707891.3129082 [buzzer_srv-5]   File "<frozen abc>", line 106, in __new__
+1753707891.3145602 [buzzer_srv-5] KeyboardInterrupt
+1753707891.3202746 [ble_node-6] Fatal Python error: init_import_site: Failed to import the site module
+1753707891.3223443 [ble_node-6] Python runtime state: initialized
+1753707891.3237233 [ble_node-6] Traceback (most recent call last):
+1753707891.3242443 [ble_node-6]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707891.3251150 [ble_node-6]   File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+1753707891.3260915 [ble_node-6]   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+1753707891.3268170 [ble_node-6]   File "<frozen importlib._bootstrap>", line 982, in exec_module
+1753707891.3275876 [ble_node-6]   File "<frozen site>", line 635, in <module>
+1753707891.3279643 [ble_node-6]   File "<frozen site>", line 622, in main
+1753707891.3288739 [ble_node-6]   File "<frozen site>", line 403, in addsitepackages
+1753707891.3299298 [ble_node-6]   File "<frozen site>", line 232, in addsitedir
+1753707891.3321185 [ble_node-6]   File "<frozen site>", line 192, in addpackage
+1753707891.3340473 [ble_node-6]   File "<string>", line 1, in <module>
+1753707891.3348131 [ble_node-6]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707891.3358583 [ble_node-6]   File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+1753707891.3368087 [ble_node-6]   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+1753707891.3378797 [ble_node-6]   File "<frozen importlib._bootstrap>", line 982, in exec_module
+1753707891.3390269 [ble_node-6]   File "<frozen importlib.util>", line 14, in <module>
+1753707891.3402665 [ble_node-6]   File "/usr/lib/python3.11/contextlib.py", line 6, in <module>
+1753707891.3418276 [ble_node-6]     from collections import deque
+1753707891.3430388 [ble_node-6]   File "/usr/lib/python3.11/collections/__init__.py", line 36, in <module>
+1753707891.3439724 [ble_node-6]     from operator import eq as _eq
+1753707891.3450534 [ble_node-6]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707891.3461664 [ble_node-6]   File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+1753707891.3480144 [ble_node-6]   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+1753707891.3494439 [ble_node-6]   File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+1753707891.3528149 [ble_node-6]   File "<frozen importlib._bootstrap_external>", line 1069, in get_code
+1753707891.3539243 [ble_node-6]   File "<frozen importlib._bootstrap_external>", line 729, in _compile_bytecode
+1753707891.3552530 [ble_node-6] KeyboardInterrupt
+1753707891.3580196 [illuminance_pub-2] Fatal Python error: init_import_site: Failed to import the site module
+1753707891.3593295 [illuminance_pub-2] Python runtime state: initialized
+1753707891.3604546 [illuminance_pub-2] Traceback (most recent call last):
+1753707891.3614907 [illuminance_pub-2]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707891.3623724 [illuminance_pub-2]   File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+1753707891.3634987 [illuminance_pub-2]   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+1753707891.3647366 [illuminance_pub-2]   File "<frozen importlib._bootstrap>", line 982, in exec_module
+1753707891.3659055 [illuminance_pub-2]   File "<frozen site>", line 635, in <module>
+1753707891.3671904 [illuminance_pub-2]   File "<frozen site>", line 622, in main
+1753707891.3685734 [illuminance_pub-2]   File "<frozen site>", line 403, in addsitepackages
+1753707891.3697424 [illuminance_pub-2]   File "<frozen site>", line 232, in addsitedir
+1753707891.3721237 [illuminance_pub-2]   File "<frozen site>", line 192, in addpackage
+1753707891.3732994 [illuminance_pub-2]   File "<string>", line 1, in <module>
+1753707891.3757057 [illuminance_pub-2]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707891.3768647 [illuminance_pub-2]   File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+1753707891.3780065 [illuminance_pub-2]   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+1753707891.3794007 [illuminance_pub-2]   File "<frozen importlib._bootstrap>", line 982, in exec_module
+1753707891.3810079 [illuminance_pub-2]   File "<frozen importlib.util>", line 14, in <module>
+1753707891.3823066 [illuminance_pub-2]   File "/usr/lib/python3.11/contextlib.py", line 6, in <module>
+1753707891.3837619 [illuminance_pub-2]     from collections import deque
+1753707891.3852313 [illuminance_pub-2]   File "/usr/lib/python3.11/collections/__init__.py", line 38, in <module>
+1753707891.3865442 [illuminance_pub-2]     from reprlib import recursive_repr as _recursive_repr
+1753707891.3897293 [illuminance_pub-2]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707891.3910160 [illuminance_pub-2]   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+1753707891.3923342 [illuminance_pub-2]   File "<frozen importlib._bootstrap>", line 1080, in _find_spec
+1753707891.3933337 [illuminance_pub-2]   File "<frozen importlib._bootstrap_external>", line 1504, in find_spec
+1753707891.3941205 [illuminance_pub-2]   File "<frozen importlib._bootstrap_external>", line 1476, in _get_spec
+1753707891.3948240 [illuminance_pub-2]   File "<frozen importlib._bootstrap_external>", line -1, in find_spec
+1753707891.3958757 [illuminance_pub-2] KeyboardInterrupt
+1753707891.3980165 [light_srv-4] Traceback (most recent call last):
+1753707891.4025528 [light_srv-4]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/light_srv", line 3, in <module>
+1753707891.4036686 [light_srv-4]     import re
+1753707891.4045954 [light_srv-4]   File "/usr/lib/python3.11/re/__init__.py", line 263, in <module>
+1753707891.4055455 [light_srv-4]     Pattern = type(_compiler.compile('', 0))
+1753707891.4062943 [light_srv-4]                    ^^^^^^^^^^^^^^^^^^^^^^^^
+1753707891.4072685 [light_srv-4]   File "/usr/lib/python3.11/re/_compiler.py", line 747, in compile
+1753707891.4082162 [light_srv-4]     code = _code(p, flags)
+1753707891.4092205 [light_srv-4]            ^^^^^^^^^^^^^^^
+1753707891.4100935 [light_srv-4]   File "/usr/lib/python3.11/re/_compiler.py", line 582, in _code
+1753707891.4110208 [light_srv-4]     code.append(SUCCESS)
+1753707891.4120064 [light_srv-4] KeyboardInterrupt
+1753707891.4144931 [imu_pub-1] Fatal Python error: init_import_site: Failed to import the site module
+1753707891.4159367 [imu_pub-1] Python runtime state: initialized
+1753707891.4168587 [imu_pub-1] Traceback (most recent call last):
+1753707891.4178104 [imu_pub-1]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707891.4187584 [imu_pub-1]   File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+1753707891.4197853 [imu_pub-1]   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+1753707891.4206424 [imu_pub-1]   File "<frozen importlib._bootstrap>", line 982, in exec_module
+1753707891.4214964 [imu_pub-1]   File "<frozen site>", line 635, in <module>
+1753707891.4230340 [imu_pub-1]   File "<frozen site>", line 622, in main
+1753707891.4236066 [imu_pub-1]   File "<frozen site>", line 403, in addsitepackages
+1753707891.4241104 [imu_pub-1]   File "<frozen site>", line 232, in addsitedir
+1753707891.4252694 [imu_pub-1]   File "<frozen site>", line 192, in addpackage
+1753707891.4255967 [imu_pub-1]   File "<string>", line 1, in <module>
+1753707891.4259825 [imu_pub-1]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707891.4262741 [imu_pub-1]   File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+1753707891.4265976 [imu_pub-1]   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+1753707891.4270558 [imu_pub-1]   File "<frozen importlib._bootstrap>", line 982, in exec_module
+1753707891.4274352 [imu_pub-1]   File "<frozen importlib.util>", line 14, in <module>
+1753707891.4278982 [imu_pub-1]   File "/usr/lib/python3.11/contextlib.py", line 7, in <module>
+1753707891.4289155 [imu_pub-1]     from functools import wraps
+1753707891.4297762 [imu_pub-1]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707891.4310946 [imu_pub-1]   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+1753707891.4321072 [imu_pub-1]   File "<frozen importlib._bootstrap>", line 1080, in _find_spec
+1753707891.4330521 [imu_pub-1]   File "<frozen importlib._bootstrap_external>", line 1504, in find_spec
+1753707891.4340518 [imu_pub-1]   File "<frozen importlib._bootstrap_external>", line 1476, in _get_spec
+1753707891.4349604 [imu_pub-1]   File "<frozen importlib._bootstrap_external>", line 1612, in find_spec
+1753707891.4356842 [imu_pub-1]   File "<frozen importlib._bootstrap_external>", line 147, in _path_stat
+1753707891.4361157 [imu_pub-1] KeyboardInterrupt
+1753707891.4371831 [vision_node-8] Fatal Python error: init_import_site: Failed to import the site module
+1753707891.4377854 [vision_node-8] Python runtime state: initialized
+1753707891.4388659 [vision_node-8] Traceback (most recent call last):
+1753707891.4393473 [vision_node-8]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707891.4396424 [vision_node-8]   File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+1753707891.4398530 [vision_node-8]   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+1753707891.4400668 [vision_node-8]   File "<frozen importlib._bootstrap>", line 982, in exec_module
+1753707891.4402971 [vision_node-8]   File "<frozen site>", line 635, in <module>
+1753707891.4405653 [vision_node-8]   File "<frozen site>", line 622, in main
+1753707891.4408407 [vision_node-8]   File "<frozen site>", line 403, in addsitepackages
+1753707891.4411101 [vision_node-8]   File "<frozen site>", line 232, in addsitedir
+1753707891.4413581 [vision_node-8]   File "<frozen site>", line 192, in addpackage
+1753707891.4416127 [vision_node-8]   File "<string>", line 1, in <module>
+1753707891.4418690 [vision_node-8]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707891.4421489 [vision_node-8]   File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+1753707891.4424093 [vision_node-8]   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+1753707891.4426737 [vision_node-8]   File "<frozen importlib._bootstrap>", line 982, in exec_module
+1753707891.4433000 [vision_node-8]   File "<frozen importlib.util>", line 14, in <module>
+1753707891.4437630 [vision_node-8]   File "/usr/lib/python3.11/contextlib.py", line 6, in <module>
+1753707891.4440336 [vision_node-8]     from collections import deque
+1753707891.4443295 [vision_node-8]   File "/usr/lib/python3.11/collections/__init__.py", line 38, in <module>
+1753707891.4447181 [vision_node-8]     from reprlib import recursive_repr as _recursive_repr
+1753707891.4452052 [vision_node-8]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1753707891.4455318 [vision_node-8]   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+1753707891.4458220 [vision_node-8]   File "<frozen importlib._bootstrap>", line 1080, in _find_spec
+1753707891.4461901 [vision_node-8]   File "<frozen importlib._bootstrap_external>", line 1504, in find_spec
+1753707891.4467099 [vision_node-8]   File "<frozen importlib._bootstrap_external>", line 1476, in _get_spec
+1753707891.4472249 [vision_node-8]   File "<frozen importlib._bootstrap_external>", line 1612, in find_spec
+1753707891.4476683 [vision_node-8]   File "<frozen importlib._bootstrap_external>", line 147, in _path_stat
+1753707891.4480689 [vision_node-8] KeyboardInterrupt

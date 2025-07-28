@@ -1,0 +1,995 @@
+1750179358.6509993 [INFO] [launch]: All log files can be found below /home/dongjae/.ros/log/2025-06-18-01-55-58-648539-raspberrypi-11822
+1750179358.6514263 [INFO] [launch]: Default logging verbosity is set to INFO
+1750179358.8864574 [INFO] [imu_pub-1]: process started with pid [11824]
+1750179358.8954127 [INFO] [illuminance_pub-2]: process started with pid [11826]
+1750179358.8958993 [INFO] [battery_pub-3]: process started with pid [11828]
+1750179358.8962982 [INFO] [light_srv-4]: process started with pid [11830]
+1750179358.8966732 [INFO] [buzzer_srv-5]: process started with pid [11832]
+1750179358.8970578 [INFO] [ble_node-6]: process started with pid [11834]
+1750179358.8974729 [INFO] [decision_node-7]: process started with pid [11836]
+1750179358.9032736 [INFO] [vision_node-8]: process started with pid [11838]
+1750179361.2940583 [buzzer_srv-5] [INFO] [1750179361.285413186] [buzzer_actuator]: 🔔 PWM Buzzer Control Node Started
+1750179361.3115456 [light_srv-4] /home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/light_service.py:16: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+1750179361.3133471 [light_srv-4]   GPIO.setup(LED_PIN1, GPIO.OUT)
+1750179361.3137991 [light_srv-4] /home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/light_service.py:17: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+1750179361.3140879 [light_srv-4]   GPIO.setup(LED_PIN2, GPIO.OUT)
+1750179361.3568022 [imu_pub-1] [INFO] [1750179361.355942279] [imu_sensor]: I2C-3 초기화 성공
+1750179361.4860849 [decision_node-7] [INFO] [1750179361.485442072] [decision_node]: Loaded config from disk
+1750179361.8514638 [battery_pub-3] [INFO] [1750179361.843979679] [battery_sensor]: I2C 초기화 성공
+1750179361.8519516 [battery_pub-3] [INFO] [1750179361.845877480] [battery_sensor]: Battery State Publisher started, publishing on /battery_state/data
+1750179361.8598409 [imu_pub-1] [INFO] [1750179361.859101064] [imu_sensor]: FallDetectionNode started: roll_thr=65.0°, pitch_thr=65.0°
+1750179361.8794656 [illuminance_pub-2] [INFO] [1750179361.877234130] [illuminance_sensor]: Initialized PCF8591 at 0x48
+1750179361.8826470 [decision_node-7] [INFO] [1750179361.881914465] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179361.8895795 [decision_node-7] [INFO] [1750179361.888956226] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179361.8967564 [decision_node-7] [INFO] [1750179361.895705545] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179361.9055479 [decision_node-7] [INFO] [1750179361.904953975] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179361.9151866 [decision_node-7] [INFO] [1750179361.914524328] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179361.9294939 [decision_node-7] [INFO] [1750179361.928784035] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179361.9403200 [decision_node-7] [INFO] [1750179361.938945661] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179361.9562776 [decision_node-7] [INFO] [1750179361.954704949] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179361.9647448 [decision_node-7] [INFO] [1750179361.961669118] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179361.9734170 [decision_node-7] [INFO] [1750179361.970338182] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179361.9823821 [decision_node-7] [INFO] [1750179361.981381616] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179361.9912190 [decision_node-7] [INFO] [1750179361.990630250] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179361.9972916 [decision_node-7] [INFO] [1750179361.996502149] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.0047183 [decision_node-7] [INFO] [1750179362.004162813] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.0143316 [decision_node-7] [INFO] [1750179362.013770481] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.0242038 [decision_node-7] [INFO] [1750179362.023642776] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.0342987 [decision_node-7] [INFO] [1750179362.033728551] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.0472887 [decision_node-7] [INFO] [1750179362.044688153] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.0546672 [decision_node-7] [INFO] [1750179362.054024601] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.0593162 [ble_node-6] [INFO] [1750179362.058641899] [ble_node]: Using adapter: D8:3A:DD:F2:4C:84
+1750179362.0686636 [decision_node-7] [INFO] [1750179362.068037050] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.0765462 [decision_node-7] [INFO] [1750179362.075960119] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.0854449 [decision_node-7] [INFO] [1750179362.084858774] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.0945988 [decision_node-7] [INFO] [1750179362.094008222] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.1069863 [decision_node-7] [INFO] [1750179362.106163037] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.1154058 [ble_node-6] [INFO] [1750179362.113474611] [ble_node]: BLE GATT Server started
+1750179362.1167450 [decision_node-7] [INFO] [1750179362.115877315] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.1254063 [ble_node-6] [INFO] [1750179362.124531435] [ble_node]: Config service added
+1750179362.1265726 [decision_node-7] [INFO] [1750179362.124715248] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.1385150 [decision_node-7] [INFO] [1750179362.137391467] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.1495960 [decision_node-7] [INFO] [1750179362.146094752] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.1605880 [decision_node-7] [INFO] [1750179362.159513335] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.1719701 [decision_node-7] [INFO] [1750179362.171343542] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.1778369 [decision_node-7] [INFO] [1750179362.177214608] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.1871352 [decision_node-7] [INFO] [1750179362.186510945] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.1950073 [decision_node-7] [INFO] [1750179362.194316885] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.2045193 [decision_node-7] [INFO] [1750179362.203860276] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.2142062 [decision_node-7] [INFO] [1750179362.213510128] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.2242556 [decision_node-7] [INFO] [1750179362.223654810] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.2342169 [decision_node-7] [INFO] [1750179362.233617531] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.2442191 [decision_node-7] [INFO] [1750179362.243625103] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.2542322 [decision_node-7] [INFO] [1750179362.253619212] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.2642410 [decision_node-7] [INFO] [1750179362.263604969] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.2743137 [decision_node-7] [INFO] [1750179362.273605005] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.2842560 [decision_node-7] [INFO] [1750179362.283607577] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.2941673 [decision_node-7] [INFO] [1750179362.293558834] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.3052728 [decision_node-7] [INFO] [1750179362.304649954] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.3145745 [decision_node-7] [INFO] [1750179362.313854254] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.3242402 [decision_node-7] [INFO] [1750179362.323553088] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.3342137 [decision_node-7] [INFO] [1750179362.333607678] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.3442369 [decision_node-7] [INFO] [1750179362.343555584] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.3561101 [decision_node-7] [INFO] [1750179362.355468123] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.3646472 [decision_node-7] [INFO] [1750179362.363998595] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.3740926 [decision_node-7] [INFO] [1750179362.373499948] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.3841875 [decision_node-7] [INFO] [1750179362.383591446] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.3941884 [decision_node-7] [INFO] [1750179362.393508981] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.4041471 [decision_node-7] [INFO] [1750179362.403552757] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.4141195 [decision_node-7] [INFO] [1750179362.413526014] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.4241891 [decision_node-7] [INFO] [1750179362.423509124] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.4341214 [decision_node-7] [INFO] [1750179362.433535010] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.4443345 [decision_node-7] [INFO] [1750179362.443665841] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.4560409 [decision_node-7] [INFO] [1750179362.455416436] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.4648511 [decision_node-7] [INFO] [1750179362.464154870] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.4741337 [decision_node-7] [INFO] [1750179362.473463688] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.4843559 [decision_node-7] [INFO] [1750179362.483718073] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.4941101 [decision_node-7] [INFO] [1750179362.493437129] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.5043187 [decision_node-7] [INFO] [1750179362.503679792] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.5146742 [decision_node-7] [INFO] [1750179362.514082046] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.5252275 [decision_node-7] [INFO] [1750179362.524579633] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.5343325 [decision_node-7] [INFO] [1750179362.533664804] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.5444174 [decision_node-7] [INFO] [1750179362.543738487] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.5564821 [decision_node-7] [INFO] [1750179362.555834654] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.5655377 [decision_node-7] [INFO] [1750179362.564832863] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.5745587 [decision_node-7] [INFO] [1750179362.573845425] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.5844514 [decision_node-7] [INFO] [1750179362.583747386] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.5943758 [decision_node-7] [INFO] [1750179362.593678885] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.6044245 [decision_node-7] [INFO] [1750179362.603776882] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.6142335 [decision_node-7] [INFO] [1750179362.613623103] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.6242914 [decision_node-7] [INFO] [1750179362.623611639] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.6344440 [decision_node-7] [INFO] [1750179362.633785580] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.6444380 [decision_node-7] [INFO] [1750179362.643732800] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.6542528 [decision_node-7] [INFO] [1750179362.653579170] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.6643374 [decision_node-7] [INFO] [1750179362.663696760] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.6742554 [decision_node-7] [INFO] [1750179362.673574184] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.6844213 [decision_node-7] [INFO] [1750179362.683722515] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.6943629 [decision_node-7] [INFO] [1750179362.693708420] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.7043858 [decision_node-7] [INFO] [1750179362.703708807] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.7161622 [decision_node-7] [INFO] [1750179362.715530365] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.7251649 [decision_node-7] [INFO] [1750179362.724467131] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.7349727 [decision_node-7] [INFO] [1750179362.734317982] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.7449434 [decision_node-7] [INFO] [1750179362.744259369] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.7543678 [decision_node-7] [INFO] [1750179362.753668946] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.7646718 [decision_node-7] [INFO] [1750179362.763950164] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.7743812 [decision_node-7] [INFO] [1750179362.773671682] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.7805321 [illuminance_pub-2] [INFO] [1750179362.779862802] [illuminance_sensor]: RAW=232 → 90.98039215686275%
+1750179362.7858207 [decision_node-7] [INFO] [1750179362.785225909] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.7952058 [decision_node-7] [INFO] [1750179362.794528950] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.8043957 [decision_node-7] [INFO] [1750179362.803767953] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.8143196 [decision_node-7] [INFO] [1750179362.813674415] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.8243711 [decision_node-7] [INFO] [1750179362.823725672] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.8343930 [decision_node-7] [INFO] [1750179362.833778170] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.8442862 [decision_node-7] [INFO] [1750179362.843672854] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.8543465 [decision_node-7] [INFO] [1750179362.853691092] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.8644867 [decision_node-7] [INFO] [1750179362.863825293] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.8742836 [decision_node-7] [INFO] [1750179362.873668422] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.8843620 [decision_node-7] [INFO] [1750179362.883704549] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.8943310 [decision_node-7] [INFO] [1750179362.893716936] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.9043527 [decision_node-7] [INFO] [1750179362.903745637] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.9143343 [decision_node-7] [INFO] [1750179362.913676099] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.9243321 [decision_node-7] [INFO] [1750179362.923731115] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.9343035 [decision_node-7] [INFO] [1750179362.933685354] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.9443944 [decision_node-7] [INFO] [1750179362.943776611] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.9543257 [decision_node-7] [INFO] [1750179362.953713572] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.9644368 [decision_node-7] [INFO] [1750179362.963750237] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.9743385 [decision_node-7] [INFO] [1750179362.973763123] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.9841096 [decision_node-7] [INFO] [1750179362.983504549] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179362.9945529 [decision_node-7] [INFO] [1750179362.993912192] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.0042393 [decision_node-7] [INFO] [1750179363.003618526] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.0146215 [decision_node-7] [INFO] [1750179363.013956447] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.0246348 [decision_node-7] [INFO] [1750179363.023991297] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.0343552 [decision_node-7] [INFO] [1750179363.033742537] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.0444129 [decision_node-7] [INFO] [1750179363.043801220] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.0543499 [decision_node-7] [INFO] [1750179363.053737645] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.0650742 [decision_node-7] [INFO] [1750179363.064417897] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.0745497 [decision_node-7] [INFO] [1750179363.073849010] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.0846081 [decision_node-7] [INFO] [1750179363.083830008] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.0944321 [decision_node-7] [INFO] [1750179363.093853043] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.1106911 [decision_node-7] [INFO] [1750179363.109960217] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.1167161 [decision_node-7] [INFO] [1750179363.116049911] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.1252131 [decision_node-7] [INFO] [1750179363.124601902] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.1343346 [decision_node-7] [INFO] [1750179363.133715110] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.1443415 [decision_node-7] [INFO] [1750179363.143714330] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.1551867 [decision_node-7] [INFO] [1750179363.154497489] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.1643937 [decision_node-7] [INFO] [1750179363.163704678] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.1748652 [decision_node-7] [INFO] [1750179363.173897212] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.1842322 [decision_node-7] [INFO] [1750179363.183638915] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.1943054 [decision_node-7] [INFO] [1750179363.193677154] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.2043886 [decision_node-7] [INFO] [1750179363.203778651] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.2144780 [decision_node-7] [INFO] [1750179363.213826056] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.2243292 [decision_node-7] [INFO] [1750179363.223745462] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.2344244 [decision_node-7] [INFO] [1750179363.233735497] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.2447577 [decision_node-7] [INFO] [1750179363.243945605] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.2600689 [decision_node-7] [INFO] [1750179363.259455227] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.2658300 [decision_node-7] [INFO] [1750179363.265221480] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.2756357 [decision_node-7] [INFO] [1750179363.274972535] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.2881207 [decision_node-7] [INFO] [1750179363.287111350] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.2981899 [decision_node-7] [INFO] [1750179363.296913183] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.3135149 [decision_node-7] [INFO] [1750179363.312520250] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.3217621 [decision_node-7] [INFO] [1750179363.320980426] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.3310237 [decision_node-7] [INFO] [1750179363.330297781] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.3368945 [decision_node-7] [INFO] [1750179363.336258606] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.3455963 [decision_node-7] [INFO] [1750179363.344953114] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.3545520 [decision_node-7] [INFO] [1750179363.353928935] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.3641155 [decision_node-7] [INFO] [1750179363.363520213] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.3740730 [decision_node-7] [INFO] [1750179363.373436786] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.3839979 [decision_node-7] [INFO] [1750179363.383425136] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.3949597 [decision_node-7] [INFO] [1750179363.394270220] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.4047713 [decision_node-7] [INFO] [1750179363.404021831] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.4143360 [decision_node-7] [INFO] [1750179363.413720998] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.4242997 [decision_node-7] [INFO] [1750179363.423720515] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.4342730 [decision_node-7] [INFO] [1750179363.433622347] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.4445319 [decision_node-7] [INFO] [1750179363.443780492] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.4542675 [decision_node-7] [INFO] [1750179363.453706546] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.4643509 [decision_node-7] [INFO] [1750179363.463747321] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.4742606 [decision_node-7] [INFO] [1750179363.473696931] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.4843502 [decision_node-7] [INFO] [1750179363.483731521] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.4943137 [decision_node-7] [INFO] [1750179363.493626075] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.5049770 [decision_node-7] [INFO] [1750179363.504345031] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.5139959 [decision_node-7] [INFO] [1750179363.513405517] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.5244424 [decision_node-7] [INFO] [1750179363.523817790] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.5342829 [decision_node-7] [INFO] [1750179363.533649882] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.5445302 [decision_node-7] [INFO] [1750179363.543856230] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.5542834 [decision_node-7] [INFO] [1750179363.553663285] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.5643218 [decision_node-7] [INFO] [1750179363.563710283] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.5743501 [decision_node-7] [INFO] [1750179363.573749651] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.5847192 [decision_node-7] [INFO] [1750179363.583989888] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.6000540 [decision_node-7] [INFO] [1750179363.599537918] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.6059799 [decision_node-7] [INFO] [1750179363.605401577] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.6143334 [decision_node-7] [INFO] [1750179363.613736476] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.6243899 [decision_node-7] [INFO] [1750179363.623564679] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.6345012 [decision_node-7] [INFO] [1750179363.633907286] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.6443095 [decision_node-7] [INFO] [1750179363.643701433] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.6541989 [decision_node-7] [INFO] [1750179363.653658598] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.6643965 [decision_node-7] [INFO] [1750179363.663751892] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.6743953 [decision_node-7] [INFO] [1750179363.673805760] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.6846194 [decision_node-7] [INFO] [1750179363.683933498] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.6943142 [decision_node-7] [INFO] [1750179363.693692442] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.7041397 [decision_node-7] [INFO] [1750179363.703605107] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.7140164 [decision_node-7] [INFO] [1750179363.713470569] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.7240970 [decision_node-7] [INFO] [1750179363.723504826] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.7345181 [decision_node-7] [INFO] [1750179363.733908414] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.7440872 [decision_node-7] [INFO] [1750179363.743546137] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.7540250 [decision_node-7] [INFO] [1750179363.753478894] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.7642705 [decision_node-7] [INFO] [1750179363.763719687] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.7743363 [decision_node-7] [INFO] [1750179363.773702315] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.7864048 [illuminance_pub-2] [INFO] [1750179363.782845708] [illuminance_sensor]: RAW=232 → 90.98039215686275%
+1750179363.7876000 [decision_node-7] [INFO] [1750179363.785490595] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.7954645 [decision_node-7] [INFO] [1750179363.794733692] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.8044562 [decision_node-7] [INFO] [1750179363.803860493] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.8146603 [decision_node-7] [INFO] [1750179363.814000082] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.8245342 [decision_node-7] [INFO] [1750179363.823882896] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.8345478 [decision_node-7] [INFO] [1750179363.833907097] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.8443453 [decision_node-7] [INFO] [1750179363.843720523] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.8545060 [decision_node-7] [INFO] [1750179363.853841094] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.8645935 [decision_node-7] [INFO] [1750179363.863963424] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.8743911 [decision_node-7] [INFO] [1750179363.873763090] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.8846502 [decision_node-7] [INFO] [1750179363.884029290] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.8943448 [decision_node-7] [INFO] [1750179363.893699161] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.9052048 [decision_node-7] [INFO] [1750179363.904309117] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.9151556 [decision_node-7] [INFO] [1750179363.914454855] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.9243639 [decision_node-7] [INFO] [1750179363.923742414] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.9345427 [decision_node-7] [INFO] [1750179363.933867911] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.9443250 [decision_node-7] [INFO] [1750179363.943717262] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.9546325 [decision_node-7] [INFO] [1750179363.953972017] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.9644878 [decision_node-7] [INFO] [1750179363.963853405] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.9746749 [decision_node-7] [INFO] [1750179363.973883088] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.9845145 [decision_node-7] [INFO] [1750179363.983894789] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179363.9949589 [decision_node-7] [INFO] [1750179363.994098638] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.0051661 [decision_node-7] [INFO] [1750179364.004513781] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.0144017 [decision_node-7] [INFO] [1750179364.013777525] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.0241745 [decision_node-7] [INFO] [1750179364.023572302] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.0344834 [decision_node-7] [INFO] [1750179364.033847057] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.0443156 [decision_node-7] [INFO] [1750179364.043713853] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.0544016 [decision_node-7] [INFO] [1750179364.053781795] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.0641387 [decision_node-7] [INFO] [1750179364.063523591] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.0746219 [decision_node-7] [INFO] [1750179364.073942586] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.0844514 [decision_node-7] [INFO] [1750179364.083849195] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.0940564 [decision_node-7] [INFO] [1750179364.093472696] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.1047921 [decision_node-7] [INFO] [1750179364.104025134] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.1152868 [decision_node-7] [INFO] [1750179364.114476888] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.1245639 [decision_node-7] [INFO] [1750179364.123934872] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.1344826 [decision_node-7] [INFO] [1750179364.133857352] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.1448593 [decision_node-7] [INFO] [1750179364.144232791] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.1544454 [decision_node-7] [INFO] [1750179364.153716275] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.1644316 [decision_node-7] [INFO] [1750179364.163688458] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.1743331 [decision_node-7] [INFO] [1750179364.173727882] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.1845474 [decision_node-7] [INFO] [1750179364.183945637] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.1945052 [decision_node-7] [INFO] [1750179364.193862710] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.2044225 [decision_node-7] [INFO] [1750179364.203779283] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.2142975 [decision_node-7] [INFO] [1750179364.213584412] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.2243097 [decision_node-7] [INFO] [1750179364.223690668] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.2343516 [decision_node-7] [INFO] [1750179364.233713333] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.2443461 [decision_node-7] [INFO] [1750179364.243741164] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.2549520 [decision_node-7] [INFO] [1750179364.254273843] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.2643175 [decision_node-7] [INFO] [1750179364.263697827] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.2744253 [decision_node-7] [INFO] [1750179364.273858712] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.2844715 [decision_node-7] [INFO] [1750179364.283854118] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.2942479 [decision_node-7] [INFO] [1750179364.293628062] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.3042798 [decision_node-7] [INFO] [1750179364.303672152] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.3145542 [decision_node-7] [INFO] [1750179364.313845963] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.3245814 [decision_node-7] [INFO] [1750179364.323953516] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.3342726 [decision_node-7] [INFO] [1750179364.333612535] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.3443828 [decision_node-7] [INFO] [1750179364.343822457] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.3541319 [decision_node-7] [INFO] [1750179364.353588994] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.3640387 [decision_node-7] [INFO] [1750179364.363499604] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.3746037 [decision_node-7] [INFO] [1750179364.374009191] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.3897228 [decision_node-7] [INFO] [1750179364.389126502] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.3974991 [decision_node-7] [INFO] [1750179364.396771517] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.4099951 [decision_node-7] [INFO] [1750179364.409492995] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.4162781 [decision_node-7] [INFO] [1750179364.415663763] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.4244261 [decision_node-7] [INFO] [1750179364.423807312] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.4345810 [decision_node-7] [INFO] [1750179364.434010808] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.4444816 [decision_node-7] [INFO] [1750179364.443772012] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.4542789 [decision_node-7] [INFO] [1750179364.453665233] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.4645541 [decision_node-7] [INFO] [1750179364.463957062] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.4743609 [decision_node-7] [INFO] [1750179364.473732654] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.4845378 [decision_node-7] [INFO] [1750179364.483914873] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.4942405 [decision_node-7] [INFO] [1750179364.493627021] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.5043490 [decision_node-7] [INFO] [1750179364.503773666] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.5143745 [decision_node-7] [INFO] [1750179364.513766849] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.5254085 [decision_node-7] [INFO] [1750179364.524793858] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.5342281 [decision_node-7] [INFO] [1750179364.533630717] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.5445323 [decision_node-7] [INFO] [1750179364.543860213] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.5541081 [decision_node-7] [INFO] [1750179364.553527010] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.5644865 [decision_node-7] [INFO] [1750179364.563851709] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.5749750 [decision_node-7] [INFO] [1750179364.574319944] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.5843327 [decision_node-7] [INFO] [1750179364.583762354] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.5946221 [decision_node-7] [INFO] [1750179364.594032812] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.6042199 [decision_node-7] [INFO] [1750179364.603622851] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.6146944 [decision_node-7] [INFO] [1750179364.614107734] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.6254628 [decision_node-7] [INFO] [1750179364.624665801] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.6344309 [decision_node-7] [INFO] [1750179364.633814380] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.6478956 [decision_node-7] [INFO] [1750179364.646871818] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.6606760 [decision_node-7] [INFO] [1750179364.659547647] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.6774158 [decision_node-7] [INFO] [1750179364.676406852] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.6902254 [decision_node-7] [INFO] [1750179364.689365605] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.7024174 [decision_node-7] [INFO] [1750179364.701362495] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.7157505 [decision_node-7] [INFO] [1750179364.713547514] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.7214127 [decision_node-7] [INFO] [1750179364.720632775] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.7292180 [decision_node-7] [INFO] [1750179364.728569381] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.7353001 [decision_node-7] [INFO] [1750179364.734634039] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.7444997 [decision_node-7] [INFO] [1750179364.743844691] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.7545822 [decision_node-7] [INFO] [1750179364.754003243] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.7643588 [decision_node-7] [INFO] [1750179364.763709206] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.7749846 [decision_node-7] [INFO] [1750179364.774234830] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.7817783 [illuminance_pub-2] [INFO] [1750179364.779699825] [illuminance_sensor]: RAW=232 → 90.98039215686275%
+1750179364.7876997 [decision_node-7] [INFO] [1750179364.786236609] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.7972405 [decision_node-7] [INFO] [1750179364.796619770] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.8049259 [decision_node-7] [INFO] [1750179364.804311156] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.8145046 [decision_node-7] [INFO] [1750179364.813894787] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.8244963 [decision_node-7] [INFO] [1750179364.823939044] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.8344829 [decision_node-7] [INFO] [1750179364.833859432] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.8444378 [decision_node-7] [INFO] [1750179364.843865615] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.8544528 [decision_node-7] [INFO] [1750179364.853867279] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.8646977 [decision_node-7] [INFO] [1750179364.864056979] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.8749650 [decision_node-7] [INFO] [1750179364.874289068] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.8850167 [decision_node-7] [INFO] [1750179364.884392677] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.8945401 [decision_node-7] [INFO] [1750179364.893894604] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.9052298 [decision_node-7] [INFO] [1750179364.904615597] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.9146836 [decision_node-7] [INFO] [1750179364.914069895] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.9244757 [decision_node-7] [INFO] [1750179364.923857395] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.9344785 [decision_node-7] [INFO] [1750179364.933879615] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.9445899 [decision_node-7] [INFO] [1750179364.943985390] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.9582033 [decision_node-7] [INFO] [1750179364.956354907] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.9644880 [decision_node-7] [INFO] [1750179364.963849479] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.9744253 [decision_node-7] [INFO] [1750179364.973784274] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.9866776 [decision_node-7] [INFO] [1750179364.984455489] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179364.9945240 [decision_node-7] [INFO] [1750179364.993927528] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.0056703 [decision_node-7] [INFO] [1750179365.004808075] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.0169981 [decision_node-7] [INFO] [1750179365.014578019] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.0251579 [decision_node-7] [INFO] [1750179365.024534091] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.0342634 [decision_node-7] [INFO] [1750179365.033689485] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.0439475 [decision_node-7] [INFO] [1750179365.043394614] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.0538507 [decision_node-7] [INFO] [1750179365.053297835] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.0639126 [decision_node-7] [INFO] [1750179365.063365981] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.0739386 [decision_node-7] [INFO] [1750179365.073387238] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.0838826 [decision_node-7] [INFO] [1750179365.083331977] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.0938847 [decision_node-7] [INFO] [1750179365.093333197] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.1040952 [decision_node-7] [INFO] [1750179365.103546675] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.1139376 [decision_node-7] [INFO] [1750179365.113354619] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.1239038 [decision_node-7] [INFO] [1750179365.123352728] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.1338756 [decision_node-7] [INFO] [1750179365.133331300] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.1438978 [decision_node-7] [INFO] [1750179365.143351539] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.1538780 [decision_node-7] [INFO] [1750179365.153327555] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.1638803 [decision_node-7] [INFO] [1750179365.163335849] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.1744683 [decision_node-7] [INFO] [1750179365.173879195] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.1845169 [decision_node-7] [INFO] [1750179365.183916841] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.1943192 [decision_node-7] [INFO] [1750179365.193720618] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.2046516 [decision_node-7] [INFO] [1750179365.203989373] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.2142704 [decision_node-7] [INFO] [1750179365.213668744] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.2244318 [decision_node-7] [INFO] [1750179365.223809833] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.2343321 [decision_node-7] [INFO] [1750179365.233727147] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.2443881 [decision_node-7] [INFO] [1750179365.243770015] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.2544336 [decision_node-7] [INFO] [1750179365.253825364] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.2643929 [decision_node-7] [INFO] [1750179365.263785770] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.2743506 [decision_node-7] [INFO] [1750179365.273743305] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.2844090 [decision_node-7] [INFO] [1750179365.283803117] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.2943544 [decision_node-7] [INFO] [1750179365.293751375] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.3047791 [decision_node-7] [INFO] [1750179365.304162574] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.3143501 [decision_node-7] [INFO] [1750179365.313721371] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.3243721 [decision_node-7] [INFO] [1750179365.323774535] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.3343933 [decision_node-7] [INFO] [1750179365.333781385] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.3443530 [decision_node-7] [INFO] [1750179365.343761568] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.3543987 [decision_node-7] [INFO] [1750179365.353758770] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.3643723 [decision_node-7] [INFO] [1750179365.363765416] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.3744507 [decision_node-7] [INFO] [1750179365.373846821] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.3844457 [decision_node-7] [INFO] [1750179365.383837893] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.3943257 [decision_node-7] [INFO] [1750179365.393721484] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.4043214 [decision_node-7] [INFO] [1750179365.403713704] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.4143169 [decision_node-7] [INFO] [1750179365.413724536] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.4243212 [decision_node-7] [INFO] [1750179365.423738571] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.4343374 [decision_node-7] [INFO] [1750179365.433735365] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.4443085 [decision_node-7] [INFO] [1750179365.443701622] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.4543417 [decision_node-7] [INFO] [1750179365.453730120] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.4643495 [decision_node-7] [INFO] [1750179365.463752377] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.4743528 [decision_node-7] [INFO] [1750179365.473762986] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.4844244 [decision_node-7] [INFO] [1750179365.483818095] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.4944072 [decision_node-7] [INFO] [1750179365.493794908] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.5043657 [decision_node-7] [INFO] [1750179365.503760072] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.5148141 [decision_node-7] [INFO] [1750179365.514146493] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.5244508 [decision_node-7] [INFO] [1750179365.523881845] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.5348415 [decision_node-7] [INFO] [1750179365.534195230] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.5443945 [decision_node-7] [INFO] [1750179365.543800656] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.5543709 [decision_node-7] [INFO] [1750179365.553762340] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.5643830 [decision_node-7] [INFO] [1750179365.563774671] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.5743618 [decision_node-7] [INFO] [1750179365.573750836] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.5844584 [decision_node-7] [INFO] [1750179365.583861203] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.5944214 [decision_node-7] [INFO] [1750179365.593815813] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.6043410 [decision_node-7] [INFO] [1750179365.603732145] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.6144156 [decision_node-7] [INFO] [1750179365.613813920] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.6245997 [decision_node-7] [INFO] [1750179365.623993416] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.6343143 [decision_node-7] [INFO] [1750179365.633694787] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.6443527 [decision_node-7] [INFO] [1750179365.643736618] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.6543670 [decision_node-7] [INFO] [1750179365.653751245] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.6643574 [decision_node-7] [INFO] [1750179365.663757651] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.6743963 [decision_node-7] [INFO] [1750179365.673759482] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.6844406 [decision_node-7] [INFO] [1750179365.683836627] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.6943851 [decision_node-7] [INFO] [1750179365.693784552] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.7044194 [decision_node-7] [INFO] [1750179365.703777901] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.7144055 [decision_node-7] [INFO] [1750179365.713806973] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.7243996 [decision_node-7] [INFO] [1750179365.723789249] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.7344341 [decision_node-7] [INFO] [1750179365.733806006] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.7443750 [decision_node-7] [INFO] [1750179365.743764745] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.7543867 [decision_node-7] [INFO] [1750179365.753775428] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.7650092 [decision_node-7] [INFO] [1750179365.764398347] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.7743382 [decision_node-7] [INFO] [1750179365.773748776] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.7814021 [illuminance_pub-2] [INFO] [1750179365.778566425] [illuminance_sensor]: RAW=232 → 90.98039215686275%
+1750179365.7848163 [decision_node-7] [INFO] [1750179365.784205734] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.7944634 [decision_node-7] [INFO] [1750179365.793861049] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.8043647 [decision_node-7] [INFO] [1750179365.803767918] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.8145461 [decision_node-7] [INFO] [1750179365.813932415] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.8244195 [decision_node-7] [INFO] [1750179365.823774136] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.8346815 [decision_node-7] [INFO] [1750179365.834066854] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.8463843 [decision_node-7] [INFO] [1750179365.845789228] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.8556559 [decision_node-7] [INFO] [1750179365.855061213] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.8648539 [decision_node-7] [INFO] [1750179365.864259291] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.8744287 [decision_node-7] [INFO] [1750179365.873818292] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.8845015 [decision_node-7] [INFO] [1750179365.883901271] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.8945348 [decision_node-7] [INFO] [1750179365.893788325] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.9047344 [decision_node-7] [INFO] [1750179365.904094265] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.9145899 [decision_node-7] [INFO] [1750179365.913962486] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.9242895 [decision_node-7] [INFO] [1750179365.923708283] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.9343526 [decision_node-7] [INFO] [1750179365.933751502] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.9443228 [decision_node-7] [INFO] [1750179365.943719612] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.9544659 [decision_node-7] [INFO] [1750179365.953876016] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.9643357 [decision_node-7] [INFO] [1750179365.963738311] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.9743001 [decision_node-7] [INFO] [1750179365.973704661] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.9848292 [decision_node-7] [INFO] [1750179365.984198267] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179365.9943850 [decision_node-7] [INFO] [1750179365.993777638] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.0043693 [decision_node-7] [INFO] [1750179366.003773006] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.0143623 [decision_node-7] [INFO] [1750179366.013756764] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.0243292 [decision_node-7] [INFO] [1750179366.023728003] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.0344980 [decision_node-7] [INFO] [1750179366.033879499] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.0443673 [decision_node-7] [INFO] [1750179366.043761109] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.0544376 [decision_node-7] [INFO] [1750179366.053837607] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.0644352 [decision_node-7] [INFO] [1750179366.063825290] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.0744214 [decision_node-7] [INFO] [1750179366.073811029] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.0846174 [decision_node-7] [INFO] [1750179366.084022654] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.0964286 [decision_node-7] [INFO] [1750179366.095860175] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.1052265 [decision_node-7] [INFO] [1750179366.104545294] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.1144507 [decision_node-7] [INFO] [1750179366.113881631] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.1255648 [decision_node-7] [INFO] [1750179366.124954898] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.1350121 [decision_node-7] [INFO] [1750179366.134344345] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.1450043 [decision_node-7] [INFO] [1750179366.144408546] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.1548030 [decision_node-7] [INFO] [1750179366.154147880] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.1643722 [decision_node-7] [INFO] [1750179366.163785399] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.1746602 [decision_node-7] [INFO] [1750179366.174033839] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.1898422 [decision_node-7] [INFO] [1750179366.189282260] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.1964836 [decision_node-7] [INFO] [1750179366.195881191] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.2049594 [decision_node-7] [INFO] [1750179366.204328072] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.2144957 [decision_node-7] [INFO] [1750179366.213905832] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.2243581 [decision_node-7] [INFO] [1750179366.223768183] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.2344236 [decision_node-7] [INFO] [1750179366.233797532] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.2442732 [decision_node-7] [INFO] [1750179366.243688550] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.2552114 [decision_node-7] [INFO] [1750179366.254556856] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.2643616 [decision_node-7] [INFO] [1750179366.263760563] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.2744193 [decision_node-7] [INFO] [1750179366.273831931] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.2844634 [decision_node-7] [INFO] [1750179366.283858466] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.2943964 [decision_node-7] [INFO] [1750179366.293804001] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.3042972 [decision_node-7] [INFO] [1750179366.303699537] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.3143721 [decision_node-7] [INFO] [1750179366.313667980] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.3243706 [decision_node-7] [INFO] [1750179366.323777477] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.3343906 [decision_node-7] [INFO] [1750179366.333800049] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.3442838 [decision_node-7] [INFO] [1750179366.343696510] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.3543556 [decision_node-7] [INFO] [1750179366.353752378] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.3642361 [decision_node-7] [INFO] [1750179366.363649099] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.3744605 [decision_node-7] [INFO] [1750179366.373864762] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.3842263 [decision_node-7] [INFO] [1750179366.383631391] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.3942196 [decision_node-7] [INFO] [1750179366.393633722] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.4042437 [decision_node-7] [INFO] [1750179366.403658183] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.4142728 [decision_node-7] [INFO] [1750179366.413679422] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.4242489 [decision_node-7] [INFO] [1750179366.423655698] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.4342065 [decision_node-7] [INFO] [1750179366.433610955] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.4442306 [decision_node-7] [INFO] [1750179366.443636749] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.4542322 [decision_node-7] [INFO] [1750179366.453635877] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.4642575 [decision_node-7] [INFO] [1750179366.463667819] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.4742489 [decision_node-7] [INFO] [1750179366.473649835] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.4842410 [decision_node-7] [INFO] [1750179366.483650889] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.4943249 [decision_node-7] [INFO] [1750179366.493723145] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.5042329 [decision_node-7] [INFO] [1750179366.503625459] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.5143087 [decision_node-7] [INFO] [1750179366.513713993] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.5242250 [decision_node-7] [INFO] [1750179366.523636325] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.5344112 [decision_node-7] [INFO] [1750179366.533815636] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.5442002 [decision_node-7] [INFO] [1750179366.543608247] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.5542676 [decision_node-7] [INFO] [1750179366.553675967] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.5642114 [decision_node-7] [INFO] [1750179366.563641631] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.5743475 [decision_node-7] [INFO] [1750179366.573751184] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.5843318 [decision_node-7] [INFO] [1750179366.583737145] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.5944571 [decision_node-7] [INFO] [1750179366.593876753] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.6042621 [decision_node-7] [INFO] [1750179366.603675567] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.6142621 [decision_node-7] [INFO] [1750179366.613686973] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.6242785 [decision_node-7] [INFO] [1750179366.623700044] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.6353931 [decision_node-7] [INFO] [1750179366.634732516] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.6446912 [decision_node-7] [INFO] [1750179366.644083686] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.6542778 [decision_node-7] [INFO] [1750179366.653665353] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.6642911 [decision_node-7] [INFO] [1750179366.663696277] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.6741939 [decision_node-7] [INFO] [1750179366.673629220] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.6841748 [decision_node-7] [INFO] [1750179366.683606014] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.6944547 [decision_node-7] [INFO] [1750179366.693868732] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.7041183 [decision_node-7] [INFO] [1750179366.703552584] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.7143319 [decision_node-7] [INFO] [1750179366.713754488] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.7242010 [decision_node-7] [INFO] [1750179366.723613395] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.7351992 [decision_node-7] [INFO] [1750179366.734487756] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.7460792 [decision_node-7] [INFO] [1750179366.745478987] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.7554243 [decision_node-7] [INFO] [1750179366.754823120] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.7646379 [decision_node-7] [INFO] [1750179366.764023161] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.7744408 [decision_node-7] [INFO] [1750179366.773826031] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.7807324 [illuminance_pub-2] [INFO] [1750179366.780066335] [illuminance_sensor]: RAW=233 → 91.37254901960785%
+1750179366.7860150 [decision_node-7] [INFO] [1750179366.785324221] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.7965648 [decision_node-7] [INFO] [1750179366.795908418] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.8056602 [decision_node-7] [INFO] [1750179366.805069052] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.8163931 [decision_node-7] [INFO] [1750179366.815814100] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.8244698 [decision_node-7] [INFO] [1750179366.823891057] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.8341458 [decision_node-7] [INFO] [1750179366.833533595] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.8441403 [decision_node-7] [INFO] [1750179366.843535518] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.8542185 [decision_node-7] [INFO] [1750179366.853597460] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.8689563 [decision_node-7] [INFO] [1750179366.867571983] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.8794107 [decision_node-7] [INFO] [1750179366.877905942] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.8896291 [decision_node-7] [INFO] [1750179366.888724378] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.9003417 [decision_node-7] [INFO] [1750179366.899329316] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.9097812 [decision_node-7] [INFO] [1750179366.908907039] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.9202414 [decision_node-7] [INFO] [1750179366.919302034] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.9296992 [decision_node-7] [INFO] [1750179366.928504612] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.9391804 [decision_node-7] [INFO] [1750179366.938228853] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.9487035 [decision_node-7] [INFO] [1750179366.947464227] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.9578335 [decision_node-7] [INFO] [1750179366.956833063] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.9688501 [decision_node-7] [INFO] [1750179366.968096070] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.9790502 [decision_node-7] [INFO] [1750179366.977369851] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.9887943 [decision_node-7] [INFO] [1750179366.987618125] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179366.9961426 [decision_node-7] [INFO] [1750179366.995415399] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.0069251 [decision_node-7] [INFO] [1750179367.006306334] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.0146782 [decision_node-7] [INFO] [1750179367.014083664] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.0240142 [decision_node-7] [INFO] [1750179367.023422593] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.0340879 [decision_node-7] [INFO] [1750179367.033476387] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.0444598 [decision_node-7] [INFO] [1750179367.043750456] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.0542767 [decision_node-7] [INFO] [1750179367.053651714] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.0642755 [decision_node-7] [INFO] [1750179367.063621879] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.0743077 [decision_node-7] [INFO] [1750179367.073703302] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.0847456 [decision_node-7] [INFO] [1750179367.084082557] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.0947127 [decision_node-7] [INFO] [1750179367.094017314] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.1045449 [decision_node-7] [INFO] [1750179367.103968350] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.1140523 [decision_node-7] [INFO] [1750179367.113485259] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.1241803 [decision_node-7] [INFO] [1750179367.123597737] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.1340647 [decision_node-7] [INFO] [1750179367.133499773] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.1449487 [decision_node-7] [INFO] [1750179367.144326598] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.1541858 [decision_node-7] [INFO] [1750179367.153581935] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.1644497 [decision_node-7] [INFO] [1750179367.163833245] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.1741512 [decision_node-7] [INFO] [1750179367.173542764] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.1854696 [decision_node-7] [INFO] [1750179367.184559717] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.1946650 [decision_node-7] [INFO] [1750179367.194004941] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.2048144 [decision_node-7] [INFO] [1750179367.204102772] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.2142911 [decision_node-7] [INFO] [1750179367.213676625] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.2245131 [decision_node-7] [INFO] [1750179367.223842270] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.2366705 [decision_node-7] [INFO] [1750179367.235956177] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.2456150 [decision_node-7] [INFO] [1750179367.244953294] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.2542477 [decision_node-7] [INFO] [1750179367.253651487] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.2645679 [decision_node-7] [INFO] [1750179367.263919316] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.2753060 [decision_node-7] [INFO] [1750179367.274681197] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.2843552 [decision_node-7] [INFO] [1750179367.283718888] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.2945900 [decision_node-7] [INFO] [1750179367.293964828] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.3044651 [decision_node-7] [INFO] [1750179367.303861530] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.3149128 [decision_node-7] [INFO] [1750179367.314062286] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.3245907 [decision_node-7] [INFO] [1750179367.323937303] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.3346086 [decision_node-7] [INFO] [1750179367.333982486] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.3450525 [decision_node-7] [INFO] [1750179367.344032539] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.3549762 [decision_node-7] [INFO] [1750179367.354258295] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.3656189 [decision_node-7] [INFO] [1750179367.364822770] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.3752341 [decision_node-7] [INFO] [1750179367.374513918] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.3847487 [decision_node-7] [INFO] [1750179367.384111919] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.3947091 [decision_node-7] [INFO] [1750179367.393892733] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.4044991 [decision_node-7] [INFO] [1750179367.403862972] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.4153559 [decision_node-7] [INFO] [1750179367.414710482] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.4243503 [decision_node-7] [INFO] [1750179367.423706636] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.4348445 [decision_node-7] [INFO] [1750179367.434138260] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.4447520 [decision_node-7] [INFO] [1750179367.444050351] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.4544206 [decision_node-7] [INFO] [1750179367.453728333] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.4647763 [decision_node-7] [INFO] [1750179367.464005125] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.4741805 [decision_node-7] [INFO] [1750179367.473528256] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.4840963 [decision_node-7] [INFO] [1750179367.483513162] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.4946158 [decision_node-7] [INFO] [1750179367.493784047] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.5054333 [decision_node-7] [INFO] [1750179367.504702852] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.5143397 [decision_node-7] [INFO] [1750179367.513748135] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.5240357 [decision_node-7] [INFO] [1750179367.523455802] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.5339701 [decision_node-7] [INFO] [1750179367.533395967] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.5443597 [decision_node-7] [INFO] [1750179367.543701166] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.5547864 [decision_node-7] [INFO] [1750179367.554083995] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.5644190 [decision_node-7] [INFO] [1750179367.563790421] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.5745680 [decision_node-7] [INFO] [1750179367.573794770] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.5845346 [decision_node-7] [INFO] [1750179367.583932434] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.5942869 [decision_node-7] [INFO] [1750179367.593669249] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.6046233 [decision_node-7] [INFO] [1750179367.603829930] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.6152902 [decision_node-7] [INFO] [1750179367.614573515] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.6243138 [decision_node-7] [INFO] [1750179367.623647205] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.6349666 [decision_node-7] [INFO] [1750179367.634280754] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.6446476 [decision_node-7] [INFO] [1750179367.644059976] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.6545372 [decision_node-7] [INFO] [1750179367.653878827] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.6646402 [decision_node-7] [INFO] [1750179367.663843492] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.6746194 [decision_node-7] [INFO] [1750179367.673928952] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.6842539 [decision_node-7] [INFO] [1750179367.683643063] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.6963689 [decision_node-7] [INFO] [1750179367.695724545] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.7047701 [decision_node-7] [INFO] [1750179367.704166666] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.7140117 [decision_node-7] [INFO] [1750179367.713413151] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.7254713 [decision_node-7] [INFO] [1750179367.724522307] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.7340727 [decision_node-7] [INFO] [1750179367.733482369] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.7440355 [decision_node-7] [INFO] [1750179367.743444848] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.7541816 [decision_node-7] [INFO] [1750179367.753577993] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.7640820 [decision_node-7] [INFO] [1750179367.763485418] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.7744806 [decision_node-7] [INFO] [1750179367.773822561] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.7819998 [illuminance_pub-2] [INFO] [1750179367.779433556] [illuminance_sensor]: RAW=232 → 90.98039215686275%
+1750179367.7885535 [decision_node-7] [INFO] [1750179367.787962120] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.7959313 [decision_node-7] [INFO] [1750179367.795287194] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.8049855 [decision_node-7] [INFO] [1750179367.804269181] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.8146608 [decision_node-7] [INFO] [1750179367.814037848] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.8246202 [decision_node-7] [INFO] [1750179367.823975013] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.8341255 [decision_node-7] [INFO] [1750179367.833468126] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.8442836 [decision_node-7] [INFO] [1750179367.843657733] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.8541360 [decision_node-7] [INFO] [1750179367.853495769] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.8642616 [decision_node-7] [INFO] [1750179367.863648785] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.8743067 [decision_node-7] [INFO] [1750179367.873700523] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.8845968 [decision_node-7] [INFO] [1750179367.883965556] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.8940904 [decision_node-7] [INFO] [1750179367.893480057] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.9043238 [decision_node-7] [INFO] [1750179367.903718572] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.9141645 [decision_node-7] [INFO] [1750179367.913564034] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.9243939 [decision_node-7] [INFO] [1750179367.923731530] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.9343667 [decision_node-7] [INFO] [1750179367.933695362] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.9444575 [decision_node-7] [INFO] [1750179367.943785118] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.9543798 [decision_node-7] [INFO] [1750179367.953746561] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.9644642 [decision_node-7] [INFO] [1750179367.963804188] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.9743917 [decision_node-7] [INFO] [1750179367.973758705] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.9847331 [decision_node-7] [INFO] [1750179367.984054571] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179367.9944015 [decision_node-7] [INFO] [1750179367.993741386] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.0044477 [decision_node-7] [INFO] [1750179368.003802013] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.0143669 [decision_node-7] [INFO] [1750179368.013746030] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.0243995 [decision_node-7] [INFO] [1750179368.023768009] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.0343878 [decision_node-7] [INFO] [1750179368.033725192] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.0442946 [decision_node-7] [INFO] [1750179368.043694098] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.0544674 [decision_node-7] [INFO] [1750179368.053872187] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.0641263 [decision_node-7] [INFO] [1750179368.063511910] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.0750661 [decision_node-7] [INFO] [1750179368.073964293] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.0845284 [decision_node-7] [INFO] [1750179368.083842440] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.0943010 [decision_node-7] [INFO] [1750179368.093688087] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.1046240 [decision_node-7] [INFO] [1750179368.103971472] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.1141675 [decision_node-7] [INFO] [1750179368.113564380] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.1242533 [decision_node-7] [INFO] [1750179368.123615267] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.1342342 [decision_node-7] [INFO] [1750179368.133608728] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.1443768 [decision_node-7] [INFO] [1750179368.143741817] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.1539259 [decision_node-7] [INFO] [1750179368.153344503] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.1644568 [decision_node-7] [INFO] [1750179368.163815849] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.1743944 [decision_node-7] [INFO] [1750179368.173736107] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.1840873 [decision_node-7] [INFO] [1750179368.183521162] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.1940925 [decision_node-7] [INFO] [1750179368.193403753] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.2056494 [decision_node-7] [INFO] [1750179368.205008128] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.2147217 [decision_node-7] [INFO] [1750179368.214085781] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.2247939 [decision_node-7] [INFO] [1750179368.224048631] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.2347925 [decision_node-7] [INFO] [1750179368.234079888] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.2445052 [decision_node-7] [INFO] [1750179368.243853980] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.2546053 [decision_node-7] [INFO] [1750179368.253948107] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.2646503 [decision_node-7] [INFO] [1750179368.263802384] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.2746577 [decision_node-7] [INFO] [1750179368.274021584] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.2845337 [decision_node-7] [INFO] [1750179368.283857879] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.2949891 [decision_node-7] [INFO] [1750179368.294303392] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.3045485 [decision_node-7] [INFO] [1750179368.303910078] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.3144891 [decision_node-7] [INFO] [1750179368.313865632] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.3245063 [decision_node-7] [INFO] [1750179368.323803945] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.3342690 [decision_node-7] [INFO] [1750179368.333571759] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.3446555 [decision_node-7] [INFO] [1750179368.343916458] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.3546979 [decision_node-7] [INFO] [1750179368.354046252] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.3644032 [decision_node-7] [INFO] [1750179368.363795048] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.3742318 [decision_node-7] [INFO] [1750179368.373625917] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.3843055 [decision_node-7] [INFO] [1750179368.383657878] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.3943768 [decision_node-7] [INFO] [1750179368.393747134] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.4043400 [decision_node-7] [INFO] [1750179368.403740558] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.4139338 [decision_node-7] [INFO] [1750179368.413348540] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.4239225 [decision_node-7] [INFO] [1750179368.423340668] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.4339185 [decision_node-7] [INFO] [1750179368.433328388] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.4440572 [decision_node-7] [INFO] [1750179368.443473144] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.4539099 [decision_node-7] [INFO] [1750179368.453313347] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.4639127 [decision_node-7] [INFO] [1750179368.463334289] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.4739156 [decision_node-7] [INFO] [1750179368.473327250] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.4839139 [decision_node-7] [INFO] [1750179368.483324229] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.4941728 [decision_node-7] [INFO] [1750179368.493572799] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.5044963 [decision_node-7] [INFO] [1750179368.503852740] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.5143232 [decision_node-7] [INFO] [1750179368.513664461] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.5243948 [decision_node-7] [INFO] [1750179368.523765143] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.5344734 [decision_node-7] [INFO] [1750179368.533848752] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.5444841 [decision_node-7] [INFO] [1750179368.543856009] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.5545373 [decision_node-7] [INFO] [1750179368.553900969] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.5645039 [decision_node-7] [INFO] [1750179368.563880467] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.5746551 [decision_node-7] [INFO] [1750179368.574015909] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.5845997 [decision_node-7] [INFO] [1750179368.583977370] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.5944843 [decision_node-7] [INFO] [1750179368.593823591] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.6046674 [decision_node-7] [INFO] [1750179368.604032347] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.6145709 [decision_node-7] [INFO] [1750179368.613890401] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.6246440 [decision_node-7] [INFO] [1750179368.624018324] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.6346972 [decision_node-7] [INFO] [1750179368.634035488] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.6447968 [decision_node-7] [INFO] [1750179368.644160967] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.6547294 [decision_node-7] [INFO] [1750179368.654058391] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.6647522 [decision_node-7] [INFO] [1750179368.664118074] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.6747327 [decision_node-7] [INFO] [1750179368.674087109] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.6851463 [decision_node-7] [INFO] [1750179368.684380512] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.6952989 [decision_node-7] [INFO] [1750179368.694468139] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.7053161 [decision_node-7] [INFO] [1750179368.704503118] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.7193539 [decision_node-7] [INFO] [1750179368.717422131] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.7306654 [decision_node-7] [INFO] [1750179368.729998424] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.7372103 [decision_node-7] [INFO] [1750179368.736501930] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.7463882 [decision_node-7] [INFO] [1750179368.745669675] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.7558806 [decision_node-7] [INFO] [1750179368.755167287] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.7653811 [decision_node-7] [INFO] [1750179368.764653511] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.7751536 [decision_node-7] [INFO] [1750179368.774322882] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.7835569 [illuminance_pub-2] [INFO] [1750179368.780584297] [illuminance_sensor]: RAW=232 → 90.98039215686275%
+1750179368.7902710 [decision_node-7] [INFO] [1750179368.789599451] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.7968271 [decision_node-7] [INFO] [1750179368.796129772] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.8061752 [decision_node-7] [INFO] [1750179368.805413404] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.8157270 [decision_node-7] [INFO] [1750179368.814994813] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.8251972 [decision_node-7] [INFO] [1750179368.824472500] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.8351533 [decision_node-7] [INFO] [1750179368.834369980] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.8450480 [decision_node-7] [INFO] [1750179368.844304386] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.8551137 [decision_node-7] [INFO] [1750179368.854328643] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.8651531 [decision_node-7] [INFO] [1750179368.864426455] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.8752093 [decision_node-7] [INFO] [1750179368.874380157] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.8856595 [decision_node-7] [INFO] [1750179368.884512691] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.8955884 [decision_node-7] [INFO] [1750179368.894838167] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.9052527 [decision_node-7] [INFO] [1750179368.904488557] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.9150920 [decision_node-7] [INFO] [1750179368.914304797] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.9251220 [decision_node-7] [INFO] [1750179368.924412331] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.9349635 [decision_node-7] [INFO] [1750179368.934178757] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.9449766 [decision_node-7] [INFO] [1750179368.944249050] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.9550073 [decision_node-7] [INFO] [1750179368.954229363] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.9650311 [decision_node-7] [INFO] [1750179368.964326231] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.9748909 [decision_node-7] [INFO] [1750179368.974130471] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.9847291 [decision_node-7] [INFO] [1750179368.984055562] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179368.9949884 [decision_node-7] [INFO] [1750179368.994209984] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.0049264 [decision_node-7] [INFO] [1750179369.004259593] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.0145960 [decision_node-7] [INFO] [1750179369.013934945] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.0249453 [decision_node-7] [INFO] [1750179369.024267144] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.0343542 [decision_node-7] [INFO] [1750179369.033709646] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.0461750 [decision_node-7] [INFO] [1750179369.045513223] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.0558007 [decision_node-7] [INFO] [1750179369.055080557] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.0651536 [decision_node-7] [INFO] [1750179369.064418616] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.0750892 [decision_node-7] [INFO] [1750179369.074247485] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.0856011 [decision_node-7] [INFO] [1750179369.084910219] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.0947194 [decision_node-7] [INFO] [1750179369.093994835] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.1048214 [decision_node-7] [INFO] [1750179369.104077184] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.1162803 [decision_node-7] [INFO] [1750179369.115591818] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.1254578 [decision_node-7] [INFO] [1750179369.124761730] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.1346116 [decision_node-7] [INFO] [1750179369.133999697] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.1447496 [decision_node-7] [INFO] [1750179369.144135045] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.1547866 [decision_node-7] [INFO] [1750179369.154039729] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.1644320 [decision_node-7] [INFO] [1750179369.163784599] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.1753120 [decision_node-7] [INFO] [1750179369.174601628] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.1850588 [decision_node-7] [INFO] [1750179369.184419905] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.1947281 [decision_node-7] [INFO] [1750179369.194036331] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.2051358 [decision_node-7] [INFO] [1750179369.204400364] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.2142131 [decision_node-7] [INFO] [1750179369.213574553] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.2276666 [decision_node-7] [INFO] [1750179369.226804471] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.2396622 [decision_node-7] [INFO] [1750179369.238021644] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.2526393 [decision_node-7] [INFO] [1750179369.251534449] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.2598948 [decision_node-7] [INFO] [1750179369.258105269] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.2716312 [decision_node-7] [INFO] [1750179369.270722673] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.2803080 [decision_node-7] [INFO] [1750179369.279298756] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.2927582 [decision_node-7] [INFO] [1750179369.291167721] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.3007529 [decision_node-7] [INFO] [1750179369.299796581] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.3117099 [decision_node-7] [INFO] [1750179369.310841089] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.3195882 [decision_node-7] [INFO] [1750179369.318667752] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.3288646 [decision_node-7] [INFO] [1750179369.327669591] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.3387337 [decision_node-7] [INFO] [1750179369.337127926] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.3474524 [decision_node-7] [INFO] [1750179369.346456447] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.3567901 [decision_node-7] [INFO] [1750179369.356009375] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.3693047 [decision_node-7] [INFO] [1750179369.367883025] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.3791091 [decision_node-7] [INFO] [1750179369.377215213] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.3904662 [decision_node-7] [INFO] [1750179369.389807265] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.3973837 [decision_node-7] [INFO] [1750179369.396547177] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.4063182 [decision_node-7] [INFO] [1750179369.405598071] [decision_node]: [INFO] send buzzer request: 5 seconds
+1750179369.4161823 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1750179369.5056405 [decision_node-7] Traceback (most recent call last):
+1750179369.5069489 [decision_node-7]   File "/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/decision_pkg/decision_node", line 33, in <module>
+1750179369.5104589 [light_srv-4] Traceback (most recent call last):
+1750179369.5113881 [light_srv-4]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/light_srv", line 33, in <module>
+1750179369.5120740 [light_srv-4]     sys.exit(load_entry_point('actuator_pkg==0.0.0', 'console_scripts', 'light_srv')())
+1750179369.5127497 [light_srv-4]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750179369.5133770 [light_srv-4]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/light_service.py", line 50, in main
+1750179369.5139799 [light_srv-4]     rclpy.spin(node)
+1750179369.5145924 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750179369.5152338 [light_srv-4]     executor.spin_once()
+1750179369.5156107 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750179369.5159638 [light_srv-4]     self._spin_once_impl(timeout_sec)
+1750179369.5167010 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 740, in _spin_once_impl
+1750179369.5172181 [light_srv-4]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+1750179369.5210695 [decision_node-7]     sys.exit(load_entry_point('decision_pkg==0.0.0', 'console_scripts', 'decision_node')())
+1750179369.5228407 [decision_node-7]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750179369.5236552 [decision_node-7]   File "/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/python3.11/site-packages/decision_pkg/decision_node.py", line 112, in main
+1750179369.5243795 [decision_node-7]     rclpy.spin(node)
+1750179369.5252638 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750179369.5259924 [decision_node-7]     executor.spin_once()
+1750179369.5266805 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750179369.5283697 [decision_node-7]     self._spin_once_impl(timeout_sec)
+1750179369.5296748 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 746, in _spin_once_impl
+1750179369.5309520 [decision_node-7]     handler()
+1750179369.5316768 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/task.py", line 254, in __call__
+1750179369.5323067 [decision_node-7]     self._handler.send(None)
+1750179369.5329044 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 447, in handler
+1750179369.5336676 [decision_node-7]     await call_coroutine(entity, arg)
+1750179369.5345671 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 372, in _execute_subscription
+1750179369.5357025 [decision_node-7]     await await_or_execute(sub.callback, msg)
+1750179369.5371323 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 107, in await_or_execute
+1750179369.5386066 [decision_node-7]     return callback(*args)
+1750179369.5395319 [decision_node-7]            ^^^^^^^^^^^^^^^
+1750179369.5403533 [decision_node-7]   File "/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/python3.11/site-packages/decision_pkg/decision_node.py", line 60, in imu_listener_callback
+1750179369.5412049 [decision_node-7]     self.get_logger().info('[INFO] send buzzer request: 5 seconds')
+1750179369.5420103 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/impl/rcutils_logger.py", line 329, in info
+1750179369.5429296 [decision_node-7]     return self.log(message, LoggingSeverity.INFO, **kwargs)
+1750179369.5441966 [decision_node-7]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750179369.5454650 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/impl/rcutils_logger.py", line 287, in log
+1750179369.5466871 [decision_node-7]     caller_id = CallerId()
+1750179369.5479176 [decision_node-7]                 ^^^^^^^^^^
+1750179369.5490692 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/impl/rcutils_logger.py", line 63, in __new__
+1750179369.5501547 [decision_node-7]     file_path=os.path.abspath(inspect.getframeinfo(frame).filename),
+1750179369.5512195 [decision_node-7]                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750179369.5521758 [decision_node-7]   File "/usr/lib/python3.11/inspect.py", line 1676, in getframeinfo
+1750179369.5530949 [decision_node-7]     positions = _get_code_position(frame.f_code, frame.f_lasti)
+1750179369.5539489 [decision_node-7]                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750179369.5548406 [decision_node-7]   File "/usr/lib/python3.11/inspect.py", line 1660, in _get_code_position
+1750179369.5564296 [decision_node-7]     return next(itertools.islice(positions_gen, instruction_index // 2, None))
+1750179369.5576828 [decision_node-7]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750179369.5590906 [decision_node-7] KeyboardInterrupt
+1750179369.5635178 [light_srv-4]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750179369.5645120 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+1750179369.5653975 [light_srv-4]     return next(self._cb_iter)
+1750179369.5662570 [light_srv-4]            ^^^^^^^^^^^^^^^^^^^
+1750179369.5673873 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+1750179369.5689001 [light_srv-4]     wait_set.wait(timeout_nsec)
+1750179369.5700805 [light_srv-4] KeyboardInterrupt
+1750179369.5733044 [vision_node-8] Traceback (most recent call last):
+1750179369.5748103 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/vision_pkg/vision_node", line 33, in <module>
+1750179369.5757334 [vision_node-8]     sys.exit(load_entry_point('vision_pkg==0.0.0', 'console_scripts', 'vision_node')())
+1750179369.5767906 [vision_node-8]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750179369.5779123 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/vision_pkg/vision_node", line 25, in importlib_load_entry_point
+1750179369.5789957 [vision_node-8]     return next(matches).load()
+1750179369.5802405 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^
+1750179369.5813408 [vision_node-8]   File "/usr/lib/python3.11/importlib/metadata/__init__.py", line 202, in load
+1750179369.5823874 [vision_node-8]     module = import_module(match.group('module'))
+1750179369.5835845 [vision_node-8]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750179369.5848935 [vision_node-8]   File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+1750179369.5864339 [vision_node-8]     return _bootstrap._gcd_import(name[level:], package, level)
+1750179369.5876567 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750179369.5885012 [vision_node-8]   File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+1750179369.5895302 [vision_node-8]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1750179369.5905240 [vision_node-8]   File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+1750179369.5918164 [vision_node-8]   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+1750179369.5931499 [vision_node-8]   File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+1750179369.5946891 [vision_node-8]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+1750179369.5960763 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/object_detection_node.py", line 4, in <module>
+1750179369.5975728 [vision_node-8]     from .yolo_detector import YoloDetector
+1750179369.5988364 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolo_detector.py", line 9, in <module>
+1750179369.6004508 [vision_node-8]     from models.common import DetectMultiBackend
+1750179369.6017013 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolov5/models/common.py", line 39, in <module>
+1750179369.6029522 [vision_node-8]     from utils.dataloaders import exif_transpose, letterbox
+1750179369.6042070 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolov5/utils/dataloaders.py", line 23, in <module>
+1750179369.6055067 [vision_node-8]     import torchvision
+1750179369.6072822 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torchvision/__init__.py", line 10, in <module>
+1750179369.6085699 [vision_node-8]     from torchvision import _meta_registrations, datasets, io, models, ops, transforms, utils  # usort:skip
+1750179369.6098325 [vision_node-8]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750179369.6111619 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torchvision/datasets/__init__.py", line 1, in <module>
+1750179369.6127553 [vision_node-8]     from ._optical_flow import FlyingChairs, FlyingThings3D, HD1K, KittiFlow, Sintel
+1750179369.6137733 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torchvision/datasets/_optical_flow.py", line 12, in <module>
+1750179369.6153700 [vision_node-8]     from ..io.image import decode_png, read_file
+1750179369.6165442 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torchvision/io/__init__.py", line 35, in <module>
+1750179369.6178930 [vision_node-8]     from .video import read_video, read_video_timestamps, write_video
+1750179369.6191676 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torchvision/io/video.py", line 17, in <module>
+1750179369.6207154 [vision_node-8]     import av
+1750179369.6222084 [vision_node-8]   File "/usr/lib/python3/dist-packages/av/__init__.py", line 27, in <module>
+1750179369.6236215 [vision_node-8]     from av.audio.fifo import AudioFifo
+1750179369.6251042 [vision_node-8]   File "/usr/lib/python3/dist-packages/av/audio/__init__.py", line 1, in <module>
+1750179369.6264622 [vision_node-8]     from .frame import AudioFrame
+1750179369.6279159 [vision_node-8]   File "av/audio/frame.pyx", line 1, in init av.audio.frame
+1750179369.6290803 [vision_node-8]   File "av/frame.pyx", line 1, in init av.frame
+1750179369.6304843 [vision_node-8]   File "/usr/lib/python3/dist-packages/av/codec/__init__.py", line 1, in <module>
+1750179369.6317656 [vision_node-8]     from .codec import Capabilities, Codec, Properties, codec_descriptor, codecs_available
+1750179369.6331604 [vision_node-8]   File "av/codec/codec.pyx", line 1, in init av.codec.codec
+1750179369.6370585 [battery_pub-3] Traceback (most recent call last):
+1750179369.6386132 [battery_pub-3]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/battery_pub", line 33, in <module>
+1750179369.6399817 [battery_pub-3]     sys.exit(load_entry_point('sensor_pkg==0.0.0', 'console_scripts', 'battery_pub')())
+1750179369.6411717 [battery_pub-3]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750179369.6423271 [battery_pub-3]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/battery_node.py", line 62, in main
+1750179369.6437430 [battery_pub-3]     rclpy.spin(node)
+1750179369.6448510 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750179369.6459560 [battery_pub-3]     executor.spin_once()
+1750179369.6473162 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750179369.6484940 [battery_pub-3]     self._spin_once_impl(timeout_sec)
+1750179369.6496964 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 740, in _spin_once_impl
+1750179369.6508770 [battery_pub-3]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+1750179369.6522067 [battery_pub-3]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750179369.6537375 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+1750179369.6552017 [battery_pub-3]     return next(self._cb_iter)
+1750179369.6564124 [battery_pub-3]            ^^^^^^^^^^^^^^^^^^^
+1750179369.6578820 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+1750179369.6591341 [battery_pub-3]     wait_set.wait(timeout_nsec)
+1750179369.6604896 [battery_pub-3] KeyboardInterrupt
+1750179369.6634376 [vision_node-8]   File "/usr/lib/python3/dist-packages/av/video/__init__.py", line 1, in <module>
+1750179369.6650233 [vision_node-8]     from .frame import VideoFrame
+1750179369.6664507 [vision_node-8]   File "av/video/frame.pyx", line 1, in init av.video.frame
+1750179369.6680281 [vision_node-8]   File "av/codec/context.pyx", line 1, in init av.codec.context
+1750179369.6692014 [vision_node-8]   File "/usr/lib/python3/dist-packages/av/container/__init__.py", line 1, in <module>
+1750179369.6725512 [buzzer_srv-5] Traceback (most recent call last):
+1750179369.6740162 [buzzer_srv-5]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/buzzer_srv", line 33, in <module>
+1750179369.6754582 [buzzer_srv-5]     sys.exit(load_entry_point('actuator_pkg==0.0.0', 'console_scripts', 'buzzer_srv')())
+1750179369.6771953 [buzzer_srv-5]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750179369.6784916 [buzzer_srv-5]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/buzzer_service.py", line 51, in main
+1750179369.6798258 [buzzer_srv-5]     rclpy.shutdown()
+1750179369.6808927 [buzzer_srv-5]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 130, in shutdown
+1750179369.6896608 [illuminance_pub-2] Traceback (most recent call last):
+1750179369.6934838 [illuminance_pub-2]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/illuminance_pub", line 33, in <module>
+1750179369.7038238 [illuminance_pub-2]     sys.exit(load_entry_point('sensor_pkg==0.0.0', 'console_scripts', 'illuminance_pub')())
+1750179369.7051415 [illuminance_pub-2]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750179369.7064598 [illuminance_pub-2]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/illuminance_node.py", line 71, in main
+1750179369.7201169 [illuminance_pub-2]     rclpy.shutdown()
+1750179369.7215521 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 130, in shutdown
+1750179369.7316477 [illuminance_pub-2]     _shutdown(context=context)
+1750179369.7328703 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/utilities.py", line 58, in shutdown
+1750179369.7450101 [vision_node-8]     from .core import Container, Flags, open
+1750179369.7556729 [vision_node-8]   File "av/container/core.pyx", line 1, in init av.container.core
+1750179369.7566121 [vision_node-8]   File "av/packet.pyx", line 1, in init av.packet
+1750179369.7650719 [imu_pub-1] Traceback (most recent call last):
+1750179369.7796898 [imu_pub-1]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/imu_node.py", line 129, in main
+1750179369.7807522 [imu_pub-1]     rclpy.spin(node)
+1750179369.7878668 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750179369.7958014 [imu_pub-1]     executor.spin_once()
+1750179369.7969151 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750179369.7979407 [imu_pub-1]     self._spin_once_impl(timeout_sec)
+1750179369.7990937 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 740, in _spin_once_impl
+1750179369.8009462 [imu_pub-1]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+1750179369.8026938 [imu_pub-1]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750179369.8045676 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+1750179369.8062341 [imu_pub-1]     return next(self._cb_iter)
+1750179369.8079863 [imu_pub-1]            ^^^^^^^^^^^^^^^^^^^
+1750179369.8098085 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+1750179369.8130515 [buzzer_srv-5]     _shutdown(context=context)
+1750179369.8146741 [buzzer_srv-5]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/utilities.py", line 58, in shutdown
+1750179369.8163190 [buzzer_srv-5]     return context.shutdown()
+1750179369.8179815 [buzzer_srv-5]            ^^^^^^^^^^^^^^^^^^
+1750179369.8195386 [buzzer_srv-5]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/context.py", line 102, in shutdown
+1750179369.8213260 [buzzer_srv-5]     self.__context.shutdown()
+1750179369.8229432 [buzzer_srv-5] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at /home/dongjae/ros2_humble_ws/src/ros2/rcl/rcl/src/rcl/init.c:241
+1750179369.8265736 [illuminance_pub-2]     return context.shutdown()
+1750179369.8283641 [illuminance_pub-2]            ^^^^^^^^^^^^^^^^^^
+1750179369.8297656 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/context.py", line 102, in shutdown
+1750179369.8316019 [illuminance_pub-2]     self.__context.shutdown()
+1750179369.8334258 [illuminance_pub-2] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at /home/dongjae/ros2_humble_ws/src/ros2/rcl/rcl/src/rcl/init.c:241
+1750179369.8360028 [imu_pub-1]     wait_set.wait(timeout_nsec)
+1750179369.8374360 [imu_pub-1] KeyboardInterrupt
+1750179369.8384962 [imu_pub-1] 
+1750179369.8401344 [imu_pub-1] During handling of the above exception, another exception occurred:
+1750179369.8417788 [imu_pub-1] 
+1750179369.8431244 [imu_pub-1] Traceback (most recent call last):
+1750179369.8447263 [imu_pub-1]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/imu_pub", line 33, in <module>
+1750179369.8464727 [imu_pub-1]     sys.exit(load_entry_point('sensor_pkg==0.0.0', 'console_scripts', 'imu_pub')())
+1750179369.8479941 [imu_pub-1]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750179369.8496740 [imu_pub-1]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/imu_node.py", line 132, in main
+1750179369.8511360 [imu_pub-1]     rclpy.shutdown()
+1750179369.8527076 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 130, in shutdown
+1750179369.8541164 [imu_pub-1]     _shutdown(context=context)
+1750179369.8556678 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/utilities.py", line 58, in shutdown
+1750179369.8567238 [imu_pub-1]     return context.shutdown()
+1750179369.8577733 [imu_pub-1]            ^^^^^^^^^^^^^^^^^^
+1750179369.8593018 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/context.py", line 102, in shutdown
+1750179369.8611593 [imu_pub-1]     self.__context.shutdown()
+1750179369.8624890 [imu_pub-1] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at /home/dongjae/ros2_humble_ws/src/ros2/rcl/rcl/src/rcl/init.c:241
+1750179369.8661735 [vision_node-8]   File "av/sidedata/sidedata.pyx", line 1, in init av.sidedata.sidedata
+1750179369.8672595 [vision_node-8]   File "av/container/streams.pyx", line 2, in init av.container.streams
+1750179369.8688030 [vision_node-8]   File "av/stream.pyx", line 1, in init av.stream
+1750179369.8714447 [vision_node-8]   File "<frozen importlib._bootstrap>", line 216, in _lock_unlock_module
+1750179369.8730056 [vision_node-8] KeyboardInterrupt
+1750179370.0204818 [ERROR] [light_srv-4]: process has died [pid 11830, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/light_srv --ros-args -r __node:=light_actuator'].
+1750179370.0606000 [ERROR] [buzzer_srv-5]: process has died [pid 11832, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/buzzer_srv --ros-args -r __node:=buzzer_actuator'].
+1750179370.0735972 [ERROR] [imu_pub-1]: process has died [pid 11824, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/imu_pub --ros-args -r __node:=imu_sensor'].
+1750179370.1500480 [ERROR] [decision_node-7]: process has died [pid 11836, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/decision_pkg/decision_node --ros-args -r __node:=decision_node'].
+1750179370.1512058 [ERROR] [battery_pub-3]: process has died [pid 11828, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/battery_pub --ros-args -r __node:=battery_sensor'].
+1750179370.2645054 [ERROR] [illuminance_pub-2]: process has died [pid 11826, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/illuminance_pub --ros-args -r __node:=illuminance_sensor'].
+1750179370.8526723 [ERROR] [vision_node-8]: process has died [pid 11838, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/vision_pkg/vision_node --ros-args -r __node:=vision_node'].
+1750179374.4990878 [ERROR] [ble_node-6]: process[ble_node-6] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+1750179374.5004456 [INFO] [ble_node-6]: sending signal 'SIGTERM' to process[ble_node-6]
+1750179379.5040894 [ERROR] [ble_node-6]: process[ble_node-6] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+1750179379.5077777 [INFO] [ble_node-6]: sending signal 'SIGKILL' to process[ble_node-6]
+1750179379.5355337 [ERROR] [ble_node-6]: process has died [pid 11834, exit code -9, cmd '/home/dongjae/ros2_kart_ws/install/app_interface_pkg/lib/app_interface_pkg/ble_node --ros-args -r __node:=ble_node'].

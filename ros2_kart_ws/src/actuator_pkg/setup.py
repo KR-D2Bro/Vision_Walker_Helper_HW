@@ -11,7 +11,11 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
     ],
-    install_requires=['setuptools'],
+    install_requires=[
+        'setuptools',
+        'rclpy',
+        'RPi.GPIO',
+    ],
     zip_safe=True,
     maintainer='dongjae',
     maintainer_email='32204045@dankook.ac.kr',
@@ -20,6 +24,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'light_srv = actuator_pkg.light_service:main',
+            'buzzer_srv = actuator_pkg.buzzer_service:main',
         ],
     },
 )

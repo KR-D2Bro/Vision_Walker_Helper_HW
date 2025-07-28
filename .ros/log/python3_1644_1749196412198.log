@@ -1,0 +1,10 @@
+[INFO] [1749196412.390407255] [ble_gatt_server]: Loaded config from disk
+[INFO] [1749196412.424978140] [ble_gatt_server]: Using adapter: D8:3A:DD:F2:4C:84
+[INFO] [1749196412.479853245] [ble_gatt_server]: BLE GATT Server started
+[INFO] [1749196412.484235176] [ble_gatt_server]: Config service added
+[INFO] [1749196426.682062524] [ble_gatt_server]: Central connected: <bluezero.device.Device object at 0x7f73801b10>, auth check start
+[INFO] [1749196437.858705556] [ble_gatt_server]: Read secret key success : mysecret
+[INFO] [1749196437.865087105] [ble_gatt_server]: mysecret : mysecret
+[INFO] [1749196437.897788952] [ble_gatt_server]: [ble_gatt_server] Authenticated after 11.2s, auth success
+[INFO] [1749196441.774578534] [ble_gatt_server]: light_read: 1
+[INFO] [1749196471.114028243] [ble_gatt_server]: alarm_read: 0

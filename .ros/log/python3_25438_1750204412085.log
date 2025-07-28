@@ -1,0 +1,118 @@
+[INFO] [1750204412.521835462] [ble_node]: Using adapter: D8:3A:DD:F2:4C:84
+[INFO] [1750204412.602635084] [ble_node]: BLE GATT Server started
+[INFO] [1750204412.608702739] [ble_node]: Config service added
+[INFO] [1750204431.356285836] [ble_node]: Central disconnected: <bluezero.device.Device object at 0x7f72d21050>
+[INFO] [1750204436.539758131] [ble_node]: Central connected: <bluezero.device.Device object at 0x7f4fed7bd0>, auth check start
+[INFO] [1750204441.439045933] [ble_node]: Central disconnected: <bluezero.device.Device object at 0x7f4ff46dd0>
+[INFO] [1750204444.007140299] [ble_node]: Central connected: <bluezero.device.Device object at 0x7f4ff478d0>, auth check start
+[INFO] [1750204445.262913413] [ble_node]: Read secret key success : mysecret
+[INFO] [1750204445.281851006] [ble_node]: mysecret : mysecret
+[INFO] [1750204445.355614707] [ble_node]: [ble_gatt_server] Authenticated after 1.3s, auth success
+[INFO] [1750204448.328290623] [ble_node]: alarm_write:1
+[INFO] [1750204448.331118768] [ble_node]: Config Published: [True, True, 90]
+[INFO] [1750204464.626480959] [ble_node]: alarm_write:0
+[INFO] [1750204464.637363300] [ble_node]: Config Published: [True, False, 90]
+[INFO] [1750204472.918790919] [ble_node]: alarm_write:1
+[INFO] [1750204472.935394494] [ble_node]: Config Published: [True, True, 90]
+[INFO] [1750204479.999012496] [ble_node]: alarm_write:0
+[INFO] [1750204480.001398478] [ble_node]: Config Published: [True, False, 90]
+[INFO] [1750204483.506365022] [ble_node]: alarm_write:1
+[INFO] [1750204483.509613312] [ble_node]: Config Published: [True, True, 90]
+[INFO] [1750204492.459018982] [ble_node]: alarm_write:0
+[INFO] [1750204492.464951288] [ble_node]: Config Published: [True, False, 90]
+[INFO] [1750204497.081381362] [ble_node]: alarm_write:1
+[INFO] [1750204497.083743436] [ble_node]: Config Published: [True, True, 90]
+[INFO] [1750204501.837605645] [ble_node]: alarm_write:0
+[INFO] [1750204501.840051071] [ble_node]: Config Published: [True, False, 90]
+[INFO] [1750204517.676125666] [ble_node]: volume_write:10
+[INFO] [1750204517.678772609] [ble_node]: Config Published: [True, False, 10]
+[INFO] [1750204517.827877744] [ble_node]: volume_write:20
+[INFO] [1750204517.866315357] [ble_node]: Config Published: [True, False, 20]
+[INFO] [1750204517.976648382] [ble_node]: volume_write:30
+[INFO] [1750204517.978942976] [ble_node]: Config Published: [True, False, 30]
+[INFO] [1750204518.156492375] [ble_node]: volume_write:40
+[INFO] [1750204518.171169337] [ble_node]: Config Published: [True, False, 40]
+[INFO] [1750204518.307070093] [ble_node]: volume_write:50
+[INFO] [1750204518.314752719] [ble_node]: Config Published: [True, False, 50]
+[INFO] [1750204518.487774135] [ble_node]: volume_write:60
+[INFO] [1750204518.490901055] [ble_node]: Config Published: [True, False, 60]
+[INFO] [1750204518.638301074] [ble_node]: volume_write:70
+[INFO] [1750204518.646743639] [ble_node]: Config Published: [True, False, 70]
+[INFO] [1750204518.830156624] [ble_node]: volume_write:80
+[INFO] [1750204518.859842507] [ble_node]: Config Published: [True, False, 80]
+[INFO] [1750204520.510261427] [ble_node]: alarm_write:1
+[INFO] [1750204520.518050738] [ble_node]: Config Published: [True, True, 80]
+[INFO] [1750204525.027230446] [ble_node]: volume_write:70
+[INFO] [1750204525.039714258] [ble_node]: Config Published: [True, True, 70]
+[INFO] [1750204525.178558789] [ble_node]: volume_write:60
+[INFO] [1750204525.189606908] [ble_node]: Config Published: [True, True, 60]
+[INFO] [1750204525.342298760] [ble_node]: volume_write:50
+[INFO] [1750204525.357576884] [ble_node]: Config Published: [True, True, 50]
+[INFO] [1750204525.935742075] [ble_node]: volume_write:40
+[INFO] [1750204525.950208520] [ble_node]: Config Published: [True, True, 40]
+[INFO] [1750204526.093257223] [ble_node]: volume_write:30
+[INFO] [1750204526.106020921] [ble_node]: Config Published: [True, True, 30]
+[INFO] [1750204526.228758150] [ble_node]: volume_write:20
+[INFO] [1750204526.235828355] [ble_node]: Config Published: [True, True, 20]
+[INFO] [1750204526.471698238] [ble_node]: volume_write:30
+[INFO] [1750204526.485828389] [ble_node]: Config Published: [True, True, 30]
+[INFO] [1750204526.648082353] [ble_node]: volume_write:40
+[INFO] [1750204526.651743602] [ble_node]: Config Published: [True, True, 40]
+[INFO] [1750204526.828013348] [ble_node]: volume_write:50
+[INFO] [1750204526.837983772] [ble_node]: Config Published: [True, True, 50]
+[INFO] [1750204527.008770485] [ble_node]: volume_write:60
+[INFO] [1750204527.017656065] [ble_node]: Config Published: [True, True, 60]
+[INFO] [1750204527.277080157] [ble_node]: volume_write:70
+[INFO] [1750204527.282376116] [ble_node]: Config Published: [True, True, 70]
+[INFO] [1750204527.490603340] [ble_node]: volume_write:80
+[INFO] [1750204527.497214975] [ble_node]: Config Published: [True, True, 80]
+[INFO] [1750204527.951640392] [ble_node]: volume_write:70
+[INFO] [1750204527.965496341] [ble_node]: Config Published: [True, True, 70]
+[INFO] [1750204528.116279338] [ble_node]: volume_write:60
+[INFO] [1750204528.119228630] [ble_node]: Config Published: [True, True, 60]
+[INFO] [1750204528.349743424] [ble_node]: volume_write:50
+[INFO] [1750204528.360258640] [ble_node]: Config Published: [True, True, 50]
+[INFO] [1750204528.508988708] [ble_node]: volume_write:40
+[INFO] [1750204528.511328746] [ble_node]: Config Published: [True, True, 40]
+[INFO] [1750204529.145091886] [ble_node]: volume_write:50
+[INFO] [1750204529.156597835] [ble_node]: Config Published: [True, True, 50]
+[INFO] [1750204529.321398614] [ble_node]: volume_write:60
+[INFO] [1750204529.332245679] [ble_node]: Config Published: [True, True, 60]
+[INFO] [1750204529.506389645] [ble_node]: volume_write:70
+[INFO] [1750204529.510913555] [ble_node]: Config Published: [True, True, 70]
+[INFO] [1750204529.647207885] [ble_node]: volume_write:80
+[INFO] [1750204529.666459164] [ble_node]: Config Published: [True, True, 80]
+[INFO] [1750204529.854525079] [ble_node]: volume_write:90
+[INFO] [1750204529.872949439] [ble_node]: Config Published: [True, True, 90]
+[INFO] [1750204529.976948700] [ble_node]: volume_write:100
+[INFO] [1750204529.987137566] [ble_node]: Config Published: [True, True, 100]
+[INFO] [1750204530.277532257] [ble_node]: volume_write:90
+[INFO] [1750204530.287843808] [ble_node]: Config Published: [True, True, 90]
+[INFO] [1750204530.488102871] [ble_node]: volume_write:80
+[INFO] [1750204530.490597926] [ble_node]: Config Published: [True, True, 80]
+[INFO] [1750204530.672479686] [ble_node]: volume_write:70
+[INFO] [1750204530.676409637] [ble_node]: Config Published: [True, True, 70]
+[INFO] [1750204530.847431479] [ble_node]: volume_write:60
+[INFO] [1750204530.864708366] [ble_node]: Config Published: [True, True, 60]
+[INFO] [1750204531.000069407] [ble_node]: volume_write:50
+[INFO] [1750204531.017425811] [ble_node]: Config Published: [True, True, 50]
+[INFO] [1750204531.178202732] [ble_node]: volume_write:40
+[INFO] [1750204531.188041861] [ble_node]: Config Published: [True, True, 40]
+[INFO] [1750204531.342845531] [ble_node]: volume_write:30
+[INFO] [1750204531.356761054] [ble_node]: Config Published: [True, True, 30]
+[INFO] [1750204531.506108414] [ble_node]: volume_write:20
+[INFO] [1750204531.518791317] [ble_node]: Config Published: [True, True, 20]
+[INFO] [1750204531.658173161] [ble_node]: volume_write:10
+[INFO] [1750204531.681385428] [ble_node]: Config Published: [True, True, 10]
+[INFO] [1750204531.929857920] [ble_node]: volume_write:20
+[INFO] [1750204531.935806727] [ble_node]: Config Published: [True, True, 20]
+[INFO] [1750204532.109768566] [ble_node]: volume_write:30
+[INFO] [1750204532.117342490] [ble_node]: Config Published: [True, True, 30]
+[INFO] [1750204532.299134695] [ble_node]: volume_write:40
+[INFO] [1750204532.307071060] [ble_node]: Config Published: [True, True, 40]
+[INFO] [1750204532.476755321] [ble_node]: volume_write:50
+[INFO] [1750204532.485412458] [ble_node]: Config Published: [True, True, 50]
+[INFO] [1750204532.659168077] [ble_node]: volume_write:60
+[INFO] [1750204532.669781477] [ble_node]: Config Published: [True, True, 60]
+[INFO] [1750204532.834954458] [ble_node]: volume_write:70
+[INFO] [1750204532.849920084] [ble_node]: Config Published: [Tr

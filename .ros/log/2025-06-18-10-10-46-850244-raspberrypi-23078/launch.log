@@ -1,0 +1,301 @@
+1750209046.8561666 [INFO] [launch]: All log files can be found below /home/dongjae/.ros/log/2025-06-18-10-10-46-850244-raspberrypi-23078
+1750209046.8573856 [INFO] [launch]: Default logging verbosity is set to INFO
+1750209047.3535347 [INFO] [imu_pub-1]: process started with pid [23149]
+1750209047.3708527 [INFO] [illuminance_pub-2]: process started with pid [23151]
+1750209047.3718593 [INFO] [battery_pub-3]: process started with pid [23154]
+1750209047.3726716 [INFO] [light_srv-4]: process started with pid [23156]
+1750209047.3784277 [INFO] [buzzer_srv-5]: process started with pid [23158]
+1750209047.3904762 [INFO] [ble_node-6]: process started with pid [23160]
+1750209047.3911822 [INFO] [decision_node-7]: process started with pid [23162]
+1750209047.3917861 [INFO] [vision_node-8]: process started with pid [23164]
+1750209049.4468086 [battery_pub-3] [INFO] [1750209049.431160514] [battery_sensor]: I2C 초기화 성공
+1750209049.4473953 [battery_pub-3] [INFO] [1750209049.434508319] [battery_sensor]: Battery State Publisher started, publishing on /battery_state/data
+1750209051.8205345 [light_srv-4] /home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/light_service.py:16: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+1750209051.8249164 [light_srv-4]   GPIO.setup(LED_PIN1, GPIO.OUT)
+1750209051.8443129 [light_srv-4] /home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/light_service.py:17: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+1750209051.8447547 [light_srv-4]   GPIO.setup(LED_PIN2, GPIO.OUT)
+1750209053.0147579 [illuminance_pub-2] [INFO] [1750209053.012384582] [illuminance_sensor]: Initialized PCF8591 at 0x48
+1750209053.0376086 [buzzer_srv-5] [INFO] [1750209053.036140681] [buzzer_actuator]: 🔔 PWM Buzzer Control Node Started
+1750209053.1151526 [decision_node-7] [INFO] [1750209053.111564418] [decision_node]: Loaded config from disk
+1750209053.6368256 [illuminance_pub-2] [ERROR] [1750209053.631815995] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209053.8845387 [ble_node-6] [INFO] [1750209053.882714528] [ble_node]: Using adapter: D8:3A:DD:F2:4C:84
+1750209053.9653709 [imu_pub-1] [INFO] [1750209053.962232257] [imu_sensor]: I2C-3 초기화 성공
+1750209053.9706767 [imu_pub-1] Traceback (most recent call last):
+1750209053.9744701 [imu_pub-1]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/imu_pub", line 33, in <module>
+1750209053.9828424 [imu_pub-1]     sys.exit(load_entry_point('sensor_pkg==0.0.0', 'console_scripts', 'imu_pub')())
+1750209053.9842114 [imu_pub-1]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750209053.9870131 [imu_pub-1]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/imu_node.py", line 127, in main
+1750209053.9909573 [imu_pub-1]     node = ImuNode()
+1750209054.0018816 [imu_pub-1]            ^^^^^^^^^
+1750209054.0043569 [imu_pub-1]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/imu_node.py", line 26, in __init__
+1750209054.0183623 [imu_pub-1]     self._wakeup_imu()
+1750209054.0193298 [imu_pub-1]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/imu_node.py", line 68, in _wakeup_imu
+1750209054.0270507 [imu_pub-1]     self.bus.write_byte_data(self.addr_imu, 0x6B, 0x00)
+1750209054.0280221 [imu_pub-1]   File "/usr/lib/python3/dist-packages/smbus2/smbus2.py", line 455, in write_byte_data
+1750209054.0292821 [imu_pub-1]     ioctl(self.fd, I2C_SMBUS, msg)
+1750209054.0310400 [imu_pub-1] OSError: [Errno 5] Input/output error
+1750209054.0319557 [ble_node-6] [INFO] [1750209054.012687612] [ble_node]: BLE GATT Server started
+1750209054.0425696 [ble_node-6] [INFO] [1750209054.041416095] [ble_node]: Config service added
+1750209054.3646894 [ERROR] [imu_pub-1]: process has died [pid 23149, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/imu_pub --ros-args -r __node:=imu_sensor'].
+1750209054.6000707 [illuminance_pub-2] [ERROR] [1750209054.599229994] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209055.5999327 [illuminance_pub-2] [ERROR] [1750209055.599273505] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209056.4569931 [decision_node-7] [INFO] [1750209056.445423258] [decision_node]: [INFO] send light request: False
+1750209056.5109696 [light_srv-4] [INFO] [1750209056.510308448] [light_actuator]: 💤 불을 끕니다.
+1750209056.5179179 [light_srv-4] [INFO] [1750209056.517207929] [light_actuator]: 💤 불을 끕니다.
+1750209056.5978510 [illuminance_pub-2] [ERROR] [1750209056.596864751] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209057.5947702 [illuminance_pub-2] [ERROR] [1750209057.593701031] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209058.5965974 [illuminance_pub-2] [ERROR] [1750209058.595964807] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209059.3784866 [battery_pub-3] [WARN] [1750209059.374313400] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750209059.3881869 [battery_pub-3] [INFO] [1750209059.387572398] [battery_sensor]: I2C 초기화 성공
+1750209059.6024110 [illuminance_pub-2] [ERROR] [1750209059.601680889] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209060.5974505 [illuminance_pub-2] [ERROR] [1750209060.596819035] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209061.6011972 [illuminance_pub-2] [ERROR] [1750209061.600450297] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209062.6002095 [illuminance_pub-2] [ERROR] [1750209062.599331971] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209062.6141322 [illuminance_pub-2] [INFO] [1750209062.608960682] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750209062.6264443 [light_srv-4] [INFO] [1750209062.622402754] [light_actuator]: 💤 불을 끕니다.
+1750209062.6328645 [decision_node-7] [INFO] [1750209062.624801279] [decision_node]: [INFO] send light request: False
+1750209062.6357996 [light_srv-4] [INFO] [1750209062.631715427] [light_actuator]: 💤 불을 끕니다.
+1750209063.6036658 [illuminance_pub-2] [ERROR] [1750209063.601942711] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209064.6026862 [illuminance_pub-2] [ERROR] [1750209064.601699981] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209065.6045523 [illuminance_pub-2] [ERROR] [1750209065.600033580] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209066.4299977 [decision_node-7] [INFO] [1750209066.428321156] [decision_node]: [INFO] send light request: False
+1750209066.4442177 [light_srv-4] [INFO] [1750209066.442756250] [light_actuator]: 💤 불을 끕니다.
+1750209066.4709132 [light_srv-4] [INFO] [1750209066.465865755] [light_actuator]: 💤 불을 끕니다.
+1750209066.5975504 [illuminance_pub-2] [ERROR] [1750209066.596263100] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209067.5990620 [illuminance_pub-2] [ERROR] [1750209067.595109849] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209068.6084249 [illuminance_pub-2] [ERROR] [1750209068.603983124] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209069.3795102 [battery_pub-3] [WARN] [1750209069.378858503] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750209069.3835945 [battery_pub-3] [INFO] [1750209069.381016176] [battery_sensor]: I2C 초기화 성공
+1750209069.5981047 [illuminance_pub-2] [ERROR] [1750209069.597187450] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209070.5976377 [illuminance_pub-2] [ERROR] [1750209070.596608848] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209070.9801924 [vision_node-8] /home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolov5/utils/general.py:32: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+1750209070.9824429 [vision_node-8]   import pkg_resources as pkg
+1750209071.6066086 [illuminance_pub-2] [ERROR] [1750209071.599586478] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209072.5933378 [illuminance_pub-2] [ERROR] [1750209072.592587564] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209072.6037087 [illuminance_pub-2] [INFO] [1750209072.602978258] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750209072.6107323 [decision_node-7] [INFO] [1750209072.608586439] [decision_node]: [INFO] send light request: False
+1750209072.6257319 [light_srv-4] [INFO] [1750209072.618939763] [light_actuator]: 💤 불을 끕니다.
+1750209072.6479321 [light_srv-4] [INFO] [1750209072.636420698] [light_actuator]: 💤 불을 끕니다.
+1750209073.5971782 [illuminance_pub-2] [ERROR] [1750209073.596498363] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209074.5967686 [illuminance_pub-2] [ERROR] [1750209074.596025021] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209075.5979524 [illuminance_pub-2] [ERROR] [1750209075.597094331] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209076.4545009 [light_srv-4] [INFO] [1750209076.453787426] [light_actuator]: 💤 불을 끕니다.
+1750209076.4646878 [light_srv-4] [INFO] [1750209076.457628899] [light_actuator]: 💤 불을 끕니다.
+1750209076.4658833 [decision_node-7] [INFO] [1750209076.463298359] [decision_node]: [INFO] send light request: False
+1750209076.6068077 [illuminance_pub-2] [ERROR] [1750209076.605067659] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209077.5989015 [illuminance_pub-2] [ERROR] [1750209077.597957577] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209078.5998433 [illuminance_pub-2] [ERROR] [1750209078.598821442] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209078.6901336 [vision_node-8] Fusing layers... 
+1750209079.3705115 [battery_pub-3] [WARN] [1750209079.368366048] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750209079.3773351 [battery_pub-3] [INFO] [1750209079.376486718] [battery_sensor]: I2C 초기화 성공
+1750209079.6012125 [illuminance_pub-2] [ERROR] [1750209079.599234158] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209080.5960717 [illuminance_pub-2] [ERROR] [1750209080.594315804] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209080.6821997 [vision_node-8] Model summary: 157 layers, 7012822 parameters, 0 gradients, 15.8 GFLOPs
+1750209080.7374704 [vision_node-8] [0:13:29.238790587] [23164] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:326 [0mlibcamera v0.5.0+59-d83ff0a4
+1750209080.7735388 [vision_node-8] [0:13:29.274332199] [23843] [1;31mERROR [1;37mV4L2 [1;34mv4l2_device.cpp:390 [0;32m'imx708': [0mUnable to set controls: Device or resource busy
+1750209080.7917981 [vision_node-8] [0:13:29.293431991] [23843] [1;33m WARN [1;37mRPiSdn [1;34msdn.cpp:40 [0mUsing legacy SDN tuning - please consider moving SDN inside rpi.denoise
+1750209080.7944076 [vision_node-8] [0:13:29.296044590] [23843] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:447 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx708@1a to Unicam device /dev/media4 and ISP device /dev/media0
+1750209080.7972074 [vision_node-8] [0:13:29.296127905] [23843] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1121 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+1750209080.7997420 [vision_node-8] [0:13:29.300883881] [23164] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1011 [0mPipeline handler in use by another process
+1750209080.8022306 [vision_node-8] Camera __init__ sequence did not complete.
+1750209080.8039646 [vision_node-8] Traceback (most recent call last):
+1750209080.8052471 [vision_node-8]   File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 293, in __init__
+1750209080.8057585 [vision_node-8]     self._open_camera()
+1750209080.8063133 [vision_node-8]   File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 505, in _open_camera
+1750209080.8074772 [vision_node-8]     self.camera.acquire()
+1750209080.8079169 [vision_node-8] RuntimeError: Failed to acquire camera: Device or resource busy
+1750209080.8083274 [vision_node-8] 
+1750209080.8118961 [vision_node-8] During handling of the above exception, another exception occurred:
+1750209080.8127017 [vision_node-8] 
+1750209080.8133547 [vision_node-8] Traceback (most recent call last):
+1750209080.8141975 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/vision_pkg/vision_node", line 33, in <module>
+1750209080.8166418 [vision_node-8]     sys.exit(load_entry_point('vision_pkg==0.0.0', 'console_scripts', 'vision_node')())
+1750209080.8172135 [vision_node-8]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750209080.8176348 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/object_detection_node.py", line 40, in main
+1750209080.8182013 [vision_node-8]     node = ObjectDetectionNode()
+1750209080.8199215 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^
+1750209080.8222873 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/object_detection_node.py", line 13, in __init__
+1750209080.8242772 [vision_node-8]     self.picam2 = Picamera2()
+1750209080.8267357 [vision_node-8]                   ^^^^^^^^^^^
+1750209080.8291528 [vision_node-8]   File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 305, in __init__
+1750209080.8323348 [vision_node-8]     raise RuntimeError("Camera __init__ sequence did not complete.")
+1750209080.8344929 [vision_node-8] RuntimeError: Camera __init__ sequence did not complete.
+1750209081.6010082 [illuminance_pub-2] [ERROR] [1750209081.597586639] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209082.6041334 [illuminance_pub-2] [ERROR] [1750209082.600664343] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209082.6202106 [illuminance_pub-2] [INFO] [1750209082.617522980] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750209082.6284692 [decision_node-7] [INFO] [1750209082.621698713] [decision_node]: [INFO] send light request: False
+1750209082.6329556 [light_srv-4] [INFO] [1750209082.623160347] [light_actuator]: 💤 불을 끕니다.
+1750209082.6374526 [light_srv-4] [INFO] [1750209082.632831372] [light_actuator]: 💤 불을 끕니다.
+1750209083.5993600 [illuminance_pub-2] [ERROR] [1750209083.597855328] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209084.3950481 [ERROR] [vision_node-8]: process has died [pid 23164, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/vision_pkg/vision_node --ros-args -r __node:=vision_node'].
+1750209084.5977564 [illuminance_pub-2] [ERROR] [1750209084.593969199] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209085.5962811 [illuminance_pub-2] [ERROR] [1750209085.595684307] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209086.4361367 [decision_node-7] [INFO] [1750209086.435600266] [decision_node]: [INFO] send light request: False
+1750209086.4394324 [light_srv-4] [INFO] [1750209086.438039754] [light_actuator]: 💤 불을 끕니다.
+1750209086.4474945 [light_srv-4] [INFO] [1750209086.446694740] [light_actuator]: 💤 불을 끕니다.
+1750209086.5941963 [illuminance_pub-2] [ERROR] [1750209086.593386923] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209087.5931420 [illuminance_pub-2] [ERROR] [1750209087.592576969] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209088.5940444 [illuminance_pub-2] [ERROR] [1750209088.593385371] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209089.3639629 [battery_pub-3] [WARN] [1750209089.363344238] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750209089.3660035 [battery_pub-3] [INFO] [1750209089.365386595] [battery_sensor]: I2C 초기화 성공
+1750209089.5981143 [illuminance_pub-2] [ERROR] [1750209089.597292374] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209090.6015563 [illuminance_pub-2] [ERROR] [1750209090.600876672] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209091.5957084 [illuminance_pub-2] [ERROR] [1750209091.594890927] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209092.5985107 [illuminance_pub-2] [ERROR] [1750209092.595455698] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209092.6072624 [decision_node-7] [INFO] [1750209092.606031763] [decision_node]: [INFO] send light request: False
+1750209092.6111212 [illuminance_pub-2] [INFO] [1750209092.606738673] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750209092.6155605 [light_srv-4] [INFO] [1750209092.614440730] [light_actuator]: 💤 불을 끕니다.
+1750209092.6268620 [light_srv-4] [INFO] [1750209092.624782054] [light_actuator]: 💤 불을 끕니다.
+1750209093.5932598 [illuminance_pub-2] [ERROR] [1750209093.592510794] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209094.5980895 [illuminance_pub-2] [ERROR] [1750209094.596291815] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209095.5957229 [illuminance_pub-2] [ERROR] [1750209095.595060471] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209096.4331887 [decision_node-7] [INFO] [1750209096.427855467] [decision_node]: [INFO] send light request: False
+1750209096.4348283 [light_srv-4] [INFO] [1750209096.432959517] [light_actuator]: 💤 불을 끕니다.
+1750209096.4463558 [light_srv-4] [INFO] [1750209096.445576476] [light_actuator]: 💤 불을 끕니다.
+1750209096.5943162 [illuminance_pub-2] [ERROR] [1750209096.592661309] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209097.5985982 [illuminance_pub-2] [ERROR] [1750209097.594208380] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209098.5995078 [illuminance_pub-2] [ERROR] [1750209098.598175346] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209099.3651052 [battery_pub-3] [WARN] [1750209099.364474073] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750209099.3686068 [battery_pub-3] [INFO] [1750209099.368045471] [battery_sensor]: I2C 초기화 성공
+1750209099.5960550 [illuminance_pub-2] [ERROR] [1750209099.592811509] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209100.6007435 [illuminance_pub-2] [ERROR] [1750209100.596333122] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209101.5985460 [illuminance_pub-2] [ERROR] [1750209101.595963299] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209102.5968900 [illuminance_pub-2] [ERROR] [1750209102.596232162] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209102.6037793 [illuminance_pub-2] [INFO] [1750209102.602025307] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750209102.6122875 [decision_node-7] [INFO] [1750209102.611727963] [decision_node]: [INFO] send light request: False
+1750209102.6205492 [light_srv-4] [INFO] [1750209102.616743809] [light_actuator]: 💤 불을 끕니다.
+1750209102.6325443 [light_srv-4] [INFO] [1750209102.631808793] [light_actuator]: 💤 불을 끕니다.
+1750209103.5938609 [illuminance_pub-2] [ERROR] [1750209103.593240369] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209104.5978575 [illuminance_pub-2] [ERROR] [1750209104.594270161] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209105.5933275 [illuminance_pub-2] [ERROR] [1750209105.592728853] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209106.4662321 [light_srv-4] [INFO] [1750209106.463115096] [light_actuator]: 💤 불을 끕니다.
+1750209106.4700763 [decision_node-7] [INFO] [1750209106.464445692] [decision_node]: [INFO] send light request: False
+1750209106.4754033 [light_srv-4] [INFO] [1750209106.474811812] [light_actuator]: 💤 불을 끕니다.
+1750209106.5976949 [illuminance_pub-2] [ERROR] [1750209106.597104042] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209107.6007624 [illuminance_pub-2] [ERROR] [1750209107.598950632] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209108.5940936 [illuminance_pub-2] [ERROR] [1750209108.593405665] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209109.3649926 [battery_pub-3] [WARN] [1750209109.362959494] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750209109.3748338 [battery_pub-3] [INFO] [1750209109.373880856] [battery_sensor]: I2C 초기화 성공
+1750209109.5992033 [illuminance_pub-2] [ERROR] [1750209109.598607060] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209110.5928056 [illuminance_pub-2] [ERROR] [1750209110.592205999] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209111.5975742 [illuminance_pub-2] [ERROR] [1750209111.594511775] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209112.5961478 [illuminance_pub-2] [ERROR] [1750209112.595548474] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209112.6057348 [illuminance_pub-2] [INFO] [1750209112.604340053] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750209112.6093118 [light_srv-4] [INFO] [1750209112.606827300] [light_actuator]: 💤 불을 끕니다.
+1750209112.6162155 [decision_node-7] [INFO] [1750209112.615692268] [decision_node]: [INFO] send light request: False
+1750209112.6212506 [light_srv-4] [INFO] [1750209112.619722075] [light_actuator]: 💤 불을 끕니다.
+1750209113.5933483 [illuminance_pub-2] [ERROR] [1750209113.592760533] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209114.5940447 [illuminance_pub-2] [ERROR] [1750209114.593274268] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209115.5928612 [illuminance_pub-2] [ERROR] [1750209115.592200813] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209116.4615369 [decision_node-7] [INFO] [1750209116.460940700] [decision_node]: [INFO] send light request: False
+1750209116.4661179 [light_srv-4] [INFO] [1750209116.465444989] [light_actuator]: 💤 불을 끕니다.
+1750209116.4800093 [light_srv-4] [INFO] [1750209116.479313526] [light_actuator]: 💤 불을 끕니다.
+1750209116.5931504 [illuminance_pub-2] [ERROR] [1750209116.592502621] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209117.5944788 [illuminance_pub-2] [ERROR] [1750209117.593745728] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209118.6090353 [illuminance_pub-2] [ERROR] [1750209118.606636477] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209119.3766017 [battery_pub-3] [WARN] [1750209119.375487618] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750209119.3817096 [battery_pub-3] [INFO] [1750209119.381148855] [battery_sensor]: I2C 초기화 성공
+1750209119.5928683 [illuminance_pub-2] [ERROR] [1750209119.592296543] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209120.5932293 [illuminance_pub-2] [ERROR] [1750209120.592550832] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209121.5979955 [illuminance_pub-2] [ERROR] [1750209121.597201541] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209122.5958960 [illuminance_pub-2] [ERROR] [1750209122.594570248] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750209122.6089320 [illuminance_pub-2] [INFO] [1750209122.603223382] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750209122.6116471 [decision_node-7] [INFO] [1750209122.606148705] [decision_node]: [INFO] send light request: False
+1750209122.6131120 [light_srv-4] [INFO] [1750209122.609833177] [light_actuator]: 💤 불을 끕니다.
+1750209122.6165593 [light_srv-4] [INFO] [1750209122.615337970] [light_actuator]: 💤 불을 끕니다.
+1750209123.3498228 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1750209123.4191527 [decision_node-7] Traceback (most recent call last):
+1750209123.4204721 [decision_node-7]   File "/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/decision_pkg/decision_node", line 33, in <module>
+1750209123.4210205 [decision_node-7]     sys.exit(load_entry_point('decision_pkg==0.0.0', 'console_scripts', 'decision_node')())
+1750209123.4222965 [decision_node-7]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750209123.4237032 [decision_node-7]   File "/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/python3.11/site-packages/decision_pkg/decision_node.py", line 118, in main
+1750209123.4254274 [decision_node-7]     rclpy.spin(node)
+1750209123.4267366 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750209123.4273012 [decision_node-7]     executor.spin_once()
+1750209123.4277880 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750209123.4284935 [decision_node-7]     self._spin_once_impl(timeout_sec)
+1750209123.4301927 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 740, in _spin_once_impl
+1750209123.4308889 [decision_node-7]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+1750209123.4329619 [decision_node-7]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750209123.4365289 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+1750209123.4386206 [decision_node-7]     return next(self._cb_iter)
+1750209123.4397120 [decision_node-7]            ^^^^^^^^^^^^^^^^^^^
+1750209123.4412506 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+1750209123.4425826 [decision_node-7]     wait_set.wait(timeout_nsec)
+1750209123.4447594 [decision_node-7] KeyboardInterrupt
+1750209123.4467838 [light_srv-4] Traceback (most recent call last):
+1750209123.4480691 [light_srv-4]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/light_srv", line 33, in <module>
+1750209123.4505670 [light_srv-4]     sys.exit(load_entry_point('actuator_pkg==0.0.0', 'console_scripts', 'light_srv')())
+1750209123.4524021 [light_srv-4]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750209123.4544039 [light_srv-4]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/light_service.py", line 50, in main
+1750209123.4575238 [light_srv-4]     rclpy.spin(node)
+1750209123.4594080 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750209123.4612727 [light_srv-4]     executor.spin_once()
+1750209123.4629002 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750209123.4642448 [light_srv-4]     self._spin_once_impl(timeout_sec)
+1750209123.4652271 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 740, in _spin_once_impl
+1750209123.4662681 [light_srv-4]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+1750209123.4675465 [light_srv-4]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750209123.4685366 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+1750209123.4696972 [light_srv-4]     return next(self._cb_iter)
+1750209123.4706137 [light_srv-4]            ^^^^^^^^^^^^^^^^^^^
+1750209123.4732854 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+1750209123.4750762 [light_srv-4]     wait_set.wait(timeout_nsec)
+1750209123.4767661 [light_srv-4] KeyboardInterrupt
+1750209123.4800458 [battery_pub-3] Traceback (most recent call last):
+1750209123.4816196 [battery_pub-3]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/battery_pub", line 33, in <module>
+1750209123.4828057 [battery_pub-3]     sys.exit(load_entry_point('sensor_pkg==0.0.0', 'console_scripts', 'battery_pub')())
+1750209123.4841821 [battery_pub-3]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750209123.4871850 [battery_pub-3]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/battery_node.py", line 62, in main
+1750209123.4902608 [battery_pub-3]     rclpy.spin(node)
+1750209123.4916356 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750209123.4926164 [battery_pub-3]     executor.spin_once()
+1750209123.4938595 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750209123.4962184 [battery_pub-3]     self._spin_once_impl(timeout_sec)
+1750209123.4982202 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 740, in _spin_once_impl
+1750209123.5000632 [battery_pub-3]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+1750209123.5012047 [battery_pub-3]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750209123.5026424 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+1750209123.5036533 [battery_pub-3]     return next(self._cb_iter)
+1750209123.5049076 [battery_pub-3]            ^^^^^^^^^^^^^^^^^^^
+1750209123.5061817 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+1750209123.5076303 [battery_pub-3]     wait_set.wait(timeout_nsec)
+1750209123.5091000 [battery_pub-3] KeyboardInterrupt
+1750209123.6638572 [illuminance_pub-2] Traceback (most recent call last):
+1750209123.6665983 [illuminance_pub-2]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/illuminance_pub", line 33, in <module>
+1750209123.6715577 [illuminance_pub-2]     sys.exit(load_entry_point('sensor_pkg==0.0.0', 'console_scripts', 'illuminance_pub')())
+1750209123.6728289 [illuminance_pub-2]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750209123.6735365 [illuminance_pub-2]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/illuminance_node.py", line 71, in main
+1750209123.6803596 [illuminance_pub-2]     rclpy.shutdown()
+1750209123.6822996 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 130, in shutdown
+1750209123.6839912 [illuminance_pub-2]     _shutdown(context=context)
+1750209123.6845546 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/utilities.py", line 58, in shutdown
+1750209123.6895208 [illuminance_pub-2]     return context.shutdown()
+1750209123.6940856 [illuminance_pub-2]            ^^^^^^^^^^^^^^^^^^
+1750209123.6949332 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/context.py", line 102, in shutdown
+1750209123.6998112 [illuminance_pub-2]     self.__context.shutdown()
+1750209123.7033520 [illuminance_pub-2] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at /home/dongjae/ros2_humble_ws/src/ros2/rcl/rcl/src/rcl/init.c:241
+1750209123.7142723 [buzzer_srv-5] Traceback (most recent call last):
+1750209123.7153511 [buzzer_srv-5]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/buzzer_srv", line 33, in <module>
+1750209123.7201450 [buzzer_srv-5]     sys.exit(load_entry_point('actuator_pkg==0.0.0', 'console_scripts', 'buzzer_srv')())
+1750209123.7226241 [buzzer_srv-5]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750209123.7240546 [buzzer_srv-5]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/buzzer_service.py", line 51, in main
+1750209123.7281597 [buzzer_srv-5]     rclpy.shutdown()
+1750209123.7324588 [buzzer_srv-5]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 130, in shutdown
+1750209123.7343090 [buzzer_srv-5]     _shutdown(context=context)
+1750209123.7358110 [buzzer_srv-5]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/utilities.py", line 58, in shutdown
+1750209123.7379808 [buzzer_srv-5]     return context.shutdown()
+1750209123.7423692 [buzzer_srv-5]            ^^^^^^^^^^^^^^^^^^
+1750209123.7465060 [buzzer_srv-5]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/context.py", line 102, in shutdown
+1750209123.7548780 [buzzer_srv-5]     self.__context.shutdown()
+1750209123.7579165 [buzzer_srv-5] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at /home/dongjae/ros2_humble_ws/src/ros2/rcl/rcl/src/rcl/init.c:241
+1750209124.0987253 [ERROR] [decision_node-7]: process has died [pid 23162, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/decision_pkg/decision_node --ros-args -r __node:=decision_node'].
+1750209124.1912248 [ERROR] [battery_pub-3]: process has died [pid 23154, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/battery_pub --ros-args -r __node:=battery_sensor'].
+1750209124.1980700 [ERROR] [light_srv-4]: process has died [pid 23156, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/light_srv --ros-args -r __node:=light_actuator'].
+1750209124.2977083 [ERROR] [buzzer_srv-5]: process has died [pid 23158, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/buzzer_srv --ros-args -r __node:=buzzer_actuator'].
+1750209124.3998740 [ERROR] [illuminance_pub-2]: process has died [pid 23151, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/illuminance_pub --ros-args -r __node:=illuminance_sensor'].
+1750209128.4116166 [ERROR] [ble_node-6]: process[ble_node-6] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+1750209128.4153864 [INFO] [ble_node-6]: sending signal 'SIGTERM' to process[ble_node-6]
+1750209133.4113197 [ERROR] [ble_node-6]: process[ble_node-6] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+1750209133.4160047 [INFO] [ble_node-6]: sending signal 'SIGKILL' to process[ble_node-6]
+1750209133.4360409 [ERROR] [ble_node-6]: process has died [pid 23160, exit code -9, cmd '/home/dongjae/ros2_kart_ws/install/app_interface_pkg/lib/app_interface_pkg/ble_node --ros-args -r __node:=ble_node'].

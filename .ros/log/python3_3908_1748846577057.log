@@ -1,0 +1,1 @@
+[ERROR] [1748846577.243481415] [ble_gatt_server]: Failed to read or parse JSON from /home/dongjae/config.conf: Expecting value: line 1 column 1 (char 0)

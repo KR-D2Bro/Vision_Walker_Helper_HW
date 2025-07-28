@@ -1,0 +1,258 @@
+1750163857.2188449 [INFO] [launch]: All log files can be found below /home/dongjae/.ros/log/2025-06-17-21-37-37-216378-raspberrypi-4120
+1750163857.2192745 [INFO] [launch]: Default logging verbosity is set to INFO
+1750163857.4504678 [INFO] [imu_pub-1]: process started with pid [4121]
+1750163857.4556572 [INFO] [illuminance_pub-2]: process started with pid [4123]
+1750163857.4565642 [INFO] [battery_pub-3]: process started with pid [4125]
+1750163857.4633346 [INFO] [light_srv-4]: process started with pid [4127]
+1750163857.4639120 [INFO] [buzzer_srv-5]: process started with pid [4129]
+1750163857.4673316 [INFO] [ble_node-6]: process started with pid [4131]
+1750163857.4682705 [INFO] [decision_node-7]: process started with pid [4133]
+1750163857.4690483 [INFO] [vision_node-8]: process started with pid [4135]
+1750163859.4476068 [buzzer_srv-5] [INFO] [1750163859.442456104] [buzzer_actuator]: 🔔 PWM Buzzer Control Node Started
+1750163859.8561025 [light_srv-4] /home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/light_service.py:16: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+1750163859.8569317 [light_srv-4]   GPIO.setup(LED_PIN1, GPIO.OUT)
+1750163859.8588729 [light_srv-4] /home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/light_service.py:17: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+1750163859.8634026 [light_srv-4]   GPIO.setup(LED_PIN2, GPIO.OUT)
+1750163859.9459066 [illuminance_pub-2] [INFO] [1750163859.942974586] [illuminance_sensor]: Initialized PCF8591 at 0x48
+1750163860.0452054 [imu_pub-1] [INFO] [1750163860.044339162] [imu_sensor]: I2C-3 초기화 성공
+1750163860.2299657 [battery_pub-3] [INFO] [1750163860.226566955] [battery_sensor]: I2C 초기화 성공
+1750163860.2409055 [battery_pub-3] [INFO] [1750163860.232048672] [battery_sensor]: Battery State Publisher started, publishing on /battery_state/data
+1750163860.4512343 [buzzer_srv-5] [INFO] [1750163860.445545071] [buzzer_actuator]: 🔊 Buzzer ON (Duty: 0%) 1Sec
+1750163860.4697278 [imu_pub-1] [INFO] [1750163860.468977647] [imu_sensor]: FallDetectionNode started: roll_thr=65.0°, pitch_thr=65.0°
+1750163860.4800735 [light_srv-4] [INFO] [1750163860.479425639] [light_actuator]: 💡 불을 켭니다.
+1750163860.5094450 [ble_node-6] [INFO] [1750163860.508833668] [ble_node]: Loaded config from disk
+1750163860.5403359 [ble_node-6] [INFO] [1750163860.539745203] [ble_node]: Using adapter: D8:3A:DD:F2:4C:84
+1750163860.5628884 [ble_node-6] [INFO] [1750163860.562196379] [ble_node]: BLE GATT Server started
+1750163860.5688987 [ble_node-6] [INFO] [1750163860.568322831] [ble_node]: Config service added
+1750163860.8835878 [illuminance_pub-2] [ERROR] [1750163860.882946123] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750163861.8834424 [illuminance_pub-2] [ERROR] [1750163861.882735079] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750163862.8855033 [illuminance_pub-2] [ERROR] [1750163862.882907347] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750163863.8832815 [illuminance_pub-2] [ERROR] [1750163863.882613840] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750163864.8835249 [illuminance_pub-2] [ERROR] [1750163864.882648034] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750163865.4481812 [light_srv-4] [INFO] [1750163865.444992068] [light_actuator]: 💤 불을 끕니다.
+1750163865.4898527 [decision_node-7] [INFO] [1750163865.489120277] [decision_node]: ✅ 요청 성공: 부저가 켜졌습니다.
+1750163865.4920793 [decision_node-7] [INFO] [1750163865.491483814] [decision_node]: ✅ 요청 성공: 불이 켜졌습니다.
+1750163865.4980638 [decision_node-7] [INFO] [1750163865.495479190] [decision_node]: ✅ 요청 성공: 불이 켜졌습니다.
+1750163865.8835993 [illuminance_pub-2] [ERROR] [1750163865.882878818] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750163866.8836281 [illuminance_pub-2] [ERROR] [1750163866.882882567] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750163867.8835125 [illuminance_pub-2] [ERROR] [1750163867.882797575] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750163868.8831584 [illuminance_pub-2] [ERROR] [1750163868.882433512] [illuminance_sensor]: I2C read error: [Errno 5] Input/output error
+1750163869.1115525 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1750163869.2129815 [light_srv-4] Traceback (most recent call last):
+1750163869.2227192 [light_srv-4]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/light_srv", line 33, in <module>
+1750163869.2240121 [light_srv-4]     sys.exit(load_entry_point('actuator_pkg==0.0.0', 'console_scripts', 'light_srv')())
+1750163869.2274992 [light_srv-4]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750163869.2318919 [light_srv-4]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/light_service.py", line 50, in main
+1750163869.2397132 [light_srv-4]     rclpy.spin(node)
+1750163869.2409818 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750163869.2424054 [light_srv-4]     executor.spin_once()
+1750163869.2477243 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750163869.2516918 [light_srv-4]     self._spin_once_impl(timeout_sec)
+1750163869.2530220 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 740, in _spin_once_impl
+1750163869.2638431 [light_srv-4]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+1750163869.2651472 [light_srv-4]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750163869.2664080 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+1750163869.2718921 [light_srv-4]     return next(self._cb_iter)
+1750163869.2758543 [light_srv-4]            ^^^^^^^^^^^^^^^^^^^
+1750163869.2771230 [light_srv-4]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+1750163869.2878163 [light_srv-4]     wait_set.wait(timeout_nsec)
+1750163869.2891717 [light_srv-4] KeyboardInterrupt
+1750163869.2934771 [vision_node-8] Traceback (most recent call last):
+1750163869.3037310 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/vision_pkg/vision_node", line 33, in <module>
+1750163869.3076613 [vision_node-8]     sys.exit(load_entry_point('vision_pkg==0.0.0', 'console_scripts', 'vision_node')())
+1750163869.3116689 [vision_node-8]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750163869.3157415 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/vision_pkg/vision_node", line 25, in importlib_load_entry_point
+1750163869.3197603 [vision_node-8]     return next(matches).load()
+1750163869.3237681 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^
+1750163869.3277907 [vision_node-8]   File "/usr/lib/python3.11/importlib/metadata/__init__.py", line 202, in load
+1750163869.3299384 [vision_node-8]     module = import_module(match.group('module'))
+1750163869.3338404 [vision_node-8]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750163869.3374655 [vision_node-8]   File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+1750163869.3403466 [vision_node-8]     return _bootstrap._gcd_import(name[level:], package, level)
+1750163869.3419027 [vision_node-8]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750163869.3457897 [vision_node-8]   File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+1750163869.3489912 [vision_node-8]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1750163869.3578510 [vision_node-8]   File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+1750163869.3586900 [vision_node-8]   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+1750163869.3596900 [vision_node-8]   File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+1750163869.3639271 [vision_node-8]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+1750163869.3648269 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/object_detection_node.py", line 4, in <module>
+1750163869.3713319 [vision_node-8]     from .yolo_detector import YoloDetector
+1750163869.3755629 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolo_detector.py", line 9, in <module>
+1750163869.3806918 [vision_node-8]     from models.common import DetectMultiBackend
+1750163869.3856754 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolov5/models/common.py", line 39, in <module>
+1750163869.3904037 [vision_node-8]     from utils.dataloaders import exif_transpose, letterbox
+1750163869.3962438 [vision_node-8]   File "/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolov5/utils/dataloaders.py", line 23, in <module>
+1750163869.3976870 [vision_node-8]     import torchvision
+1750163869.3997817 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torchvision/__init__.py", line 10, in <module>
+1750163869.4033093 [vision_node-8]     from torchvision import _meta_registrations, datasets, io, models, ops, transforms, utils  # usort:skip
+1750163869.4080944 [vision_node-8]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750163869.4160676 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torchvision/models/__init__.py", line 2, in <module>
+1750163869.4229491 [vision_node-8]     from .convnext import *
+1750163869.4362528 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torchvision/models/convnext.py", line 8, in <module>
+1750163869.4374151 [vision_node-8]     from ..ops.misc import Conv2dNormActivation, Permute
+1750163869.4403930 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torchvision/ops/__init__.py", line 23, in <module>
+1750163869.4414470 [vision_node-8]     from .poolers import MultiScaleRoIAlign
+1750163869.4486103 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torchvision/ops/poolers.py", line 10, in <module>
+1750163869.4500260 [vision_node-8]     from .roi_align import roi_align
+1750163869.4596982 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torchvision/ops/roi_align.py", line 7, in <module>
+1750163869.4617267 [vision_node-8]     from torch._dynamo.utils import is_compile_supported
+1750163869.4637172 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/_dynamo/__init__.py", line 13, in <module>
+1750163869.4655485 [vision_node-8]     from . import config, convert_frame, eval_frame, resume_execution
+1750163869.4714196 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/_dynamo/convert_frame.py", line 52, in <module>
+1750163869.4726229 [vision_node-8]     from torch._dynamo.symbolic_convert import TensorifyState
+1750163869.4736681 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/_dynamo/symbolic_convert.py", line 57, in <module>
+1750163869.4747264 [vision_node-8]     from . import (
+1750163869.4801621 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/_dynamo/trace_rules.py", line 32, in <module>
+1750163869.4816711 [vision_node-8]     from .variables import (
+1750163869.4834487 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/_dynamo/variables/__init__.py", line 19, in <module>
+1750163869.4876571 [vision_node-8]     from .base import VariableTracker
+1750163869.4888809 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/_dynamo/variables/base.py", line 581, in <module>
+1750163869.4916508 [vision_node-8]     from . import builder
+1750163869.4955277 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/_dynamo/variables/builder.py", line 86, in <module>
+1750163869.4968917 [vision_node-8]     from ..side_effects import SideEffects
+1750163869.4982018 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/_dynamo/side_effects.py", line 21, in <module>
+1750163869.5037279 [vision_node-8]     from .codegen import PyCodegen
+1750163869.5047500 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/_dynamo/codegen.py", line 43, in <module>
+1750163869.5063705 [vision_node-8]     from .variables.functions import (
+1750163869.5116105 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/_dynamo/variables/functions.py", line 71, in <module>
+1750163869.5161498 [vision_node-8]     from torch.distributed.fsdp._fully_shard import _fsdp_param_group
+1750163869.5178292 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/distributed/fsdp/__init__.py", line 1, in <module>
+1750163869.5275848 [vision_node-8]     from ._flat_param import FlatParameter as FlatParameter
+1750163869.5287054 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/distributed/fsdp/_flat_param.py", line 33, in <module>
+1750163869.5298047 [vision_node-8]     from ._fsdp_extensions import (
+1750163869.5351489 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/distributed/fsdp/_fsdp_extensions.py", line 8, in <module>
+1750163869.5401518 [vision_node-8]     from torch.distributed.fsdp._shard_utils import (
+1750163869.5478339 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/distributed/fsdp/_shard_utils.py", line 18, in <module>
+1750163869.5637138 [decision_node-7] Traceback (most recent call last):
+1750163869.5646496 [decision_node-7]   File "/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/decision_pkg/decision_node", line 33, in <module>
+1750163869.5654154 [decision_node-7]     sys.exit(load_entry_point('decision_pkg==0.0.0', 'console_scripts', 'decision_node')())
+1750163869.5693407 [decision_node-7]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750163869.5757344 [decision_node-7]   File "/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/python3.11/site-packages/decision_pkg/decision_node.py", line 64, in main
+1750163869.5768366 [decision_node-7]     rclpy.spin(node)
+1750163869.5777314 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750163869.5786200 [decision_node-7]     executor.spin_once()
+1750163869.5799952 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750163869.5810568 [decision_node-7]     self._spin_once_impl(timeout_sec)
+1750163869.5827799 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 740, in _spin_once_impl
+1750163869.5851135 [decision_node-7]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+1750163869.5865705 [decision_node-7]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750163869.5882812 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+1750163869.5913322 [decision_node-7]     return next(self._cb_iter)
+1750163869.5933666 [decision_node-7]            ^^^^^^^^^^^^^^^^^^^
+1750163869.6003227 [decision_node-7]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+1750163869.6018510 [decision_node-7]     wait_set.wait(timeout_nsec)
+1750163869.6034427 [decision_node-7] KeyboardInterrupt
+1750163869.6122015 [battery_pub-3] Traceback (most recent call last):
+1750163869.6138952 [battery_pub-3]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/battery_pub", line 33, in <module>
+1750163869.6175342 [battery_pub-3]     sys.exit(load_entry_point('sensor_pkg==0.0.0', 'console_scripts', 'battery_pub')())
+1750163869.6201093 [battery_pub-3]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750163869.6216707 [battery_pub-3]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/battery_node.py", line 62, in main
+1750163869.6230781 [battery_pub-3]     rclpy.spin(node)
+1750163869.6240990 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750163869.6251426 [battery_pub-3]     executor.spin_once()
+1750163869.6261904 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750163869.6280355 [battery_pub-3]     self._spin_once_impl(timeout_sec)
+1750163869.6295071 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 740, in _spin_once_impl
+1750163869.6315105 [battery_pub-3]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+1750163869.6328237 [battery_pub-3]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750163869.6341078 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+1750163869.6359799 [battery_pub-3]     return next(self._cb_iter)
+1750163869.6374869 [battery_pub-3]            ^^^^^^^^^^^^^^^^^^^
+1750163869.6390917 [battery_pub-3]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+1750163869.6416824 [battery_pub-3]     wait_set.wait(timeout_nsec)
+1750163869.6432405 [battery_pub-3] KeyboardInterrupt
+1750163869.6485174 [vision_node-8]     from torch.distributed.tensor import DeviceMesh, DTensor, Replicate, Shard as DShard
+1750163869.6501286 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/distributed/tensor/__init__.py", line 4, in <module>
+1750163869.6520569 [vision_node-8]     import torch.distributed.tensor._ops  # force import all built-in dtensor ops
+1750163869.6541939 [vision_node-8]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750163869.6557682 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/distributed/tensor/_ops/__init__.py", line 2, in <module>
+1750163869.6571839 [vision_node-8]     from ._conv_ops import *  # noqa: F403
+1750163869.6592073 [vision_node-8]     ^^^^^^^^^^^^^^^^^^^^^^^^
+1750163869.6614196 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/distributed/tensor/_ops/_conv_ops.py", line 7, in <module>
+1750163869.6627843 [vision_node-8]     from torch.distributed.tensor._ops.utils import register_prop_rule
+1750163869.6648405 [vision_node-8]   File "/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/torch/distributed/tensor/_ops/utils.py", line 11, in <module>
+1750163869.6663201 [vision_node-8]     from torch.distributed.tensor._api import DTensor
+1750163869.6684873 [vision_node-8]   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+1750163869.6721628 [vision_node-8]   File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+1750163869.6752150 [vision_node-8]   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+1750163869.6792402 [vision_node-8]   File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+1750163869.6839106 [vision_node-8]   File "<frozen importlib._bootstrap_external>", line 1069, in get_code
+1750163869.6854885 [vision_node-8]   File "<frozen importlib._bootstrap_external>", line 729, in _compile_bytecode
+1750163869.6874931 [vision_node-8] KeyboardInterrupt
+1750163869.6931283 [ERROR] [light_srv-4]: process has died [pid 4127, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/light_srv --ros-args -r __node:=light_actuator'].
+1750163869.6999497 [illuminance_pub-2] Traceback (most recent call last):
+1750163869.7040701 [illuminance_pub-2]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/illuminance_pub", line 33, in <module>
+1750163869.7056694 [illuminance_pub-2]     sys.exit(load_entry_point('sensor_pkg==0.0.0', 'console_scripts', 'illuminance_pub')())
+1750163869.7072046 [illuminance_pub-2]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750163869.7092397 [illuminance_pub-2]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/illuminance_node.py", line 55, in main
+1750163869.7107184 [illuminance_pub-2]     rclpy.shutdown()
+1750163869.7125297 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 130, in shutdown
+1750163869.7140841 [illuminance_pub-2]     _shutdown(context=context)
+1750163869.7163427 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/utilities.py", line 58, in shutdown
+1750163869.7179580 [illuminance_pub-2]     return context.shutdown()
+1750163869.7197855 [illuminance_pub-2]            ^^^^^^^^^^^^^^^^^^
+1750163869.7211254 [illuminance_pub-2]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/context.py", line 102, in shutdown
+1750163869.7228122 [illuminance_pub-2]     self.__context.shutdown()
+1750163869.7242773 [illuminance_pub-2] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at /home/dongjae/ros2_humble_ws/src/ros2/rcl/rcl/src/rcl/init.c:241
+1750163869.7294643 [imu_pub-1] Traceback (most recent call last):
+1750163869.7321708 [imu_pub-1]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/imu_node.py", line 129, in main
+1750163869.7337108 [imu_pub-1]     rclpy.spin(node)
+1750163869.7351742 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 229, in spin
+1750163869.7365677 [imu_pub-1]     executor.spin_once()
+1750163869.7379270 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 751, in spin_once
+1750163869.7392995 [imu_pub-1]     self._spin_once_impl(timeout_sec)
+1750163869.7404573 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 740, in _spin_once_impl
+1750163869.7428758 [ERROR] [buzzer_srv-5]: process has died [pid 4129, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/buzzer_srv --ros-args -r __node:=buzzer_actuator'].
+1750163869.7458067 [imu_pub-1]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+1750163869.7477143 [imu_pub-1]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750163869.7494078 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+1750163869.7505350 [imu_pub-1]     return next(self._cb_iter)
+1750163869.7515264 [imu_pub-1]            ^^^^^^^^^^^^^^^^^^^
+1750163869.7524035 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/executors.py", line 590, in _wait_for_ready_callbacks
+1750163869.7532454 [imu_pub-1]     entity_count += waitable.get_num_entities()
+1750163869.7559392 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/waitable.py", line 38, in __add__
+1750163869.7573793 [imu_pub-1]     result = self.__class__()
+1750163869.7587719 [imu_pub-1]              ^^^^^^^^^^^^^^^^
+1750163869.7611337 [imu_pub-1] KeyboardInterrupt
+1750163869.7623510 [imu_pub-1] 
+1750163869.7636230 [imu_pub-1] During handling of the above exception, another exception occurred:
+1750163869.7648289 [imu_pub-1] 
+1750163869.7659321 [imu_pub-1] Traceback (most recent call last):
+1750163869.7670887 [imu_pub-1]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/imu_pub", line 33, in <module>
+1750163869.7684329 [imu_pub-1]     sys.exit(load_entry_point('sensor_pkg==0.0.0', 'console_scripts', 'imu_pub')())
+1750163869.7700818 [imu_pub-1]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750163869.7715435 [imu_pub-1]   File "/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/python3.11/site-packages/sensor_pkg/imu_node.py", line 132, in main
+1750163869.7728257 [imu_pub-1]     rclpy.shutdown()
+1750163869.7745101 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 130, in shutdown
+1750163869.7758191 [imu_pub-1]     _shutdown(context=context)
+1750163869.7774441 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/utilities.py", line 58, in shutdown
+1750163869.7786109 [imu_pub-1]     return context.shutdown()
+1750163869.7803330 [imu_pub-1]            ^^^^^^^^^^^^^^^^^^
+1750163869.7816277 [imu_pub-1]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/context.py", line 102, in shutdown
+1750163869.7833312 [imu_pub-1]     self.__context.shutdown()
+1750163869.7844062 [imu_pub-1] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at /home/dongjae/ros2_humble_ws/src/ros2/rcl/rcl/src/rcl/init.c:241
+1750163869.7863340 [ERROR] [illuminance_pub-2]: process has died [pid 4123, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/illuminance_pub --ros-args -r __node:=illuminance_sensor'].
+1750163869.7893169 [buzzer_srv-5] Traceback (most recent call last):
+1750163869.7912047 [buzzer_srv-5]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/actuator_pkg/buzzer_srv", line 33, in <module>
+1750163869.7933276 [buzzer_srv-5]     sys.exit(load_entry_point('actuator_pkg==0.0.0', 'console_scripts', 'buzzer_srv')())
+1750163869.7949877 [buzzer_srv-5]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1750163869.7967741 [buzzer_srv-5]   File "/home/dongjae/ros2_kart_ws/install/actuator_pkg/lib/python3.11/site-packages/actuator_pkg/buzzer_service.py", line 51, in main
+1750163869.7978983 [buzzer_srv-5]     rclpy.shutdown()
+1750163869.7991507 [buzzer_srv-5]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/__init__.py", line 130, in shutdown
+1750163869.8003020 [buzzer_srv-5]     _shutdown(context=context)
+1750163869.8011954 [buzzer_srv-5]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/utilities.py", line 58, in shutdown
+1750163869.8020959 [buzzer_srv-5]     return context.shutdown()
+1750163869.8033590 [buzzer_srv-5]            ^^^^^^^^^^^^^^^^^^
+1750163869.8053186 [buzzer_srv-5]   File "/home/dongjae/ros2_humble_ws/install/rclpy/lib/python3.11/site-packages/rclpy/context.py", line 102, in shutdown
+1750163869.8063462 [buzzer_srv-5]     self.__context.shutdown()
+1750163869.8077047 [buzzer_srv-5] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at /home/dongjae/ros2_humble_ws/src/ros2/rcl/rcl/src/rcl/init.c:241
+1750163869.8333793 [ERROR] [decision_node-7]: process has died [pid 4133, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/decision_pkg/lib/decision_pkg/decision_node --ros-args -r __node:=decision_node'].
+1750163869.8565423 [ERROR] [battery_pub-3]: process has died [pid 4125, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/battery_pub --ros-args -r __node:=battery_sensor'].
+1750163869.9234426 [ERROR] [imu_pub-1]: process has died [pid 4121, exit code 1, cmd '/home/dongjae/ros2_kart_ws/install/sensor_pkg/lib/sensor_pkg/imu_pub --ros-args -r __node:=imu_sensor'].
+1750163870.8002036 [ERROR] [vision_node-8]: process has died [pid 4135, exit code -2, cmd '/home/dongjae/ros2_kart_ws/install/vision_pkg/lib/vision_pkg/vision_node --ros-args -r __node:=vision_node'].
+1750163874.2003529 [ERROR] [ble_node-6]: process[ble_node-6] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+1750163874.2017198 [INFO] [ble_node-6]: sending signal 'SIGTERM' to process[ble_node-6]
+1750163879.2043605 [ERROR] [ble_node-6]: process[ble_node-6] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+1750163879.2081268 [INFO] [ble_node-6]: sending signal 'SIGKILL' to process[ble_node-6]
+1750163879.2332559 [ERROR] [ble_node-6]: process has died [pid 4131, exit code -9, cmd '/home/dongjae/ros2_kart_ws/install/app_interface_pkg/lib/app_interface_pkg/ble_node --ros-args -r __node:=ble_node'].

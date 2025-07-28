@@ -1,0 +1,860 @@
+1750206239.0677865 [INFO] [launch]: All log files can be found below /home/dongjae/.ros/log/2025-06-18-09-23-59-064015-raspberrypi-970
+1750206239.0682790 [INFO] [launch]: Default logging verbosity is set to INFO
+1750206239.3688731 [INFO] [imu_pub-1]: process started with pid [971]
+1750206239.3694787 [INFO] [illuminance_pub-2]: process started with pid [973]
+1750206239.3699338 [INFO] [battery_pub-3]: process started with pid [975]
+1750206239.3703704 [INFO] [light_srv-4]: process started with pid [977]
+1750206239.3707778 [INFO] [buzzer_srv-5]: process started with pid [979]
+1750206239.3713503 [INFO] [ble_node-6]: process started with pid [981]
+1750206239.3719521 [INFO] [decision_node-7]: process started with pid [983]
+1750206239.3808074 [INFO] [vision_node-8]: process started with pid [985]
+1750206241.7527766 [buzzer_srv-5] [INFO] [1750206241.751948397] [buzzer_actuator]: 🔔 PWM Buzzer Control Node Started
+1750206242.4036183 [illuminance_pub-2] [INFO] [1750206242.402588748] [illuminance_sensor]: Initialized PCF8591 at 0x48
+1750206242.4305375 [decision_node-7] [INFO] [1750206242.429733193] [decision_node]: Loaded config from disk
+1750206242.5865164 [battery_pub-3] [INFO] [1750206242.585245693] [battery_sensor]: I2C 초기화 성공
+1750206242.5878301 [battery_pub-3] [INFO] [1750206242.587255396] [battery_sensor]: Battery State Publisher started, publishing on /battery_state/data
+1750206242.6056609 [imu_pub-1] [INFO] [1750206242.604927822] [imu_sensor]: I2C-3 초기화 성공
+1750206242.9834533 [imu_pub-1] [INFO] [1750206242.982734618] [imu_sensor]: FallDetectionNode started: roll_thr=65.0°, pitch_thr=65.0°
+1750206243.0458608 [ble_node-6] [INFO] [1750206243.045096637] [ble_node]: Using adapter: D8:3A:DD:F2:4C:84
+1750206243.0975368 [ble_node-6] [INFO] [1750206243.096910211] [ble_node]: BLE GATT Server started
+1750206243.1025095 [ble_node-6] [INFO] [1750206243.101910377] [ble_node]: Config service added
+1750206243.3457110 [illuminance_pub-2] [INFO] [1750206243.344590877] [illuminance_sensor]: RAW=204 → 80.0%
+1750206244.3466437 [illuminance_pub-2] [INFO] [1750206244.344584710] [illuminance_sensor]: RAW=204 → 80.0%
+1750206245.3451116 [illuminance_pub-2] [INFO] [1750206245.344485376] [illuminance_sensor]: RAW=204 → 80.0%
+1750206246.3452072 [illuminance_pub-2] [INFO] [1750206246.344518950] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206247.3458252 [illuminance_pub-2] [INFO] [1750206247.344685097] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206248.3459163 [illuminance_pub-2] [INFO] [1750206248.345015652] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206249.3477488 [illuminance_pub-2] [INFO] [1750206249.347106003] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206250.3468969 [illuminance_pub-2] [INFO] [1750206250.344515614] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206251.3466334 [illuminance_pub-2] [INFO] [1750206251.344340465] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206252.3451707 [illuminance_pub-2] [INFO] [1750206252.344505002] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206252.3484409 [illuminance_pub-2] [INFO] [1750206252.347728631] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206252.3528061 [decision_node-7] [INFO] [1750206252.352006298] [decision_node]: [INFO] send light request: False
+1750206252.3878319 [light_srv-4] [INFO] [1750206252.386756205] [light_actuator]: 💤 불을 끕니다.
+1750206252.5199208 [battery_pub-3] [WARN] [1750206252.519287816] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206252.5218937 [battery_pub-3] [INFO] [1750206252.521267242] [battery_sensor]: I2C 초기화 성공
+1750206253.3451076 [illuminance_pub-2] [INFO] [1750206253.344383075] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206254.3450668 [illuminance_pub-2] [INFO] [1750206254.344360149] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206298.1039460 [illuminance_pub-2] [INFO] [1750206298.102008255] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206298.1156087 [illuminance_pub-2] [INFO] [1750206298.110615626] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206298.1171420 [decision_node-7] [INFO] [1750206298.111002774] [decision_node]: [INFO] send light request: False
+1750206298.1183829 [light_srv-4] [INFO] [1750206298.112781311] [light_actuator]: 💤 불을 끕니다.
+1750206298.3473387 [illuminance_pub-2] [INFO] [1750206298.344930515] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206299.3484058 [illuminance_pub-2] [INFO] [1750206299.346896421] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206300.3455527 [illuminance_pub-2] [INFO] [1750206300.344809365] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206301.3454416 [illuminance_pub-2] [INFO] [1750206301.344767068] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206302.3464665 [illuminance_pub-2] [INFO] [1750206302.345788197] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206302.3540230 [illuminance_pub-2] [INFO] [1750206302.353331197] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206302.3597906 [decision_node-7] [INFO] [1750206302.356821253] [decision_node]: [INFO] send light request: False
+1750206302.3611965 [light_srv-4] [INFO] [1750206302.358715975] [light_actuator]: 💤 불을 끕니다.
+1750206303.3465207 [illuminance_pub-2] [INFO] [1750206303.344514012] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206303.9436088 [vision_node-8] /home/dongjae/ros2_kart_ws/install/vision_pkg/lib/python3.11/site-packages/vision_pkg/yolov5/utils/general.py:32: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+1750206303.9440136 [vision_node-8]   import pkg_resources as pkg
+1750206304.3473125 [illuminance_pub-2] [INFO] [1750206304.346305159] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206305.2756734 [battery_pub-3] [WARN] [1750206305.274421418] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206305.2787704 [battery_pub-3] [INFO] [1750206305.278160751] [battery_sensor]: I2C 초기화 성공
+1750206305.3462470 [illuminance_pub-2] [INFO] [1750206305.345608492] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206306.3466918 [illuminance_pub-2] [INFO] [1750206306.345058065] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206307.3472629 [illuminance_pub-2] [INFO] [1750206307.345986380] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206308.3458138 [illuminance_pub-2] [INFO] [1750206308.344224231] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206309.3455017 [illuminance_pub-2] [INFO] [1750206309.344708749] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206310.3452694 [illuminance_pub-2] [INFO] [1750206310.344548433] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206311.3324721 [vision_node-8] Fusing layers... 
+1750206311.3463058 [illuminance_pub-2] [INFO] [1750206311.344258766] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206312.3453431 [illuminance_pub-2] [INFO] [1750206312.344284599] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206312.3489671 [illuminance_pub-2] [INFO] [1750206312.348001154] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206312.3507926 [decision_node-7] [INFO] [1750206312.350163784] [decision_node]: [INFO] send light request: False
+1750206312.3530788 [light_srv-4] [INFO] [1750206312.352278673] [light_actuator]: 💤 불을 끕니다.
+1750206312.5221148 [battery_pub-3] [WARN] [1750206312.521455710] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206312.5247495 [battery_pub-3] [INFO] [1750206312.523417488] [battery_sensor]: I2C 초기화 성공
+1750206312.6699533 [vision_node-8] Model summary: 157 layers, 7012822 parameters, 0 gradients, 15.8 GFLOPs
+1750206312.7272098 [vision_node-8] [0:00:50.147490209] [985] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:326 [0mlibcamera v0.5.0+59-d83ff0a4
+1750206312.8505189 [vision_node-8] [0:00:50.270798894] [1091] [1;33m WARN [1;37mRPiSdn [1;34msdn.cpp:40 [0mUsing legacy SDN tuning - please consider moving SDN inside rpi.denoise
+1750206312.8530722 [vision_node-8] [0:00:50.273453691] [1091] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:447 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx708@1a to Unicam device /dev/media2 and ISP device /dev/media0
+1750206312.8534582 [vision_node-8] [0:00:50.273529209] [1091] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1121 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+1750206312.8628128 [vision_node-8] [0:00:50.283008487] [985] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1205 [0mconfiguring streams: (0) 640x480-XBGR8888 (1) 1536x864-SBGGR10_CSI2P
+1750206312.8641458 [vision_node-8] [0:00:50.283540487] [1091] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:622 [0mSensor: /base/soc/i2c0mux/i2c@1/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10 - Selected unicam format: 1536x864-pBAA
+1750206313.3650835 [illuminance_pub-2] [INFO] [1750206313.359741617] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206314.3524606 [illuminance_pub-2] [INFO] [1750206314.349060431] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206315.3474119 [illuminance_pub-2] [INFO] [1750206315.344810745] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206316.3498209 [illuminance_pub-2] [INFO] [1750206316.348811726] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206317.3489263 [illuminance_pub-2] [INFO] [1750206317.347670892] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206318.3596873 [illuminance_pub-2] [INFO] [1750206318.352500336] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206319.3523562 [illuminance_pub-2] [INFO] [1750206319.350854539] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206320.3463676 [illuminance_pub-2] [INFO] [1750206320.345580279] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206321.3503418 [illuminance_pub-2] [INFO] [1750206321.347050556] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206322.3511951 [illuminance_pub-2] [INFO] [1750206322.349977760] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206322.3672624 [illuminance_pub-2] [INFO] [1750206322.365687537] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206322.3712802 [decision_node-7] [INFO] [1750206322.369099630] [decision_node]: [INFO] send light request: False
+1750206322.3731976 [light_srv-4] [INFO] [1750206322.372527778] [light_actuator]: 💤 불을 끕니다.
+1750206322.5281751 [battery_pub-3] [WARN] [1750206322.527379130] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206322.5349228 [battery_pub-3] [INFO] [1750206322.530465648] [battery_sensor]: I2C 초기화 성공
+1750206323.3547430 [illuminance_pub-2] [INFO] [1750206323.353287648] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206324.3643064 [illuminance_pub-2] [INFO] [1750206324.362041221] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206325.3592911 [illuminance_pub-2] [INFO] [1750206325.353866647] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206326.3530583 [illuminance_pub-2] [INFO] [1750206326.352250220] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206327.3467524 [illuminance_pub-2] [INFO] [1750206327.344731460] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206328.3645208 [illuminance_pub-2] [INFO] [1750206328.361649349] [illuminance_sensor]: RAW=206 → 80.7843137254902%
+1750206328.6202199 [imu_pub-1] [WARN] [1750206328.619365941] [imu_sensor]: FALL! Roll=-116.9°, Pitch=68.9°
+1750206328.6326268 [imu_pub-1] [WARN] [1750206328.629545256] [imu_sensor]: FALL! Roll=-174.1°, Pitch=65.9°
+1750206328.6375723 [decision_node-7] [INFO] [1750206328.634697182] [decision_node]: [INFO] send buzzer request: 3.0 seconds
+1750206328.6495633 [buzzer_srv-5] [INFO] [1750206328.640072867] [buzzer_actuator]: 🔊 Buzzer ON (Duty: 70%) 3.0Sec
+1750206328.6615145 [imu_pub-1] [WARN] [1750206328.660404960] [imu_sensor]: FALL! Roll=18.2°, Pitch=78.8°
+1750206328.6838367 [imu_pub-1] [WARN] [1750206328.680963941] [imu_sensor]: FALL! Roll=146.8°, Pitch=88.0°
+1750206328.7006817 [imu_pub-1] [WARN] [1750206328.699723626] [imu_sensor]: FALL! Roll=34.4°, Pitch=82.8°
+1750206328.7141955 [imu_pub-1] [WARN] [1750206328.713398200] [imu_sensor]: FALL! Roll=-39.0°, Pitch=81.9°
+1750206328.7264400 [imu_pub-1] [WARN] [1750206328.725667552] [imu_sensor]: FALL! Roll=-31.9°, Pitch=78.4°
+1750206328.7518120 [imu_pub-1] [WARN] [1750206328.750917422] [imu_sensor]: FALL! Roll=-36.5°, Pitch=76.3°
+1750206328.8205807 [imu_pub-1] [WARN] [1750206328.814835478] [imu_sensor]: FALL! Roll=-1.7°, Pitch=68.6°
+1750206328.8380826 [imu_pub-1] [WARN] [1750206328.835337589] [imu_sensor]: FALL! Roll=-8.6°, Pitch=72.6°
+1750206328.8517952 [imu_pub-1] [WARN] [1750206328.846563422] [imu_sensor]: FALL! Roll=-8.0°, Pitch=74.7°
+1750206328.8608689 [imu_pub-1] [WARN] [1750206328.860126459] [imu_sensor]: FALL! Roll=3.2°, Pitch=76.1°
+1750206328.8783984 [imu_pub-1] [WARN] [1750206328.877532441] [imu_sensor]: FALL! Roll=-9.7°, Pitch=74.9°
+1750206328.8912675 [imu_pub-1] [WARN] [1750206328.890024941] [imu_sensor]: FALL! Roll=-12.0°, Pitch=77.2°
+1750206328.9091201 [imu_pub-1] [WARN] [1750206328.908359459] [imu_sensor]: FALL! Roll=7.5°, Pitch=71.9°
+1750206328.9199440 [imu_pub-1] [WARN] [1750206328.919267533] [imu_sensor]: FALL! Roll=9.8°, Pitch=74.5°
+1750206328.9318593 [imu_pub-1] [WARN] [1750206328.929285533] [imu_sensor]: FALL! Roll=-3.9°, Pitch=80.1°
+1750206328.9442401 [imu_pub-1] [WARN] [1750206328.942591182] [imu_sensor]: FALL! Roll=3.7°, Pitch=81.6°
+1750206328.9509690 [imu_pub-1] [WARN] [1750206328.950020515] [imu_sensor]: FALL! Roll=-131.9°, Pitch=83.4°
+1750206328.9731357 [imu_pub-1] [WARN] [1750206328.972373737] [imu_sensor]: FALL! Roll=-2.8°, Pitch=69.1°
+1750206329.1985602 [imu_pub-1] [WARN] [1750206329.197784422] [imu_sensor]: FALL! Roll=-167.2°, Pitch=-42.9°
+1750206329.3519514 [illuminance_pub-2] [INFO] [1750206329.348534922] [illuminance_sensor]: RAW=204 → 80.0%
+1750206330.3513463 [illuminance_pub-2] [INFO] [1750206330.349739614] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206331.3530333 [illuminance_pub-2] [INFO] [1750206331.352303921] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206332.3519533 [illuminance_pub-2] [INFO] [1750206332.348941753] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206332.3574212 [illuminance_pub-2] [INFO] [1750206332.356346519] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206332.3652563 [decision_node-7] [INFO] [1750206332.364588759] [decision_node]: [INFO] send light request: False
+1750206332.3690414 [light_srv-4] [INFO] [1750206332.366638262] [light_actuator]: 💤 불을 끕니다.
+1750206332.5290580 [battery_pub-3] [WARN] [1750206332.527656874] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206332.5390587 [battery_pub-3] [INFO] [1750206332.533701201] [battery_sensor]: I2C 초기화 성공
+1750206333.3526154 [illuminance_pub-2] [INFO] [1750206333.351569523] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206334.3481185 [illuminance_pub-2] [INFO] [1750206334.347257287] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206335.3495882 [illuminance_pub-2] [INFO] [1750206335.348189626] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206336.3563855 [illuminance_pub-2] [INFO] [1750206336.354004712] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206337.3546412 [illuminance_pub-2] [INFO] [1750206337.352809660] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206338.3494320 [illuminance_pub-2] [INFO] [1750206338.348561955] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206339.3466239 [illuminance_pub-2] [INFO] [1750206339.345745102] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206340.3473175 [illuminance_pub-2] [INFO] [1750206340.346182893] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206341.3539639 [illuminance_pub-2] [INFO] [1750206341.353075228] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206342.3509614 [illuminance_pub-2] [INFO] [1750206342.347634053] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206342.3514836 [illuminance_pub-2] [INFO] [1750206342.349913987] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206342.3569021 [decision_node-7] [INFO] [1750206342.354211130] [decision_node]: [INFO] send light request: False
+1750206342.3601198 [light_srv-4] [INFO] [1750206342.359417807] [light_actuator]: 💤 불을 끕니다.
+1750206342.5233364 [battery_pub-3] [WARN] [1750206342.522003049] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206342.5247965 [battery_pub-3] [INFO] [1750206342.524150936] [battery_sensor]: I2C 초기화 성공
+1750206343.3456118 [illuminance_pub-2] [INFO] [1750206343.344838016] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206344.3470781 [illuminance_pub-2] [INFO] [1750206344.345585097] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206345.0017958 [ble_node-6] [INFO] [1750206345.000998566] [ble_node]: Central connected: <bluezero.device.Device object at 0x7f66e2d8d0>, auth check start
+1750206345.3567152 [illuminance_pub-2] [INFO] [1750206345.354453775] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206346.2733860 [ble_node-6] [INFO] [1750206346.271393498] [ble_node]: Read secret key success : mysecret
+1750206346.2820284 [ble_node-6] [INFO] [1750206346.280513926] [ble_node]: mysecret : mysecret
+1750206346.3478396 [illuminance_pub-2] [INFO] [1750206346.345448840] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206346.3719604 [ble_node-6] [INFO] [1750206346.370654145] [ble_node]: [ble_gatt_server] Authenticated after 1.3s, auth success
+1750206347.3528688 [illuminance_pub-2] [INFO] [1750206347.349832616] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206348.3566263 [illuminance_pub-2] [INFO] [1750206348.355324969] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206349.3537490 [illuminance_pub-2] [INFO] [1750206349.349695668] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206350.3484356 [illuminance_pub-2] [INFO] [1750206350.347475454] [illuminance_sensor]: RAW=201 → 78.82352941176471%
+1750206351.3502679 [illuminance_pub-2] [INFO] [1750206351.348909232] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206352.3545542 [illuminance_pub-2] [INFO] [1750206352.351717727] [illuminance_sensor]: RAW=201 → 78.82352941176471%
+1750206352.3560374 [illuminance_pub-2] [INFO] [1750206352.354965765] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206352.3657753 [decision_node-7] [INFO] [1750206352.359701381] [decision_node]: [INFO] send light request: False
+1750206352.3680847 [light_srv-4] [INFO] [1750206352.360267904] [light_actuator]: 💤 불을 끕니다.
+1750206352.5222018 [battery_pub-3] [WARN] [1750206352.521306425] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206352.5259356 [battery_pub-3] [INFO] [1750206352.524592927] [battery_sensor]: I2C 초기화 성공
+1750206353.3513610 [illuminance_pub-2] [INFO] [1750206353.350310764] [illuminance_sensor]: RAW=201 → 78.82352941176471%
+1750206354.3604558 [illuminance_pub-2] [INFO] [1750206354.357358985] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206355.3479710 [illuminance_pub-2] [INFO] [1750206355.346373850] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206356.3580799 [illuminance_pub-2] [INFO] [1750206356.356680042] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206357.3497307 [illuminance_pub-2] [INFO] [1750206357.348966148] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206358.3463504 [illuminance_pub-2] [INFO] [1750206358.345376646] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206359.3495655 [illuminance_pub-2] [INFO] [1750206359.348299841] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206360.3504193 [illuminance_pub-2] [INFO] [1750206360.349083420] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206361.3519609 [illuminance_pub-2] [INFO] [1750206361.348503828] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206362.3519568 [illuminance_pub-2] [INFO] [1750206362.350039911] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206362.3646982 [illuminance_pub-2] [INFO] [1750206362.363472879] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206362.3683522 [decision_node-7] [INFO] [1750206362.363671179] [decision_node]: [INFO] send light request: False
+1750206362.3698044 [light_srv-4] [INFO] [1750206362.368606506] [light_actuator]: 💤 불을 끕니다.
+1750206362.5234571 [battery_pub-3] [WARN] [1750206362.521350444] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206362.5288563 [battery_pub-3] [INFO] [1750206362.528054919] [battery_sensor]: I2C 초기화 성공
+1750206363.3517997 [illuminance_pub-2] [INFO] [1750206363.349985733] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206364.3533673 [illuminance_pub-2] [INFO] [1750206364.352356275] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206365.3459704 [illuminance_pub-2] [INFO] [1750206365.345259866] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206366.3462746 [illuminance_pub-2] [INFO] [1750206366.345311902] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206367.3495665 [illuminance_pub-2] [INFO] [1750206367.346732416] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206368.3501546 [illuminance_pub-2] [INFO] [1750206368.348661069] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206369.3535147 [illuminance_pub-2] [INFO] [1750206369.351950860] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206370.3518693 [illuminance_pub-2] [INFO] [1750206370.349648515] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206371.3509057 [illuminance_pub-2] [INFO] [1750206371.348133235] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206372.3530562 [illuminance_pub-2] [INFO] [1750206372.352106508] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206372.3603623 [illuminance_pub-2] [INFO] [1750206372.358470800] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206372.3640144 [decision_node-7] [INFO] [1750206372.359001640] [decision_node]: [INFO] send light request: False
+1750206372.3672168 [light_srv-4] [INFO] [1750206372.366148496] [light_actuator]: 💤 불을 끕니다.
+1750206372.5287409 [battery_pub-3] [WARN] [1750206372.527146145] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206372.5300736 [battery_pub-3] [INFO] [1750206372.529305650] [battery_sensor]: I2C 초기화 성공
+1750206373.3480017 [illuminance_pub-2] [INFO] [1750206373.345777300] [illuminance_sensor]: RAW=204 → 80.0%
+1750206374.3556473 [illuminance_pub-2] [INFO] [1750206374.349828712] [illuminance_sensor]: RAW=204 → 80.0%
+1750206375.3488886 [illuminance_pub-2] [INFO] [1750206375.347839542] [illuminance_sensor]: RAW=204 → 80.0%
+1750206376.3486879 [illuminance_pub-2] [INFO] [1750206376.347854704] [illuminance_sensor]: RAW=204 → 80.0%
+1750206377.3496461 [illuminance_pub-2] [INFO] [1750206377.348829596] [illuminance_sensor]: RAW=204 → 80.0%
+1750206378.3465600 [illuminance_pub-2] [INFO] [1750206378.345872343] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206379.3470490 [illuminance_pub-2] [INFO] [1750206379.346265405] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206380.3489616 [illuminance_pub-2] [INFO] [1750206380.347040010] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206381.3463793 [illuminance_pub-2] [INFO] [1750206381.345066242] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206382.3672931 [illuminance_pub-2] [INFO] [1750206382.357213192] [illuminance_sensor]: RAW=201 → 78.82352941176471%
+1750206382.3726730 [illuminance_pub-2] [INFO] [1750206382.371073976] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206382.3806801 [light_srv-4] [INFO] [1750206382.378992522] [light_actuator]: 💤 불을 끕니다.
+1750206382.3820744 [decision_node-7] [INFO] [1750206382.380356011] [decision_node]: [INFO] send light request: False
+1750206382.5241899 [battery_pub-3] [WARN] [1750206382.522100295] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206382.5296566 [battery_pub-3] [INFO] [1750206382.527409696] [battery_sensor]: I2C 초기화 성공
+1750206383.3485847 [illuminance_pub-2] [INFO] [1750206383.347439876] [illuminance_sensor]: RAW=201 → 78.82352941176471%
+1750206384.3493609 [illuminance_pub-2] [INFO] [1750206384.348486694] [illuminance_sensor]: RAW=201 → 78.82352941176471%
+1750206385.3525369 [illuminance_pub-2] [INFO] [1750206385.347209706] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206386.3531721 [illuminance_pub-2] [INFO] [1750206386.349463570] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206387.3521657 [illuminance_pub-2] [INFO] [1750206387.345796654] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206388.3497317 [illuminance_pub-2] [INFO] [1750206388.348838900] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206389.3512573 [illuminance_pub-2] [INFO] [1750206389.350290141] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206390.3503985 [illuminance_pub-2] [INFO] [1750206390.349247262] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206391.3603792 [illuminance_pub-2] [INFO] [1750206391.354331900] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206392.3516638 [illuminance_pub-2] [INFO] [1750206392.350727817] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206392.3615987 [illuminance_pub-2] [INFO] [1750206392.360462606] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206392.3671746 [decision_node-7] [INFO] [1750206392.360923311] [decision_node]: [INFO] send light request: False
+1750206392.3689463 [light_srv-4] [INFO] [1750206392.367369034] [light_actuator]: 💤 불을 끕니다.
+1750206392.5228665 [battery_pub-3] [WARN] [1750206392.521949096] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206392.5323975 [battery_pub-3] [INFO] [1750206392.531030013] [battery_sensor]: I2C 초기화 성공
+1750206393.3571405 [illuminance_pub-2] [INFO] [1750206393.353084647] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206394.3497686 [illuminance_pub-2] [INFO] [1750206394.348691222] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206395.3490689 [illuminance_pub-2] [INFO] [1750206395.346233586] [illuminance_sensor]: RAW=204 → 80.0%
+1750206396.3477809 [illuminance_pub-2] [INFO] [1750206396.346933504] [illuminance_sensor]: RAW=204 → 80.0%
+1750206397.3469613 [illuminance_pub-2] [INFO] [1750206397.346032571] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206398.3541832 [illuminance_pub-2] [INFO] [1750206398.351706615] [illuminance_sensor]: RAW=201 → 78.82352941176471%
+1750206399.3504024 [illuminance_pub-2] [INFO] [1750206399.347509080] [illuminance_sensor]: RAW=201 → 78.82352941176471%
+1750206400.3551750 [illuminance_pub-2] [INFO] [1750206400.354414089] [illuminance_sensor]: RAW=201 → 78.82352941176471%
+1750206401.3530819 [illuminance_pub-2] [INFO] [1750206401.349935251] [illuminance_sensor]: RAW=201 → 78.82352941176471%
+1750206402.3520341 [illuminance_pub-2] [INFO] [1750206402.351203330] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206402.3631487 [illuminance_pub-2] [INFO] [1750206402.357530621] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206402.3674634 [decision_node-7] [INFO] [1750206402.363955838] [decision_node]: [INFO] send light request: False
+1750206402.3742561 [light_srv-4] [INFO] [1750206402.369721747] [light_actuator]: 💤 불을 끕니다.
+1750206402.5282559 [battery_pub-3] [WARN] [1750206402.525542103] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206402.5286632 [battery_pub-3] [INFO] [1750206402.527464603] [battery_sensor]: I2C 초기화 성공
+1750206403.3525944 [illuminance_pub-2] [INFO] [1750206403.350732686] [illuminance_sensor]: RAW=204 → 80.0%
+1750206404.3524485 [illuminance_pub-2] [INFO] [1750206404.349281842] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206405.3462784 [illuminance_pub-2] [INFO] [1750206405.344977064] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206405.8836737 [vision_node-8] [INFO] [1750206405.881695840] [vision_node]: capture!!
+1750206405.8919661 [decision_node-7] [INFO] [1750206405.890149914] [decision_node]: [INFO] send buzzer request: 0.8 seconds
+1750206405.8945296 [buzzer_srv-5] [INFO] [1750206405.891093795] [buzzer_actuator]: 🔊 Buzzer ON (Duty: 70%) 0.800000011920929Sec
+1750206406.3500800 [illuminance_pub-2] [INFO] [1750206406.346756044] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206407.3581522 [illuminance_pub-2] [INFO] [1750206407.350616145] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206408.3462090 [illuminance_pub-2] [INFO] [1750206408.345402656] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206409.3534517 [illuminance_pub-2] [INFO] [1750206409.352399396] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206410.3467824 [illuminance_pub-2] [INFO] [1750206410.345154253] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206411.3489511 [illuminance_pub-2] [INFO] [1750206411.348196807] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206412.3460503 [illuminance_pub-2] [INFO] [1750206412.345070494] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206412.3500679 [illuminance_pub-2] [INFO] [1750206412.349170982] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206412.3535872 [light_srv-4] [INFO] [1750206412.352411218] [light_actuator]: 💤 불을 끕니다.
+1750206412.3554878 [decision_node-7] [INFO] [1750206412.354603128] [decision_node]: [INFO] send light request: False
+1750206412.5287650 [battery_pub-3] [WARN] [1750206412.527296654] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206412.5329289 [battery_pub-3] [INFO] [1750206412.530500520] [battery_sensor]: I2C 초기화 성공
+1750206413.3502271 [illuminance_pub-2] [INFO] [1750206413.348538359] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206414.3516333 [illuminance_pub-2] [INFO] [1750206414.350668031] [illuminance_sensor]: RAW=201 → 78.82352941176471%
+1750206414.6488326 [vision_node-8] [INFO] [1750206414.648193169] [vision_node]: capture!!
+1750206414.6559925 [decision_node-7] [INFO] [1750206414.652613380] [decision_node]: [INFO] send buzzer request: 0.8 seconds
+1750206414.6570711 [buzzer_srv-5] [INFO] [1750206414.653894630] [buzzer_actuator]: 🔊 Buzzer ON (Duty: 70%) 0.800000011920929Sec
+1750206415.3557708 [illuminance_pub-2] [INFO] [1750206415.350641008] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750206416.3506253 [illuminance_pub-2] [INFO] [1750206416.347977472] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206417.3624911 [illuminance_pub-2] [INFO] [1750206417.359059440] [illuminance_sensor]: RAW=201 → 78.82352941176471%
+1750206418.3492439 [illuminance_pub-2] [INFO] [1750206418.348471450] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750206419.3476896 [illuminance_pub-2] [INFO] [1750206419.346456896] [illuminance_sensor]: RAW=207 → 81.17647058823529%
+1750206420.3479383 [illuminance_pub-2] [INFO] [1750206420.346478500] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206421.3567152 [illuminance_pub-2] [INFO] [1750206421.350600635] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206422.3500290 [illuminance_pub-2] [INFO] [1750206422.348108378] [illuminance_sensor]: RAW=201 → 78.82352941176471%
+1750206422.3540645 [illuminance_pub-2] [INFO] [1750206422.352610112] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206422.3578706 [decision_node-7] [INFO] [1750206422.356547719] [decision_node]: [INFO] send light request: False
+1750206422.3650510 [light_srv-4] [INFO] [1750206422.363498773] [light_actuator]: 💤 불을 끕니다.
+1750206422.5216138 [battery_pub-3] [WARN] [1750206422.520832091] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206422.5318859 [battery_pub-3] [INFO] [1750206422.527705608] [battery_sensor]: I2C 초기화 성공
+1750206423.3622262 [illuminance_pub-2] [INFO] [1750206423.360745138] [illuminance_sensor]: RAW=201 → 78.82352941176471%
+1750206424.3488188 [illuminance_pub-2] [INFO] [1750206424.346835975] [illuminance_sensor]: RAW=201 → 78.82352941176471%
+1750206425.3456714 [illuminance_pub-2] [INFO] [1750206425.344890579] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206426.3519371 [illuminance_pub-2] [INFO] [1750206426.350016792] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206427.3561077 [illuminance_pub-2] [INFO] [1750206427.347081593] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206428.3471417 [illuminance_pub-2] [INFO] [1750206428.346403576] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206429.3472407 [illuminance_pub-2] [INFO] [1750206429.344802159] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206430.3497787 [illuminance_pub-2] [INFO] [1750206430.346601669] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206431.3518131 [illuminance_pub-2] [INFO] [1750206431.348795120] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206432.3573956 [illuminance_pub-2] [INFO] [1750206432.349540311] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206432.3603089 [illuminance_pub-2] [INFO] [1750206432.358860529] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206432.3717985 [decision_node-7] [INFO] [1750206432.370365459] [decision_node]: [INFO] send light request: False
+1750206432.3839614 [light_srv-4] [INFO] [1750206432.379219901] [light_actuator]: 💤 불을 끕니다.
+1750206433.0892763 [battery_pub-3] [WARN] [1750206433.088242371] [battery_sensor]: I2C 통신 오류: OSError(5, 'Input/output error'), 버스 재초기화 시도
+1750206433.0968924 [battery_pub-3] [INFO] [1750206433.095479802] [battery_sensor]: I2C 초기화 성공
+1750206433.3541484 [illuminance_pub-2] [INFO] [1750206433.351200636] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206434.3516908 [illuminance_pub-2] [INFO] [1750206434.346456235] [illuminance_sensor]: RAW=201 → 78.82352941176471%
+1750206435.3468843 [illuminance_pub-2] [INFO] [1750206435.346164983] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206436.3516541 [illuminance_pub-2] [INFO] [1750206436.346030859] [illuminance_sensor]: RAW=201 → 78.82352941176471%
+1750206437.3462253 [illuminance_pub-2] [INFO] [1750206437.345409011] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206438.3662474 [illuminance_pub-2] [INFO] [1750206438.363907304] [illuminance_sensor]: RAW=206 → 80.7843137254902%
+1750206439.3553925 [illuminance_pub-2] [INFO] [1750206439.351041729] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206440.3453426 [illuminance_pub-2] [INFO] [1750206440.344578431] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206441.3479316 [illuminance_pub-2] [INFO] [1750206441.346914401] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206442.3481960 [illuminance_pub-2] [INFO] [1750206442.346473697] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206442.3603389 [illuminance_pub-2] [INFO] [1750206442.354624946] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206442.3652630 [decision_node-7] [INFO] [1750206442.355004074] [decision_node]: [INFO] send light request: False
+1750206442.3676314 [light_srv-4] [INFO] [1750206442.361939605] [light_actuator]: 💤 불을 끕니다.
+1750206442.5236342 [battery_pub-3] [WARN] [1750206442.522718696] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206442.5291777 [battery_pub-3] [INFO] [1750206442.526573385] [battery_sensor]: I2C 초기화 성공
+1750206443.3510425 [illuminance_pub-2] [INFO] [1750206443.349523833] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206444.3519337 [illuminance_pub-2] [INFO] [1750206444.350347529] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206445.3645873 [illuminance_pub-2] [INFO] [1750206445.359078175] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206446.3529294 [illuminance_pub-2] [INFO] [1750206446.352181199] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206447.3527467 [illuminance_pub-2] [INFO] [1750206447.351985303] [illuminance_sensor]: RAW=201 → 78.82352941176471%
+1750206448.3490167 [illuminance_pub-2] [INFO] [1750206448.348106944] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206449.3503251 [illuminance_pub-2] [INFO] [1750206449.349542222] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206450.3481472 [illuminance_pub-2] [INFO] [1750206450.347160273] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206451.3530607 [illuminance_pub-2] [INFO] [1750206451.351510362] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206452.3461585 [illuminance_pub-2] [INFO] [1750206452.345311889] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206452.3539188 [illuminance_pub-2] [INFO] [1750206452.353151662] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206452.3590202 [decision_node-7] [INFO] [1750206452.356922632] [decision_node]: [INFO] send light request: False
+1750206452.3638148 [light_srv-4] [INFO] [1750206452.362972114] [light_actuator]: 💤 불을 끕니다.
+1750206452.5281222 [battery_pub-3] [WARN] [1750206452.525522652] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206452.5322175 [battery_pub-3] [INFO] [1750206452.530907099] [battery_sensor]: I2C 초기화 성공
+1750206453.3472061 [illuminance_pub-2] [INFO] [1750206453.346143115] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206454.3523517 [illuminance_pub-2] [INFO] [1750206454.349444830] [illuminance_sensor]: RAW=201 → 78.82352941176471%
+1750206455.3488348 [illuminance_pub-2] [INFO] [1750206455.347322426] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206456.3501625 [illuminance_pub-2] [INFO] [1750206456.348123840] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206457.3472970 [illuminance_pub-2] [INFO] [1750206457.346467030] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206458.3473763 [illuminance_pub-2] [INFO] [1750206458.346444669] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206459.3491042 [illuminance_pub-2] [INFO] [1750206459.348240495] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206460.3480260 [illuminance_pub-2] [INFO] [1750206460.344664119] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206461.3461239 [illuminance_pub-2] [INFO] [1750206461.345147347] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206462.3653457 [illuminance_pub-2] [INFO] [1750206462.361819280] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206462.3943977 [illuminance_pub-2] [INFO] [1750206462.390866114] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206462.3963490 [light_srv-4] [INFO] [1750206462.392563888] [light_actuator]: 💤 불을 끕니다.
+1750206462.4020729 [decision_node-7] [INFO] [1750206462.393403738] [decision_node]: [INFO] send light request: False
+1750206462.5242774 [battery_pub-3] [WARN] [1750206462.521510417] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206462.5259392 [battery_pub-3] [INFO] [1750206462.525152075] [battery_sensor]: I2C 초기화 성공
+1750206463.3514385 [illuminance_pub-2] [INFO] [1750206463.348969195] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206464.3505516 [illuminance_pub-2] [INFO] [1750206464.348848339] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206465.3551931 [illuminance_pub-2] [INFO] [1750206465.351927455] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206466.3506038 [illuminance_pub-2] [INFO] [1750206466.348624827] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206467.3558772 [illuminance_pub-2] [INFO] [1750206467.353321232] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206468.3501341 [illuminance_pub-2] [INFO] [1750206468.349352413] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206469.3500712 [illuminance_pub-2] [INFO] [1750206469.348080878] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206470.3502192 [illuminance_pub-2] [INFO] [1750206470.348269520] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206471.3505285 [illuminance_pub-2] [INFO] [1750206471.348479007] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206472.3537283 [illuminance_pub-2] [INFO] [1750206472.350651852] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206472.3665721 [illuminance_pub-2] [INFO] [1750206472.361722458] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206472.3677485 [light_srv-4] [INFO] [1750206472.365095340] [light_actuator]: 💤 불을 끕니다.
+1750206472.3845937 [decision_node-7] [INFO] [1750206472.376321575] [decision_node]: [INFO] send light request: False
+1750206472.5228491 [battery_pub-3] [WARN] [1750206472.522053129] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206472.5272770 [battery_pub-3] [INFO] [1750206472.525564899] [battery_sensor]: I2C 초기화 성공
+1750206473.3518443 [illuminance_pub-2] [INFO] [1750206473.349516955] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206474.3559768 [illuminance_pub-2] [INFO] [1750206474.354247481] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206475.3478885 [illuminance_pub-2] [INFO] [1750206475.346271763] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206476.3492339 [illuminance_pub-2] [INFO] [1750206476.347085368] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206477.3482056 [illuminance_pub-2] [INFO] [1750206477.346976332] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206478.3531041 [illuminance_pub-2] [INFO] [1750206478.350957017] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206479.3517141 [illuminance_pub-2] [INFO] [1750206479.350232141] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206480.3451562 [illuminance_pub-2] [INFO] [1750206480.344429595] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206481.3484099 [illuminance_pub-2] [INFO] [1750206481.347638460] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206482.3499298 [illuminance_pub-2] [INFO] [1750206482.348993536] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206482.3567104 [decision_node-7] [INFO] [1750206482.354440803] [decision_node]: [INFO] send light request: False
+1750206482.3581975 [illuminance_pub-2] [INFO] [1750206482.356728928] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206482.3616390 [light_srv-4] [INFO] [1750206482.358094629] [light_actuator]: 💤 불을 끕니다.
+1750206482.5237398 [battery_pub-3] [WARN] [1750206482.522925164] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206482.5325446 [battery_pub-3] [INFO] [1750206482.531623980] [battery_sensor]: I2C 초기화 성공
+1750206483.3535025 [illuminance_pub-2] [INFO] [1750206483.350155614] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206484.3557918 [illuminance_pub-2] [INFO] [1750206484.354535595] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206485.3518255 [illuminance_pub-2] [INFO] [1750206485.347769023] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206486.3482900 [illuminance_pub-2] [INFO] [1750206486.347362922] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206487.3585818 [illuminance_pub-2] [INFO] [1750206487.357353597] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206488.3479578 [illuminance_pub-2] [INFO] [1750206488.347093271] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206489.3498068 [illuminance_pub-2] [INFO] [1750206489.349039662] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206490.3477161 [illuminance_pub-2] [INFO] [1750206490.346871948] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206491.3474214 [illuminance_pub-2] [INFO] [1750206491.346216062] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206492.3617876 [illuminance_pub-2] [INFO] [1750206492.357779429] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206492.3684549 [decision_node-7] [INFO] [1750206492.367220005] [decision_node]: [INFO] send light request: False
+1750206492.3732879 [illuminance_pub-2] [INFO] [1750206492.367517301] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206492.3838995 [light_srv-4] [INFO] [1750206492.370011555] [light_actuator]: 💤 불을 끕니다.
+1750206492.5256724 [battery_pub-3] [WARN] [1750206492.524654840] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206492.5365775 [battery_pub-3] [INFO] [1750206492.531903179] [battery_sensor]: I2C 초기화 성공
+1750206493.3501489 [illuminance_pub-2] [INFO] [1750206493.347284368] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206494.3518569 [illuminance_pub-2] [INFO] [1750206494.349064300] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206495.3571095 [illuminance_pub-2] [INFO] [1750206495.356228052] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206496.3502643 [illuminance_pub-2] [INFO] [1750206496.349048343] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206497.3675768 [illuminance_pub-2] [INFO] [1750206497.360632855] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206498.3518600 [illuminance_pub-2] [INFO] [1750206498.348176550] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206499.3595824 [illuminance_pub-2] [INFO] [1750206499.358111147] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206500.3511956 [illuminance_pub-2] [INFO] [1750206500.348900935] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206501.3479457 [illuminance_pub-2] [INFO] [1750206501.344657856] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206502.3514452 [illuminance_pub-2] [INFO] [1750206502.350525124] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206502.3583529 [illuminance_pub-2] [INFO] [1750206502.354979598] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206502.3673244 [decision_node-7] [INFO] [1750206502.361931624] [decision_node]: [INFO] send light request: False
+1750206502.3710942 [light_srv-4] [INFO] [1750206502.362770270] [light_actuator]: 💤 불을 끕니다.
+1750206502.5248919 [battery_pub-3] [WARN] [1750206502.523250343] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206502.5280621 [battery_pub-3] [INFO] [1750206502.525071525] [battery_sensor]: I2C 초기화 성공
+1750206503.3456411 [illuminance_pub-2] [INFO] [1750206503.344830439] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206504.3498926 [illuminance_pub-2] [INFO] [1750206504.348643343] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206505.3526764 [illuminance_pub-2] [INFO] [1750206505.351823462] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206506.3638513 [illuminance_pub-2] [INFO] [1750206506.362912486] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206507.3467169 [illuminance_pub-2] [INFO] [1750206507.345989360] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206508.3481102 [illuminance_pub-2] [INFO] [1750206508.347307325] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206509.3497319 [illuminance_pub-2] [INFO] [1750206509.346960358] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206510.3501089 [illuminance_pub-2] [INFO] [1750206510.346788084] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206511.3520575 [illuminance_pub-2] [INFO] [1750206511.349964888] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206512.3503404 [illuminance_pub-2] [INFO] [1750206512.348031486] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206512.3594570 [decision_node-7] [INFO] [1750206512.358732007] [decision_node]: [INFO] send light request: False
+1750206512.3645108 [illuminance_pub-2] [INFO] [1750206512.359331209] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206512.3692448 [light_srv-4] [INFO] [1750206512.368407177] [light_actuator]: 💤 불을 끕니다.
+1750206512.5298219 [battery_pub-3] [WARN] [1750206512.527090416] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206512.5381761 [battery_pub-3] [INFO] [1750206512.537060234] [battery_sensor]: I2C 초기화 성공
+1750206513.3484461 [illuminance_pub-2] [INFO] [1750206513.347664700] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206514.3488386 [illuminance_pub-2] [INFO] [1750206514.346140887] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206515.3467991 [illuminance_pub-2] [INFO] [1750206515.345979598] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206516.3525131 [illuminance_pub-2] [INFO] [1750206516.349622699] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206517.3478663 [illuminance_pub-2] [INFO] [1750206517.345507707] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206518.3546069 [illuminance_pub-2] [INFO] [1750206518.352345688] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206519.3538604 [illuminance_pub-2] [INFO] [1750206519.350537521] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206520.3496377 [illuminance_pub-2] [INFO] [1750206520.348468454] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206521.3505664 [illuminance_pub-2] [INFO] [1750206521.349712055] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206522.3527026 [illuminance_pub-2] [INFO] [1750206522.351566160] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206522.3568385 [illuminance_pub-2] [INFO] [1750206522.354122897] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206522.3625906 [decision_node-7] [INFO] [1750206522.360204499] [decision_node]: [INFO] send light request: False
+1750206522.3640833 [light_srv-4] [INFO] [1750206522.361193128] [light_actuator]: 💤 불을 끕니다.
+1750206522.5252740 [battery_pub-3] [WARN] [1750206522.524515803] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206522.5298336 [battery_pub-3] [INFO] [1750206522.528231726] [battery_sensor]: I2C 초기화 성공
+1750206523.3519542 [illuminance_pub-2] [INFO] [1750206523.350482642] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206524.3456564 [illuminance_pub-2] [INFO] [1750206524.344821700] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206525.3486223 [illuminance_pub-2] [INFO] [1750206525.347724806] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206526.3484135 [illuminance_pub-2] [INFO] [1750206526.347653611] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206527.3470521 [illuminance_pub-2] [INFO] [1750206527.346288336] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206528.3512037 [illuminance_pub-2] [INFO] [1750206528.350124633] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206529.3475988 [illuminance_pub-2] [INFO] [1750206529.344953064] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206530.3595960 [illuminance_pub-2] [INFO] [1750206530.355548985] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206531.3548124 [illuminance_pub-2] [INFO] [1750206531.353317716] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206532.3483961 [illuminance_pub-2] [INFO] [1750206532.346760504] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206532.3728027 [decision_node-7] [INFO] [1750206532.371735637] [decision_node]: [INFO] send light request: False
+1750206532.3800983 [light_srv-4] [INFO] [1750206532.373217584] [light_actuator]: 💤 불을 끕니다.
+1750206532.3842421 [illuminance_pub-2] [INFO] [1750206532.373768805] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206532.5263636 [battery_pub-3] [WARN] [1750206532.525441481] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206532.5307848 [battery_pub-3] [INFO] [1750206532.529578575] [battery_sensor]: I2C 초기화 성공
+1750206533.3495512 [illuminance_pub-2] [INFO] [1750206533.345720231] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206534.3543315 [illuminance_pub-2] [INFO] [1750206534.350706694] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206535.3589609 [illuminance_pub-2] [INFO] [1750206535.355459313] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206536.3515592 [illuminance_pub-2] [INFO] [1750206536.349448229] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206537.3569517 [illuminance_pub-2] [INFO] [1750206537.354407793] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206538.3540585 [illuminance_pub-2] [INFO] [1750206538.352456691] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206539.3557646 [illuminance_pub-2] [INFO] [1750206539.353645840] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206540.3457029 [illuminance_pub-2] [INFO] [1750206540.344753920] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206541.3482473 [illuminance_pub-2] [INFO] [1750206541.346279006] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206542.3474092 [illuminance_pub-2] [INFO] [1750206542.346252941] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206542.3546431 [illuminance_pub-2] [INFO] [1750206542.350056600] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206542.3632617 [decision_node-7] [INFO] [1750206542.361410691] [decision_node]: [INFO] send light request: False
+1750206542.3689148 [light_srv-4] [INFO] [1750206542.367874416] [light_actuator]: 💤 불을 끕니다.
+1750206542.5292814 [battery_pub-3] [WARN] [1750206542.528530306] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206542.5352461 [battery_pub-3] [INFO] [1750206542.531706911] [battery_sensor]: I2C 초기화 성공
+1750206543.3511736 [illuminance_pub-2] [INFO] [1750206543.349040006] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206544.3517427 [illuminance_pub-2] [INFO] [1750206544.350631729] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206545.3517346 [illuminance_pub-2] [INFO] [1750206545.350002133] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206546.3612309 [illuminance_pub-2] [INFO] [1750206546.357886113] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206547.3487082 [illuminance_pub-2] [INFO] [1750206547.347374867] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206548.3469329 [illuminance_pub-2] [INFO] [1750206548.346078293] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206549.3488698 [illuminance_pub-2] [INFO] [1750206549.346510407] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206550.3568864 [illuminance_pub-2] [INFO] [1750206550.353943445] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206551.3489628 [illuminance_pub-2] [INFO] [1750206551.346342667] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206552.3574808 [illuminance_pub-2] [INFO] [1750206552.355965114] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206552.3600831 [illuminance_pub-2] [INFO] [1750206552.358614227] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206552.3643377 [light_srv-4] [INFO] [1750206552.363037828] [light_actuator]: 💤 불을 끕니다.
+1750206552.3794980 [decision_node-7] [INFO] [1750206552.370438403] [decision_node]: [INFO] send light request: False
+1750206552.5245552 [battery_pub-3] [WARN] [1750206552.523050982] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206552.5284448 [battery_pub-3] [INFO] [1750206552.526196636] [battery_sensor]: I2C 초기화 성공
+1750206553.3497698 [illuminance_pub-2] [INFO] [1750206553.346931806] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206554.3470569 [illuminance_pub-2] [INFO] [1750206554.345787657] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206555.3481810 [illuminance_pub-2] [INFO] [1750206555.345999397] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206556.3576732 [illuminance_pub-2] [INFO] [1750206556.353818992] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206557.3504167 [illuminance_pub-2] [INFO] [1750206557.346925201] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206558.3593910 [illuminance_pub-2] [INFO] [1750206558.355357408] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206559.3518083 [illuminance_pub-2] [INFO] [1750206559.351018958] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206560.3650794 [illuminance_pub-2] [INFO] [1750206560.357965682] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206561.3492887 [illuminance_pub-2] [INFO] [1750206561.348521634] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206562.3466024 [illuminance_pub-2] [INFO] [1750206562.345800587] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206562.3576508 [illuminance_pub-2] [INFO] [1750206562.353281165] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206562.3598931 [decision_node-7] [INFO] [1750206562.358487909] [decision_node]: [INFO] send light request: False
+1750206562.3651280 [light_srv-4] [INFO] [1750206562.358673405] [light_actuator]: 💤 불을 끕니다.
+1750206562.5409093 [battery_pub-3] [WARN] [1750206562.534458666] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206562.5595076 [battery_pub-3] [INFO] [1750206562.551347757] [battery_sensor]: I2C 초기화 성공
+1750206563.3620634 [illuminance_pub-2] [INFO] [1750206563.357547430] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206564.3469729 [illuminance_pub-2] [INFO] [1750206564.346127933] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206565.3527286 [illuminance_pub-2] [INFO] [1750206565.347089276] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206566.3587232 [illuminance_pub-2] [INFO] [1750206566.355512599] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206567.3519814 [illuminance_pub-2] [INFO] [1750206567.351253084] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206568.3502445 [illuminance_pub-2] [INFO] [1750206568.349244252] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206569.3512394 [illuminance_pub-2] [INFO] [1750206569.348848038] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206570.3572385 [illuminance_pub-2] [INFO] [1750206570.353348314] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206571.3567846 [illuminance_pub-2] [INFO] [1750206571.354597311] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206572.3463018 [illuminance_pub-2] [INFO] [1750206572.345022796] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206572.3555923 [decision_node-7] [INFO] [1750206572.354313559] [decision_node]: [INFO] send light request: False
+1750206572.3607972 [illuminance_pub-2] [INFO] [1750206572.355687882] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206572.3635974 [light_srv-4] [INFO] [1750206572.358305714] [light_actuator]: 💤 불을 끕니다.
+1750206572.5356739 [battery_pub-3] [WARN] [1750206572.532393175] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206572.5403228 [battery_pub-3] [INFO] [1750206572.539342803] [battery_sensor]: I2C 초기화 성공
+1750206573.3685224 [illuminance_pub-2] [INFO] [1750206573.365090731] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206574.3475568 [illuminance_pub-2] [INFO] [1750206574.346625178] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206575.3480413 [illuminance_pub-2] [INFO] [1750206575.347317257] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206576.3491349 [illuminance_pub-2] [INFO] [1750206576.348331755] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206577.3522320 [illuminance_pub-2] [INFO] [1750206577.350891828] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206578.3518372 [illuminance_pub-2] [INFO] [1750206578.348323183] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206579.3546889 [illuminance_pub-2] [INFO] [1750206579.353056156] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206580.3479543 [illuminance_pub-2] [INFO] [1750206580.346015070] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206581.3492005 [illuminance_pub-2] [INFO] [1750206581.348129413] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206582.3523977 [illuminance_pub-2] [INFO] [1750206582.350906685] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206582.3624279 [decision_node-7] [INFO] [1750206582.361408613] [decision_node]: [INFO] send light request: False
+1750206582.3720131 [light_srv-4] [INFO] [1750206582.367035505] [light_actuator]: 💤 불을 끕니다.
+1750206582.3736219 [illuminance_pub-2] [INFO] [1750206582.369083095] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206582.5264461 [battery_pub-3] [WARN] [1750206582.525615371] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206582.5317774 [battery_pub-3] [INFO] [1750206582.528457427] [battery_sensor]: I2C 초기화 성공
+1750206583.3486209 [illuminance_pub-2] [INFO] [1750206583.347927782] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206584.3604531 [illuminance_pub-2] [INFO] [1750206584.356509279] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206585.3521674 [illuminance_pub-2] [INFO] [1750206585.346604164] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206586.3642991 [illuminance_pub-2] [INFO] [1750206586.358649773] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206587.3493936 [illuminance_pub-2] [INFO] [1750206587.346862317] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206588.3493629 [illuminance_pub-2] [INFO] [1750206588.347353205] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206589.3540959 [illuminance_pub-2] [INFO] [1750206589.349846735] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206590.3519616 [illuminance_pub-2] [INFO] [1750206590.349131755] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206591.3484268 [illuminance_pub-2] [INFO] [1750206591.344967968] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206592.3530254 [illuminance_pub-2] [INFO] [1750206592.350041836] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206592.3632638 [illuminance_pub-2] [INFO] [1750206592.362056500] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206592.3717649 [decision_node-7] [INFO] [1750206592.365241353] [decision_node]: [INFO] send light request: False
+1750206592.3760977 [light_srv-4] [INFO] [1750206592.372164419] [light_actuator]: 💤 불을 끕니다.
+1750206592.5293891 [battery_pub-3] [WARN] [1750206592.521600589] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206592.5303118 [battery_pub-3] [INFO] [1750206592.527473803] [battery_sensor]: I2C 초기화 성공
+1750206593.3554738 [illuminance_pub-2] [INFO] [1750206593.352301901] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206594.3553827 [illuminance_pub-2] [INFO] [1750206594.354527314] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206595.3566344 [illuminance_pub-2] [INFO] [1750206595.354899974] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206596.3544209 [illuminance_pub-2] [INFO] [1750206596.350865381] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206597.3489795 [illuminance_pub-2] [INFO] [1750206597.347466746] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206598.3462765 [illuminance_pub-2] [INFO] [1750206598.344819266] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206599.3559532 [illuminance_pub-2] [INFO] [1750206599.347758307] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206600.3520465 [illuminance_pub-2] [INFO] [1750206600.351006898] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206601.3464875 [illuminance_pub-2] [INFO] [1750206601.345402086] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206602.3498416 [illuminance_pub-2] [INFO] [1750206602.348241727] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206602.3561215 [light_srv-4] [INFO] [1750206602.354965864] [light_actuator]: 💤 불을 끕니다.
+1750206602.3572307 [decision_node-7] [INFO] [1750206602.354979715] [decision_node]: [INFO] send light request: False
+1750206602.3634803 [illuminance_pub-2] [INFO] [1750206602.355355709] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206602.5290177 [battery_pub-3] [WARN] [1750206602.527357653] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206602.5441263 [battery_pub-3] [INFO] [1750206602.539848015] [battery_sensor]: I2C 초기화 성공
+1750206603.3454940 [illuminance_pub-2] [INFO] [1750206603.344719123] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206604.3500404 [illuminance_pub-2] [INFO] [1750206604.349087460] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206605.3567054 [illuminance_pub-2] [INFO] [1750206605.353659502] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206606.3524213 [illuminance_pub-2] [INFO] [1750206606.350780102] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206607.3498940 [illuminance_pub-2] [INFO] [1750206607.347645982] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206608.3520222 [illuminance_pub-2] [INFO] [1750206608.348435486] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206609.3513353 [illuminance_pub-2] [INFO] [1750206609.349385685] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206610.3541007 [illuminance_pub-2] [INFO] [1750206610.353149818] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206611.3472264 [illuminance_pub-2] [INFO] [1750206611.346427165] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206612.3478258 [illuminance_pub-2] [INFO] [1750206612.345704136] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206612.3678310 [illuminance_pub-2] [INFO] [1750206612.362515974] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206612.3730187 [decision_node-7] [INFO] [1750206612.370051257] [decision_node]: [INFO] send light request: False
+1750206612.3763363 [light_srv-4] [INFO] [1750206612.374982725] [light_actuator]: 💤 불을 끕니다.
+1750206612.5303111 [battery_pub-3] [WARN] [1750206612.528372957] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206612.5428710 [battery_pub-3] [INFO] [1750206612.541576938] [battery_sensor]: I2C 초기화 성공
+1750206613.3515379 [illuminance_pub-2] [INFO] [1750206613.350621459] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206614.3509212 [illuminance_pub-2] [INFO] [1750206614.350107285] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206615.3487706 [illuminance_pub-2] [INFO] [1750206615.347058202] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206616.3458586 [illuminance_pub-2] [INFO] [1750206616.344985344] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206617.3581212 [illuminance_pub-2] [INFO] [1750206617.354021758] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206618.3517773 [illuminance_pub-2] [INFO] [1750206618.347877203] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206619.3467391 [illuminance_pub-2] [INFO] [1750206619.345968657] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206620.3553674 [illuminance_pub-2] [INFO] [1750206620.350370889] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206621.3562491 [illuminance_pub-2] [INFO] [1750206621.354887257] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206622.3529730 [illuminance_pub-2] [INFO] [1750206622.352294426] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206622.3564074 [illuminance_pub-2] [INFO] [1750206622.355699809] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206622.3616412 [decision_node-7] [INFO] [1750206622.360737689] [decision_node]: [INFO] send light request: False
+1750206622.3759782 [light_srv-4] [INFO] [1750206622.370342899] [light_actuator]: 💤 불을 끕니다.
+1750206622.5231962 [battery_pub-3] [WARN] [1750206622.522472836] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206622.5255179 [battery_pub-3] [INFO] [1750206622.524717030] [battery_sensor]: I2C 초기화 성공
+1750206623.3542309 [illuminance_pub-2] [INFO] [1750206623.352392657] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206624.3540351 [illuminance_pub-2] [INFO] [1750206624.352781477] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206625.3505895 [illuminance_pub-2] [INFO] [1750206625.349633101] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206626.3521848 [illuminance_pub-2] [INFO] [1750206626.348451753] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206627.3478723 [illuminance_pub-2] [INFO] [1750206627.344843116] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206628.3459063 [illuminance_pub-2] [INFO] [1750206628.344515637] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206629.3539088 [illuminance_pub-2] [INFO] [1750206629.350126116] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206630.3455179 [illuminance_pub-2] [INFO] [1750206630.344764200] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206631.3502672 [illuminance_pub-2] [INFO] [1750206631.349040547] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206632.3596871 [illuminance_pub-2] [INFO] [1750206632.350599045] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206632.3601885 [illuminance_pub-2] [INFO] [1750206632.354461796] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206632.3616555 [decision_node-7] [INFO] [1750206632.356909822] [decision_node]: [INFO] send light request: False
+1750206632.3632722 [light_srv-4] [INFO] [1750206632.362411610] [light_actuator]: 💤 불을 끕니다.
+1750206632.5263646 [battery_pub-3] [WARN] [1750206632.524597237] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206632.5293932 [battery_pub-3] [INFO] [1750206632.528733189] [battery_sensor]: I2C 초기화 성공
+1750206633.3494093 [illuminance_pub-2] [INFO] [1750206633.347847617] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206634.3493640 [illuminance_pub-2] [INFO] [1750206634.348522393] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206635.3488848 [illuminance_pub-2] [INFO] [1750206635.345689304] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206636.3567448 [illuminance_pub-2] [INFO] [1750206636.355793865] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206637.3485167 [illuminance_pub-2] [INFO] [1750206637.347685243] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206638.3685415 [illuminance_pub-2] [INFO] [1750206638.359622226] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206639.3482630 [illuminance_pub-2] [INFO] [1750206639.347459864] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206640.3479314 [illuminance_pub-2] [INFO] [1750206640.346481797] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206641.3505511 [illuminance_pub-2] [INFO] [1750206641.349765548] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206642.3484809 [illuminance_pub-2] [INFO] [1750206642.347679313] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206642.3590338 [decision_node-7] [INFO] [1750206642.354719014] [decision_node]: [INFO] send light request: False
+1750206642.3602004 [light_srv-4] [INFO] [1750206642.354958604] [light_actuator]: 💤 불을 끕니다.
+1750206642.3621912 [illuminance_pub-2] [INFO] [1750206642.355792706] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206642.5220590 [battery_pub-3] [WARN] [1750206642.521277926] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206642.5241549 [battery_pub-3] [INFO] [1750206642.523385292] [battery_sensor]: I2C 초기화 성공
+1750206643.3496766 [illuminance_pub-2] [INFO] [1750206643.348311020] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206644.3474176 [illuminance_pub-2] [INFO] [1750206644.346499576] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206645.3480635 [illuminance_pub-2] [INFO] [1750206645.346911208] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206646.3538220 [illuminance_pub-2] [INFO] [1750206646.348368761] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206647.3521531 [illuminance_pub-2] [INFO] [1750206647.351352024] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206648.3486927 [illuminance_pub-2] [INFO] [1750206648.346271948] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206649.3544962 [illuminance_pub-2] [INFO] [1750206649.353177473] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206650.3482099 [illuminance_pub-2] [INFO] [1750206650.346525471] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206651.3596458 [illuminance_pub-2] [INFO] [1750206651.356213116] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206652.3491688 [illuminance_pub-2] [INFO] [1750206652.348401641] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206652.3607113 [illuminance_pub-2] [INFO] [1750206652.358022211] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206652.3646436 [decision_node-7] [INFO] [1750206652.358021933] [decision_node]: [INFO] send light request: False
+1750206652.3676691 [light_srv-4] [INFO] [1750206652.359043849] [light_actuator]: 💤 불을 끕니다.
+1750206652.5213871 [battery_pub-3] [WARN] [1750206652.519476228] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206652.5229020 [battery_pub-3] [INFO] [1750206652.521925722] [battery_sensor]: I2C 초기화 성공
+1750206653.3533137 [illuminance_pub-2] [INFO] [1750206653.352610264] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206654.3527384 [illuminance_pub-2] [INFO] [1750206654.350250857] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206655.3477392 [illuminance_pub-2] [INFO] [1750206655.346374959] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206656.3555243 [illuminance_pub-2] [INFO] [1750206656.352502012] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206657.3510823 [illuminance_pub-2] [INFO] [1750206657.350086846] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206658.3489633 [illuminance_pub-2] [INFO] [1750206658.345166955] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206659.3486588 [illuminance_pub-2] [INFO] [1750206659.346700621] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206660.3474278 [illuminance_pub-2] [INFO] [1750206660.346027410] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206661.3499475 [illuminance_pub-2] [INFO] [1750206661.349091689] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206662.3482370 [illuminance_pub-2] [INFO] [1750206662.346656767] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206662.3538890 [illuminance_pub-2] [INFO] [1750206662.351442536] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206662.3589146 [decision_node-7] [INFO] [1750206662.352580322] [decision_node]: [INFO] send light request: False
+1750206662.3684909 [light_srv-4] [INFO] [1750206662.364958483] [light_actuator]: 💤 불을 끕니다.
+1750206662.5251105 [battery_pub-3] [WARN] [1750206662.522282460] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206662.5262876 [battery_pub-3] [INFO] [1750206662.525722354] [battery_sensor]: I2C 초기화 성공
+1750206663.3490775 [illuminance_pub-2] [INFO] [1750206663.348126332] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206664.3479125 [illuminance_pub-2] [INFO] [1750206664.344812150] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206665.3540277 [illuminance_pub-2] [INFO] [1750206665.350714052] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206666.3513186 [illuminance_pub-2] [INFO] [1750206666.348761549] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206667.3503606 [illuminance_pub-2] [INFO] [1750206667.349305894] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206668.3485343 [illuminance_pub-2] [INFO] [1750206668.347317633] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206669.3519979 [illuminance_pub-2] [INFO] [1750206669.350129014] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206670.3460419 [illuminance_pub-2] [INFO] [1750206670.345262056] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206671.3507822 [illuminance_pub-2] [INFO] [1750206671.348862742] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206672.3472376 [illuminance_pub-2] [INFO] [1750206672.346426850] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206672.3509924 [illuminance_pub-2] [INFO] [1750206672.350046670] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206672.3548572 [decision_node-7] [INFO] [1750206672.354118319] [decision_node]: [INFO] send light request: False
+1750206672.3619893 [light_srv-4] [INFO] [1750206672.359977970] [light_actuator]: 💤 불을 끕니다.
+1750206672.5285759 [battery_pub-3] [WARN] [1750206672.526989228] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206672.5301943 [battery_pub-3] [INFO] [1750206672.529450243] [battery_sensor]: I2C 초기화 성공
+1750206673.3581090 [illuminance_pub-2] [INFO] [1750206673.354171494] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206674.3499966 [illuminance_pub-2] [INFO] [1750206674.346778229] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206675.3526618 [illuminance_pub-2] [INFO] [1750206675.350117514] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206676.3505318 [illuminance_pub-2] [INFO] [1750206676.349468957] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206677.3463924 [illuminance_pub-2] [INFO] [1750206677.345582403] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206678.3472590 [illuminance_pub-2] [INFO] [1750206678.346245394] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206679.3499627 [illuminance_pub-2] [INFO] [1750206679.347208801] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206680.3495502 [illuminance_pub-2] [INFO] [1750206680.348573955] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206681.3669918 [illuminance_pub-2] [INFO] [1750206681.364201071] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206682.3513358 [illuminance_pub-2] [INFO] [1750206682.346727197] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206682.3598645 [illuminance_pub-2] [INFO] [1750206682.357774549] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206682.3672214 [light_srv-4] [INFO] [1750206682.366315403] [light_actuator]: 💤 불을 끕니다.
+1750206682.3687923 [decision_node-7] [INFO] [1750206682.367822131] [decision_node]: [INFO] send light request: False
+1750206682.5208237 [battery_pub-3] [WARN] [1750206682.520011112] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206682.5248950 [battery_pub-3] [INFO] [1750206682.524098578] [battery_sensor]: I2C 초기화 성공
+1750206683.3488805 [illuminance_pub-2] [INFO] [1750206683.347925155] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206684.3488324 [illuminance_pub-2] [INFO] [1750206684.347307652] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206685.3543861 [illuminance_pub-2] [INFO] [1750206685.349763316] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206686.3557882 [illuminance_pub-2] [INFO] [1750206686.349401879] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206687.3470657 [illuminance_pub-2] [INFO] [1750206687.345827046] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206688.3926134 [illuminance_pub-2] [INFO] [1750206688.387263462] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206689.3542387 [illuminance_pub-2] [INFO] [1750206689.351890470] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206690.3528152 [illuminance_pub-2] [INFO] [1750206690.351394086] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206691.3500688 [illuminance_pub-2] [INFO] [1750206691.348687777] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206692.3483069 [illuminance_pub-2] [INFO] [1750206692.346886611] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206692.3570502 [illuminance_pub-2] [INFO] [1750206692.353338541] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206692.3643062 [decision_node-7] [INFO] [1750206692.362296432] [decision_node]: [INFO] send light request: False
+1750206692.3687394 [light_srv-4] [INFO] [1750206692.361973879] [light_actuator]: 💤 불을 끕니다.
+1750206692.5252645 [battery_pub-3] [WARN] [1750206692.523869956] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206692.5274539 [battery_pub-3] [INFO] [1750206692.526148956] [battery_sensor]: I2C 초기화 성공
+1750206693.3558550 [illuminance_pub-2] [INFO] [1750206693.351391469] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206694.3466566 [illuminance_pub-2] [INFO] [1750206694.345241949] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206695.3530040 [illuminance_pub-2] [INFO] [1750206695.349773492] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206696.3483958 [illuminance_pub-2] [INFO] [1750206696.345399624] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206697.3561172 [illuminance_pub-2] [INFO] [1750206697.355347789] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206698.3496110 [illuminance_pub-2] [INFO] [1750206698.346540452] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206699.3466823 [illuminance_pub-2] [INFO] [1750206699.345848270] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206700.3556502 [illuminance_pub-2] [INFO] [1750206700.350483601] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206701.3521380 [illuminance_pub-2] [INFO] [1750206701.351211439] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206702.3456364 [illuminance_pub-2] [INFO] [1750206702.344939438] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206702.3551607 [illuminance_pub-2] [INFO] [1750206702.354073090] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206702.3648884 [decision_node-7] [INFO] [1750206702.360101081] [decision_node]: [INFO] send light request: False
+1750206702.3749878 [light_srv-4] [INFO] [1750206702.366254941] [light_actuator]: 💤 불을 끕니다.
+1750206702.5257204 [battery_pub-3] [WARN] [1750206702.522208306] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206702.5294070 [battery_pub-3] [INFO] [1750206702.528412647] [battery_sensor]: I2C 초기화 성공
+1750206703.3540320 [illuminance_pub-2] [INFO] [1750206703.351416075] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206704.3549106 [illuminance_pub-2] [INFO] [1750206704.351980216] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206705.3516669 [illuminance_pub-2] [INFO] [1750206705.350625458] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206706.3560722 [illuminance_pub-2] [INFO] [1750206706.351228457] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206707.3477988 [illuminance_pub-2] [INFO] [1750206707.345472923] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206708.3566201 [illuminance_pub-2] [INFO] [1750206708.350515060] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206709.3482020 [illuminance_pub-2] [INFO] [1750206709.347451417] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206710.3565140 [illuminance_pub-2] [INFO] [1750206710.349759300] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206711.3475037 [illuminance_pub-2] [INFO] [1750206711.346109145] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206712.3532023 [illuminance_pub-2] [INFO] [1750206712.351139880] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206712.3626080 [illuminance_pub-2] [INFO] [1750206712.360967308] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206712.3678274 [light_srv-4] [INFO] [1750206712.366335935] [light_actuator]: 💤 불을 끕니다.
+1750206712.3693755 [decision_node-7] [INFO] [1750206712.366335880] [decision_node]: [INFO] send light request: False
+1750206712.5285707 [battery_pub-3] [WARN] [1750206712.527912175] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206712.5331335 [battery_pub-3] [INFO] [1750206712.529785754] [battery_sensor]: I2C 초기화 성공
+1750206713.3461814 [illuminance_pub-2] [INFO] [1750206713.345426351] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206714.3558133 [illuminance_pub-2] [INFO] [1750206714.351503782] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206715.3453336 [illuminance_pub-2] [INFO] [1750206715.344596111] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206716.3476336 [illuminance_pub-2] [INFO] [1750206716.346709495] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206717.3487823 [illuminance_pub-2] [INFO] [1750206717.347685912] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206718.3480949 [illuminance_pub-2] [INFO] [1750206718.347204958] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206719.3459809 [illuminance_pub-2] [INFO] [1750206719.345211985] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206720.3503673 [illuminance_pub-2] [INFO] [1750206720.346915195] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206721.3603675 [illuminance_pub-2] [INFO] [1750206721.356184895] [illuminance_sensor]: RAW=204 → 80.0%
+1750206722.3486526 [illuminance_pub-2] [INFO] [1750206722.347397562] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206722.3563325 [illuminance_pub-2] [INFO] [1750206722.354619362] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206722.3656940 [decision_node-7] [INFO] [1750206722.362662009] [decision_node]: [INFO] send light request: False
+1750206722.3706119 [light_srv-4] [INFO] [1750206722.368294617] [light_actuator]: 💤 불을 끕니다.
+1750206722.5235302 [battery_pub-3] [WARN] [1750206722.520689945] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206722.5247934 [battery_pub-3] [INFO] [1750206722.523659313] [battery_sensor]: I2C 초기화 성공
+1750206723.3518639 [illuminance_pub-2] [INFO] [1750206723.349066104] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206724.3518624 [illuminance_pub-2] [INFO] [1750206724.350288487] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206725.3478639 [illuminance_pub-2] [INFO] [1750206725.345531473] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206726.3510337 [illuminance_pub-2] [INFO] [1750206726.348214188] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206727.3718982 [illuminance_pub-2] [INFO] [1750206727.367700604] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206728.3488615 [illuminance_pub-2] [INFO] [1750206728.347717003] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206729.3481181 [illuminance_pub-2] [INFO] [1750206729.347183861] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206730.3518517 [illuminance_pub-2] [INFO] [1750206730.349693146] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206731.3539901 [illuminance_pub-2] [INFO] [1750206731.352812133] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206732.3461988 [illuminance_pub-2] [INFO] [1750206732.345434583] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206732.3546710 [illuminance_pub-2] [INFO] [1750206732.353124660] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206732.3587263 [decision_node-7] [INFO] [1750206732.356011066] [decision_node]: [INFO] send light request: False
+1750206732.3660345 [light_srv-4] [INFO] [1750206732.358895139] [light_actuator]: 💤 불을 끕니다.
+1750206732.5236855 [battery_pub-3] [WARN] [1750206732.520978230] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206732.5399835 [battery_pub-3] [INFO] [1750206732.535939812] [battery_sensor]: I2C 초기화 성공
+1750206733.3601463 [illuminance_pub-2] [INFO] [1750206733.357838306] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206734.3510458 [illuminance_pub-2] [INFO] [1750206734.348130442] [illuminance_sensor]: RAW=202 → 79.2156862745098%
+1750206735.3493526 [illuminance_pub-2] [INFO] [1750206735.348455861] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206736.3559268 [illuminance_pub-2] [INFO] [1750206736.354020950] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206737.3503635 [illuminance_pub-2] [INFO] [1750206737.346930347] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206737.9916954 [vision_node-8] [INFO] [1750206737.990404343] [vision_node]: capture!!
+1750206738.0015182 [decision_node-7] [INFO] [1750206737.998442863] [decision_node]: [INFO] send buzzer request: 0.8 seconds
+1750206738.0025735 [buzzer_srv-5] [INFO] [1750206737.998592066] [buzzer_actuator]: 🔊 Buzzer ON (Duty: 70%) 0.800000011920929Sec
+1750206738.3509033 [illuminance_pub-2] [INFO] [1750206738.347871634] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206739.3502483 [illuminance_pub-2] [INFO] [1750206739.349423047] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206740.3456547 [illuminance_pub-2] [INFO] [1750206740.344979647] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206741.3508003 [illuminance_pub-2] [INFO] [1750206741.349987499] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206742.2480218 [vision_node-8] [INFO] [1750206742.247448419] [vision_node]: capture!!
+1750206742.2575216 [decision_node-7] [INFO] [1750206742.256863690] [decision_node]: [INFO] send buzzer request: 0.8 seconds
+1750206742.2644403 [buzzer_srv-5] [INFO] [1750206742.260039835] [buzzer_actuator]: 🔊 Buzzer ON (Duty: 70%) 0.800000011920929Sec
+1750206742.3459632 [illuminance_pub-2] [INFO] [1750206742.345255081] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206742.3504043 [illuminance_pub-2] [INFO] [1750206742.349607552] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206742.3560488 [decision_node-7] [INFO] [1750206742.353935893] [decision_node]: [INFO] send light request: False
+1750206742.3664825 [light_srv-4] [INFO] [1750206742.365157781] [light_actuator]: 💤 불을 끕니다.
+1750206742.5234733 [battery_pub-3] [WARN] [1750206742.522631415] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206742.5366004 [battery_pub-3] [INFO] [1750206742.532643681] [battery_sensor]: I2C 초기화 성공
+1750206743.3524220 [illuminance_pub-2] [INFO] [1750206743.350571039] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206744.3491719 [illuminance_pub-2] [INFO] [1750206744.347584311] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206745.3570733 [illuminance_pub-2] [INFO] [1750206745.356062338] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206746.3544850 [illuminance_pub-2] [INFO] [1750206746.351808281] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206747.3535869 [illuminance_pub-2] [INFO] [1750206747.352020858] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206748.3536725 [illuminance_pub-2] [INFO] [1750206748.351494549] [illuminance_sensor]: RAW=206 → 80.7843137254902%
+1750206749.3552566 [illuminance_pub-2] [INFO] [1750206749.351823528] [illuminance_sensor]: RAW=206 → 80.7843137254902%
+1750206750.3514469 [illuminance_pub-2] [INFO] [1750206750.348705563] [illuminance_sensor]: RAW=204 → 80.0%
+1750206751.3525772 [illuminance_pub-2] [INFO] [1750206751.351221058] [illuminance_sensor]: RAW=204 → 80.0%
+1750206752.3501568 [illuminance_pub-2] [INFO] [1750206752.348344159] [illuminance_sensor]: RAW=204 → 80.0%
+1750206752.3579919 [decision_node-7] [INFO] [1750206752.355651852] [decision_node]: [INFO] send light request: False
+1750206752.3612885 [illuminance_pub-2] [INFO] [1750206752.356596457] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206752.3661642 [light_srv-4] [INFO] [1750206752.358623333] [light_actuator]: 💤 불을 끕니다.
+1750206752.5276959 [battery_pub-3] [WARN] [1750206752.523453518] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206752.5282199 [battery_pub-3] [INFO] [1750206752.525680281] [battery_sensor]: I2C 초기화 성공
+1750206753.1438067 [vision_node-8] [INFO] [1750206753.142812686] [vision_node]: capture!!
+1750206753.1517134 [decision_node-7] [INFO] [1750206753.150623894] [decision_node]: [INFO] send buzzer request: 0.8 seconds
+1750206753.1574636 [buzzer_srv-5] [INFO] [1750206753.156430838] [buzzer_actuator]: 🔊 Buzzer ON (Duty: 70%) 0.800000011920929Sec
+1750206753.3556318 [illuminance_pub-2] [INFO] [1750206753.353917998] [illuminance_sensor]: RAW=204 → 80.0%
+1750206754.3464212 [illuminance_pub-2] [INFO] [1750206754.345595923] [illuminance_sensor]: RAW=204 → 80.0%
+1750206755.3521142 [illuminance_pub-2] [INFO] [1750206755.350480980] [illuminance_sensor]: RAW=204 → 80.0%
+1750206756.3531523 [illuminance_pub-2] [INFO] [1750206756.350288306] [illuminance_sensor]: RAW=204 → 80.0%
+1750206757.3518336 [illuminance_pub-2] [INFO] [1750206757.350951937] [illuminance_sensor]: RAW=204 → 80.0%
+1750206758.3480325 [illuminance_pub-2] [INFO] [1750206758.345191641] [illuminance_sensor]: RAW=204 → 80.0%
+1750206759.3478534 [illuminance_pub-2] [INFO] [1750206759.347144050] [illuminance_sensor]: RAW=204 → 80.0%
+1750206760.3498573 [illuminance_pub-2] [INFO] [1750206760.347940128] [illuminance_sensor]: RAW=204 → 80.0%
+1750206761.3538060 [illuminance_pub-2] [INFO] [1750206761.352901155] [illuminance_sensor]: RAW=204 → 80.0%
+1750206762.3538115 [illuminance_pub-2] [INFO] [1750206762.349203843] [illuminance_sensor]: RAW=204 → 80.0%
+1750206762.3653629 [decision_node-7] [INFO] [1750206762.363638936] [decision_node]: [INFO] send light request: False
+1750206762.3674393 [light_srv-4] [INFO] [1750206762.364996724] [light_actuator]: 💤 불을 끕니다.
+1750206762.3735256 [illuminance_pub-2] [INFO] [1750206762.369883711] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206762.5269239 [battery_pub-3] [WARN] [1750206762.525061461] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206762.5401318 [battery_pub-3] [INFO] [1750206762.537820509] [battery_sensor]: I2C 초기화 성공
+1750206763.3518453 [illuminance_pub-2] [INFO] [1750206763.348202545] [illuminance_sensor]: RAW=204 → 80.0%
+1750206764.3489728 [illuminance_pub-2] [INFO] [1750206764.346634762] [illuminance_sensor]: RAW=204 → 80.0%
+1750206765.3474884 [illuminance_pub-2] [INFO] [1750206765.346484946] [illuminance_sensor]: RAW=204 → 80.0%
+1750206766.3576841 [illuminance_pub-2] [INFO] [1750206766.353198265] [illuminance_sensor]: RAW=204 → 80.0%
+1750206767.3462613 [illuminance_pub-2] [INFO] [1750206767.345372207] [illuminance_sensor]: RAW=204 → 80.0%
+1750206768.3466654 [illuminance_pub-2] [INFO] [1750206768.345947607] [illuminance_sensor]: RAW=204 → 80.0%
+1750206769.3518503 [illuminance_pub-2] [INFO] [1750206769.351152193] [illuminance_sensor]: RAW=204 → 80.0%
+1750206770.3567967 [illuminance_pub-2] [INFO] [1750206770.352821702] [illuminance_sensor]: RAW=204 → 80.0%
+1750206771.3478887 [illuminance_pub-2] [INFO] [1750206771.346987009] [illuminance_sensor]: RAW=204 → 80.0%
+1750206772.3531468 [illuminance_pub-2] [INFO] [1750206772.352125462] [illuminance_sensor]: RAW=204 → 80.0%
+1750206772.3646345 [illuminance_pub-2] [INFO] [1750206772.360534169] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206772.3723657 [decision_node-7] [INFO] [1750206772.370697753] [decision_node]: [INFO] send light request: False
+1750206772.3836622 [light_srv-4] [INFO] [1750206772.373599124] [light_actuator]: 💤 불을 끕니다.
+1750206772.5218766 [battery_pub-3] [WARN] [1750206772.521035330] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206772.5250206 [battery_pub-3] [INFO] [1750206772.522991558] [battery_sensor]: I2C 초기화 성공
+1750206773.3562629 [illuminance_pub-2] [INFO] [1750206773.351337704] [illuminance_sensor]: RAW=204 → 80.0%
+1750206774.3460457 [illuminance_pub-2] [INFO] [1750206774.345121750] [illuminance_sensor]: RAW=204 → 80.0%
+1750206775.3560050 [illuminance_pub-2] [INFO] [1750206775.353254587] [illuminance_sensor]: RAW=204 → 80.0%
+1750206776.3552291 [illuminance_pub-2] [INFO] [1750206776.348272979] [illuminance_sensor]: RAW=204 → 80.0%
+1750206777.3690512 [illuminance_pub-2] [INFO] [1750206777.360957216] [illuminance_sensor]: RAW=204 → 80.0%
+1750206778.3468189 [illuminance_pub-2] [INFO] [1750206778.345342360] [illuminance_sensor]: RAW=204 → 80.0%
+1750206779.3715932 [illuminance_pub-2] [INFO] [1750206779.366577201] [illuminance_sensor]: RAW=204 → 80.0%
+1750206780.3514726 [illuminance_pub-2] [INFO] [1750206780.348233622] [illuminance_sensor]: RAW=204 → 80.0%
+1750206781.3549061 [illuminance_pub-2] [INFO] [1750206781.353786114] [illuminance_sensor]: RAW=204 → 80.0%
+1750206782.3499491 [illuminance_pub-2] [INFO] [1750206782.348109362] [illuminance_sensor]: RAW=203 → 79.6078431372549%
+1750206782.3550639 [illuminance_pub-2] [INFO] [1750206782.354078306] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206782.3562870 [decision_node-7] [INFO] [1750206782.354374085] [decision_node]: [INFO] send light request: False
+1750206782.3580341 [light_srv-4] [INFO] [1750206782.356872407] [light_actuator]: 💤 불을 끕니다.
+1750206782.5272775 [battery_pub-3] [WARN] [1750206782.521336324] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206782.5294080 [battery_pub-3] [INFO] [1750206782.526156450] [battery_sensor]: I2C 초기화 성공
+1750206783.3494725 [illuminance_pub-2] [INFO] [1750206783.346668136] [illuminance_sensor]: RAW=204 → 80.0%
+1750206784.3518307 [illuminance_pub-2] [INFO] [1750206784.351022313] [illuminance_sensor]: RAW=204 → 80.0%
+1750206785.3515694 [illuminance_pub-2] [INFO] [1750206785.349827432] [illuminance_sensor]: RAW=204 → 80.0%
+1750206786.3519018 [illuminance_pub-2] [INFO] [1750206786.349474384] [illuminance_sensor]: RAW=204 → 80.0%
+1750206787.3468583 [illuminance_pub-2] [INFO] [1750206787.346106454] [illuminance_sensor]: RAW=204 → 80.0%
+1750206788.3552282 [illuminance_pub-2] [INFO] [1750206788.350774284] [illuminance_sensor]: RAW=204 → 80.0%
+1750206789.3471985 [illuminance_pub-2] [INFO] [1750206789.346301087] [illuminance_sensor]: RAW=204 → 80.0%
+1750206790.3468800 [illuminance_pub-2] [INFO] [1750206790.345598751] [illuminance_sensor]: RAW=204 → 80.0%
+1750206791.3552485 [illuminance_pub-2] [INFO] [1750206791.353039546] [illuminance_sensor]: RAW=204 → 80.0%
+1750206792.3469605 [illuminance_pub-2] [INFO] [1750206792.345615746] [illuminance_sensor]: RAW=204 → 80.0%
+1750206792.3596463 [illuminance_pub-2] [INFO] [1750206792.355789938] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206792.3699322 [decision_node-7] [INFO] [1750206792.367774802] [decision_node]: [INFO] send light request: False
+1750206792.3722591 [light_srv-4] [INFO] [1750206792.368977786] [light_actuator]: 💤 불을 끕니다.
+1750206792.5212648 [battery_pub-3] [WARN] [1750206792.520507889] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206792.5250554 [battery_pub-3] [INFO] [1750206792.522796914] [battery_sensor]: I2C 초기화 성공
+1750206793.3455002 [illuminance_pub-2] [INFO] [1750206793.344781666] [illuminance_sensor]: RAW=204 → 80.0%
+1750206794.3539412 [illuminance_pub-2] [INFO] [1750206794.353191998] [illuminance_sensor]: RAW=204 → 80.0%
+1750206795.3517480 [illuminance_pub-2] [INFO] [1750206795.346321979] [illuminance_sensor]: RAW=204 → 80.0%
+1750206796.3529203 [illuminance_pub-2] [INFO] [1750206796.352036139] [illuminance_sensor]: RAW=204 → 80.0%
+1750206797.3557632 [illuminance_pub-2] [INFO] [1750206797.351229636] [illuminance_sensor]: RAW=204 → 80.0%
+1750206798.3489404 [illuminance_pub-2] [INFO] [1750206798.346955665] [illuminance_sensor]: RAW=204 → 80.0%
+1750206799.3597090 [illuminance_pub-2] [INFO] [1750206799.353510350] [illuminance_sensor]: RAW=204 → 80.0%
+1750206800.3490310 [illuminance_pub-2] [INFO] [1750206800.348039326] [illuminance_sensor]: RAW=204 → 80.0%
+1750206801.3561385 [illuminance_pub-2] [INFO] [1750206801.354734756] [illuminance_sensor]: RAW=204 → 80.0%
+1750206802.3484924 [illuminance_pub-2] [INFO] [1750206802.346492586] [illuminance_sensor]: RAW=204 → 80.0%
+1750206802.3545477 [decision_node-7] [INFO] [1750206802.353736563] [decision_node]: [INFO] send light request: False
+1750206802.3557644 [illuminance_pub-2] [INFO] [1750206802.353773304] [illuminance_sensor]: [INFO] Illuminance publish: isNight=False
+1750206802.3631799 [light_srv-4] [INFO] [1750206802.361291930] [light_actuator]: 💤 불을 끕니다.
+1750206802.5282252 [battery_pub-3] [WARN] [1750206802.524903347] [battery_sensor]: I2C 통신 오류: OSError(121, 'Remote I/O error'), 버스 재초기화 시도
+1750206802.5321195 [battery_pub-3] [INFO] [1750206802.530063023] [battery_sensor]: I2C 초기화 성공
+1750206803.3641138 [illuminance_pub-2] [INFO] [1750206803.358929553] [illuminance_sensor]: RAW=204 → 80.0%
+1750206804.3598678 [illuminance_pub-2] [INFO] [1750206804.355203918] [illuminance_sensor]: RAW=204 → 80.0%
+1750206805.3489060 [illuminance_pub-2] [INFO] [1750206805.348123301] [illuminance_sensor]: RAW=204 → 80.0%
+1750206806.3479328 [illuminance_pub-2] [INFO] [1750206806.346461792] [illuminance_sensor]: RAW=204 → 80.0%
+1750206807.3471811 [illuminance_pub-2] [INFO] [1750206807.346310847] [illuminance_sensor]: RAW=204 → 80.0%
+1750206808.3503139 [illuminance_pub-2] [INFO] [1750206808.349550173] [illuminance_sensor]: RAW=205 → 80.3921568627451%
+1750206809.3528512 [illuminance_pub-2] [INFO] [1750206809.351826873] [illuminance_sensor]: RAW=203 → 79.6078431372549%

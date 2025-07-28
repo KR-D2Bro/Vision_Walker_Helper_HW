@@ -1,19 +1,23 @@
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Float32
+from interfaces.msg import Illuminance
 from smbus2 import SMBus
 
 class LightDataPublisher(Node):
     def __init__(self):
         super().__init__('Light_data_publisher')
-        self.pub = self.create_publisher(Float32, 'light_intensity', 10)
+        self.pub = self.create_publisher(Illuminance, '/light/alert', 10)
         self.timer = self.create_timer(1.0, self.timer_callback)
+        self.decide_timer = self.create_timer(10, self.decide_timer_callback)
+        self.isNight = False
+        self.tmp = 0
+        self.darkness_thr = 90
 
         # I2C 버스 및 PCF8591(기본 주소 0x48) 초기화
         self.bus = SMBus(0)
         self.addr = 0x48
-        self.vref = 3.3             # 참조 전압
+        self.max = 100             # 참조 전압
         self.control_base = 0x40    # PCF8591: 0100_0000 (자동증가 off, 입력 모드)
 
         self.get_logger().info(f'Initialized PCF8591 at 0x{self.addr:02X}')
@@ -32,12 +36,24 @@ class LightDataPublisher(Node):
     def timer_callback(self):
         try:
             raw = self.read_ain(0)  # 보드 내장 LDR → AIN0
-            voltage = raw / 255.0 * self.vref
-            msg = Float32(data=voltage)
-            self.pub.publish(msg)
-            self.get_logger().info(f'RAW={raw:3d} → {voltage:.3f} V')
+            darkness = raw / 255.0 * self.max
+            if darkness > self.darkness_thr:
+                self.tmp += 1
+            else:
+                self.tmp -= 1
+            self.get_logger().info(f'RAW={raw:3d} → {darkness}%')
         except Exception as e:
             self.get_logger().error(f'I2C read error: {e}')
+
+    def decide_timer_callback(self):
+        res = True if self.tmp > 0 else False #True=Night, False=Day
+        self.tmp = 0
+        
+        msg = Illuminance()
+        msg.is_night = res
+        self.pub.publish(msg)
+        self.get_logger().info(f'[INFO] Illuminance publish: isNight={res}')
+        self.isNight = res
 
     def destroy_node(self):
         self.bus.close()

@@ -1,4 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/dongjae'
+let g:netrw_dirhist_8='/home/dongjae/ros2_kart_ws/src/vision_pkg/vision_pkg/model'
+let g:netrw_dirhist_7='/home/dongjae/ros2_kart_ws/src/interfaces/msg'
+let g:netrw_dirhist_6='/home/dongjae/ros2_kart_ws/src/app_interface_pkg'
+let g:netrw_dirhist_5='/home/dongjae/ros2_kart_ws/src/interfaces/srv'
+let g:netrw_dirhist_4='/home/dongjae/ros2_kart_ws/src/interfaces'
+let g:netrw_dirhist_3='/home/dongjae/ros2_kart_ws/src/interfaces/msg'
 let g:netrw_dirhist_2='/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages'
 let g:netrw_dirhist_1='/home/dongjae/ros2_humble_venv/lib/python3.11/site-packages/bluezero'
