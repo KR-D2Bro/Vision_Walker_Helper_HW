@@ -18,9 +18,9 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1753708260,,"wq"
+|2,0,1753710915,,"wq"
 :q
-|2,0,1750212968,,"q"
+|2,0,1753710753,,"q"
 :q!
 |2,0,1750209195,,"q!"
 :129
@@ -120,237 +120,276 @@ $
 |3,0,36,0,1,0,1750188216,"response"
 
 # File marks:
-'0  11  44  ~/.gitignore
-|4,48,11,44,1753708260,"~/.gitignore"
-'1  11  38  ~/.gitignore
-|4,49,11,38,1753708251,"~/.gitignore"
-'2  11  12  ~/.gitignore
-|4,50,11,12,1753708173,"~/.gitignore"
-'3  11  12  ~/.gitignore
-|4,51,11,12,1753708173,"~/.gitignore"
-'4  18  34  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py
-|4,52,18,34,1750212968,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py"
-'5  19  38  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py
-|4,53,19,38,1750211985,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py"
-'6  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,54,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
-'7  10  12  /etc/systemd/system/ros2-auto-launch.service
-|4,55,10,12,1750209422,"/etc/systemd/system/ros2-auto-launch.service"
-'8  4  51  ~/start_ros2_launch.sh
-|4,56,4,51,1750209403,"~/start_ros2_launch.sh"
-'9  116  41  ~/.bashrc
-|4,57,116,41,1750209319,"~/.bashrc"
+'0  12  15  ~/.gitignore
+|4,48,12,15,1753710915,"~/.gitignore"
+'1  1  0  ~/.git-credentials
+|4,49,1,0,1753710753,"~/.git-credentials"
+'2  117  0  ~/.bashrc
+|4,50,117,0,1753710438,"~/.bashrc"
+'3  10  21  /etc/systemd/system/ros2-auto-launch.service
+|4,51,10,21,1753709950,"/etc/systemd/system/ros2-auto-launch.service"
+'4  2  49  ~/start_ros2_launch.sh
+|4,52,2,49,1753709805,"~/start_ros2_launch.sh"
+'5  11  44  ~/.gitignore
+|4,53,11,44,1753708260,"~/.gitignore"
+'6  11  44  ~/.gitignore
+|4,54,11,44,1753708260,"~/.gitignore"
+'7  11  38  ~/.gitignore
+|4,55,11,38,1753708251,"~/.gitignore"
+'8  11  38  ~/.gitignore
+|4,56,11,38,1753708251,"~/.gitignore"
+'9  11  12  ~/.gitignore
+|4,57,11,12,1753708173,"~/.gitignore"
 
 # Jumplist (newest first):
+-'  12  15  ~/.gitignore
+|4,39,12,15,1753710915,"~/.gitignore"
+-'  11  44  ~/.gitignore
+|4,39,11,44,1753710759,"~/.gitignore"
+-'  1  0  ~/.git-credentials
+|4,39,1,0,1753710753,"~/.git-credentials"
+-'  1  0  ~/.git-credentials
+|4,39,1,0,1753710753,"~/.git-credentials"
+-'  117  0  ~/.bashrc
+|4,39,117,0,1753710438,"~/.bashrc"
+-'  117  0  ~/.bashrc
+|4,39,117,0,1753710438,"~/.bashrc"
+-'  117  0  ~/.bashrc
+|4,39,117,0,1753710438,"~/.bashrc"
+-'  117  0  ~/.bashrc
+|4,39,117,0,1753710438,"~/.bashrc"
+-'  116  41  ~/.bashrc
+|4,39,116,41,1753710425,"~/.bashrc"
+-'  116  41  ~/.bashrc
+|4,39,116,41,1753710425,"~/.bashrc"
+-'  116  41  ~/.bashrc
+|4,39,116,41,1753710425,"~/.bashrc"
+-'  116  41  ~/.bashrc
+|4,39,116,41,1753710425,"~/.bashrc"
+-'  10  21  /etc/systemd/system/ros2-auto-launch.service
+|4,39,10,21,1753709950,"/etc/systemd/system/ros2-auto-launch.service"
+-'  10  21  /etc/systemd/system/ros2-auto-launch.service
+|4,39,10,21,1753709950,"/etc/systemd/system/ros2-auto-launch.service"
+-'  10  21  /etc/systemd/system/ros2-auto-launch.service
+|4,39,10,21,1753709950,"/etc/systemd/system/ros2-auto-launch.service"
+-'  10  21  /etc/systemd/system/ros2-auto-launch.service
+|4,39,10,21,1753709950,"/etc/systemd/system/ros2-auto-launch.service"
+-'  10  21  /etc/systemd/system/ros2-auto-launch.service
+|4,39,10,21,1753709950,"/etc/systemd/system/ros2-auto-launch.service"
+-'  10  21  /etc/systemd/system/ros2-auto-launch.service
+|4,39,10,21,1753709950,"/etc/systemd/system/ros2-auto-launch.service"
+-'  10  21  /etc/systemd/system/ros2-auto-launch.service
+|4,39,10,21,1753709950,"/etc/systemd/system/ros2-auto-launch.service"
+-'  10  21  /etc/systemd/system/ros2-auto-launch.service
+|4,39,10,21,1753709950,"/etc/systemd/system/ros2-auto-launch.service"
+-'  2  49  ~/start_ros2_launch.sh
+|4,39,2,49,1753709805,"~/start_ros2_launch.sh"
+-'  2  49  ~/start_ros2_launch.sh
+|4,39,2,49,1753709805,"~/start_ros2_launch.sh"
+-'  2  49  ~/start_ros2_launch.sh
+|4,39,2,49,1753709805,"~/start_ros2_launch.sh"
+-'  2  49  ~/start_ros2_launch.sh
+|4,39,2,49,1753709805,"~/start_ros2_launch.sh"
+-'  2  49  ~/start_ros2_launch.sh
+|4,39,2,49,1753709805,"~/start_ros2_launch.sh"
+-'  2  49  ~/start_ros2_launch.sh
+|4,39,2,49,1753709805,"~/start_ros2_launch.sh"
+-'  2  49  ~/start_ros2_launch.sh
+|4,39,2,49,1753709805,"~/start_ros2_launch.sh"
+-'  2  49  ~/start_ros2_launch.sh
+|4,39,2,49,1753709805,"~/start_ros2_launch.sh"
+-'  2  49  ~/start_ros2_launch.sh
+|4,39,2,49,1753709805,"~/start_ros2_launch.sh"
+-'  2  49  ~/start_ros2_launch.sh
+|4,39,2,49,1753709805,"~/start_ros2_launch.sh"
+-'  2  49  ~/start_ros2_launch.sh
+|4,39,2,49,1753709805,"~/start_ros2_launch.sh"
+-'  2  49  ~/start_ros2_launch.sh
+|4,39,2,49,1753709805,"~/start_ros2_launch.sh"
+-'  2  49  ~/start_ros2_launch.sh
+|4,39,2,49,1753709805,"~/start_ros2_launch.sh"
+-'  2  49  ~/start_ros2_launch.sh
+|4,39,2,49,1753709805,"~/start_ros2_launch.sh"
+-'  2  49  ~/start_ros2_launch.sh
+|4,39,2,49,1753709805,"~/start_ros2_launch.sh"
+-'  2  49  ~/start_ros2_launch.sh
+|4,39,2,49,1753709805,"~/start_ros2_launch.sh"
+-'  4  51  ~/start_ros2_launch.sh
+|4,39,4,51,1753709745,"~/start_ros2_launch.sh"
+-'  4  51  ~/start_ros2_launch.sh
+|4,39,4,51,1753709745,"~/start_ros2_launch.sh"
+-'  4  51  ~/start_ros2_launch.sh
+|4,39,4,51,1753709745,"~/start_ros2_launch.sh"
+-'  4  51  ~/start_ros2_launch.sh
+|4,39,4,51,1753709745,"~/start_ros2_launch.sh"
+-'  4  51  ~/start_ros2_launch.sh
+|4,39,4,51,1753709745,"~/start_ros2_launch.sh"
+-'  4  51  ~/start_ros2_launch.sh
+|4,39,4,51,1753709745,"~/start_ros2_launch.sh"
+-'  4  51  ~/start_ros2_launch.sh
+|4,39,4,51,1753709745,"~/start_ros2_launch.sh"
+-'  4  51  ~/start_ros2_launch.sh
+|4,39,4,51,1753709745,"~/start_ros2_launch.sh"
+-'  4  51  ~/start_ros2_launch.sh
+|4,39,4,51,1753709745,"~/start_ros2_launch.sh"
+-'  4  51  ~/start_ros2_launch.sh
+|4,39,4,51,1753709745,"~/start_ros2_launch.sh"
+-'  4  51  ~/start_ros2_launch.sh
+|4,39,4,51,1753709745,"~/start_ros2_launch.sh"
+-'  4  51  ~/start_ros2_launch.sh
+|4,39,4,51,1753709745,"~/start_ros2_launch.sh"
+-'  4  51  ~/start_ros2_launch.sh
+|4,39,4,51,1753709745,"~/start_ros2_launch.sh"
+-'  4  51  ~/start_ros2_launch.sh
+|4,39,4,51,1753709745,"~/start_ros2_launch.sh"
+-'  4  51  ~/start_ros2_launch.sh
+|4,39,4,51,1753709745,"~/start_ros2_launch.sh"
+-'  4  51  ~/start_ros2_launch.sh
+|4,39,4,51,1753709745,"~/start_ros2_launch.sh"
+-'  11  44  ~/.gitignore
+|4,39,11,44,1753708260,"~/.gitignore"
+-'  11  44  ~/.gitignore
+|4,39,11,44,1753708260,"~/.gitignore"
+-'  11  44  ~/.gitignore
+|4,39,11,44,1753708260,"~/.gitignore"
+-'  11  44  ~/.gitignore
+|4,39,11,44,1753708260,"~/.gitignore"
+-'  11  44  ~/.gitignore
+|4,39,11,44,1753708260,"~/.gitignore"
+-'  11  44  ~/.gitignore
+|4,39,11,44,1753708260,"~/.gitignore"
+-'  11  44  ~/.gitignore
+|4,39,11,44,1753708260,"~/.gitignore"
+-'  11  44  ~/.gitignore
+|4,39,11,44,1753708260,"~/.gitignore"
+-'  11  44  ~/.gitignore
+|4,39,11,44,1753708260,"~/.gitignore"
+-'  11  44  ~/.gitignore
+|4,39,11,44,1753708260,"~/.gitignore"
+-'  11  44  ~/.gitignore
+|4,39,11,44,1753708260,"~/.gitignore"
+-'  11  44  ~/.gitignore
+|4,39,11,44,1753708260,"~/.gitignore"
+-'  11  44  ~/.gitignore
+|4,39,11,44,1753708260,"~/.gitignore"
+-'  11  44  ~/.gitignore
+|4,39,11,44,1753708260,"~/.gitignore"
+-'  11  44  ~/.gitignore
+|4,39,11,44,1753708260,"~/.gitignore"
 -'  11  44  ~/.gitignore
 |4,39,11,44,1753708260,"~/.gitignore"
 -'  11  38  ~/.gitignore
 |4,39,11,38,1753708251,"~/.gitignore"
+-'  11  38  ~/.gitignore
+|4,39,11,38,1753708251,"~/.gitignore"
+-'  11  38  ~/.gitignore
+|4,39,11,38,1753708251,"~/.gitignore"
+-'  11  38  ~/.gitignore
+|4,39,11,38,1753708251,"~/.gitignore"
+-'  11  38  ~/.gitignore
+|4,39,11,38,1753708251,"~/.gitignore"
+-'  11  38  ~/.gitignore
+|4,39,11,38,1753708251,"~/.gitignore"
+-'  11  38  ~/.gitignore
+|4,39,11,38,1753708251,"~/.gitignore"
+-'  11  38  ~/.gitignore
+|4,39,11,38,1753708251,"~/.gitignore"
+-'  11  38  ~/.gitignore
+|4,39,11,38,1753708251,"~/.gitignore"
+-'  11  38  ~/.gitignore
+|4,39,11,38,1753708251,"~/.gitignore"
+-'  11  38  ~/.gitignore
+|4,39,11,38,1753708251,"~/.gitignore"
+-'  11  38  ~/.gitignore
+|4,39,11,38,1753708251,"~/.gitignore"
+-'  11  38  ~/.gitignore
+|4,39,11,38,1753708251,"~/.gitignore"
+-'  11  38  ~/.gitignore
+|4,39,11,38,1753708251,"~/.gitignore"
+-'  11  38  ~/.gitignore
+|4,39,11,38,1753708251,"~/.gitignore"
+-'  11  38  ~/.gitignore
+|4,39,11,38,1753708251,"~/.gitignore"
 -'  11  12  ~/.gitignore
 |4,39,11,12,1753708173,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1753708158,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1753708158,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1753708158,"~/.gitignore"
--'  18  34  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py
-|4,39,18,34,1750212968,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py"
--'  18  34  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py
-|4,39,18,34,1750212968,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py"
--'  18  34  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py
-|4,39,18,34,1750212968,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py"
--'  18  34  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py
-|4,39,18,34,1750212968,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py"
--'  18  34  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py
-|4,39,18,34,1750212968,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py"
--'  18  34  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py
-|4,39,18,34,1750212968,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py"
--'  18  34  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py
-|4,39,18,34,1750212968,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py"
--'  18  34  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py
-|4,39,18,34,1750212968,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py"
--'  32  21  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py
-|4,39,32,21,1750211989,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py"
--'  32  21  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py
-|4,39,32,21,1750211989,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py"
--'  32  21  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py
-|4,39,32,21,1750211989,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py"
--'  32  21  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py
-|4,39,32,21,1750211989,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py"
--'  32  21  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py
-|4,39,32,21,1750211989,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py"
--'  32  21  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py
-|4,39,32,21,1750211989,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py"
--'  32  21  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py
-|4,39,32,21,1750211989,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py"
--'  32  21  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py
-|4,39,32,21,1750211989,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py"
--'  19  38  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py
-|4,39,19,38,1750211985,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py"
--'  19  38  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py
-|4,39,19,38,1750211985,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py"
--'  19  38  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py
-|4,39,19,38,1750211985,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py"
--'  19  38  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py
-|4,39,19,38,1750211985,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py"
--'  19  38  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py
-|4,39,19,38,1750211985,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py"
--'  19  38  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py
-|4,39,19,38,1750211985,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py"
--'  19  38  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py
-|4,39,19,38,1750211985,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py"
--'  19  38  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py
-|4,39,19,38,1750211985,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py"
--'  19  38  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py
-|4,39,19,38,1750211985,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py"
--'  19  38  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py
-|4,39,19,38,1750211985,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py"
--'  19  38  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py
-|4,39,19,38,1750211985,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py"
--'  19  38  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py
-|4,39,19,38,1750211985,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py"
--'  19  38  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py
-|4,39,19,38,1750211985,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py"
--'  19  38  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py
-|4,39,19,38,1750211985,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py"
--'  19  38  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py
-|4,39,19,38,1750211985,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py"
--'  19  38  ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py
-|4,39,19,38,1750211985,"~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  7  0  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,7,0,1750209801,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
--'  30  20  ~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py
-|4,39,30,20,1750209795,"~/ros2_kart_ws/src/vision_pkg/vision_pkg/object_detection_node.py"
+-'  11  12  ~/.gitignore
+|4,39,11,12,1753708173,"~/.gitignore"
+-'  11  12  ~/.gitignore
+|4,39,11,12,1753708173,"~/.gitignore"
+-'  11  12  ~/.gitignore
+|4,39,11,12,1753708173,"~/.gitignore"
+-'  11  12  ~/.gitignore
+|4,39,11,12,1753708173,"~/.gitignore"
+-'  11  12  ~/.gitignore
+|4,39,11,12,1753708173,"~/.gitignore"
+-'  11  12  ~/.gitignore
+|4,39,11,12,1753708173,"~/.gitignore"
+-'  11  12  ~/.gitignore
+|4,39,11,12,1753708173,"~/.gitignore"
+-'  11  12  ~/.gitignore
+|4,39,11,12,1753708173,"~/.gitignore"
+-'  11  12  ~/.gitignore
+|4,39,11,12,1753708173,"~/.gitignore"
+-'  11  12  ~/.gitignore
+|4,39,11,12,1753708173,"~/.gitignore"
+-'  11  12  ~/.gitignore
+|4,39,11,12,1753708173,"~/.gitignore"
+-'  11  12  ~/.gitignore
+|4,39,11,12,1753708173,"~/.gitignore"
+-'  11  12  ~/.gitignore
+|4,39,11,12,1753708173,"~/.gitignore"
+-'  11  12  ~/.gitignore
+|4,39,11,12,1753708173,"~/.gitignore"
+-'  11  12  ~/.gitignore
+|4,39,11,12,1753708173,"~/.gitignore"
 
 # History of marks within files (newest to oldest):
 
 > ~/.gitignore
-	*	1753708259	0
-	"	11	44
-	^	11	45
-	.	11	44
-	+	11	44
+	*	1753710914	0
+	"	12	15
+	^	12	16
+	.	12	15
+	+	11	45
+	+	12	15
+
+> ~/.git-credentials
+	*	1753710752	0
+	"	1	0
+
+> ~/.bashrc
+	*	1753710437	0
+	"	117	0
+	^	117	0
+	.	117	0
+	+	118	31
+	+	118	0
+	+	115	0
+	+	118	0
+	+	117	0
+
+> /etc/systemd/system/ros2-auto-launch.service
+	*	1753709911	0
+	"	10	21
+	^	10	24
+	.	10	24
+	+	10	24
+
+> ~/start_ros2_launch.sh
+	*	1753709750	0
+	"	2	49
+	^	4	52
+	.	2	19
+	+	1	31
+	+	1	41
+	+	1	19
+	+	1	5
+	+	1	0
+	+	1	19
+	+	5	37
+	+	4	19
+	+	3	19
+	+	2	19
 
 > ~/ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py
 	*	1750212967	0
@@ -410,38 +449,6 @@ $
 	+	30	26
 	+	12	52
 	+	30	20
-
-> /etc/systemd/system/ros2-auto-launch.service
-	*	1750209420	0
-	"	10	12
-	^	10	24
-	.	10	24
-	+	10	24
-
-> ~/start_ros2_launch.sh
-	*	1750209402	0
-	"	4	51
-	^	4	52
-	.	2	19
-	+	1	31
-	+	1	41
-	+	1	19
-	+	1	5
-	+	1	0
-	+	1	19
-	+	5	37
-	+	4	19
-	+	3	19
-	+	2	19
-
-> ~/.bashrc
-	*	1750209318	0
-	"	116	41
-	^	118	32
-	.	115	0
-	+	118	31
-	+	118	0
-	+	115	0
 
 > ~/ros2_kart_ws/src/decision_pkg/decision_pkg/decision_node.py
 	*	1750204371	0

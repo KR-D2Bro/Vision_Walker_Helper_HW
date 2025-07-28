@@ -115,4 +115,4 @@ fi
 source ~/ros2_humble_venv/bin/activate
 source ~/ros2_humble_ws/install/setup.bash
 source ~/ros2_kart_ws/install/setup.bash
-ros2 launch launch_pkg launch.py
+#ros2 launch launch_pkg launch.py
