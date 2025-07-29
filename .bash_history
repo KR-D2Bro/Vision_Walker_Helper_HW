@@ -1861,3 +1861,29 @@ vim ros2_kart_ws/src/actuator_pkg/actuator_pkg/light_service.py
 vim ros2_kart_ws/src/actuator_pkg/actuator_pkg/buzzer_service.py 
 sudo systemctl status ros2-auto-launch.service 
 poweroff 
+ls
+ls -al
+git add .
+git rm --cached ros2_kart_ws/src/vision_pkg/vision_pkg/yolo5
+vim .gitignore 
+ls ros2_kart_ws/src/vision_pkg/vision_pkg/yolo5
+cd ros2_kart_ws/src/vision_pkg/vision_pkg/yolov5/
+ls
+cd ~
+ls ros2_kart_ws/src/vision_pkg/vision_pkg/yolo5/
+ls ros2_kart_ws/src/vision_pkg/vision_pkg/yolov5
+vim .gitignore 
+git add .
+git commit -m "semi_final"
+git push
+ls /etc/services 
+cd /etc/services
+ls .
+ls /
+ls /srv/
+ls /etc/services 
+ls
+vim start_ros2_launch.sh 
+ls /etc/systemd/system
+vim /etc/systemd/system/ros2-auto-launch.service 
+sudo systemctl disable ros2-auto-launch.service 
