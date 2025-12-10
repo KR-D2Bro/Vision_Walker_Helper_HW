@@ -1,56 +1,75 @@
-import sys
-import torch
-import os
+#YOLOv11 code
+import os, time, cv2
 
-# YOLOv5 코드 경로를 Python 모듈 경로에 추가
-YOLOV5_PATH = os.path.join(os.path.dirname(__file__), 'yolov5')
-sys.path.append(YOLOV5_PATH)
+import ncnn
 
-from models.common import DetectMultiBackend
-from utils.general import non_max_suppression, scale_boxes 
-import cv2
-import numpy as np
-model_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),'model', 'best.pt')
-headless = os.environ.get('DISPLAY','') == ''
+try:
+    ncnn.create_gpu_instance()
+except Exception as e:
+    print("ncnn Vulkan init failed:", e)
+
+from ultralytics import YOLO
+
+HOME_DIR = '/home/dongjae/Vision_Walker_Helper_HW/'
+VISION_PKG_DIR = 'ros2_kart_ws/src/vision_pkg/vision_pkg/'
+PKG_ROOT = os.path.join(HOME_DIR, VISION_PKG_DIR)
+
+THIS_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_DIR = os.path.join(THIS_DIR, 'model')
+
+# �� NCNN export�� ���� ���� �̸�(���ο� .param/.bin ����)
+MODEL_FOLDER = os.path.join(MODEL_DIR, 'best_openvino_model')
+
+IMGSZ = 640
+CONF_THR = 0.25
+IOU_THR  = 0.45
+
 
 class YoloDetector:
-    def __init__(self, model_path= model_PATH, device='cpu'):
-        self.device = device
-        self.model = DetectMultiBackend(model_path, device=self.device)
-        self.model.eval()
+    """
+    Ultralytics YOLO(NCNN) �߷� ����
+    ��ȯ: [{'name': str, 'conf': float, 'bbox': [x1,y1,x2,y2]}, ...]
+    """
+    def __init__(self,
+                 model_dir: str = MODEL_FOLDER,
+                 imgsz: int = IMGSZ,
+                 conf_thres: float = CONF_THR,
+                 iou_thres: float = IOU_THR):
+        self.imgsz = imgsz
+        self.conf_thres = conf_thres
+        self.iou_thres = iou_thres
+
+        # NCNN ������ ���� �ε�, task ����
+        self.model = YOLO(model_dir, task='detect')
 
     def detect(self, frame):
-        img = cv2.resize(frame, (640, 640))
-        #gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-        #img = np.stack([gray, gray, gray], axis=-1)
-        img = img.transpose(2, 0, 1)
-        img = torch.from_numpy(img).float() / 255.0
-        img = img.unsqueeze(0).to(self.device)
-        pred = None
-        try:
-            pred = self.model(img, augment=False)
-            pred = non_max_suppression(pred, conf_thres=0.4, iou_thres=0.45)[0]  # 첫 번째 이미지 결과
-            #시각화#
-            if not headless:
-                #frame = gray.copy()
-                if pred is not None and len(pred):
-                    pred[:, :4] = scale_boxes(img.shape[2:], pred[:, :4], frame.shape).round()
+        """
+        frame: BGR np.ndarray(H,W,3)
+        """
+        # Ultralytics�� ���ο��� NCNN ���� + NMS���� ó��
+        r = self.model(frame,
+                       imgsz=self.imgsz,
+                       conf=self.conf_thres,
+                       iou=self.iou_thres,
+                       verbose=False)[0]
 
-                    for *xyxy, conf, cls in pred:
-                        label = f'{self.model.names[int(cls)]} {conf:.2f}'
-                        xyxy = [int(x) for x in xyxy]
-                        cv2.rectangle(frame, (xyxy[0], xyxy[1]), (xyxy[2], xyxy[3]), (0, 255, 0), 2)
-                        cv2.putText(frame, label, (xyxy[0], xyxy[1] - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
-           
-                print(type(frame), frame.shape, frame.dtype)
-                cv2.imshow('Detection', frame)
-                cv2.waitKey(1)
-            #시각화 끝#
-        except Exception as e:
-            print("에러발생:",e)
         results = []
-        if pred is not None and len(pred):
-            for *xyxy, conf, cls in pred:
-                class_name = self.model.names[int(cls)]
-                results.append({'name': class_name, 'conf': float(conf), 'bbox': xyxy})
+        if r.boxes is not None and len(r.boxes) > 0:
+            names = r.names if isinstance(r.names, dict) else {i: n for i, n in enumerate(r.names)}
+            for b in r.boxes:
+                x1, y1, x2, y2 = map(int, b.xyxy[0].tolist())
+                cls = int(b.cls[0])
+                conf = float(b.conf[0])
+                results.append({
+                    'name': names.get(cls, str(cls)),
+                    'conf': conf,
+                    'bbox': [x1, y1, x2, y2]
+                })
+        #         name = r.names.get(cls, str(cls))
+        #         cv2.rectangle(frame, (x1,y1), (x2,y2), (0,255,0), 2)
+        #         cv2.putText(frame, f"{name} {conf:.2f}", (x1, max(0,y1-6)),
+        #                 cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0,255,0), 2)
+
+        # cv2.imshow("Openvino YOLO", frame)
+        # cv2.waitKey(1)
         return results

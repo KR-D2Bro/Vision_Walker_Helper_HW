@@ -2,11 +2,11 @@
 import rclpy
 from rclpy.node import Node
 from interfaces.srv import LightCommand, BuzzerCommand, ConfigSrv
-from interfaces.msg import Imu, Illuminance, Vision, Config
+from interfaces.msg import Imu, Illuminance, Vision, Config, Fall
 import time, json
 from threading import Timer
 
-HOMEDIR = '/home/dongjae/'
+HOMEDIR = '/home/dongjae/Vision_Walker_Helper_HW/'
 CONFIG_PATH = HOMEDIR + 'config.conf'
 
 CONFIG_KEY = ['light','alarm','volume']
@@ -22,11 +22,12 @@ class DecisionNode(Node):
         self.config_srv = self.create_service(ConfigSrv, '/srv/config',self.handle_config_request)
         self.light_cli = self.create_client(LightCommand, 'light/control')
         self.buzzer_cli = self.create_client(BuzzerCommand, 'buzzer/control')
+        self.fall_pub = self.create_publisher(Fall, '/fall/alert', 10)
         self.create_subscription(Illuminance,
                                  '/light/alert',
                                  self.illuminance_listener_callback,
                                  10)
-        self.create_subscription(Imu,
+        self.create_subscription(Fall,
                                  '/imu/alert',
                                  self.imu_listener_callback,
                                  10)
@@ -63,11 +64,14 @@ class DecisionNode(Node):
         self.send_light_request(msg.is_night and self.config[0])
         self.get_logger().info(f'[INFO] send light request: {self.config[0] and msg.is_night}')
         
-    def imu_listener_callback(self, msg: Imu):
+    def imu_listener_callback(self, msg: Fall):
         self.send_buzzer_request(3.0)
+        fall_msg = Fall()
+        fall_msg.is_fall = msg.is_fall
+        self.fall_pub.publish(fall_msg)
 
     def vision_listener_callback(self, msg: Vision):
-        self.send_buzzer_request(0.8)
+        self.send_buzzer_request(0.08)
 
     def config_listener_callback(self, msg: Config):
         self.config[0] = msg.light

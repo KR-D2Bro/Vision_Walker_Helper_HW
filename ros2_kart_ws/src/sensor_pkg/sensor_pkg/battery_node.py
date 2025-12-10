@@ -3,9 +3,10 @@ from rclpy.node import Node
 from interfaces.msg import BatteryState
 from smbus2 import SMBus
 import time
+import struct
 
 I2C_BUS_NUM = 1
-DEVICE_ADDR = 0x17
+DEVICE_ADDR = 0x36
 
 class BatteryStatePublisher(Node):
     def __init__(self):
@@ -19,7 +20,7 @@ class BatteryStatePublisher(Node):
     def timer_callback(self):
         msg = BatteryState()
         try:
-            msg.percentage = self.read_battery()
+            msg.percentage = int(self.read_battery())
         except Exception as e:
             self.get_logger().warn(f'I2C 통신 오류: {e!r}, 버스 재초기화 시도')
             self.init_bus(I2C_BUS_NUM)
@@ -29,10 +30,10 @@ class BatteryStatePublisher(Node):
         self.get_logger().info(f'Battery: {round(msg.percentage,2)}%')
 
     def read_battery(self):
-        msb = self.bus.read_byte_data(DEVICE_ADDR, 20)
-        lsb = self.bus.read_byte_data(DEVICE_ADDR, 19)
-        percentage = (msb << 8) | lsb
-        return percentage
+        read = self.bus.read_byte_data(DEVICE_ADDR, 4)
+        swapped = struct.unpack("<H", struct.pack(">H", read))[0]
+        capacity = swapped/256
+        return capacity
 
     def init_bus(self, bus_num : int):
         try:
@@ -62,4 +63,3 @@ def main(args=None):
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()
-

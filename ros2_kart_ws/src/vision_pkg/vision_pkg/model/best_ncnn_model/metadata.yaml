@@ -1,0 +1,22 @@
+description: Ultralytics YOLO11-eca model trained on /content/RDD_SPLIT/data.yaml
+author: Ultralytics
+date: '2025-11-06T06:30:52.920647'
+version: 8.3.225
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 640
+- 640
+names:
+  0: longitudinal crack
+  1: transverse crack
+  2: alligator crack
+  3: other corruption
+  4: Pothole
+args:
+  batch: 1
+  half: false
+channels: 3

@@ -7,9 +7,10 @@ from bluezero import adapter
 from bluezero import peripheral
 from bluezero import async_tools
 import random
-HOMEDIR = '/home/dongjae'
-BINDINGPATH = HOMEDIR + '/binding.conf'
-SECKEYPATH = HOMEDIR + '/secretKey.txt'
+import struct
+HOMEDIR = '/home/dongjae/Vision_Walker_Helper_HW/'
+BINDINGPATH = HOMEDIR + 'binding.conf'
+SECKEYPATH = HOMEDIR + 'secretKey.txt'
 LOCALNAME = 'VisionWalkHelper'
 # Define a custom service and characteristic UUIDs
 BIND_SVC_UUID = '87654321-1234-5678-1234-56789abcdef0'
@@ -18,6 +19,7 @@ LIGHT_CONFIG_CHAR_UUID = 'abcdef01-1234-5678-1234-56789abcdef1'
 ALARM_CONFIG_CHAR_UUID = 'abcdef01-1234-5678-1234-56789abcdef2'
 VOLUME_CONFIG_CHAR_UUID = 'abcdef01-1234-5678-1234-56789abcdef3'
 BATTERY_CHAR_UUID = '2A19'
+FALL_CHAR_UUID = 'abcdef01-1234-5678-1234-56789abcdef6'
 AUTH_TIMEOUT_SEC = 2
 
 
@@ -27,7 +29,9 @@ class Ble_peripheral():
         self.node = node
         self.is_authenticated = False
         self.connected_addr = None
-        self.notify_characteristic = None
+        self.battery_notify_characteristic = None
+        self.fall_notify_characteristic = None
+        self.last_fall_state = False
 
         # Discover the Bluetooth adapter address
         # Get the first available Bluetooth adapter
@@ -48,6 +52,7 @@ class Ble_peripheral():
         self._add_advertising_service()
         self._add_secure_config_service()
         self._add_battery_notify_characteristic() 
+        self._add_fall_notify_characteristic()
 
         self.data_lock = threading.Lock()
 
@@ -116,20 +121,46 @@ class Ble_peripheral():
             value=[self.node.last_notified_percentage],
             notifying=False,
             flags = ['notify'],
-            notify_callback=self.notify_callback
+            notify_callback=self.battery_notify_callback
         )
 
+    def _add_fall_notify_characteristic(self):
+        self.ble_periph.add_characteristic(
+            srv_id=1,
+            chr_id=6,
+            uuid = FALL_CHAR_UUID,
+            value=[self.last_fall_state],
+            notifying=False,
+            flags = ['notify'],
+            notify_callback=self.fall_notify_callback
+        )
+
+    def update_fall_state(self, fall_state: bool):
+        if self.fall_notify_characteristic is not None:
+            try:
+                data_to_send = struct.pack("!B", 1 if fall_state else 0)
+                self.fall_notify_characteristic.set_value(data_to_send)
+            except Exception as e:
+                self.node.get_logger().warn(f'-------------------errorerrorerror!!!!!!!!! : {e}')
+
     #notify 구독시 해당 특성을 저장
-    def notify_callback(self,notifying, characteristic):
+    def fall_notify_callback(self,notifying, characteristic):
         if notifying:
-            self.notify_characteristic = characteristic
+            self.node.get_logger().info('-------------------fall_notify subscribed!!!!!!!!!')
+            self.fall_notify_characteristic = characteristic
         else:
-            self.notify_characteristic = None
+            self.fall_notify_characteristic = None
+
+    def battery_notify_callback(self,notifying, characteristic):
+        if notifying:
+            self.battery_notify_characteristic = characteristic
+        else:
+            self.battery_notify_characteristic = None
 
     #ble_node에서 호출하는 메소드로 배터리 특성의 value를 변경
     def update_battery_state(self, percentage: int):
-        if self.notify_characteristic is not None:
-            self.notify_characteristic.set_value(list(percentage.to_bytes(2,byteorder='little',signed=True)))
+        if self.battery_notify_characteristic is not None:
+            self.battery_notify_characteristic.set_value(list(percentage.to_bytes(2,byteorder='little',signed=True)))
 
 
     def _auth_write_callback(self, value, options):
@@ -148,6 +179,7 @@ class Ble_peripheral():
 
         self.node.get_logger().info(f"{sec_key} : {token}") 
         if sec_key == token:
+            self.node.get_logger().info(f'[ble_gatt_server] Authentication success')
             self.is_authenticated = True
 
     def handle_connect(self, device_address):
@@ -174,6 +206,8 @@ class Ble_peripheral():
     def handle_disconnect(self, device_address):
         self.connected_addr = None
         self.is_authenticated = False
+        self.fall_notify_characteristic=None
+        self.battery_notify_characteristic = None
         self.node.get_logger().info(f'Central disconnected: {device_address}')
 
     def light_read_config(self):

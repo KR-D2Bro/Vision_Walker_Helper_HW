@@ -7,7 +7,7 @@ from rclpy.node import Node
 from threading import Thread
 import subprocess
 import asyncio
-from interfaces.msg import Config, BatteryState
+from interfaces.msg import Config, BatteryState, Fall
 from interfaces.srv import ConfigSrv
 from app_interface_pkg.ble_agent import register_agent
 from app_interface_pkg.ble_periph import Ble_peripheral
@@ -28,6 +28,7 @@ class BLEGATTServer(Node):
                                                     '/battery_state/data',
                                                     self.battery_listener_callback,
                                                     10)
+        self.fall_sub = self.create_subscription(Fall, '/fall/alert', self.fall_listener_callback, 10)
         self.last_notified_percentage = 100
 
         self.ble_lock = self.create_timer(0.01, self._dummy_timer)
@@ -42,13 +43,19 @@ class BLEGATTServer(Node):
         
         self.get_logger().info(f"Config Published: {self.config}")
 
+    def fall_listener_callback(self, msg:Fall):
+        if msg.is_fall is True:
+            if self.periph is not None:
+                self.periph.update_fall_state(msg.is_fall)
 
     def battery_listener_callback(self, msg:BatteryState):
         percentage = msg.percentage
-        if percentage != self.last_notified_percentage:
-            if self.periph is not None:
-                self.periph.update_battery_state(percentage)
-            self.last_notified_percentage = percentage
+        # if percentage != self.last_notified_percentage:
+        #     if self.periph is not None:
+        #         self.periph.update_battery_state(percentage)
+        #     self.last_notified_percentage = percentage
+        if self.periph is not None:
+            self.periph.update_battery_state(percentage)
 
     def wait_config_srv(self):
         self.config_cli.wait_for_service(timeout_sec=60.0)

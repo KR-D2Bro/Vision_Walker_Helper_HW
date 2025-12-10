@@ -32,6 +32,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/BatteryState.msg"
   "msg/Illuminance.msg"
   "msg/Vision.msg"
+  "msg/Fall.msg"
   "srv/LightCommand.srv"
   "srv/BuzzerCommand.srv"
   "srv/ConfigSrv.srv"
